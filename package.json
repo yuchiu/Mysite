@@ -1,0 +1,10 @@
+{
+  "name": "portfolio",
+  "version": "",
+  "scripts":{
+    "start": "serve ./"
+  },
+  "dependencies": {
+    "serve": "^6.3.1"
+  }
+}
