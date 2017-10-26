@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+@import 'var';
+@import 'mixins';
+@import './mq';
+@import './components/nav';
+@import './components/home';
+@import './components/showcase';
+@import './components/contacts';
+@import './components/footer';
+
+body {
+  margin: 0;
+  font-family: 'Titillium Web', sans-serif;
+}

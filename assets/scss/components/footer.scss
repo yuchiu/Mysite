@@ -1,0 +1,20 @@
+.footer {
+    width: 100%;
+    min-height: 10vh;
+    background-color: #373737;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer p {
+    color: #bacbd3;
+    margin: 0;
+    width: 88%;
+    text-align: right;
+}
+
+.footer a {
+    color: #bacbd3;
+}
