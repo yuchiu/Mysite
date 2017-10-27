@@ -3,13 +3,36 @@
     margin: 0;
     min-height: 100vh;
     width: 100%;
-    background: white;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     z-index: 1;
+
+    background: linear-gradient(270deg, #662b8e, #bf3f71, #1f2792, #c1d23d);
+    background-size: 800% 800%;
+    
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+    
+    @-webkit-keyframes AnimationName {
+        0%{background-position:0% 73%}
+        50%{background-position:100% 28%}
+        100%{background-position:0% 73%}
+    }
+    @-moz-keyframes AnimationName {
+        0%{background-position:0% 73%}
+        50%{background-position:100% 28%}
+        100%{background-position:0% 73%}
+    }
+    @keyframes AnimationName { 
+        0%{background-position:0% 73%}
+        50%{background-position:100% 28%}
+        100%{background-position:0% 73%}
+    }
+
   }
   
   .home::after {
@@ -22,7 +45,14 @@
     background-position: center top;
     background-attachment: fixed;
     position: absolute;
-    opacity: 0.7;
+  //   background-image:
+  //   url(https://confluence.siteworx.com/download/attachments/133038218/boat.svg?api=v2),
+  //  url(https://confluence.siteworx.com/download/attachments/133038218/landscape.svg?api=v2), 
+  //     linear-gradient(#f2c9d4 0%, #ffffff 50%, #fff075 55%, #ffffc7 55%, #ffe396 70%, #ffd4c2 90%);
+  //   background-repeat: no-repeat;
+  //   background-size: 54%, 100%, 100%;
+  //   background-position: 50% 100%, 0 50%;
+  //   opacity: 0.5;
     z-index: -1;
   }
   
@@ -45,7 +75,7 @@
   
 .home h1 {
     margin: 0.4em;
-    color: #000;
+    color: #fff;
     font-weight: 100;
     font-size: 7vmax;
     width: 100%;
@@ -54,7 +84,7 @@
   
   .home h2 {
     margin: 0.4em;
-    color: #000;
+    color: #fff;
     font-size: 26px;
     font-weight: 100;
     width: 60%;

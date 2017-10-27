@@ -8,7 +8,7 @@ class Projects extends React.Component {
           <div className="content animated bounceInDown">
             <h1>
               Yu Chiu</h1>
-            <h2 id="introduction">Code, Tech, Caffine.</h2>
+            <h2 id="introduction">Devloper  ·  Creator  ·  Learner</h2>
           </div>
         </div>
       </div>

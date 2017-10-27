@@ -40,21 +40,6 @@ class Projects extends React.Component {
             </ul>
           </div>
         </div>
-        <div className="top-bar homeNav">
-          <div className="nav">
-            <ul>
-              <li>
-                <a href="#home" id="link1">HOME</a>
-              </li>
-              <li>
-                <a href="#stuff" id="link2">SHOWCASE</a>
-              </li>
-              <li>
-                <a href="#contact" id="link3">CONTACT</a>
-              </li>
-            </ul>
-          </div>
-        </div>
       </div>
     )
   }
