@@ -24,14 +24,15 @@
   background-size: cover;
   background-position: center top;
   background-attachment: fixed;
-  position: absolute; //   background-image:
+  position: absolute; 
+  //   background-image:
   //   url(https://confluence.siteworx.com/download/attachments/133038218/boat.svg?api=v2),
   //  url(https://confluence.siteworx.com/download/attachments/133038218/landscape.svg?api=v2), 
   //     linear-gradient(#f2c9d4 0%, #ffffff 50%, #fff075 55%, #ffffc7 55%, #ffe396 70%, #ffd4c2 90%);
   //   background-repeat: no-repeat;
   //   background-size: 54%, 100%, 100%;
   //   background-position: 50% 100%, 0 50%;
-  //   opacity: 0.5;
+  //   opacity: 0.3;
   z-index: -1;
 }
 
@@ -67,7 +68,7 @@
 .home h1 {
   margin: 0.4em;
   color: #fff;
-  font-size: 3vmax;
+  font-size: 2vmax;
   width: 100%;
   text-align: center;
 }
@@ -82,7 +83,8 @@
   white-space: nowrap;
   overflow: hidden;
   width: 30em;
-  animation: type 6s steps(60, end);
+  animation: type 6.5s steps(60, end);
+  animation-delay: 0.3s;
 }
 
 .home .contact-icons {

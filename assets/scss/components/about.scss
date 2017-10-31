@@ -1,0 +1,73 @@
+#contact {
+  min-height: 85vh;
+  display: flex;
+}
+
+input,
+textarea {
+  border: 0.1em solid #000;
+  border-radius: 3px;
+  padding: 5px 10px;
+  font-size: 20px;
+  width: 600px;
+  box-sizing: border-box;
+  margin: 1em auto;
+  resize: none;
+  outline: none;
+}
+
+button {
+  color: #000;
+  background: #fff;
+  border: 0.1em solid #000;
+  border-radius: 3px;
+  outline: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0.2em 1.5em;
+  margin: 1em auto;
+  cursor: pointer;
+}
+
+#about-me-container {
+  padding: 3vw;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 30vw
+}
+
+#email-form-container {
+  flex: 40vw
+}
+
+#social-media-container {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+      margin-left: 0;
+      padding-left: 0;
+}
+
+button:hover {
+  color: rgba(169, 211, 173, 1);
+  background: #fff;
+}
+
+@include maxMediaQueries(975px) {
+  #contact {
+    display: flex;
+    flex-direction: column;
+  }
+  #about-me-container {
+    flex: 30vw
+  }
+  
+  #email-form-container {
+    flex: 40vw
+  }
+  
+  #social-media-container {
+    flex: 30vw;
+  }
+}
