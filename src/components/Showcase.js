@@ -54,7 +54,7 @@ class Projects extends React.Component {
             <div className="thumbnail">
               <div className="pic" id="pic5"></div>
               <div className="desc">
-                <h2 id="app5">Foodie Image Upload App</h2>
+                <h2 id="app5">Image Upload App</h2>
                 <p id="app5desc">React ∙ Redux ∙ Firebase</p>
                 <a
                   href="https://github.com/yuchiu/React-Redux-Recipe-App"

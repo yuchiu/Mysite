@@ -11,11 +11,17 @@
 
 .shrink {
   background-color: #fff;
+  -webkit-box-shadow: 1px 1px 2px #c6c6c6;
+  -moz-box-shadow: 1px 1px 2px #c6c6c6;
+  box-shadow: 1px 1px 2px #c6c6c6;
 }
 .shrink{
   .nav{
       a{
         color: #000;
+        &:hover {
+          color: #81a2c6;
+        }
       }
   }
 }
@@ -42,8 +48,9 @@
     font-size: 15px;
     font-weight: bold;
     transition: all 0.3s ease;
-    :hover {
-      color: #f3f2ff;
+    opacity: 0.8;
+    &:hover {
+      color: #eab69a;
     }
   }
 }
