@@ -8,44 +8,11 @@
   align-items: center;
   position: relative;
   z-index: 1;
-  background: linear-gradient(270deg, #662b8e, #bf3f71, #1f2792, #c1d23d);
+  background: linear-gradient(329deg, #535eb4, #4e8da5, #449467, #6f51aa);
   background-size: 800% 800%;
-  -webkit-animation: AnimationName 30s ease infinite;
-  -moz-animation: AnimationName 30s ease infinite;
-  animation: AnimationName 30s ease infinite;
-  @-webkit-keyframes AnimationName {
-    0% {
-      background-position: 0% 73%
-    }
-    50% {
-      background-position: 100% 28%
-    }
-    100% {
-      background-position: 0% 73%
-    }
-  }
-  @-moz-keyframes AnimationName {
-    0% {
-      background-position: 0% 73%
-    }
-    50% {
-      background-position: 100% 28%
-    }
-    100% {
-      background-position: 0% 73%
-    }
-  }
-  @keyframes AnimationName {
-    0% {
-      background-position: 0% 73%
-    }
-    50% {
-      background-position: 100% 28%
-    }
-    100% {
-      background-position: 0% 73%
-    }
-  }
+  -webkit-animation: bgColor 30s ease infinite;
+  -moz-animation: bgColor 30s ease infinite;
+  animation: bgColor 30s ease infinite;
 }
 
 .home::after {
@@ -57,7 +24,8 @@
   background-size: cover;
   background-position: center top;
   background-attachment: fixed;
-  position: absolute; //   background-image:
+  position: absolute; 
+  //   background-image:
   //   url(https://confluence.siteworx.com/download/attachments/133038218/boat.svg?api=v2),
   //  url(https://confluence.siteworx.com/download/attachments/133038218/landscape.svg?api=v2), 
   //     linear-gradient(#f2c9d4 0%, #ffffff 50%, #fff075 55%, #ffffc7 55%, #ffe396 70%, #ffd4c2 90%);
@@ -86,8 +54,9 @@
   justify-content: center;
 }
 
-.home i {
+.home .fa {
   margin: 0 16px 24px;
+  text-decoration: none;
   color: white;
    :hover,
    :active,
@@ -99,31 +68,88 @@
 .home h1 {
   margin: 0.4em;
   color: #fff;
-  font-weight: 100;
-  font-size: 7vmax;
+  font-size: 3vmax;
   width: 100%;
   text-align: center;
 }
 
-.home h2 {
-  margin: 0.4em;
+.home #introduction {
+  margin-bottom: 36px;
+  margin: 36px auto 56px;
+
   color: #fff;
   font-size: 26px;
-  font-weight: 100;
-  width: 60%;
+  width: 100%;
   text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 5s steps(60, end);
 }
 
 .home .contact-icons {
-  margin: 0.4em;
-  font-size: 26px;
-  font-weight: 100;
-  width: 60%;
+  margin: 0em;
+  font-size: 20px;
+  width: 100%;
   text-align: center;
 }
+
 .home .arrow {
   margin: 0.4em;
+  margin-top: 10em;
   opacity: 0.6;
-  width: 60%;
+  width: 100%;
   text-align: center;
+}
+
+.home #line {
+  animation: blink 1s infinite;
+}
+
+@-webkit-keyframes bgColor {
+  0% {
+    background-position: 0% 23%
+  }
+  50% {
+    background-position: 100% 78%
+  }
+  100% {
+    background-position: 0% 23%
+  }
+}
+
+@-moz-keyframes bgColor {
+  0% {
+    background-position: 0% 23%
+  }
+  50% {
+    background-position: 100% 78%
+  }
+  100% {
+    background-position: 0% 23%
+  }
+}
+
+@keyframes bgColor {
+  0% {
+    background-position: 0% 23%
+  }
+  50% {
+    background-position: 100% 78%
+  }
+  100% {
+    background-position: 0% 23%
+  }
+}
+
+@keyframes type {
+  from {
+    width: 0px;
+  }
+}
+
+@keyframes blink {
+  to {
+    opacity: .0;
+  }
 }

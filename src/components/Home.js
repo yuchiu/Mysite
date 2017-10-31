@@ -6,9 +6,8 @@ class Projects extends React.Component {
       <div>
         <div className="home" id="home">
           <div className="content animated bounceInDown">
-            <h1>Yu Chiu</h1>
-            <h2 id="introduction">Devloper · Creator · Learner</h2>
-
+            <h1>HI FRIEND. I'M YU.</h1>
+            <h2 id="introduction">Developer · Creator · Learner <span id="line">|</span></h2>
             <div className="contact-icons">
               <a href="https://github.com/yuchiu" target="_blank">
                 <i className="fa fa-github fa-2x" aria-hidden="true"></i>
@@ -24,9 +23,8 @@ class Projects extends React.Component {
               </a>
             </div>
             <div className="arrow">
-              <i className="fa fa-angle-double-down fa-3x" id="arrow-icon" aria-hidden="true"></i>
+              <a href="#stuff" className="fa fa-angle-double-down fa-3x" id="arrow-icon" aria-hidden="true"></a>
             </div>
-
 
           </div>
 
