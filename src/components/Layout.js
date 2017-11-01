@@ -5,8 +5,7 @@ import $ from 'jquery';
 import Nav from './Nav'
 import Home from './Home'
 import Showcase from './Showcase'
-import Skillset from './Skillset'
-import About from './About'
+import About from './About/'
 import Footer from './Footer'
 
 class Layout extends React.Component {
@@ -37,7 +36,6 @@ class Layout extends React.Component {
         <Nav/>
         <Home/>
         <Showcase/>
-        <Skillset/>
         <About/>
         <Footer/>
       </div>

@@ -1,0 +1,41 @@
+@import './aboutme';
+@import './contacts';
+@import './emailform';
+@import './skillset';
+@import './skillsetcol';
+
+#upper-about-section{
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#lower-about-section {
+  min-height: 65vh;
+  display: flex;
+}
+
+#about-me-container {
+  padding: 3vw;
+  text-align: center;
+}
+
+#email-form-container {
+  padding: 3vw;
+}
+
+#contact-container {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+
+@include maxMediaQueries(975px) {
+  #lower-about-section {
+    display: flex;
+    flex-direction: column;
+  }
+}

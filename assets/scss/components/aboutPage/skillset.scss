@@ -1,56 +1,11 @@
-#skillset-container{
-    display: flex;
-}
-  
-  section.IconsPage {
-    width: 90%;
-    margin-top: 100px;
-    letter-spacing: 2px;
-    text-align: center;
-  }
-  
-  .IconsPage .icon-container {
-    width: 100%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-  }
-  
-  .IconsPage .icon-container .col {
-    width: 100%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-align: center;
-        align-items: center;
-    padding: 50px 0;
-  }
-  
-  @media (max-width: 449px) {
-    .IconsPage .icon-container .col {
-      padding: 20px 0;
-    }
-  }
-  
-  //icons 
-  @media (max-width: 800px) {
-    section.footer {
+@media (max-width: 800px) {
+    section.icons-section {
       display: none;
     }
   }
   
-  .footer h3 {
-    font-weight: 200;
-    text-transform: uppercase;
-    color: #6A798A;
-    width: 70%;
-    margin: auto;
-  }
-  
   .icon-container {
-    width: 70%;
+    width: 100%;
     margin: auto;
     display: -ms-flexbox;
     display: flex;
@@ -59,14 +14,7 @@
     -ms-flex-align: center;
         align-items: center;
   }
-  
-  .footer h3 {
-    font-weight: 300;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-    font-size: 14px;
-  }
-  
+    
   .tech-icon {
     height: 50px;
     width: 50px;

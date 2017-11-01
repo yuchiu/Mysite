@@ -1,0 +1,31 @@
+@media (min-width: 799px) {
+    section.icons-col-section {
+      display: none;
+    }
+  }
+  
+  section.icons-col-section {
+    width: 90%;
+    margin-top: 100px;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  
+  .icons-col-section .icon-container {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  
+  .icons-col-section .icon-container .col {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-align: center;
+        align-items: center;
+    padding: 40px 0;
+  }

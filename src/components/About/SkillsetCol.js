@@ -9,12 +9,11 @@ import {
   reduxLogo,
   webpackLogo,
   babelLogo
-} from '../../assets/icons/index'
-class Projects extends React.Component {
+} from '../../../assets/icons/index'
+class SkillsetCol extends React.Component {
   render() {
     return (
-        <div id="skillset-container">
-      <section className="IconsPage">
+      <section className="icons-col-section">
         <div>
           <h3>My favourite technologies I like to work with</h3>
         </div>
@@ -63,9 +62,8 @@ class Projects extends React.Component {
           </div>
         </div>
       </section>
-      </div>
     )
   }
 }
 
-export default Projects
+export default SkillsetCol
