@@ -1,7 +1,6 @@
 import React from 'react'
 import Skillset from './Skillset'
 import SkillsetCol from './SkillsetCol'
-import AboutMe from './AboutMe'
 import EmailForm from './EmailForm'
 import Contacts from './Contacts'
 
@@ -14,9 +13,8 @@ class About extends React.Component {
           <SkillsetCol/>
         </div>
         <div className="lower-about-section" id="lower-about-section">
-          <AboutMe/>
-          <EmailForm/>
           <Contacts/>
+          <EmailForm/>
         </div>
       </div>
     )

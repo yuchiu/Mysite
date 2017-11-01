@@ -1,0 +1,57 @@
+ #contact-title{
+     width: 45vw;
+ }
+  .buttonbox {
+    width: 25%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .buttonborder {
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+    border: 0.1em solid #373737;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .buttonborder:hover {
+    background-color: #373737;
+  }
+  
+  #mail a {
+    font-size: 1.3vmax;
+  }
+  
+  .buttonborder a {
+    display: block;
+    text-decoration: none;
+    color: #373737;
+    font-size: 1.5vmax;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .buttonborder a:hover {
+    color: #bacbd3;
+  }
+  
+@media only screen and (max-width:975px) {
+
+    .content2 {
+        width: 100%;
+      }
+      .buttonborder {
+        width: 75%;
+        border-width: 0.1em;
+      }
+      .buttonbox {
+        width: 100%;
+        align-items: center;
+      }
+      #mail a {
+        font-size: 1.9vmax
+      }
+}
