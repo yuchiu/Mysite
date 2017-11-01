@@ -6,7 +6,7 @@
   
   section.icons-col-section {
     width: 90%;
-    margin-top: 100px;
+    margin-top: 60px;
     letter-spacing: 2px;
     text-align: center;
   }
@@ -28,4 +28,8 @@
     -ms-flex-align: center;
         align-items: center;
     padding: 40px 0;
+  }
+  .icons-col-section h3{
+      text-align: center;
+      font-size: 15px;
   }
