@@ -11,7 +11,7 @@ class Projects extends React.Component {
               <div className="pic" id="pic1"></div>
               <div className="desc">
                 <h2 id="app1">Netflix Clone</h2>
-                <p id="app1desc">ReactJS ∙ Redux ∙ Sass</p>
+                <p id="app1desc">ReactJS ∙ Redux ∙ Scss ∙ tmdb API</p>
                 <a
                   href="https://github.com/yuchiu/React-Redux-Netflix-Clone"
                   target="_blank"
@@ -40,7 +40,7 @@ class Projects extends React.Component {
               <div className="pic" id="pic2"></div>
               <div className="desc">
                 <h2 id="app2">Venues Finder</h2>
-                <p id="app2desc">ReactJS ∙ Redux ∙ GoogleMap</p>
+                <p id="app2desc">ReactJS ∙ Redux ∙ GoogleMap ∙ foursquare API</p>
                 <a
                   href="https://github.com/yuchiu/React-Redux-Venues-Finder"
                   target="_blank"
@@ -103,7 +103,7 @@ class Projects extends React.Component {
               <div className="pic" id="pic22"></div>
               <div className="desc">
                 <h2 id="app22">Force Directed Graph</h2>
-                <p id="app22desc">JS ∙ React ∙ D3</p>
+                <p id="app22desc">React ∙ D3</p>
                 <a
                   href="hhttps://github.com/yuchiu/Force-Graph-React-D3"
                   target="_blank"
@@ -236,7 +236,7 @@ class Projects extends React.Component {
               <div className="pic" id="pic6"></div>
               <div className="desc">
                 <h2 id="app6">Weather App</h2>
-                <p id="app6desc">JS ∙ jQuery</p>
+                <p id="app6desc">JS ∙ jQuery ∙ Open Weather API</p>
                 <a
                   href="https://github.com/yuchiu/show-the-weather"
                   target="_blank"
@@ -344,7 +344,7 @@ class Projects extends React.Component {
               <div className="pic" id="pic28"></div>
               <div className="desc">
                 <h2 id="app9">Twitch Live</h2>
-                <p id="app9desc">JS ∙ Bootstrap4</p>
+                <p id="app9desc">JS ∙ Bootstrap4 ∙ Twitch API</p>
                 <a
                   href="https://github.com/yuchiu/twitch-JSON-API"
                   target="_blank"
@@ -378,7 +378,7 @@ class Projects extends React.Component {
               <div className="pic" id="pic20"></div>
               <div className="desc">
                 <h2 id="app9">Wiki Viewer</h2>
-                <p id="app9desc">JS ∙ Bootstrap4</p>
+                <p id="app9desc">JS ∙ Bootstrap4 ∙ Wiki API</p>
                 <a
                   href="https://github.com/yuchiu/wiki-viewer"
                   target="_blank"

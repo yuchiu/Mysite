@@ -25,7 +25,7 @@ class Projects extends React.Component {
               <a href="#stuff" id="link2">SHOWCASE</a>
             </li>
             <li>
-              <a href="#contact" id="link3">CONTACT</a>
+              <a href="#skillset-container" id="link3">ABOUT</a>
             </li>
           </ul>
         </nav>

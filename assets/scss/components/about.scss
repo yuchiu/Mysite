@@ -1,21 +1,15 @@
-#contact {
-  min-height: 85vh;
-  display: flex;
-}
-
 input,
 textarea {
   border: 0.1em solid #000;
   border-radius: 3px;
   padding: 5px 10px;
-  font-size: 20px;
+  font-size: 15px;
   width: 600px;
   box-sizing: border-box;
   margin: 1em auto;
   resize: none;
   outline: none;
 }
-
 button {
   color: #000;
   background: #fff;
@@ -28,27 +22,40 @@ button {
   margin: 1em auto;
   cursor: pointer;
 }
+#contact {
+  min-height: 65vh;
+  display: flex;
+}
 
 #about-me-container {
   padding: 3vw;
   text-align: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex: 30vw
 }
 
 #email-form-container {
-  flex: 40vw
+  padding: 3vw;
+}
+
+.email-form-item{
+  display: flex;
+  flex-direction: column;
 }
 
 #social-media-container {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-      margin-left: 0;
-      padding-left: 0;
+  margin-left: 0;
+  padding-left: 0;
 }
 
+.social-media-item {
+  padding: 0.5vw;
+  margin-bottom: 1rem;
+  &last-child {
+    margin-bottom: 0;
+  }
+}
 button:hover {
   color: rgba(169, 211, 173, 1);
   background: #fff;
@@ -58,16 +65,5 @@ button:hover {
   #contact {
     display: flex;
     flex-direction: column;
-  }
-  #about-me-container {
-    flex: 30vw
-  }
-  
-  #email-form-container {
-    flex: 40vw
-  }
-  
-  #social-media-container {
-    flex: 30vw;
   }
 }
