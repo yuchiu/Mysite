@@ -14,27 +14,23 @@ class Skillset extends React.Component {
   render() {
     return (
       <section className="icons-section">
-       <div><h3>My favourite technologies I like to work with</h3></div>
+       <div><h3>My current favorite technology stack</h3></div>
        <div className="icon-container">
-         <div className="tech-icon react">
-           {reactLogo}
-           <span>React</span>
+         <div className="tech-icon html">
+           {htmlLogo}
+           <span>HTML5</span>
          </div>
          <div className="tech-icon css">
            {cssLogo}
            <span>CSS3</span>
          </div>
-         <div className="tech-icon html">
-           {htmlLogo}
-           <span>HTML5</span>
-         </div>
          <div className="tech-icon javascript">
            {javascriptLogo}
            <span>JavaScript</span>
          </div>
-         <div className="tech-icon nodejs">
-           {nodejsLogo}
-           <span>Node.js</span>
+         <div className="tech-icon react">
+           {reactLogo}
+           <span>React</span>
          </div>
          <div className="tech-icon react-router">
            {reactRouterLogo}
@@ -43,6 +39,10 @@ class Skillset extends React.Component {
          <div className="tech-icon redux">
            {reduxLogo}
            <span>Redux</span>
+         </div>
+         <div className="tech-icon nodejs">
+           {nodejsLogo}
+           <span>Node.js</span>
          </div>
          <div className="tech-icon webpack">
            {webpackLogo}

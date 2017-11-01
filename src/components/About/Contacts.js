@@ -19,28 +19,28 @@ class Contacts extends React.Component {
           <div className="buttonbox">
             <div className="buttonborder">
               <a href="https://github.com/yuchiu" target="_blank">
-                <i className="fa fa-github"></i>
+                <i className="fa fa-github"></i><br/>
                 GitHub</a>
             </div>
           </div>
           <div className="buttonbox" id="mail">
             <div className="buttonborder">
               <a href="mailto:steven2002yc@gmail.com">
-                <i className="fa fa-envelope"></i>
-                steven2002yc@gmail.com</a>
+                <i className="fa fa-envelope"></i><br/>
+                <p>steven2002yc@gmail</p></a>
             </div>
           </div>
-          <div className="buttonbox">
+          <div className="buttonbox" id="freecodecamp">
             <div className="buttonborder">
               <a href="https://www.freecodecamp.org/yuchiu" target="_blank">
-                <i className="fa fa-free-code-camp"></i>
-                FreeCodeCamp</a>
+                <i className="fa fa-free-code-camp"></i><br/>
+                <p>FreeCodeCamp</p></a>
             </div>
           </div>
           <div className="buttonbox">
             <div className="buttonborder">
               <a href="https://codepen.io/yuchiu/" target="_blank">
-                <i className="fa fa-codepen"></i>
+                <i className="fa fa-codepen"></i><br/>
                 CodePen</a>
             </div>
           </div>

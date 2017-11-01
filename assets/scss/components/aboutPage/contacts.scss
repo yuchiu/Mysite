@@ -9,28 +9,30 @@
   }
   
   .buttonborder {
-    width: 100%;
+    width: 95%;
     background-color: transparent;
     text-align: center;
-    border: 0.1em solid #373737;
+    border: 0.1em solid #000;
     border-radius: 5px;
     transition: all 0.3s ease;
   }
   
   .buttonborder:hover {
-    background-color: #373737;
+    background-color: #000;
   }
   
-  #mail a {
-    font-size: 1.3vmax;
+  #mail p {
+    font-size: 0.9vmax;
+  }
+  #freecodecamp p {
+    font-size: 1.2vmax;
   }
   
   .buttonborder a {
     display: block;
     text-decoration: none;
-    color: #373737;
+    color: #000;
     font-size: 1.5vmax;
-    font-weight: bold;
     transition: all 0.3s ease;
   }
   
@@ -45,13 +47,16 @@
       }
       .buttonborder {
         width: 75%;
-        border-width: 0.1em;
+        border-width: 0.1em;a {
+            font-size: 2.5vmax;}
       }
       .buttonbox {
         width: 100%;
         align-items: center;
+      }  #mail p {
+        font-size: 2vmax;
       }
-      #mail a {
-        font-size: 1.9vmax
+      #freecodecamp p {
+        font-size: 2vmax;
       }
 }
