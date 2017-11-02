@@ -23,7 +23,7 @@ class Projects extends React.Component {
               </a>
             </div>
             <div className="arrow">
-              <a href="#stuff" className="fa fa-angle-double-down fa-3x" id="arrow-icon" aria-hidden="true"></a>
+              <a href="#showcase" className="fa fa-angle-double-down fa-3x" id="arrow-icon" aria-hidden="true"></a>
             </div>
 
           </div>

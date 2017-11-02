@@ -1,12 +1,12 @@
 import React from 'react'
 
-class Projects extends React.Component {
+class Showcase extends React.Component {
   render() {
     return (
       <div>
-        <div className="stuff" id="stuff">
+        <div className="showcase" id="showcase">
           <div className="content">
-            <h2 id="projects">Showcase</h2>
+            <h1 id="projects">Showcase</h1>
             <div className="thumbnail">
               <div className="pic" id="pic1"></div>
               <div className="desc">
@@ -415,4 +415,4 @@ class Projects extends React.Component {
   }
 }
 
-export default Projects
+export default Showcase

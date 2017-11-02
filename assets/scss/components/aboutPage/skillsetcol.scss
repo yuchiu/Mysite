@@ -18,6 +18,11 @@
     -ms-flex-direction: column;
         flex-direction: column;
   }
+  .icons-col-section .tech-icon {
+    height: 50px;
+    width: 50px;
+  }
+  
   
   .icons-col-section .icon-container .col {
     width: 100%;
@@ -27,7 +32,7 @@
         justify-content: space-around;
     -ms-flex-align: center;
         align-items: center;
-    padding: 40px 0;
+    padding: 45px 0;
   }
   .icons-col-section h3{
       text-align: center;

@@ -5,15 +5,15 @@ textarea {
     border-radius: 3px;
     padding: 5px 10px;
     font-size: 15px;
-    width: 500px;
+    width: 35vw;
     box-sizing: border-box;
-    margin: 1em auto;
+    margin: 0.8em auto;
     resize: none;
     outline: none;
 }
 
-.email-form-container {
-    margin:5vh 5vw 0 5vw;
+#email-form-container {
+    text-align: center;
     button {
         color: #000;
         background: transparent;
@@ -22,11 +22,21 @@ textarea {
         outline: none;
         font-size: 20px;
         padding: 0.2em 1.5em;
-        margin: 1em auto;
+        margin: 0.5em auto;
         cursor: pointer;
         &:hover {
             color: rgba(169, 211, 173, 1);
             background: #fff;
         }
+    }
+}
+@include maxMediaQueries(975px) {
+    input,
+    textarea {
+        width: 75vw;
+    }
+    #email-form-title{
+        margin-top:1em;
+        font-size: 25px
     }
 }

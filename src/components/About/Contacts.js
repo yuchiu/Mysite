@@ -4,7 +4,8 @@ class Contacts extends React.Component {
   render() {
     return (
       <div className="contact-container" id="contact-container">
-        <h1>about me</h1>
+        <div id="about-me-container">
+        <h1 id="about-me-title">about me</h1>
         <p>This book is a treatise on the theory of ethics, very popular during the
           Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
           comes from a line in section 1.10.32.
@@ -14,6 +15,7 @@ class Contacts extends React.Component {
           those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et
           Malorum" by Cicero are also reproduced in their exact original form, accompanied
           by English versions from the 1914 translation by H. Rackham.</p>
+          </div>
         <div className="content2">
           <h1 id="contact-title">Get in touch with me</h1>
           <div className="buttonbox">
