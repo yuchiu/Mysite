@@ -6,15 +6,10 @@ class Contacts extends React.Component {
       <div className="contact-container" id="contact-container">
         <div id="about-me-container">
         <h1 id="about-me-title">about me</h1>
-        <p>This book is a treatise on the theory of ethics, very popular during the
-          Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
-          comes from a line in section 1.10.32.
+        <p>I'm a Web Developer based in New York City. Looking for amazing projects? Send me a message!
         </p>
         <p>
-          The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for
-          those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et
-          Malorum" by Cicero are also reproduced in their exact original form, accompanied
-          by English versions from the 1914 translation by H. Rackham.</p>
+          This site and the projects were designed and built by hand from ground up. Check out the code on my Github.</p>
           </div>
         <div className="content2">
           <h1 id="contact-title">Get in touch with me</h1>
