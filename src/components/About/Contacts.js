@@ -5,14 +5,14 @@ class Contacts extends React.Component {
     return (
       <div className="contact-container" id="contact-container">
         <div id="about-me-container">
-        <h1 id="about-me-title">about me</h1>
+        <h1 id="about-me-title">About Me</h1>
         <p>I'm a Web Developer based in New York City. Looking for amazing projects? Send me a message!
         </p>
         <p>
           This site and the projects were designed and built by hand from ground up. Check out the code on my Github!</p>
           </div>
         <div className="content2">
-          <h1 id="contact-title">Get in touch with me</h1>
+          <h1 id="contact-title">Get In Touch With Me</h1>
           <div className="buttonbox">
             <div className="buttonborder">
               <a href="https://github.com/yuchiu" target="_blank">
