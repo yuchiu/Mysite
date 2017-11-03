@@ -326,7 +326,7 @@ class Showcase extends React.Component {
               <div className="pic" id="pic9"></div>
               <div className="desc">
                 <h2 id="app9">Simon's Game</h2>
-                <p id="app9desc">JS ∙ CSS</p>
+                <p id="app9desc">JS ∙ jQuery ∙ CSS</p>
                 <a
                   href="https://github.com/yuchiu/simon-game"
                   target="_blank"

@@ -24,7 +24,7 @@ class Contacts extends React.Component {
             <div className="buttonborder">
               <a href="mailto:steven2002yc@gmail.com">
                 <i className="fa fa-envelope"></i><br/>
-                <p>steven2002yc@gmail</p></a>
+                <p>steven2002yc@gmail.com</p></a>
             </div>
           </div>
           <div className="buttonbox" id="freecodecamp">
