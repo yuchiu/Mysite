@@ -9,7 +9,7 @@ class Contacts extends React.Component {
         <p>I'm a Web Developer based in New York City. Looking for amazing projects? Send me a message!
         </p>
         <p>
-          This site and the projects were designed and built by hand from ground up. Check out the code on my Github.</p>
+          This site and the projects were designed and built by hand from ground up. Check out the code on my Github!</p>
           </div>
         <div className="content2">
           <h1 id="contact-title">Get in touch with me</h1>
@@ -17,7 +17,7 @@ class Contacts extends React.Component {
             <div className="buttonborder">
               <a href="https://github.com/yuchiu" target="_blank">
                 <i className="fa fa-github"></i><br/>
-                GitHub</a>
+                <p>GitHub</p></a>
             </div>
           </div>
           <div className="buttonbox" id="mail">
@@ -38,7 +38,7 @@ class Contacts extends React.Component {
             <div className="buttonborder">
               <a href="https://codepen.io/yuchiu/" target="_blank">
                 <i className="fa fa-codepen"></i><br/>
-                CodePen</a>
+                <p>CodePen</p></a>
             </div>
           </div>
         </div>

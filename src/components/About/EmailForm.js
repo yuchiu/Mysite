@@ -11,7 +11,7 @@ class EmailForm extends React.Component {
           <br/>
           <textarea name="message" rows="6" placeholder="Your message" required></textarea>
           <br/>
-          <button className="email-form-item" type="submit">send</button>
+          <button id="email-send-btn" type="submit">send</button>
         </form>
       </div>
     )

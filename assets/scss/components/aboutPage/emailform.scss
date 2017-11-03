@@ -1,6 +1,6 @@
 input,
 textarea {
-    border: 0.1em solid #000;
+    border: 2px solid #3f4877;
     background: transparent;
     border-radius: 3px;
     padding: 5px 10px;
@@ -11,22 +11,50 @@ textarea {
     resize: none;
     outline: none;
 }
-
+.buttonborder a {
+    display: block;
+    font-size: 1.2vmax;
+    -webkit-transition: all 700ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -moz-transition: all 700ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -ms-transition: all 700ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -o-transition: all 700ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    transition: all 700ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    display: block;
+    text-decoration: none;
+    border-radius: 4px;
+    color: #3f4877;
+    box-shadow: #3f4877 0 0px 0px 1px inset;
+  }
+ 
+  .buttonborder a:hover {
+     color: rgba(255, 255, 255, 0.85);
+     box-shadow: #3f4877 0 0px 0px 40px inset;
+  }
+ 
 #email-form-container {
     text-align: center;
     button {
-        color: #000;
+        display: block;
+        font-size: 1.8vmax;
+        -webkit-transition: all 700ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+        -moz-transition: all 700ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+        -ms-transition: all 700ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+        -o-transition: all 700ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+        transition: all 700ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+        display: block;
+        text-decoration: none;
+        border-radius: 4px;
+        color: #3f4877;
+        box-shadow: #3f4877 0 0px 0px 1px inset;
+        border: none;
         background: transparent;
-        border: 0.1em solid #000;
-        border-radius: 3px;
         outline: none;
-        font-size: 20px;
         padding: 0.2em 1.5em;
         margin: 0.5em auto;
         cursor: pointer;
         &:hover {
-            background-color: #000;
-            color: #bacbd3;
+            color: rgba(255, 255, 255, 0.85);
+            box-shadow: #3f4877 0 0px 0px 40px inset;
         }
     }
 }
@@ -39,4 +67,8 @@ textarea {
         margin-top:1em;
         font-size: 25px
     }
+    #email-form-container {button{
+        font-size: 3vmax;
+
+    }}
 }
