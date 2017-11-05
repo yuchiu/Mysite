@@ -3,7 +3,7 @@ import React from 'react'
 class Contacts extends React.Component {
   render() {
     return (
-      <div className="contact-container" id="contact-container">
+      <div id="contact-container">
         <div id="about-me-container">
         <h1 id="about-me-title">About Me</h1>
         <p>I'm a Web Developer based in New York City. Looking for amazing projects? Send me a message!
@@ -11,7 +11,7 @@ class Contacts extends React.Component {
         <p>
           This site and the projects were designed and built by hand from ground up. Check out the code on my Github!</p>
           </div>
-        <div className="content2">
+        <div id="social-contact">
           <h1 id="contact-title">Get In Touch With Me</h1>
           <div className="buttonbox">
             <div className="buttonborder">

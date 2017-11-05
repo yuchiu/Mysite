@@ -1,4 +1,4 @@
-.showcase {
+#showcase {
   margin: 0 auto;
   padding: 10vh 0;
   background: transparent;
@@ -9,7 +9,7 @@
   justify-content: center;
 }
 
-.showcase h1 {
+#showcase h1 {
   margin-bottom: 0.8em;
   color: $black;
   width: 100%;
@@ -19,7 +19,7 @@
 .thumbnail {
   width: 280px;
   height: 300px;
-  background-color: black;
+  background-color: transparent;
   margin: 10px;
   transition: all 0.3s ease;
   -webkit-box-shadow: 5px 5px 26px 0px rgba(0, 0, 0, 0.1);
@@ -74,13 +74,13 @@
 	display: block;
 	text-decoration: none;
 	border-radius: 4px;
-  color: #3f4877;
-	box-shadow: #3f4877 0 0px 0px 1px inset;
+  color: $btn-color;
+	box-shadow: $btn-color 0 0px 0px 1px inset;
 }
 
 .desc a:hover {
 	color: rgba(255, 255, 255, 0.85);
-	box-shadow: #3f4877 0 0px 0px 40px inset;
+	box-shadow: $btn-color 0 0px 0px 50px inset;
 }
 
 .thumbnail:hover .pic {
@@ -91,6 +91,17 @@
   height: 40%;
 }
 
+@include maxMediaQueries(880px) {
+  #showcase {
+    width: 100%;
+  }
+  .thumbnail {
+    transform: scale(0.9, 0.9);
+    margin: 0;
+  }
+}
+
+
 #pic1 {
   background-image: url(https://i.imgur.com/fRXR8vT.jpg)
 }
@@ -100,7 +111,7 @@
 }
 
 #pic3 {
-  background-image: url(https://i.imgur.com/fZd7aHm.jpg)
+  background-image: url(https://i.imgur.com/KOzFIo8.jpg)
 }
 
 #pic4 {
@@ -116,7 +127,7 @@
 }
 
 #pic7 {
-  background-image: url(https://i.imgur.com/PcIeVLE.jpg)
+  background-image: url(https://i.imgur.com/ahxa5Ih.jpg)
 }
 
 #pic8 {
@@ -124,7 +135,7 @@
 }
 
 #pic9 {
-  background-image: url(https://i.imgur.com/qMwBOu5.jpg)
+  background-image: url(https://i.imgur.com/zrOlOmJ.jpg)
 }
 
 #pic14 {
@@ -135,25 +146,11 @@
   background-image: url(https://i.imgur.com/efRWI3y.jpg)
 }
 
-#pic12 {
-  background-image: url(https://i.imgur.com/5UkevM0.jpg)
-}
 
 #pic16 {
-  background-image: url(https://i.imgur.com/O5sHF5x.jpg)
+  background-image: url(https://i.imgur.com/Z9zla9S.jpg)
 }
 
-#pic17 {
-  background-image: url(https://i.imgur.com/qFn9uYn.jpg)
-}
-
-#pic18 {
-  background-image: url(https://i.imgur.com/5UkevM0.jpg)
-}
-
-#pic19 {
-  background-image: url(https://i.imgur.com/komUTyN.jpg)
-}
 
 #pic20 {
   background-image: url(https://i.imgur.com/kcOrNHd.jpg)

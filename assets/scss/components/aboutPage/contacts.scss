@@ -1,83 +1,83 @@
- .content2 {
-   width: 80%;
-   margin: 0 auto;
-   padding: 10px 0 0 0;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
- }
+#social-contact {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
- #contact-title {
-   width: 45vw;
- }
+#contact-title {
+  width: 45vw;
+}
 
- .buttonbox {
-   width: 50%;
-   margin: 5px 0;
-   display: flex;
-   justify-content: center;
- }
+.buttonbox {
+  width: 50%;
+  margin: 5px 0;
+  display: flex;
+  justify-content: center;
+}
 
- .buttonborder {
-   width: 95%;
-   background-color: transparent;
-   text-align: center;
- }
+.buttonborder {
+  width: 95%;
+  background-color: transparent;
+  text-align: center;
+}
 
- .buttonborder {
-   i {
-     font-size: 2vmax;
-   }
-   a {
-     display: block;
-     font-size: 1.2vmax;
-     -webkit-transition: all 700ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-     -moz-transition: all 700ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-     -ms-transition: all 700ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-     -o-transition: all 700ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-     transition: all 700ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-     display: block;
-     text-decoration: none;
-     border-radius: 4px;
-     color: #3f4877;
-     box-shadow: #3f4877 0 0px 0px 1px inset;
-   }
- }
+.buttonborder {
+  i {
+    font-size: 2vmax;
+  }
+  a {
+    display: block;
+    font-size: 1.2vmax;
+    -webkit-transition: all 700ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -moz-transition: all 700ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -ms-transition: all 700ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -o-transition: all 700ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    transition: all 700ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    display: block;
+    text-decoration: none;
+    border-radius: 4px;
+    color: $btn-color;
+    box-shadow: $btn-color 0 0px 0px 1px inset;
+  }
+}
 
- .buttonborder a:hover {
-   color: rgba(255, 255, 255, 0.85);
-   box-shadow: #3f4877 0 0px 0px 40px inset;
- }
+.buttonborder a:hover {
+  color: rgba(255, 255, 255, 0.85);
+  box-shadow: $btn-color 0 0px 0px 50px inset;
+}
 
- @include maxMediaQueries(975px) {
-   #about-me-container {
-     #about-me-title {
-       font-size: 25px;
-     }
-   }
-   #contact-title {
-     width: 90vw;
-     text-align: center;
-     font-size: 25px;
-   }
-   .content2 {
-     width: 100%;
-   }
-   #about-me-container {
-     text-align: center;
-   }
-   .buttonborder {
-     width: 75%;
-     border-width: 0.1em;
-     p {
-       font-size: 3vmax;
-     }
-     i {
-       font-size: 3vmax;
-     }
-   }
-   .buttonbox {
-     width: 100%;
-     align-items: center;
-   }
- }
+@include maxMediaQueries(975px) {
+  #about-me-container {
+    #about-me-title {
+      font-size: 25px;
+    }
+  }
+  #contact-title {
+    width: 90vw;
+    text-align: center;
+    font-size: 25px;
+  }
+  #social-contact {
+    width: 100%;
+  }
+  #about-me-container {
+    text-align: center;
+  }
+  .buttonborder {
+    width: 75%;
+    border-width: 0.1em;
+    p {
+      font-size: 3vmax;
+    }
+    i {
+      font-size: 3vmax;
+    }
+  }
+  .buttonbox {
+    width: 100%;
+    align-items: center;
+  }
+}

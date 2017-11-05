@@ -14,7 +14,7 @@ class Skillset extends React.Component {
   render() {
     return (
       <section className="icons-section">
-       <div><h3>My Current Favorite Technology Stack</h3></div>
+       <div><h3>My Current Favorite Stack</h3></div>
        <div className="icon-container">
          <div className="tech-icon html">
            {htmlLogo}

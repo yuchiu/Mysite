@@ -14,7 +14,7 @@ class SkillsetCol extends React.Component {
   render() {
     return (
       <section className="icons-col-section">
-       <div><h3>My Current Favorite Technology Stack</h3></div>
+       <div><h3>My Current Favorite Stack</h3></div>
         <div className="icon-container">
           <div className="col">
             <div className="tech-icon react">

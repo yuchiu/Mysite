@@ -2,10 +2,8 @@
 @import './emailform';
 @import './skillset';
 @import './skillsetcol';
-
-
-#about{  
-  background:transparent;
+#about {
+  background: transparent;
 }
 
 #upper-about-section {
@@ -15,7 +13,7 @@
 }
 
 #lower-about-section {
-  padding-top:5vh;
+  padding-top: 5vh;
   min-height: 60vh;
   display: flex;
 }
@@ -23,10 +21,10 @@
 #contact-container {
   margin: 1vw;
 }
+
 #email-form-container {
   margin: 1vw;
 }
-
 
 @include maxMediaQueries(975px) {
   #lower-about-section {

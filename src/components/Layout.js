@@ -11,7 +11,6 @@ import Footer from './Footer'
 class Layout extends React.Component {
 
   componentDidMount() {
-
     $('a')
       .click(function (event) {
         if (this.hash !== '') {
