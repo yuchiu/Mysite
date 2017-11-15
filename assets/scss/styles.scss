@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300');
 @import 'var';
 @import 'mixins';
-@import './components/nav';
-@import './components/home';
-@import './components/showcase';
+@import './components/nav/nav';
+@import './components/home/home';
+@import './components/showcase/showcase';
 @import './components/aboutpage/about';
-@import './components/footer';
+@import './components/footer/footer';
 
 body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
-  background: linear-gradient(329deg, #e1e3f1, #e0f0f0, #e0f0e7);
+  
+  background: linear-gradient(329deg, #e0e3f8, #edffff, #f0fff6);
   background-size: 800% 800%;
   -webkit-animation: bgColor 30s ease infinite;
   -moz-animation: bgColor 30s ease infinite;

@@ -1,12 +1,11 @@
 import React from 'react'
 
-class Showcase extends React.Component {
+class AllShowcase extends React.Component {
   render() {
     return (
       <div>
-        <div id="showcase">
+        <div id="all-showcase">
           <div className="content">
-            <h1 id="projects">Showcase</h1>
             <div className="thumbnail">
               <div className="pic" id="pic1"></div>
               <div className="desc">
@@ -154,6 +153,24 @@ class Showcase extends React.Component {
             </div>
 
             <div className="thumbnail">
+              <div className="pic" id="pic28"></div>
+              <div className="desc">
+                <h2 id="app9">Twitch Online Status</h2>
+                <p id="app9desc">JS ∙ jQuery ∙ CSS ∙ Twitch API</p>
+                <a
+                  href="https://github.com/yuchiu/twitch-JSON-API"
+                  target="_blank"
+                  className="exlink">
+                  <i className="fa fa-external-link"></i>Github</a>
+                <a
+                  href="https://yuchiu.github.io/twitch-JSON-API/"
+                  target="_blank"
+                  className="exlink">
+                  <i className="fa fa-external-link"></i>View</a>
+              </div>
+            </div>
+
+            <div className="thumbnail">
               <div className="pic" id="pic4"></div>
               <div className="desc">
                 <h2 id="app4">Conway's Game of Life</h2>
@@ -240,23 +257,7 @@ class Showcase extends React.Component {
             </div>
 
 
-            <div className="thumbnail">
-              <div className="pic" id="pic28"></div>
-              <div className="desc">
-                <h2 id="app9">Twitch Live</h2>
-                <p id="app9desc">JS ∙ Bootstrap4 ∙ Twitch API</p>
-                <a
-                  href="https://github.com/yuchiu/twitch-JSON-API"
-                  target="_blank"
-                  className="exlink">
-                  <i className="fa fa-external-link"></i>Github</a>
-                <a
-                  href="https://yuchiu.github.io/twitch-JSON-API/"
-                  target="_blank"
-                  className="exlink">
-                  <i className="fa fa-external-link"></i>View</a>
-              </div>
-            </div>
+
             <div className="thumbnail">
               <div className="pic" id="pic20"></div>
               <div className="desc">
@@ -345,4 +346,4 @@ class Showcase extends React.Component {
   }
 }
 
-export default Showcase
+export default AllShowcase

@@ -22,7 +22,7 @@ class Projects extends React.Component {
               <a href="#home" id="link1">HOME</a>
             </li>
             <li>
-              <a href="#showcase" id="link2">SHOWCASE</a>
+              <a href="#showcase-container" id="link2">SHOWCASE</a>
             </li>
             <li>
               <a href="#about" id="link3">ABOUT</a>
