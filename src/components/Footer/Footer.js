@@ -5,7 +5,7 @@ class Projects extends React.Component {
     return (
       <div>
         <div className="footer">
-          <p>Yu Chiu © 2017</p>
+          <p>© 2017 <b>Yu Chiu</b>. Powered by Awesomeness.</p>
         </div>
       </div>
     )

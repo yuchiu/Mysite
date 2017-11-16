@@ -40,7 +40,10 @@
   p{
     color: #383838;
   }
-  a.a-tag-btn{
+  .a-tag-btn.victoria-one,
+  .a-tag-btn.victoria-two,
+  .a-tag-btn.victoria-three,
+  .a-tag-btn.victoria-four{
     border-radius:3px;
     padding: 5px 10px;
     text-transform: none;
@@ -52,6 +55,12 @@
     }
     p{
       color:#fff;
+    }
+    .a-tag-btn.victoria-one,
+    .a-tag-btn.victoria-two,
+    .a-tag-btn.victoria-three,
+    .a-tag-btn.victoria-four{
+      border-color: $btn-color4;
     }
   }
 }
