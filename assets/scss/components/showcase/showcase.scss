@@ -26,9 +26,9 @@
   .a-tag-btn.sandy-four{
     cursor: pointer;
     padding: 8px 15px;
-    color: $btn-color6;
+    color: $btn-color7;
     &:hover{
-      text-shadow: 0 0 2px #fff7f7, 0 0 3px #fff7f7, 0 0 5px #fff7f7, 0 0 10px $btn-color;
+      text-shadow: 0 0 2px #fff7f7, 0 0 3px #fff7f7, 0 0 5px #fff7f7, 0 0 30px $btn-color, 0 0 10px $btn-color;
     }
   }
 }

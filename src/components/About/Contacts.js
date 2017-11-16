@@ -14,14 +14,14 @@ class Contacts extends React.Component {
                 <p>GitHub</p></a>
             </div>
           </div>
-          <div className="buttonbox" id="mail">
+          <div className="buttonbox">
             <div className="buttonborder">
               <a href="mailto:steven2002yc@gmail.com" className="a-tag-btn victoria-two">
                 <i className="fa fa-envelope"></i><br/>
-                <p>steven2002yc@gmail.com</p></a>
+                <p >steven2002yc@gmail.com</p></a>
             </div>
           </div>
-          <div className="buttonbox" id="freecodecamp">
+          <div className="buttonbox">
             <div className="buttonborder">
               <a href="https://www.freecodecamp.org/yuchiu" className="a-tag-btn victoria-three" target="_blank">
                 <i className="fa fa-free-code-camp"></i><br/>

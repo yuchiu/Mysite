@@ -33,6 +33,9 @@
     display: flex;
     flex-direction: column;
   }
+  #about-me-title{
+    font-size: 20px;
+  }
 }
 
 @include minMediaQueries(976px) {
