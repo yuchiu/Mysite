@@ -1,19 +1,23 @@
 @import './allShowcase';
 @import './defaultShowcase';
+#showcase-container {}
 
-#showcase-container{
-  
-}
 #showcase-title {
-  padding-top:50px;
+  padding-top: 50px;
   margin-bottom: 5px;
   color: $black;
   width: 100%;
   text-align: center;
 }
-#btn-options{
+
+#category-btn-container {
   justify-content: center;
   text-align: center;
-  margin:10px;
-  margin-bottom:30px;
+  margin: 10px;
+  margin-bottom: 25px;
+}
+
+#category-btn-container {
+  @include aTagBtnBaseStyle;
+  @include aTagBtnVictoria;
 }
