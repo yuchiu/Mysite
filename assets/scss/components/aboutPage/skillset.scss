@@ -47,6 +47,9 @@
   
   .tech-icon span {
     opacity: 0;
+    display:flex;
+    justify-content: center;
+    margin-top:3px;
     -webkit-transition: opacity 0.5s;
     -o-transition: opacity 0.5s;
     transition: opacity 0.5s;
