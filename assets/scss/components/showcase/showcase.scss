@@ -1,23 +1,57 @@
 @import './allShowcase';
 @import './defaultShowcase';
-#showcase-container {}
+#showcase-container {
+}
 
 #showcase-title {
-  padding-top: 50px;
-  margin-bottom: 5px;
-  color: $black;
+  margin:0;
+  padding-top:50px;
+  margin-bottom: 0px;
   width: 100%;
   text-align: center;
 }
 
-#category-btn-container {
-  justify-content: center;
-  text-align: center;
-  margin: 10px;
-  margin-bottom: 25px;
-}
 
 #category-btn-container {
   @include aTagBtnBaseStyle;
-  @include aTagBtnVictoria;
+  @include aTagBtnSandy;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width:700px;
+
+  .a-tag-btn.sandy-one,
+  .a-tag-btn.sandy-two,
+  .a-tag-btn.sandy-three,
+  .a-tag-btn.sandy-four{
+    cursor: pointer;
+    padding: 8px 15px;
+    color: $btn-color3;
+  }
+}
+@include maxMediaQueries(800px){
+  
+#category-btn-container{
+  width:550px;
+  .a-tag-btn.sandy-one,
+  .a-tag-btn.sandy-two,
+  .a-tag-btn.sandy-three,
+  .a-tag-btn.sandy-four{
+    padding: 5px 5px;
+    font-size: 0.8em;
+  }
+}
+}
+@include maxMediaQueries(650px){
+  
+#category-btn-container{
+  width:450px;
+  .a-tag-btn.sandy-one,
+  .a-tag-btn.sandy-two,
+  .a-tag-btn.sandy-three,
+  .a-tag-btn.sandy-four{
+    padding: 0px 0px;
+    font-size: 0.7em;
+  }
+}
 }

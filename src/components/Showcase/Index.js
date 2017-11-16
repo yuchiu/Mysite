@@ -13,7 +13,7 @@ class Index extends React.Component {
     const name = e.target.name
     switch (name) {
       case "default":
-        this.setState({showAll: false, category: ""})
+        this.setState({showAll: false})
         break;
       case "all":
         this.setState({showAll: true, category: name})
@@ -37,31 +37,31 @@ class Index extends React.Component {
         <h1 id="showcase-title">Showcase</h1>
         <div id="category-btn-container">
           <a
-            className="a-tag-btn victoria-two"
+            className="a-tag-btn sandy-one"
             name="default"
             onClick={this
             .handleClick
             .bind(this)}>Default</a>
           <a
-            className="a-tag-btn victoria-two"
+            className="a-tag-btn sandy-two"
             name="all"
             onClick={this
             .handleClick
             .bind(this)}>All</a>
           <a
-            className="a-tag-btn victoria-two"
+            className="a-tag-btn sandy-three"
             name="vanilla"
             onClick={this
             .handleClick
-            .bind(this)}>CSS ∙ JS ∙ jQuery</a>
+            .bind(this)}>CSS ∙ JS</a>
           <a
-            className="a-tag-btn victoria-two"
+            className="a-tag-btn sandy-four"
             name="frontend"
             onClick={this
             .handleClick
             .bind(this)}>Front-End Framework</a>
           <a
-            className="a-tag-btn victoria-two"
+            className="a-tag-btn sandy-one"
             name="backend"
             onClick={this
             .handleClick

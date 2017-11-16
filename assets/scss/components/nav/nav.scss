@@ -30,17 +30,19 @@
     font-weight: bold;
     transition: all 0.3s ease;
     opacity: 0.8;
+    padding: 15px 4px;
     &:hover {
-      color: #ff7077;
+      color: #ff666e;
+      text-shadow: 0 0 1px #d7c0eb,0 0 5px #ff666e;
     }
   }
 }
 
 .shrink {
   background-color: $white;
-  -webkit-box-shadow: 1px 1px 2px $navShadow;
-  -moz-box-shadow: 1px 1px 2px $navShadow;
-  box-shadow: 1px 1px 2px $navShadow;
+  -webkit-box-shadow: 1px 1px 2px $navShadow, 2px 2px 8px $navShadow;
+  -moz-box-shadow: 1px 1px 2px $navShadow, 2px 2px 8px $navShadow;
+  box-shadow: 1px 1px 2px $navShadow, 2px 2px 8px $navShadow;
 }
 
 .shrink {
@@ -48,7 +50,9 @@
     a {
       color: $black;
       &:hover {
-        color: #ff7077;
+        opacity: 0.8;
+        color: #5e49ff;
+        text-shadow: 0 0 10px #fff7f7, 0 0 20px #fff7f7, 0 0 30px #fff7f7, 0 0 40px #816eff, 0 0 70px #816eff, 0 0 100px #816eff;
       }
     }
   }

@@ -21,12 +21,10 @@
     }
 }
 
+/* Base style for <a> tag button */
 @mixin aTagBtnBaseStyle {
     .a-tag-btn,
     .a-tag-btn:visited {
-        position: relative;
-        display: block;
-        margin: 30px auto 0;
         padding: 14px 15px;
         color: #fff;
         font-size: 14px;
@@ -88,6 +86,9 @@
         transition: all 1s ease;
     }
 }
+
+
+/* Sandy Buttons */
 
 @mixin aTagBtnSandy() {
     .a-tag-btn.sandy-one {
@@ -162,56 +163,138 @@
 
 
 /* Victoria Buttons */
-@mixin aTagBtnVictoria{
-.a-tag-btn.victoria-one {
-	border: 2px solid #D24D57;
-}
-.a-tag-btn.victoria-one:after {
-	background: #D24D57;
-	-moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
-	-ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
-	-webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
-	transform: translateX(-50%) translateY(-50%) rotate(-25deg);
-}
-.a-tag-btn.victoria-two {
-	border: 2px solid #D24D57;
-}
-.a-tag-btn.victoria-two:after {
-	background: #D24D57;
-	-moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
-	-ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
-	-webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
-	transform: translateX(-50%) translateY(-50%) rotate(25deg);
-}
-.a-tag-btn.victoria-three {
-	border: 2px solid #D24D57;
-}
-.a-tag-btn.victoria-three:after {
-	background: #D24D57;
-	opacity: .5;
-	-moz-transform: translateX(-50%) translateY(-50%);
-	-ms-transform: translateX(-50%) translateY(-50%);
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
-}
-.a-tag-btn.victoria-three:hover:after {
-	height: 140%;
-	opacity: 1;
-}
-.a-tag-btn.victoria-four {
-	border: 2px solid #D24D57;
-}
-.a-tag-btn.victoria-four:after {
-	background: #D24D57;
-	opacity: .5;
-	-moz-transform: translateY(-50%) translateX(-50%) rotate(90deg);
-	-ms-transform: translateY(-50%) translateX(-50%) rotate(90deg);
-	-webkit-transform: translateY(-50%) translateX(-50%) rotate(90deg);
-	transform: translateY(-50%) translateX(-50%) rotate(90deg);
-}
-.a-tag-btn.victoria-four:hover:after {
-	opacity: 1;
-	height: 600% !important;
-}
+
+@mixin aTagBtnVictoria {
+    .a-tag-btn.victoria-one {
+        border: 2px solid #AEA8D3;
+    }
+    .a-tag-btn.victoria-one:after {
+        background: #AEA8D3;
+        -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+        -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+        -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+        transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    }
+    .a-tag-btn.victoria-two {
+        border: 2px solid #AEA8D3;
+    }
+    .a-tag-btn.victoria-two:after {
+        background: #AEA8D3;
+        -moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+        -ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+        -webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+        transform: translateX(-50%) translateY(-50%) rotate(25deg);
+    }
+    .a-tag-btn.victoria-three {
+        border: 2px solid #AEA8D3;
+    }
+    .a-tag-btn.victoria-three:after {
+        background: #AEA8D3;
+        opacity: .5;
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+    .a-tag-btn.victoria-three:hover:after {
+        height: 140%;
+        opacity: 1;
+    }
+    .a-tag-btn.victoria-four {
+        border: 2px solid #AEA8D3;
+    }
+    .a-tag-btn.victoria-four:after {
+        background: #AEA8D3;
+        opacity: .5;
+        -moz-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+        -ms-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+        -webkit-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+        transform: translateY(-50%) translateX(-50%) rotate(90deg);
+    }
+    .a-tag-btn.victoria-four:hover:after {
+        opacity: 1;
+        height: 600% !important;
+    }
 }
 
+
+/* Gibson Buttons */
+
+@mixin aTagBtnGibson() {
+    .a-tag-btn.gibson-one {
+        border: 2px solid #65b37a;
+        color: #FFF;
+    }
+    .a-tag-btn.gibson-one:after {
+        opacity: 0;
+        background-image: -webkit-linear-gradient( transparent 50%, rgba(101, 179, 122, 0.2) 50%);
+        background-image: -moz-linear-gradient(transparent 50%, rgba(101, 179, 122, 0.2) 50%);
+        background-size: 10px 10px;
+        -moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+        -ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+        -webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+        transform: translateX(-50%) translateY(-50%) rotate(25deg);
+    }
+    .a-tag-btn.gibson-one:hover:after {
+        height: 600% !important;
+        opacity: 1;
+        color: #FFF;
+    }
+    .a-tag-btn.gibson-two {
+        border: 2px solid #65b37a;
+        color: #FFF;
+    }
+    .a-tag-btn.gibson-two:after {
+        opacity: 0;
+        background-image: -webkit-linear-gradient( transparent 50%, rgba(101, 179, 122, 0.2) 50%);
+        background-image: -moz-linear-gradient(transparent 50%, rgba(101, 179, 122, 0.2) 50%);
+        background-size: 10px 10px;
+        -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+        -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+        -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+        transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    }
+    .a-tag-btn.gibson-two:hover:after {
+        height: 600% !important;
+        opacity: 1;
+        color: #FFF;
+    }
+    .a-tag-btn.gibson-three {
+        border: 2px solid #65b37a;
+        color: #FFF;
+    }
+    .a-tag-btn.gibson-three:after {
+        opacity: 0;
+        background-image: -webkit-linear-gradient( transparent 50%, rgba(101, 179, 122, 0.2) 50%);
+        background-image: -moz-linear-gradient(transparent 50%, rgba(101, 179, 122, 0.2) 50%);
+        background-size: 10px 10px;
+        -moz-transform: translateX(-50%) translateY(-50%) rotate(90deg);
+        -ms-transform: translateX(-50%) translateY(-50%) rotate(90deg);
+        -webkit-transform: translateX(-50%) translateY(-50%) rotate(90deg);
+        transform: translateX(-50%) translateY(-50%) rotate(90deg);
+    }
+    .a-tag-btn.gibson-three:hover:after {
+        height: 600% !important;
+        opacity: 1;
+        color: #FFF;
+    }
+    .a-tag-btn.gibson-four {
+        border: 2px solid #65b37a;
+        color: #FFF;
+    }
+    .a-tag-btn.gibson-four:after {
+        opacity: 0;
+        background-image: -webkit-linear-gradient( transparent 50%, rgba(101, 179, 122, 0.2) 50%);
+        background-image: -moz-linear-gradient(transparent 50%, rgba(101, 179, 122, 0.2) 50%);
+        background-size: 10px 10px;
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+    .a-tag-btn.gibson-four:hover:after {
+        height: 600% !important;
+        opacity: 1;
+        color: #FFF;
+    }
+}

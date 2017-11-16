@@ -1,4 +1,4 @@
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     section.icons-section {
       display: none;
     }
@@ -7,7 +7,7 @@
     h3{
       text-align: center;
       margin-top:10vh;
-      margin-bottom:5vh;
+      margin-bottom:10vh;
     }
   }
   .icon-container {
@@ -23,8 +23,8 @@
   }
     
   .tech-icon {
-    height: 70px;
-    width: 70px;
+    height: 100px;
+    width: 100px;
   }
   
   .tech-icon svg {

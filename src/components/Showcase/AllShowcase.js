@@ -4,8 +4,11 @@ import $ from 'jquery';
 class AllShowcase extends React.Component {
   componentDidUpdate() {
     console.log(this.props.category)
-    $('.thumbnail').hide("fast");
-      $(`.${this.props.category}`).show("slow");
+    $('.all').hide("");
+    setTimeout(() => {
+      
+      $(`.${this.props.category}`).show("");
+  }, 700);
 
   }
 
@@ -22,9 +25,9 @@ class AllShowcase extends React.Component {
                 <a
                   href="https://github.com/yuchiu/React-Redux-Netflix-Clone"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>Github</a>
-                <a href="http://netflix-react.surge.sh/" target="_blank" className="a-tag-btn">
+                <a href="http://netflix-react.surge.sh/" target="_blank" className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>View</a>
               </div>
             </div>
@@ -36,9 +39,9 @@ class AllShowcase extends React.Component {
                 <a
                   href="https://github.com/yuchiu/Recipe-Sharing-App"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>Github</a>
-                <a href="http://recipesharingapp.surge.sh/" target="_blank" className="a-tag-btn">
+                <a href="http://recipesharingapp.surge.sh/" target="_blank" className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>View</a>
               </div>
             </div>
@@ -51,9 +54,9 @@ class AllShowcase extends React.Component {
                 <a
                   href="https://github.com/yuchiu/React-Redux-Venues-Finder"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>Github</a>
-                <a href="https://venues-finder.surge.sh/" target="_blank" className="a-tag-btn">
+                <a href="https://venues-finder.surge.sh/" target="_blank" className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>View</a>
               </div>
             </div>
@@ -66,9 +69,9 @@ class AllShowcase extends React.Component {
                 <a
                   href="https://github.com/yuchiu/React-Redux-Recipe-App"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>Github</a>
-                <a href="http://recipe-app.surge.sh/" target="_blank" className="a-tag-btn">
+                <a href="http://recipe-app.surge.sh/" target="_blank" className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>View</a>
               </div>
             </div>
@@ -81,9 +84,9 @@ class AllShowcase extends React.Component {
                 <a
                   href="https://github.com/yuchiu/React-Chat-Plugin"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>Github</a>
-                <a href="https://chat-plugin.surge.sh/" target="_blank" className="a-tag-btn">
+                <a href="https://chat-plugin.surge.sh/" target="_blank" className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>View</a>
               </div>
             </div>
@@ -96,12 +99,12 @@ class AllShowcase extends React.Component {
                 <a
                   href="https://github.com/yuchiu/js-calculator"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>Github</a>
                 <a
                   href="https://yuchiu.github.io/js-calculator/"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>View</a>
               </div>
             </div>
@@ -114,12 +117,12 @@ class AllShowcase extends React.Component {
                 <a
                   href="https://github.com/yuchiu/simon-game"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>Github</a>
                 <a
                   href="https://yuchiu.github.io/simon-game/"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>View</a>
               </div>
             </div>
@@ -132,12 +135,12 @@ class AllShowcase extends React.Component {
                 <a
                   href="https://github.com/yuchiu/random-quote-machine"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>Github</a>
                 <a
                   href="https://yuchiu.github.io/random-quote-machine/"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>View</a>
               </div>
             </div>
@@ -150,12 +153,12 @@ class AllShowcase extends React.Component {
                 <a
                   href="https://github.com/yuchiu/tomato-clock"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>Github</a>
                 <a
                   href="https://yuchiu.github.io/tomato-clock/"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>View</a>
               </div>
             </div>
@@ -168,12 +171,12 @@ class AllShowcase extends React.Component {
                 <a
                   href="https://github.com/yuchiu/twitch-JSON-API"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>Github</a>
                 <a
                   href="https://yuchiu.github.io/twitch-JSON-API/"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>View</a>
               </div>
             </div>
@@ -186,12 +189,12 @@ class AllShowcase extends React.Component {
                 <a
                   href="https://github.com/yuchiu/game-of-life"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>Github</a>
                 <a
                   href="https://yuchiu.github.io/game-of-life/"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>View</a>
               </div>
             </div>
@@ -204,9 +207,9 @@ class AllShowcase extends React.Component {
                 <a
                   href="hhttps://github.com/yuchiu/Force-Graph-React-D3"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>Github</a>
-                <a href="https://d3-forcegraph.surge.sh/" target="_blank" className="a-tag-btn">
+                <a href="https://d3-forcegraph.surge.sh/" target="_blank" className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>View</a>
               </div>
             </div>
@@ -219,12 +222,12 @@ class AllShowcase extends React.Component {
                 <a
                   href="https://github.com/yuchiu/GDP-barchart-d3"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>Github</a>
                 <a
                   href="https://yuchiu.github.io/GDP-barchart-d3/"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>View</a>
               </div>
             </div>
@@ -236,12 +239,12 @@ class AllShowcase extends React.Component {
                 <a
                   href="https://github.com/yuchiu/show-the-weather"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>Github</a>
                 <a
                   href="https://yuchiu.github.io/show-the-weather/"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>View</a>
               </div>
             </div>
@@ -254,12 +257,12 @@ class AllShowcase extends React.Component {
                 <a
                   href="https://github.com/yuchiu/bootstrap-conf"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>Github</a>
                 <a
                   href="https://yuchiu.github.io/bootstrap-conf/"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>View</a>
               </div>
             </div>
@@ -272,12 +275,12 @@ class AllShowcase extends React.Component {
                 <a
                   href="https://github.com/yuchiu/wiki-viewer"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>Github</a>
                 <a
                   href="https://yuchiu.github.io/wiki-viewer/"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>View</a>
               </div>
             </div>
@@ -290,12 +293,12 @@ class AllShowcase extends React.Component {
                 <a
                   href="https://github.com/yuchiu/tic-tac-toe"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>Github</a>
                 <a
                   href="https://yuchiu.github.io/tic-tac-toe/"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>View</a>
               </div>
             </div>
@@ -308,12 +311,12 @@ class AllShowcase extends React.Component {
                 <a
                   href="https://github.com/yuchiu/rotating-cube"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>Github</a>
                 <a
                   href="https://yuchiu.github.io/rotating-cube/"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>View</a>
               </div>
             </div>
@@ -325,12 +328,12 @@ class AllShowcase extends React.Component {
                 <a
                   href="https://github.com/yuchiu/CSS-gallery"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>Github</a>
                 <a
                   href="https://yuchiu.github.io/CSS-gallery/"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>View</a>
               </div>
             </div>
@@ -342,12 +345,12 @@ class AllShowcase extends React.Component {
                 <a
                   href="https://github.com/yuchiu/hex-clock"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>Github</a>
                 <a
                   href="https://yuchiu.github.io/hex-clock/"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>View</a>
               </div>
             </div>
@@ -360,7 +363,7 @@ class AllShowcase extends React.Component {
                 <a
                   href="https://github.com/yuchiu/URL-Shortener-Microservice"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>Github</a>
               </div>
             </div>
@@ -373,12 +376,12 @@ class AllShowcase extends React.Component {
                 <a
                   href="https://github.com/yuchiu/Timestamp-MicroService"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>Github</a>
                 <a
                   href="https://timestamp-yuchiu.herokuapp.com/"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>View</a>
               </div>
             </div>
@@ -390,12 +393,12 @@ class AllShowcase extends React.Component {
                 <a
                   href="https://github.com/yuchiu/Request-Header-Parser-Microservice"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>Github</a>
                 <a
                   href="https://headerparser-yuchiu.herokuapp.com/"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>View</a>
               </div>
             </div>
@@ -407,12 +410,12 @@ class AllShowcase extends React.Component {
                 <a
                   href="https://github.com/yuchiu/File-Metadata-Microservice"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>Github</a>
                 <a
                   href="https://filemetadata-yuchiu.herokuapp.com/"
                   target="_blank"
-                  className="a-tag-btn">
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>View</a>
               </div>
             </div>
