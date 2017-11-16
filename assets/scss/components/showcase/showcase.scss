@@ -32,7 +32,7 @@
 @include maxMediaQueries(800px){
   
 #category-btn-container{
-  width:550px;
+  width:100vw;
   .a-tag-btn.sandy-one,
   .a-tag-btn.sandy-two,
   .a-tag-btn.sandy-three,
@@ -45,7 +45,6 @@
 @include maxMediaQueries(650px){
   
 #category-btn-container{
-  width:450px;
   .a-tag-btn.sandy-one,
   .a-tag-btn.sandy-two,
   .a-tag-btn.sandy-three,
