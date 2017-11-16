@@ -18,9 +18,6 @@ class Index extends React.Component {
       case "all":
         this.setState({showAll: true, category: name})
         break;
-      case "vanilla":
-        this.setState({showAll: true, category: name})
-        break;
       case "frontend":
         this.setState({showAll: true, category: name})
         break;
@@ -30,6 +27,7 @@ class Index extends React.Component {
       default:
         break;
     }
+    console.log("on index: "+this.state.category)
   }
   render() {
     return (
@@ -37,31 +35,25 @@ class Index extends React.Component {
         <h1 id="showcase-title">Showcase</h1>
         <div id="category-btn-container">
           <a
-            className="a-tag-btn sandy-one"
+            className="a-tag-btn sandy-four"
             name="default"
             onClick={this
             .handleClick
             .bind(this)}>Default</a>
           <a
-            className="a-tag-btn sandy-two"
+            className="a-tag-btn sandy-one"
             name="all"
             onClick={this
             .handleClick
             .bind(this)}>All</a>
           <a
             className="a-tag-btn sandy-three"
-            name="vanilla"
-            onClick={this
-            .handleClick
-            .bind(this)}>CSS ∙ JS</a>
-          <a
-            className="a-tag-btn sandy-four"
             name="frontend"
             onClick={this
             .handleClick
-            .bind(this)}>Front-End Framework</a>
+            .bind(this)}>Front-End</a>
           <a
-            className="a-tag-btn sandy-one"
+            className="a-tag-btn sandy-two"
             name="backend"
             onClick={this
             .handleClick

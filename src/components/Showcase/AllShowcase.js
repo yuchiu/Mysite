@@ -3,7 +3,10 @@ import $ from 'jquery';
 
 class AllShowcase extends React.Component {
   componentDidUpdate() {
-    console.log(this.props.category)
+    if(this.props.category)
+    console.log("on Allshowcase: "+this.props.category)
+    else
+    console.log('on AllShowcase: no category props')
     $('.all').hide("");
     setTimeout(() => {
       
@@ -79,7 +82,7 @@ class AllShowcase extends React.Component {
             <div className="thumbnail all frontend">
               <div className="pic" id="pic14"></div>
               <div className="desc">
-                <h2>Real Time Chat Plugin CDN</h2>
+                <h2>Real Time Chat CDN</h2>
                 <p>ReactJS ∙ Redux ∙ Firebase</p>
                 <a
                   href="https://github.com/yuchiu/React-Chat-Plugin"
@@ -91,7 +94,7 @@ class AllShowcase extends React.Component {
               </div>
             </div>
 
-            <div className="thumbnail all vanilla">
+            <div className="thumbnail all frontend">
               <div className="pic" id="pic7"></div>
               <div className="desc">
                 <h2 >Calculator</h2>
@@ -109,7 +112,7 @@ class AllShowcase extends React.Component {
               </div>
             </div>
 
-            <div className="thumbnail all vanilla">
+            <div className="thumbnail all frontend">
               <div className="pic" id="pic9"></div>
               <div className="desc">
                 <h2 >Simon's Game</h2>
@@ -127,7 +130,7 @@ class AllShowcase extends React.Component {
               </div>
             </div>
 
-            <div className="thumbnail all vanilla">
+            <div className="thumbnail all frontend">
               <div className="pic" id="pic16"></div>
               <div className="desc">
                 <h2 >Random Quote Machine</h2>
@@ -145,7 +148,7 @@ class AllShowcase extends React.Component {
               </div>
             </div>
 
-            <div className="thumbnail all vanilla">
+            <div className="thumbnail all frontend">
               <div className="pic" id="pic3"></div>
               <div className="desc">
                 <h2 >Pomodoro Timer</h2>
@@ -163,7 +166,7 @@ class AllShowcase extends React.Component {
               </div>
             </div>
 
-            <div className="thumbnail all vanilla">
+            <div className="thumbnail all frontend">
               <div className="pic" id="pic28"></div>
               <div className="desc">
                 <h2 >Twitch Online Status</h2>
@@ -181,7 +184,7 @@ class AllShowcase extends React.Component {
               </div>
             </div>
 
-            <div className="thumbnail all vanilla">
+            <div className="thumbnail all frontend">
               <div className="pic" id="pic4"></div>
               <div className="desc">
                 <h2 >Conway's Game of Life</h2>
@@ -231,7 +234,7 @@ class AllShowcase extends React.Component {
                   <i className="fa fa-external-link"></i>View</a>
               </div>
             </div>
-            <div className="thumbnail all vanilla">
+            <div className="thumbnail all frontend">
               <div className="pic" id="pic6"></div>
               <div className="desc">
                 <h2 >Weather App</h2>
@@ -249,7 +252,7 @@ class AllShowcase extends React.Component {
               </div>
             </div>
 
-            <div className="thumbnail all vanilla">
+            <div className="thumbnail all frontend">
               <div className="pic" id="pic11"></div>
               <div className="desc">
                 <h2>Boostrap Page</h2>
@@ -267,7 +270,7 @@ class AllShowcase extends React.Component {
               </div>
             </div>
 
-            <div className="thumbnail all vanilla">
+            <div className="thumbnail all frontend">
               <div className="pic" id="pic20"></div>
               <div className="desc">
                 <h2 >Wiki Viewer</h2>
@@ -285,7 +288,7 @@ class AllShowcase extends React.Component {
               </div>
             </div>
 
-            <div className="thumbnail all vanilla">
+            <div className="thumbnail all frontend">
               <div className="pic" id="pic31"></div>
               <div className="desc">
                 <h2 >Tic Tac Toe</h2>
@@ -303,7 +306,7 @@ class AllShowcase extends React.Component {
               </div>
             </div>
 
-            <div className="thumbnail all vanilla">
+            <div className="thumbnail all frontend">
               <div className="pic" id="pic32"></div>
               <div className="desc">
                 <h2 >Rotating Cube</h2>
@@ -315,40 +318,6 @@ class AllShowcase extends React.Component {
                   <i className="fa fa-external-link"></i>Github</a>
                 <a
                   href="https://yuchiu.github.io/rotating-cube/"
-                  target="_blank"
-                  className="a-tag-btn sandy-two">
-                  <i className="fa fa-external-link"></i>View</a>
-              </div>
-            </div>
-            <div className="thumbnail all vanilla">
-              <div className="pic" id="pic33"></div>
-              <div className="desc">
-                <h2 >CSS Transition Gallery</h2>
-                <p>CSS</p>
-                <a
-                  href="https://github.com/yuchiu/CSS-gallery"
-                  target="_blank"
-                  className="a-tag-btn sandy-two">
-                  <i className="fa fa-external-link"></i>Github</a>
-                <a
-                  href="https://yuchiu.github.io/CSS-gallery/"
-                  target="_blank"
-                  className="a-tag-btn sandy-two">
-                  <i className="fa fa-external-link"></i>View</a>
-              </div>
-            </div>
-            <div className="thumbnail all vanilla">
-              <div className="pic" id="pic34"></div>
-              <div className="desc">
-                <h2 >Hex Clock</h2>
-                <p>JS</p>
-                <a
-                  href="https://github.com/yuchiu/hex-clock"
-                  target="_blank"
-                  className="a-tag-btn sandy-two">
-                  <i className="fa fa-external-link"></i>Github</a>
-                <a
-                  href="https://yuchiu.github.io/hex-clock/"
                   target="_blank"
                   className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>View</a>

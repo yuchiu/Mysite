@@ -20,6 +20,14 @@
         @content;
     }
 }
+/* Transition Animation */
+@mixin cubicTransition{
+    -webkit-transition: all 700ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -moz-transition: all 700ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -ms-transition: all 700ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -o-transition: all 700ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    transition: all 700ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+} 
 
 /* Base style for <a> tag button */
 @mixin aTagBtnBaseStyle {
@@ -92,11 +100,11 @@
 
 @mixin aTagBtnSandy() {
     .a-tag-btn.sandy-one {
-        border: 2px solid #AEA8D3;
+        border: 2px solid #a8d3d3;
         color: #FFF;
     }
     .a-tag-btn.sandy-one:after {
-        border: 3px solid #AEA8D3;
+        border: 3px solid #a8d3d3;
         opacity: 0;
         -moz-transform: translateX(-50%) translateY(-50%);
         -ms-transform: translateX(-50%) translateY(-50%);
@@ -109,11 +117,11 @@
         color: #FFF;
     }
     .a-tag-btn.sandy-two {
-        border: 2px solid #AEA8D3;
+        border: 2px solid #a8d3d3;
         color: #FFF;
     }
     .a-tag-btn.sandy-two:after {
-        border: 3px solid #AEA8D3;
+        border: 3px solid #a8d3d3;
         opacity: 0;
         -moz-transform: translateY(-50%) translateX(-50%) rotate(90deg);
         -ms-transform: translateY(-50%) translateX(-50%) rotate(90deg);
@@ -126,11 +134,11 @@
         color: #FFF;
     }
     .a-tag-btn.sandy-three {
-        border: 2px solid #AEA8D3;
+        border: 2px solid #a8d3d3;
         color: #FFF;
     }
     .a-tag-btn.sandy-three:after {
-        border: 3px solid #AEA8D3;
+        border: 3px solid #a8d3d3;
         opacity: 0;
         -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
         -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
@@ -143,11 +151,11 @@
         color: #FFF;
     }
     .a-tag-btn.sandy-four {
-        border: 2px solid #AEA8D3;
+        border: 2px solid #a8d3d3;
         color: #FFF;
     }
     .a-tag-btn.sandy-four:after {
-        border: 3px solid #AEA8D3;
+        border: 3px solid #a8d3d3;
         opacity: 0;
         -moz-transform: translateY(-50%) translateX(-50%) rotate(25deg);
         -ms-transform: translateY(-50%) translateX(-50%) rotate(25deg);
@@ -166,30 +174,30 @@
 
 @mixin aTagBtnVictoria {
     .a-tag-btn.victoria-one {
-        border: 2px solid #AEA8D3;
+        border: 2px solid #a8d3d3;
     }
     .a-tag-btn.victoria-one:after {
-        background: #AEA8D3;
+        background: #a8d3d3;
         -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
         -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
         -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
         transform: translateX(-50%) translateY(-50%) rotate(-25deg);
     }
     .a-tag-btn.victoria-two {
-        border: 2px solid #AEA8D3;
+        border: 2px solid #a8d3d3;
     }
     .a-tag-btn.victoria-two:after {
-        background: #AEA8D3;
+        background: #a8d3d3;
         -moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
         -ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
         -webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
         transform: translateX(-50%) translateY(-50%) rotate(25deg);
     }
     .a-tag-btn.victoria-three {
-        border: 2px solid #AEA8D3;
+        border: 2px solid #a8d3d3;
     }
     .a-tag-btn.victoria-three:after {
-        background: #AEA8D3;
+        background: #a8d3d3;
         opacity: .5;
         -moz-transform: translateX(-50%) translateY(-50%);
         -ms-transform: translateX(-50%) translateY(-50%);
@@ -201,10 +209,10 @@
         opacity: 1;
     }
     .a-tag-btn.victoria-four {
-        border: 2px solid #AEA8D3;
+        border: 2px solid #a8d3d3;
     }
     .a-tag-btn.victoria-four:after {
-        background: #AEA8D3;
+        background: #a8d3d3;
         opacity: .5;
         -moz-transform: translateY(-50%) translateX(-50%) rotate(90deg);
         -ms-transform: translateY(-50%) translateX(-50%) rotate(90deg);

@@ -1,60 +1,62 @@
 @media (max-width: 1000px) {
-    section.icons-section {
-      display: none;
-    }
+  section.icons-section {
+    display: none;
   }
-  .icons-section{
-    h3{
-      text-align: center;
-      margin-top:10vh;
-      margin-bottom:10vh;
-    }
+}
+
+.icons-section {
+  h3 {
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
   }
-  .icon-container {
-    width: 100%;
-    margin: auto;
-    margin-bottom: 5vh;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-align: center;
-        align-items: center;
-  }
-    
-  .tech-icon {
-    height: 100px;
-    width: 100px;
-  }
-  
-  .tech-icon svg {
-    -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
-    -webkit-transition: -webkit-transform 0.2s, -webkit-filter 0.2s;
-    transition: -webkit-transform 0.2s, -webkit-filter 0.2s;
-    -o-transition: transform 0.2s, filter 0.2s;
-    transition: transform 0.2s, filter 0.2s;
-    transition: transform 0.2s, filter 0.2s, -webkit-transform 0.2s, -webkit-filter 0.2s;
-  }
-  
-  .tech-icon svg:hover {
-    -webkit-filter: grayscale(0%);
-            filter: grayscale(0%);
-    -webkit-transform: scale(1.1, 1.1);
-        -ms-transform: scale(1.1, 1.1);
-            transform: scale(1.1, 1.1);
-  }
-  
-  .tech-icon span {
-    opacity: 0;
-    display:flex;
-    justify-content: center;
-    margin-top:3px;
-    -webkit-transition: opacity 0.5s;
-    -o-transition: opacity 0.5s;
-    transition: opacity 0.5s;
-  }
-  
-  .tech-icon svg:hover + span {
-    opacity: 1;
-  }
+}
+
+.icon-container {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 5vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.tech-icon {
+  height: 100px;
+  width: 100px;
+}
+
+.tech-icon svg {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: -webkit-transform 0.2s, -webkit-filter 0.2s;
+  transition: -webkit-transform 0.2s, -webkit-filter 0.2s;
+  -o-transition: transform 0.2s, filter 0.2s;
+  transition: transform 0.2s, filter 0.2s;
+  transition: transform 0.2s, filter 0.2s, -webkit-transform 0.2s, -webkit-filter 0.2s;
+}
+
+.tech-icon svg:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  -webkit-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+
+.tech-icon span {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 3px;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.tech-icon svg:hover+span {
+  opacity: 1;
+}

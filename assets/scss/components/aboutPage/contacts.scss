@@ -52,6 +52,7 @@
   &:hover{
     i {
     color:#fff;
+    font-weight: bold;
     }
     p{
       color:#fff;
@@ -60,7 +61,10 @@
     .a-tag-btn.victoria-two,
     .a-tag-btn.victoria-three,
     .a-tag-btn.victoria-four{
-      border-color: $btn-color4;
+      @include cubicTransition;
+      border-color: #23ecc7;
+      background: #23ecc7;
+      box-shadow: 0 0 3px #23ecc7, 0 0 5px #23ecc7, 0 0 10px #23ecc7, 0 0 20px #23ecc7, 0 0 40px #23ecc7;
     }
   }
 }

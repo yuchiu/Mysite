@@ -18,7 +18,7 @@
   display: flex;
   margin: 0 auto;
   margin-bottom: 20px;
-  width:700px;
+  width:450px;
 
   .a-tag-btn.sandy-one,
   .a-tag-btn.sandy-two,
@@ -26,13 +26,16 @@
   .a-tag-btn.sandy-four{
     cursor: pointer;
     padding: 8px 15px;
-    color: $btn-color3;
+    color: $btn-color4;
+    &:hover{
+      text-shadow: 0 0 2px #fff7f7, 0 0 3px #fff7f7, 0 0 5px #fff7f7, 0 0 10px $btn-color;
+    }
   }
 }
 @include maxMediaQueries(800px){
   
 #category-btn-container{
-  width:100vw;
+  width:350px;
   .a-tag-btn.sandy-one,
   .a-tag-btn.sandy-two,
   .a-tag-btn.sandy-three,
@@ -45,11 +48,12 @@
 @include maxMediaQueries(650px){
   
 #category-btn-container{
+  width:280px;
   .a-tag-btn.sandy-one,
   .a-tag-btn.sandy-two,
   .a-tag-btn.sandy-three,
   .a-tag-btn.sandy-four{
-    padding: 0px 0px;
+    padding: 3px 3px;
     font-size: 0.7em;
   }
 }
