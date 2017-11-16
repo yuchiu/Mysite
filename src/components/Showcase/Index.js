@@ -6,14 +6,14 @@ class Index extends React.Component {
     super()
     this.state = {
       showAll: false,
-      category: ""
+      category: null
     }
   }
   handleClick(e) {
     const name = e.target.name
     switch (name) {
       case "default":
-        this.setState({showAll: false})
+        this.setState({showAll: false, category: null})
         break;
       case "all":
         this.setState({showAll: true, category: name})
@@ -27,7 +27,6 @@ class Index extends React.Component {
       default:
         break;
     }
-    console.log("on index: "+this.state.category)
   }
   render() {
     return (
@@ -60,7 +59,7 @@ class Index extends React.Component {
             .bind(this)}>Back-End</a>
         </div>
         {!this.state.showAll && <DefaultShowcase/>}
-        {this.state.showAll && <AllShowcase category={this.state.category}/>}
+        {this.state.showAll && this.state.category && <AllShowcase category={this.state.category}/>}
       </div>
 
     )

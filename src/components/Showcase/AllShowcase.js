@@ -2,17 +2,18 @@ import React from 'react'
 import $ from 'jquery';
 
 class AllShowcase extends React.Component {
-  componentDidUpdate() {
-    if(this.props.category)
-    console.log("on Allshowcase: "+this.props.category)
-    else
-    console.log('on AllShowcase: no category props')
+  componentDidMount() {
+    this.showCategory()
+
+  }
+  componentWillUpdate() {
+    this.showCategory()
+  }
+  showCategory(){
     $('.all').hide("");
     setTimeout(() => {
-      
       $(`.${this.props.category}`).show("");
   }, 700);
-
   }
 
   render() {
