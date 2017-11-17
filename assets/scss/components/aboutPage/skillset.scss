@@ -56,7 +56,9 @@
   -o-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
-
+.icons-section-title{
+  font-size:30px;
+}
 .tech-icon svg:hover+span {
   opacity: 1;
 }
@@ -66,4 +68,10 @@
   width: 100px;
 }
 
+}
+
+@include maxMediaQueries(975px) {
+  .icons-section-title{
+    font-size:20px;
+  }
 }
