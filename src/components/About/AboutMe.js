@@ -5,12 +5,18 @@ class Contacts extends React.Component {
     return (
       <div id="about-me-container">
         <h1 id="about-me-title">About Me</h1>
-        <p>I'm a Web Developer based in New York City. Looking for amazing projects?
-          Send me a message!
-        </p>
-        <p>
-          This site and the projects were designed and built by hand from ground up. Check
-          out the code on my Github!</p>
+        <div id="about-me-p">
+          <p>Born in Hong Kong, Based in New York, Raised in the Internet.</p>
+          <p>
+            This site and the projects were designed and built by hand from ground up. Check
+            out my code on Github! Looking for amazing projects? Send me a message!
+          </p>
+          <p>
+            I am actively seeking for a position that allows me to meaningfully impact
+            company growth, to expand upon my experience, and to apply my skills in an
+            innovative, collaborative environment.
+          </p>
+        </div>
       </div>
     )
   }
