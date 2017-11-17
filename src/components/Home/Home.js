@@ -6,7 +6,7 @@ class Projects extends React.Component {
       <div>
         <div id="home">
           <div className="content animated bounceInDown">
-            <h1>HI THERE, I'M YU CHIU. </h1>
+            <h1>HI THERE, I'M YU. </h1>
             <h2 id="introduction">Learner · Creator · Developer<span id="line">|</span></h2>
             <div className="contact-icons">
               <a href="https://github.com/yuchiu" target="_blank">
