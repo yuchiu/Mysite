@@ -9,12 +9,12 @@ class Contacts extends React.Component {
           <p>Born in Hong Kong, Based in New York, Raised in the Internet.</p>
           <p>
             This site and the projects were designed and built by hand from ground up. Check
-            out my code on Github! Looking for amazing projects? Send me a message!
+            out my code on Github! <br/>Looking for amazing projects? Send me a message!
           </p>
           <p>
             I am actively seeking for a position that allows me to meaningfully impact
             company growth, to expand upon my experience, and to apply my skills in an
-            innovative, collaborative environment. Intrested in hiring me? Send me a message!
+            innovative, collaborative environment. <br/>Intrested in hiring me? Send me a message!
           </p>
         </div>
       </div>
