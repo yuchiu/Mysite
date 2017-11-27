@@ -12,7 +12,7 @@ class Index extends React.Component {
         <a
           className="lg-img-container"
           id="lg-img2"
-          href="https://venues-finder.surge.sh/"
+          href="https://photo-wall.surge.sh/"
           target="_blank"></a>
         <a
           className="lg-img-container"

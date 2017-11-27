@@ -1,6 +1,6 @@
 .thumbnail {
-    width: 280px;
-    height: 300px;
+    width: 340px;
+    height: 360px;
     background-color: transparent;
     margin: 10px;
     transition: all 0.3s ease;
@@ -65,13 +65,19 @@
     height: 40%;
 }
 
+@include maxMediaQueries(1680px) {
+    .thumbnail {
+        width: 280px;
+        height: 300px;
+    }
+}
 @include maxMediaQueries(880px) {
     #all-showcase {
         width: 100%;
     }
     .thumbnail {
-        transform: scale(0.9, 0.9);
-        margin: 0;
+        width: 260px;
+        height: 280px;
     }
 }
 
@@ -80,7 +86,7 @@
 }
 
 #pic2 {
-    background-image: url(https://i.imgur.com/1ALK248.jpg)
+    background-image: url(https://i.imgur.com/AutMfIM.jpg)
 }
 
 #pic3 {
@@ -92,7 +98,7 @@
 }
 
 #pic5 {
-    background-image: url(https://i.imgur.com/QFgAvlQ.jpg)
+    background-image: url(https://i.imgur.com/iTctvUw.jpg)
 }
 
 #pic6 {

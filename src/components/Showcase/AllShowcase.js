@@ -53,14 +53,14 @@ class AllShowcase extends React.Component {
             <div className="thumbnail all frontend">
               <div className="pic" id="pic2"></div>
               <div className="desc">
-                <h2 >Venues Finder</h2>
+                <h2 >Travel Hotspots</h2>
                 <p >ReactJS ∙ Redux ∙ GoogleMap ∙ foursquare API</p>
                 <a
-                  href="https://github.com/yuchiu/React-Redux-Venues-Finder"
+                  href="https://github.com/yuchiu/Travel-Hotspots"
                   target="_blank"
                   className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>Github</a>
-                <a href="https://venues-finder.surge.sh/" target="_blank" className="a-tag-btn sandy-two">
+                <a href="http://travel-hotspots.surge.sh/" target="_blank" className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>View</a>
               </div>
             </div>
@@ -68,14 +68,14 @@ class AllShowcase extends React.Component {
             <div className="thumbnail all frontend">
               <div className="pic" id="pic5"></div>
               <div className="desc">
-                <h2 >Image Upload App</h2>
+                <h2 >Photo Wall Image Upload</h2>
                 <p >React ∙ Redux ∙ Firebase</p>
                 <a
-                  href="https://github.com/yuchiu/React-Redux-Recipe-App"
+                  href="https://github.com/yuchiu/Photo-Wall"
                   target="_blank"
                   className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>Github</a>
-                <a href="http://recipe-app.surge.sh/" target="_blank" className="a-tag-btn sandy-two">
+                <a href="http://photo-wall.surge.sh/" target="_blank" className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>View</a>
               </div>
             </div>
@@ -283,24 +283,6 @@ class AllShowcase extends React.Component {
                   <i className="fa fa-external-link"></i>Github</a>
                 <a
                   href="https://yuchiu.github.io/wiki-viewer/"
-                  target="_blank"
-                  className="a-tag-btn sandy-two">
-                  <i className="fa fa-external-link"></i>View</a>
-              </div>
-            </div>
-
-            <div className="thumbnail all frontend">
-              <div className="pic" id="pic31"></div>
-              <div className="desc">
-                <h2 >Tic Tac Toe</h2>
-                <p>JS</p>
-                <a
-                  href="https://github.com/yuchiu/tic-tac-toe"
-                  target="_blank"
-                  className="a-tag-btn sandy-two">
-                  <i className="fa fa-external-link"></i>Github</a>
-                <a
-                  href="https://yuchiu.github.io/tic-tac-toe/"
                   target="_blank"
                   className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>View</a>
