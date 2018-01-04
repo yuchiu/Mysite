@@ -9,11 +9,11 @@ class AllShowcase extends React.Component {
   componentWillUpdate() {
     this.showCategory()
   }
-  showCategory(){
+  showCategory() {
     $('.all').hide("");
     setTimeout(() => {
       $(`.${this.props.category}`).show("");
-  }, 700);
+    }, 700);
   }
 
   render() {
@@ -31,25 +31,13 @@ class AllShowcase extends React.Component {
                   target="_blank"
                   className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>Github</a>
-                <a href="http://netflix-react.surge.sh/" target="_blank" className="a-tag-btn sandy-two">
-                  <i className="fa fa-external-link"></i>View</a>
-              </div>
-            </div>
-            <div className="thumbnail all frontend backend">
-              <div className="pic" id="pic27"></div>
-              <div className="desc">
-                <h2 >Recipe Sharing App</h2>
-                <p >VueJS ∙ ExpressJS ∙ Sequelize ∙ SQLite</p>
                 <a
-                  href="https://github.com/yuchiu/Recipe-Sharing-App"
+                  href="http://netflix-react.surge.sh/"
                   target="_blank"
                   className="a-tag-btn sandy-two">
-                  <i className="fa fa-external-link"></i>Github</a>
-                <a href="http://recipesharingapp.surge.sh/" target="_blank" className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>View</a>
               </div>
             </div>
-
             <div className="thumbnail all frontend">
               <div className="pic" id="pic2"></div>
               <div className="desc">
@@ -60,7 +48,10 @@ class AllShowcase extends React.Component {
                   target="_blank"
                   className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>Github</a>
-                <a href="http://travel-hotspots.surge.sh/" target="_blank" className="a-tag-btn sandy-two">
+                <a
+                  href="http://travel-hotspots.surge.sh/"
+                  target="_blank"
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>View</a>
               </div>
             </div>
@@ -75,7 +66,10 @@ class AllShowcase extends React.Component {
                   target="_blank"
                   className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>Github</a>
-                <a href="http://photo-wall.surge.sh/" target="_blank" className="a-tag-btn sandy-two">
+                <a
+                  href="http://photo-wall.surge.sh/"
+                  target="_blank"
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>View</a>
               </div>
             </div>
@@ -90,7 +84,10 @@ class AllShowcase extends React.Component {
                   target="_blank"
                   className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>Github</a>
-                <a href="https://chat-plugin.surge.sh/" target="_blank" className="a-tag-btn sandy-two">
+                <a
+                  href="https://chat-plugin.surge.sh/"
+                  target="_blank"
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>View</a>
               </div>
             </div>
@@ -213,7 +210,10 @@ class AllShowcase extends React.Component {
                   target="_blank"
                   className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>Github</a>
-                <a href="https://d3-forcegraph.surge.sh/" target="_blank" className="a-tag-btn sandy-two">
+                <a
+                  href="https://d3-forcegraph.surge.sh/"
+                  target="_blank"
+                  className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>View</a>
               </div>
             </div>
@@ -301,6 +301,42 @@ class AllShowcase extends React.Component {
                   <i className="fa fa-external-link"></i>Github</a>
                 <a
                   href="https://yuchiu.github.io/rotating-cube/"
+                  target="_blank"
+                  className="a-tag-btn sandy-two">
+                  <i className="fa fa-external-link"></i>View</a>
+              </div>
+            </div>
+
+            <div className="thumbnail all backend">
+              <div className="pic" id="pic27"></div>
+              <div className="desc">
+                <h2 >Recipe Sharing App</h2>
+                <p >VueJS ∙ ExpressJS ∙ Sequelize ∙ SQLite</p>
+                <a
+                  href="https://github.com/yuchiu/Recipe-Sharing-App"
+                  target="_blank"
+                  className="a-tag-btn sandy-two">
+                  <i className="fa fa-external-link"></i>Github</a>
+                <a
+                  href="http://recipesharingapp.surge.sh/"
+                  target="_blank"
+                  className="a-tag-btn sandy-two">
+                  <i className="fa fa-external-link"></i>View</a>
+              </div>
+            </div>
+
+            <div className="thumbnail all backend">
+              <div className="pic" id="pic35"></div>
+              <div className="desc">
+                <h2 >Bookmark Sharing</h2>
+                <p>React ∙ Redux ∙ ExpressJS ∙ MongoDB</p>
+                <a
+                  href="https://github.com/yuchiu/Bookmark-Sharing"
+                  target="_blank"
+                  className="a-tag-btn sandy-two">
+                  <i className="fa fa-external-link"></i>Github</a>
+                <a
+                  href="https://bookmark-sharing.herokuapp.com/"
                   target="_blank"
                   className="a-tag-btn sandy-two">
                   <i className="fa fa-external-link"></i>View</a>
