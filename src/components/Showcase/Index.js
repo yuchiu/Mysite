@@ -2,7 +2,7 @@ import React from "react";
 import AllShowcase from "./AllShowcase";
 import DefaultShowcase from "./DefaultShowcase";
 
-class Index extends React.Component {
+class Showcase extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -73,4 +73,4 @@ class Index extends React.Component {
   }
 }
 
-export default Index;
+export default Showcase;

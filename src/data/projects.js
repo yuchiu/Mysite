@@ -146,7 +146,7 @@ export default [
   {
     id: "1700",
     name: "Recipe Sharing App",
-    thumbnailImg: "https://i.imgur.com/fRXR8vT.jpg",
+    thumbnailImg: "https://i.imgur.com/4wTKkHJ.jpg",
     category: "fullstack",
     techStack: ["Vue.js", "VueX", "Express.js", "SQLite"],
     githubLink: "https://github.com/yuchiu/Recipe-Sharing-App",
