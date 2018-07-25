@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import {
   reactLogo,
   cssLogo,
@@ -9,12 +9,15 @@ import {
   reduxLogo,
   webpackLogo,
   babelLogo
-} from '../../../assets/icons/index'
+} from "../../../assets/icons/index";
+
 class SkillsetCol extends React.Component {
   render() {
     return (
       <section className="icons-col-section">
-       <div><h3 className="icons-section-title">My Current Favorite Stack</h3></div>
+        <div>
+          <h3 className="icons-section-title">My Current Favorite Stack</h3>
+        </div>
         <div className="icon-container">
           <div className="col">
             <div className="tech-icon react">
@@ -60,8 +63,8 @@ class SkillsetCol extends React.Component {
           </div>
         </div>
       </section>
-    )
+    );
   }
 }
 
-export default SkillsetCol
+export default SkillsetCol;

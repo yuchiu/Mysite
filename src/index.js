@@ -1,10 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Layout from './components/Layout';
+import React from "react";
+import ReactDOM from "react-dom";
+import Routes from "./components/Routes";
 
+const App = <Routes />;
 
-const app = (
-    <Layout/>
-)
-
-ReactDOM.render(app, document.getElementById('root'))
+ReactDOM.render(App, document.getElementById("root"));

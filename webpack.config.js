@@ -1,7 +1,10 @@
+/* eslint-disable */
+
 var webpack = require('webpack')
 var path = require('path')
 var htmlWebpackPlugin = require('html-webpack-plugin')
 var OpenBrowserPlugin = require('open-browser-webpack-plugin')
+const Uglify = require("uglifyjs-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -11,7 +14,8 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: '[name].bundle.js',
-    sourceMapFilename: '[name].bundle.map'
+    sourceMapFilename: '[name].bundle.map',
+    publicPath : '/'
   },
 
   devtool: '#source-map',
@@ -22,7 +26,7 @@ module.exports = {
       exclude: /(node_modules)/,
       loader: 'babel-loader',
       query: {
-        presets: ['react', 'es2015']
+        presets: ['react', 'es2017' , 'stage-0']
       }
     }, {
       test: /\.(css|scss|sass)$/,
@@ -35,7 +39,9 @@ module.exports = {
     }]
   },
 
+
   devServer: {
+    port: 5000,
     historyApiFallback: true,
     contentBase: path.join(__dirname, 'dist'),
     inline: true,
@@ -49,13 +55,7 @@ module.exports = {
         'NODE_ENV': JSON.stringify('production')
       }
     }),
-    new webpack.optimize.UglifyJsPlugin({
-      minimize: true,
-      compress: {
-        warnings: true,
-        drop_console: true
-      }
-    }),
+    new Uglify(),
     new htmlWebpackPlugin({
       template: path.join(__dirname, 'index.html'),
       hash: true
@@ -68,7 +68,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
 
     new OpenBrowserPlugin({
-      url: 'http://localhost:8080'
+      url: 'http://localhost:5000'
     })
   ]
 }
