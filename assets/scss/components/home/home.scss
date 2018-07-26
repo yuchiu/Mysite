@@ -57,37 +57,21 @@
       animation: blink 1s infinite;
     }
   }
-  &__contacts {
-    margin: 0em;
-    font-size: 20px;
-    width: 100%;
-    text-align: center;
-    &__icon {
-      margin: 0 16px 24px;
-      text-decoration: none;
-      color: white;
-      &:hover,
-      &:active,
-      &:focus {
-        color: white;
-      }
-    }
-  }
   &__link {
     color: white;
     margin: 0.4em;
-    margin-top: 10em;
-    opacity: 0.6;
     width: 100%;
     text-align: center;
+    margin-bottom: 10em;
     &__icon {
+      opacity: 0.7;
       margin: 0 16px 24px;
       text-decoration: none;
       color: white;
-      &:hover,
-      &:active,
-      &:focus {
-        color: white;
+      transition: all 0.3s ease;
+      &:hover {
+        opacity: 1;
+        text-shadow: 0 0 1px #fff7f7, 0 0 5px #fff7f7, 0 0 30px #fff7f7;
       }
     }
   }

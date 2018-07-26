@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   color: $white;
 }
 .navbar {
@@ -23,18 +23,27 @@
       margin-left: 60px;
       list-style-type: none;
       &__link {
+        white-space: nowrap;
         text-decoration: none;
         color: $black;
         font-size: 15px;
         font-weight: bold;
-        transition: all 0.3s ease;
         opacity: 0.8;
         padding: 15px 0px;
-        &:hover {
-          opacity: 0.9;
-          color: $btn-color;
-          text-shadow: 0 0 1px #fff7f7, 0 0 3px #fff7f7, 0 0 5px #fff7f7,
-            0 0 30px $btn-color;
+        &:hover & {
+          &__name,
+          &__icon {
+            opacity: 0.9;
+            color: $btn-color;
+            text-shadow: 0 0 1px #fff7f7, 0 0 3px #fff7f7, 0 0 5px #fff7f7,
+              0 0 30px $btn-color;
+          }
+        }
+        &__icon {
+          transition: all 0.3s ease;
+        }
+        &__name {
+          transition: all 0.3s ease;
         }
       }
     }
