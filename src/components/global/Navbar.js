@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../../../assets/img/YC_logo_new.png";
 
 const Navbar = () => (
   <div className="navbar-container">
     <Link to="/" className="navbar-logo" style={{ textDecoration: "none" }}>
-      <img className="navbar-logo__img" src="https://i.imgur.com/fB7aaGJ.png" />{" "}
+      <img className="navbar-logo__img" src={logo} />{" "}
       <span className="navbar-logo__name">Yu Chiu</span>
     </Link>
     <nav className="navbar">

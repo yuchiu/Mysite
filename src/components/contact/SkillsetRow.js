@@ -9,7 +9,7 @@ import {
   reduxLogo,
   webpackLogo,
   babelLogo
-} from "../../../assets/icons/index";
+} from "../../data";
 
 const SkillsetRow = () => (
   <section className="icons-row-section">

@@ -11,7 +11,7 @@
 
 .transparent-navbar {
   margin: 0 auto;
-  width: 80%;
+  width: 85%;
   box-sizing: border-box;
   display: flex;
   justify-content: flex-end;
@@ -28,7 +28,7 @@
         font-weight: bold;
         transition: all 0.3s ease;
         opacity: 0.8;
-        padding: 15px 4px;
+        padding: 15px 0px;
         &:hover {
           color: #ff666e;
           text-shadow: 0 0 1px #d7c0eb, 0 0 5px #ff666e;
