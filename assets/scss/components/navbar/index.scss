@@ -1,5 +1,60 @@
 @import "./navbar";
 @import "./transparentNavbar";
+.navbar-logo {
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__img {
+    width: 45px;
+    padding: 0 10px;
+    &--transparent {
+      content: url("https://i.imgur.com/cJFYz7l.png");
+    }
+  }
+  &__name {
+    text-decoration: none;
+    color: $black;
+    font-size: 25px;
+    margin: auto;
+    &--transparent {
+      color: white;
+    }
+  }
+  &--transparent & {
+    &:hover {
+      &__name & {
+        &--transparent {
+          color: #ff666e;
+          text-shadow: 0 0 1px #d7c0eb, 0 0 5px #ff666e;
+        }
+      }
+    }
+  }
+  &:hover & {
+    &__name {
+      transition: all 0.3s ease;
+      opacity: 0.9;
+      color: $btn-color;
+      text-shadow: 0 0 1px #fff7f7, 0 0 3px #fff7f7, 0 0 5px #fff7f7,
+        0 0 30px $btn-color;
+      &--transparent {
+        &:hover {
+          color: #ff666e;
+          text-shadow: 0 0 1px #d7c0eb, 0 0 5px #ff666e;
+        }
+      }
+    }
+  }
+}
+.navbar-logo--transparent {
+  &:hover {
+    .navbar-logo__name--transparent {
+      color: #ff666e;
+      text-shadow: 0 0 1px #d7c0eb, 0 0 5px #ff666e;
+    }
+  }
+}
 
 @include maxMediaQueries(880px) {
   .transparent-navbar,
@@ -7,11 +62,28 @@
     width: 100%;
     padding: 0 1em 0 0;
     &__list {
-      margin: 0 0.3em;
+      margin: 0.3em 0.3em;
       &__item {
         &__link {
           font-size: 12px;
         }
+      }
+    }
+  }
+}
+
+@include maxMediaQueries(500px) {
+  .transparent-navbar,
+  .navbar {
+    padding: 0;
+    &__list {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin: auto;
+      &__item {
+        margin: auto;
       }
     }
   }

@@ -3,7 +3,8 @@
   display: flex;
   animation: fadein 1s;
   &__img {
-    margin-bottom: 5vh;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
     cursor: pointer;
     background-size: cover;
     background-position: center;
@@ -11,7 +12,7 @@
     list-style: none;
     overflow: hidden;
     width: 0vw;
-    height: 80vh;
+    height: 78vh;
     filter: grayscale(100%);
     transition: transform 1s, filter 1s;
     box-shadow: -3px 0px 15px 0px rgb(54, 54, 54),
