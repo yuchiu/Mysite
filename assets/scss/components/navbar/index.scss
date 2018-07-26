@@ -21,37 +21,23 @@
       color: white;
     }
   }
-  &--transparent & {
-    &:hover {
-      &__name & {
-        &--transparent {
-          color: #ff666e;
-          text-shadow: 0 0 1px #d7c0eb, 0 0 5px #ff666e;
-        }
-      }
-    }
-  }
+
   &:hover & {
     &__name {
       transition: all 0.3s ease;
-      opacity: 0.9;
-      color: $btn-color;
-      text-shadow: 0 0 1px #fff7f7, 0 0 3px #fff7f7, 0 0 5px #fff7f7,
-        0 0 30px $btn-color;
-      &--transparent {
-        &:hover {
-          color: #ff666e;
-          text-shadow: 0 0 1px #d7c0eb, 0 0 5px #ff666e;
-        }
-      }
+      opacity: 1;
+      color: #28d1b2;
+      text-shadow: 0 0 1px #23ecc7, 0 0 1px #23ecc7, 0 0 3px #fff7f7,
+        0 0 5px #bad2ff, 0 0 5px #bad2ff, 0 0 30px #9bffed;
     }
   }
 }
 .navbar-logo--transparent {
   &:hover {
     .navbar-logo__name--transparent {
-      color: #ff666e;
-      text-shadow: 0 0 1px #d7c0eb, 0 0 5px #ff666e;
+      color: #ffffff;
+      text-shadow: 0 0 1px #ffffff, 0 0 1px #ffffff, 0 0 1px #ffffff,
+        0 0 5px #ffd7d9, 0 0 30px #ffcacd;
     }
   }
 }

@@ -33,10 +33,10 @@
         &:hover & {
           &__name,
           &__icon {
-            opacity: 0.9;
-            color: $btn-color;
-            text-shadow: 0 0 1px #fff7f7, 0 0 3px #fff7f7, 0 0 5px #fff7f7,
-              0 0 30px $btn-color;
+            opacity: 1;
+            color: #05af90;
+            text-shadow: 0 0 1px #23ecc7, 0 0 1px #23ecc7, 0 0 3px #fff7f7,
+              0 0 5px #bad2ff, 0 0 5px #bad2ff, 0 0 30px #9bffed;
           }
         }
         &__icon {
