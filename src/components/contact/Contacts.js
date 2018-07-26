@@ -4,6 +4,7 @@ const Contacts = () => (
   <div className="contacts-section">
     <div className="contacts">
       <h1 className="contacts__header">Get In Touch With Me</h1>
+      <br />
       <div className="contacts__box">
         <div className="contacts__box__border">
           <a

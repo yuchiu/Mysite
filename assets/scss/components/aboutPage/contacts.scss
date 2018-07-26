@@ -3,15 +3,17 @@
   margin: 1vw;
 }
 .contacts {
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
   padding: 10px 0 0 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  &____header {
-    width: 45vw;
-    margin: 0;
+  &__header {
+    display: block;
+    width: 50vw;
+    margin: 0 auto;
+    margin-bottom: 5vh;
   }
 
   &__box {
@@ -70,6 +72,63 @@
     }
   }
 }
+@include maxMediaQueries(1600px) {
+  .contacts {
+    &__header {
+      margin-bottom: 3vh;
+    }
+    &__box {
+      padding-top: 20px;
+      &__border {
+        &__btn {
+          &__name {
+            font-size: 1.2vmax;
+          }
+          &__icon {
+            font-size: 2.2vmax;
+          }
+        }
+      }
+    }
+  }
+}
+@include maxMediaQueries(1400px) {
+  .contacts {
+    &__header {
+      margin-bottom: 0;
+    }
+    &__box {
+      padding-top: 25px;
+      &__border {
+        &__btn {
+          &__name {
+            font-size: 1.4vmax;
+          }
+          &__icon {
+            font-size: 2.4vmax;
+          }
+        }
+      }
+    }
+  }
+}
+@include maxMediaQueries(1200px) {
+  .contacts {
+    &__box {
+      padding-top: 30px;
+      &__border {
+        &__btn {
+          &__name {
+            font-size: 1.6vmax;
+          }
+          &__icon {
+            font-size: 2.6vmax;
+          }
+        }
+      }
+    }
+  }
+}
 
 @include maxMediaQueries(975px) {
   .contacts {
@@ -101,6 +160,9 @@
         }
       }
     }
+  }
+  .contacts__box {
+    padding-top: 0;
   }
 }
 

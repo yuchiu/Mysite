@@ -10,7 +10,7 @@
   .icons-section-title {
     text-align: center;
     margin-top: 10vh;
-    margin-bottom: 10vh;
+    margin-bottom: 8vh;
   }
 }
 .icons-section-title {
@@ -20,12 +20,9 @@
 .icons {
   width: 100%;
   margin: auto;
-  margin-bottom: 5vh;
-  display: -ms-flexbox;
+  margin-bottom: 3vh;
   display: flex;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
-  -ms-flex-align: center;
   align-items: center;
   &__item {
     height: 80px;
@@ -35,26 +32,18 @@
       display: flex;
       justify-content: center;
       margin-top: 3px;
-      -webkit-transition: opacity 0.5s;
-      -o-transition: opacity 0.5s;
       transition: opacity 0.5s;
+      &--react-router {
+        margin-top: 35px;
+      }
     }
   }
   svg {
-    -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    -webkit-transition: -webkit-transform 0.2s, -webkit-filter 0.2s;
-    transition: -webkit-transform 0.2s, -webkit-filter 0.2s;
-    -o-transition: transform 0.2s, filter 0.2s;
     transition: transform 0.2s, filter 0.2s;
-    transition: transform 0.2s, filter 0.2s, -webkit-transform 0.2s,
-      -webkit-filter 0.2s;
   }
   svg:hover {
-    -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
-    -webkit-transform: scale(1.1, 1.1);
-    -ms-transform: scale(1.1, 1.1);
     transform: scale(1.1, 1.1);
   }
   svg:hover + span {
@@ -101,9 +90,7 @@ section.icons-col-section {
       width: 100%;
       display: -ms-flexbox;
       display: flex;
-      -ms-flex-pack: distribute;
       justify-content: space-around;
-      -ms-flex-align: center;
       align-items: center;
       padding: 45px 0;
     }
