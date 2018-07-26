@@ -1,17 +1,18 @@
 import React from "react";
 import AllShowcase from "./AllShowcase";
 import DefaultShowcase from "./DefaultShowcase";
+import { Navbar, Footer } from "../global";
 
 class Showcase extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       showAll: false,
       category: null
     };
   }
 
-  handleClick(e) {
+  handleClick = e => {
     const { name } = e.target;
     switch (name) {
       case "default":
@@ -29,46 +30,49 @@ class Showcase extends React.Component {
       default:
         break;
     }
-  }
+  };
 
   render() {
+    const { category, showAll } = this.state;
     return (
-      <div id="showcase-container">
-        <h1 id="showcase-title">Showcase</h1>
-        <div id="category-btn-container">
-          <a
-            className="a-tag-btn sandy-four"
-            name="default"
-            onClick={this.handleClick.bind(this)}
-          >
-            Default
-          </a>
-          <a
-            className="a-tag-btn sandy-one"
-            name="all"
-            onClick={this.handleClick.bind(this)}
-          >
-            All
-          </a>
-          <a
-            className="a-tag-btn sandy-three"
-            name="frontend"
-            onClick={this.handleClick.bind(this)}
-          >
-            Front-End
-          </a>
-          <a
-            className="a-tag-btn sandy-two"
-            name="backend"
-            onClick={this.handleClick.bind(this)}
-          >
-            Back-End
-          </a>
+      <React.Fragment>
+        <Navbar />
+        <div className="showcase-page">
+          <div className="category">
+            <a
+              className="a-tag-btn category__btn sandy-four"
+              name="default"
+              onClick={this.handleClick}
+            >
+              Default
+            </a>
+            <a
+              className="a-tag-btn category__btn sandy-one"
+              name="all"
+              onClick={this.handleClick}
+            >
+              All
+            </a>
+            <a
+              className="a-tag-btn category__btn sandy-three"
+              name="frontend"
+              onClick={this.handleClick}
+            >
+              Front-End
+            </a>
+            <a
+              className="a-tag-btn category__btn sandy-two"
+              name="backend"
+              onClick={this.handleClick}
+            >
+              Back-End
+            </a>
+          </div>
+          {!showAll && <DefaultShowcase />}
+          {showAll && category && <AllShowcase category={category} />}
         </div>
-        {!this.state.showAll && <DefaultShowcase />}
-        {this.state.showAll &&
-          this.state.category && <AllShowcase category={this.state.category} />}
-      </div>
+        <Footer />
+      </React.Fragment>
     );
   }
 }

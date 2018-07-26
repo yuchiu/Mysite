@@ -2,33 +2,24 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { projects } from "../../data";
-import Project from "./Project";
+import AllShowcaseItem from "./AllShowcaseItem";
 
-class AllShowcase extends React.Component {
-  render() {
-    return (
-      <div>
-        <div id="all-showcase">
-          <div className="content">
-            {projects.map(
-              (project, i) =>
-                (this.props.category === project.category ||
-                  project.category === "fullstack" ||
-                  this.props.category === "all") && (
-                  <Project
-                    key={i}
-                    category={this.props.category}
-                    project={project}
-                  />
-                )
-            )}
-          </div>
-        </div>
+const AllShowcase = ({ category }) => (
+  <div>
+    <div className="all-showcase">
+      <div className="all-showcase__list">
+        {projects.map(
+          (project, i) =>
+            (category === project.category ||
+              project.category === "fullstack" ||
+              category === "all") && (
+              <AllShowcaseItem key={i} category={category} project={project} />
+            )
+        )}
       </div>
-    );
-  }
-}
-
+    </div>
+  </div>
+);
 AllShowcase.propTypes = {
   category: PropTypes.string
 };

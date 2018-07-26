@@ -1,18 +1,23 @@
-@media (max-width: 1000px) {
-  section.icons-section {
+/* icons in row*/
+
+//show as row above 1000px
+@media (min-width: 1000px) {
+  section.icons-col-section {
     display: none;
   }
 }
-
-.icons-section {
-  h3 {
+.icons-row-section {
+  .icons-section-title {
     text-align: center;
     margin-top: 10vh;
     margin-bottom: 10vh;
   }
 }
+.icons-section-title {
+  font-size: 30px;
+}
 
-.icon-container {
+.icons {
   width: 100%;
   margin: auto;
   margin-bottom: 5vh;
@@ -22,56 +27,89 @@
   justify-content: space-around;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.tech-icon {
-  height: 80px;
-  width: 80px;
-}
-
-.tech-icon svg {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  -webkit-transition: -webkit-transform 0.2s, -webkit-filter 0.2s;
-  transition: -webkit-transform 0.2s, -webkit-filter 0.2s;
-  -o-transition: transform 0.2s, filter 0.2s;
-  transition: transform 0.2s, filter 0.2s;
-  transition: transform 0.2s, filter 0.2s, -webkit-transform 0.2s, -webkit-filter 0.2s;
-}
-
-.tech-icon svg:hover {
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
-  -webkit-transform: scale(1.1, 1.1);
-  -ms-transform: scale(1.1, 1.1);
-  transform: scale(1.1, 1.1);
-}
-
-.tech-icon span {
-  opacity: 0;
-  display: flex;
-  justify-content: center;
-  margin-top: 3px;
-  -webkit-transition: opacity 0.5s;
-  -o-transition: opacity 0.5s;
-  transition: opacity 0.5s;
-}
-.icons-section-title{
-  font-size:30px;
-}
-.tech-icon svg:hover+span {
-  opacity: 1;
+  &__item {
+    height: 80px;
+    width: 80px;
+    &__name {
+      opacity: 0;
+      display: flex;
+      justify-content: center;
+      margin-top: 3px;
+      -webkit-transition: opacity 0.5s;
+      -o-transition: opacity 0.5s;
+      transition: opacity 0.5s;
+    }
+  }
+  svg {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: -webkit-transform 0.2s, -webkit-filter 0.2s;
+    transition: -webkit-transform 0.2s, -webkit-filter 0.2s;
+    -o-transition: transform 0.2s, filter 0.2s;
+    transition: transform 0.2s, filter 0.2s;
+    transition: transform 0.2s, filter 0.2s, -webkit-transform 0.2s,
+      -webkit-filter 0.2s;
+  }
+  svg:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    -webkit-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+  }
+  svg:hover + span {
+    opacity: 1;
+  }
 }
 @media (min-width: 1300px) {
-.tech-icon {
-  height: 100px;
-  width: 100px;
-}
-
+  .icons__item {
+    height: 100px;
+    width: 100px;
+  }
 }
 
 @include maxMediaQueries(975px) {
-  .icons-section-title{
-    font-size:20px;
+  .icons-section-title {
+    font-size: 20px;
+  }
+}
+
+/* icons in column*/
+
+//show as col below 1000px
+@media (max-width: 1000px) {
+  section.icons-row-section {
+    display: none;
+  }
+}
+
+section.icons-col-section {
+  width: 100%;
+  margin-top: 60px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.icons-col-section {
+  .icons {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    &__col {
+      width: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 45px 0;
+    }
+    &__item {
+      height: 70px;
+      width: 70px;
+    }
   }
 }

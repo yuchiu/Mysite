@@ -1,15 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Project = ({ project }) => (
-  <div key={project.id} className={`thumbnail ${project.category}`}>
+const AllShowcaseItem = ({ project }) => (
+  <div key={project.id} className={`project ${project.category}`}>
     <div
-      className="pic"
+      className="project__pic"
       style={{ backgroundImage: `url(${project.thumbnailImg})` }}
     />
-    <div className="desc">
-      <h2>{project.name}</h2>
-      <p>
+    <div className="project__desc">
+      <h2 className="project__desc__name">{project.name}</h2>
+      <p className="project__desc__tech">
         {project.techStack.map((tech, i) => (
           <div style={{ display: "inline" }} key={i}>
             {" ∙ "}
@@ -21,7 +21,7 @@ const Project = ({ project }) => (
         href={`${project.githubLink}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="a-tag-btn sandy-two"
+        className="a-tag-btn sandy-two project__desc__link"
       >
         <i className="fa fa-external-link" />Github
       </a>
@@ -29,7 +29,7 @@ const Project = ({ project }) => (
         href={`${project.demoLink}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="a-tag-btn sandy-two"
+        className="a-tag-btn sandy-two project__desc__link"
       >
         <i className="fa fa-external-link" />View
       </a>
@@ -37,8 +37,8 @@ const Project = ({ project }) => (
   </div>
 );
 
-Project.propTypes = {
+AllShowcaseItem.propTypes = {
   project: PropTypes.string
 };
 
-export default Project;
+export default AllShowcaseItem;

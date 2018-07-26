@@ -1,18 +1,8 @@
-#default-showcase {
-    background: #fff;
-    display: flex;
-    -webkit-animation: fadein 1s;
-    /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 1s;
-    /* Firefox < 16 */
-    -ms-animation: fadein 1s;
-    /* Internet Explorer */
-    -o-animation: fadein 1s;
-    /* Opera < 12.1 */
-    animation: fadein 1s;
-}
-
-.lg-img-container {
+.default-showcase {
+  background: #fff;
+  display: flex;
+  animation: fadein 1s;
+  &__img {
     margin-bottom: 5vh;
     cursor: pointer;
     background-size: cover;
@@ -20,170 +10,78 @@
     object-fit: cover;
     list-style: none;
     overflow: hidden;
-    width: 80vw;
+    width: 0vw;
     height: 80vh;
-    -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    -webkit-transition: -webkit-transform 1s, -webkit-filter 1s;
-    transition: -webkit-transform 1s, -webkit-filter 1s;
-    -o-transition: transform 1s, filter 1s;
     transition: transform 1s, filter 1s;
-    transition: transform 1s, filter 1s, -webkit-transform 1s, -webkit-filter 1s;
-    &:hover {
-        -webkit-filter: grayscale(0%);
-        filter: grayscale(0%);
-        overflow: hidden;
-    }
-    -webkit-box-shadow:-3px 0px 15px 0px rgb(54, 54, 54),
-    -2px 0px 8px 0px rgb(94, 94, 94);
-    -moz-box-shadow:-3px 0px 15px 0px rgb(54, 54, 54),
-    -2px 0px 8px 0px rgb(94, 94, 94);
     box-shadow: -3px 0px 15px 0px rgb(54, 54, 54),
-    -2px 0px 8px 0px rgb(94, 94, 94);
-    
-    -webkit-transition: all 1000ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-    -moz-transition: all 1000ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-    -ms-transition: all 1000ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-    -o-transition: all 1000ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-    transition: all 1000ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-}
-
-#lg-img1 {
-    background-image: url("https://i.imgur.com/BWpLkRy.jpg");
-    flex: 8;
+      -2px 0px 8px 0px rgb(94, 94, 94);
+    transition: all 1000ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
     &:hover {
-        flex: 50;
+      filter: grayscale(0%);
+      overflow: hidden;
     }
-}
-
-#lg-img2 {
-    background-image: url("https://i.imgur.com/I8GNgRX.png");
-    flex: 6;
-    &:hover {
+    &--1 {
+      flex: 8;
+      &:hover {
+        flex: 55;
+      }
+    }
+    &--2 {
+      flex: 7;
+      &:hover {
         flex: 60;
+      }
     }
-}
-
-#lg-img3 {
-    background-image: url("https://i.imgur.com/zBcGik4.png");
-    flex: 4;
-    &:hover {
+    &--3 {
+      flex: 6;
+      &:hover {
         flex: 65;
+      }
     }
-}
-
-#lg-img4 {
-    background-image: url("https://i.imgur.com/Q12rdkT.png");
-    flex: 3;
-    &:hover {
+    &--4 {
+      flex: 5;
+      &:hover {
         flex: 70;
+      }
     }
+  }
 }
-
-#lg-img5 {
-    background-image: url("https://i.imgur.com/MIxbebT.png");
-    flex: 2;
-    &:hover {
-        flex: 70;
-    }
-}
-
 @keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-
-/* Firefox < 16 */
-
-@-moz-keyframes fadein {
-    from {
-        opacity: 0;
+@include maxMediaQueries(800px) {
+  .default-showcase__img--1 {
+    flex: 1;
+    &:hover {
+      flex: 20;
     }
-    to {
-        opacity: 1;
-    }
-}
+  }
 
+  .default-showcase__img--2 {
+    flex: 1;
+    &:hover {
+      flex: 20;
+    }
+  }
 
-/* Safari, Chrome and Opera > 12.1 */
+  .default-showcase__img--3 {
+    flex: 1;
+    &:hover {
+      flex: 20;
+    }
+  }
 
-@-webkit-keyframes fadein {
-    from {
-        opacity: 0;
+  .default-showcase__img--4 {
+    flex: 1;
+    &:hover {
+      flex: 20;
     }
-    to {
-        opacity: 1;
-    }
-}
-
-
-/* Internet Explorer */
-
-@-ms-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-
-/* Opera < 12.1 */
-
-@-o-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@include maxMediaQueries(800px){
-
-    #lg-img1 {
-        background-image: url("https://i.imgur.com/BWpLkRy.jpg");
-        flex: 1;
-        &:hover {
-            flex: 20;
-        }
-    }
-    
-    #lg-img2 {
-        background-image: url("https://i.imgur.com/OHGWtS5.png");
-        flex: 1;
-        &:hover {
-            flex: 20;
-        }
-    }
-    
-    #lg-img3 {
-        background-image: url("https://i.imgur.com/zBcGik4.png");
-        flex: 1;
-        &:hover {
-            flex: 20;
-        }
-    }
-    
-    #lg-img4 {
-        background-image: url("https://i.imgur.com/Q12rdkT.png");
-        flex: 1;
-        &:hover {
-            flex: 20;
-        }
-    }
-    
-    #lg-img5 {
-        background-image: url("https://i.imgur.com/MIxbebT.png");
-        flex: 1;
-        &:hover {
-            flex: 20;
-        }
-    }
+  }
 }

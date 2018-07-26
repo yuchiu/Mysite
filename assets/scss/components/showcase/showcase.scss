@@ -1,25 +1,11 @@
-@import "./allShowcase";
-@import "./defaultShowcase";
-#showcase-container {
-}
-
-#showcase-title {
-  margin: 0;
-  padding-top: 50px;
-  margin-bottom: 0px;
-  width: 100%;
-  text-align: center;
-}
-
-#category-btn-container {
+.category {
+  padding-top: 35px;
   @include aTagBtnBaseStyle;
   @include aTagBtnSandy;
   display: flex;
   margin: 0 auto;
-  margin-top: -15px;
   margin-bottom: 20px;
   width: 450px;
-
   .a-tag-btn.sandy-one,
   .a-tag-btn.sandy-two,
   .a-tag-btn.sandy-three,
@@ -34,7 +20,7 @@
   }
 }
 @include maxMediaQueries(800px) {
-  #category-btn-container {
+  .category {
     width: 350px;
     .a-tag-btn.sandy-one,
     .a-tag-btn.sandy-two,
@@ -46,7 +32,7 @@
   }
 }
 @include maxMediaQueries(650px) {
-  #category-btn-container {
+  .category {
     width: 280px;
     .a-tag-btn.sandy-one,
     .a-tag-btn.sandy-two,

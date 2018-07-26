@@ -1,0 +1,26 @@
+@import "./skillset";
+@import "./contacts";
+@import "./about";
+
+.contact-page {
+  background: transparent;
+  &__upper {
+    min-height: 15vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__lower {
+    padding-top: 5vh;
+    min-height: 45vh;
+    display: flex;
+    padding-bottom: 50px;
+  }
+}
+
+@include maxMediaQueries(975px) {
+  .contact-page__lower {
+    display: flex;
+    flex-direction: column;
+  }
+}

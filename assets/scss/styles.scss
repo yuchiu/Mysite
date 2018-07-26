@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300');
-@import 'var';
-@import 'mixins';
-@import './components/nav/nav';
-@import './components/home/home';
-@import './components/showcase/showcase';
-@import './components/aboutpage/about';
-@import './components/footer/footer';
+@import url("https://fonts.googleapis.com/css?family=Raleway:300");
+@import "var";
+@import "mixins";
+@import "./components/navbar/index";
+@import "./components/footer/index";
+@import "./components/home/index";
+@import "./components/showcase/index";
+@import "./components/aboutpage/index";
 
 body {
   margin: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #3d3d3d;
 }

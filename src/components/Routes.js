@@ -1,44 +1,18 @@
 import React from "react";
 import "../../assets/scss/styles.scss";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import $ from "jquery";
-import Nav from "./nav";
 import Home from "./home";
 import Showcase from "./showcase";
-import About from "./about";
-import Footer from "./footer";
+import Contact from "./contact";
 
-class Layout extends React.Component {
-  componentDidMount() {
-    // eslint-disable-next-line
-    $("a").click(function(event) {
-      if (this.hash !== "") {
-        event.preventDefault();
-        const { hash } = this;
-        $("html, body").animate(
-          {
-            scrollTop: $(hash).offset().top
-          },
-          1000,
-          () => {
-            window.location.hash = hash;
-          }
-        );
-      }
-    });
-  }
-
-  render() {
-    return (
-      <div>
-        <Nav />
-        <Home />
-        <Showcase />
-        <About />
-        <Footer />
-      </div>
-    );
-  }
-}
-
-export default Layout;
+const Routes = () => (
+  <BrowserRouter>
+    <Switch>
+      <Route path="/" exact component={Home} />
+      <Route path="/showcase" exact component={Showcase} />
+      <Route path="/contact" exact component={Contact} />
+    </Switch>
+  </BrowserRouter>
+);
+export default Routes;

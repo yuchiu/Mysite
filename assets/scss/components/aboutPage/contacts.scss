@@ -1,106 +1,116 @@
-
- 
-#contact-container {
+.contacts-section {
   text-align: center;
+  margin: 1vw;
 }
-#social-contact {
+.contacts {
   width: 80%;
   margin: 0 auto;
   padding: 10px 0 0 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-#contact-title {
-  width: 45vw;
-  margin:0;
-}
-
-.buttonbox {
-  width: 50%;
-  margin: 0 0;
-  display: flex;
-  justify-content: center;
-}
-
-.buttonborder {
-  width: 95%;
-  background-color: transparent;
-  text-align: center;
-}
-
-.buttonborder {
-  @include aTagBtnBaseStyle;
-  @include aTagBtnVictoria;
-  i {
-    color: #383838;
-    font-size: 2vmax;
+  &____header {
+    width: 45vw;
+    margin: 0;
   }
-  p{
-    color: #383838;
-    font-size: 1vmax;
-  }
-  .a-tag-btn.victoria-one,
-  .a-tag-btn.victoria-two,
-  .a-tag-btn.victoria-three,
-  .a-tag-btn.victoria-four{
-    border-radius:1px;
-    padding: 5px 10px;
-    text-transform: none;
-    border-color: #383838;
-  }
-  &:hover{
-    i {
-    color:#fff;
-    font-weight: bold;
+
+  &__box {
+    width: 50%;
+    margin: 0 0;
+    display: flex;
+    justify-content: center;
+    &__border {
+      width: 95%;
+      background-color: transparent;
+      text-align: center;
+      @include aTagBtnBaseStyle;
+      @include aTagBtnVictoria;
+      .a-tag-btn.victoria-one,
+      .a-tag-btn.victoria-two,
+      .a-tag-btn.victoria-three,
+      .a-tag-btn.victoria-four {
+        border-radius: 1px;
+        padding: 5px 10px;
+        text-transform: none;
+        border-color: #383838;
+      }
+      &:hover {
+        .a-tag-btn.victoria-one,
+        .a-tag-btn.victoria-two,
+        .a-tag-btn.victoria-three,
+        .a-tag-btn.victoria-four {
+          @include cubicTransition;
+          border-color: #23ecc7;
+          background: #23ecc7;
+          box-shadow: 0 0 3px #23ecc7, 0 0 5px #23ecc7, 0 0 10px #23ecc7,
+            0 0 20px #23ecc7, 0 0 40px #23ecc7;
+        }
+      }
+      &:hover & {
+        &__btn {
+          &__icon {
+            color: #fff;
+            font-weight: bold;
+          }
+          &__name {
+            color: #fff;
+          }
+        }
+      }
+      &__btn {
+        &__icon {
+          color: #383838;
+          font-size: 2vmax;
+        }
+        &__name {
+          color: #383838;
+          font-size: 1vmax;
+        }
+      }
     }
-    p{
-      color:#fff;
-    }
+  }
+}
+
+@include maxMediaQueries(975px) {
+  .contacts {
     .a-tag-btn.victoria-one,
     .a-tag-btn.victoria-two,
     .a-tag-btn.victoria-three,
-    .a-tag-btn.victoria-four{
-      @include cubicTransition;
-      border-color: #23ecc7;
-      background: #23ecc7;
-      box-shadow: 0 0 3px #23ecc7, 0 0 5px #23ecc7, 0 0 10px #23ecc7, 0 0 20px #23ecc7, 0 0 40px #23ecc7;
+    .a-tag-btn.victoria-four {
+      padding: 0px 0px;
+    }
+    width: 100%;
+    &__header {
+      width: 90vw;
+      text-align: center;
+      font-size: 20px;
+    }
+    &__box {
+      width: 100%;
+      align-items: center;
+      &__border {
+        border-width: 0.1em;
+        width: 70%;
+        &__btn {
+          &__icon {
+            font-size: 4vmax;
+          }
+          &__name {
+            font-size: 1.8vmax;
+          }
+        }
+      }
     }
   }
 }
 
-
-@include maxMediaQueries(975px) {
-    #about-me-title {
-      font-size: 25px;
-    }
-  #contact-title {
-    width: 90vw;
-    text-align: center;
-    font-size: 20px;
-  }
-  #social-contact {
-    width: 100%;
-  }
-  .buttonborder {
-    width: 70%;
-    border-width: 0.1em;
-    p {
-      font-size: 1.8vmax;
-    }
-    i {
-      font-size: 4vmax;
-    }
-  }
-  .buttonbox {
-    width: 100%;
+@include minMediaQueries(976px) {
+  .contacts-section {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-  }
-  .a-tag-btn.victoria-one,
-  .a-tag-btn.victoria-two,
-  .a-tag-btn.victoria-three,
-  .a-tag-btn.victoria-four{
-    padding: 0px 0px;
+    text-align: center;
+    flex: 35vw;
+    margin: 0 3vw;
   }
 }

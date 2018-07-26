@@ -1,58 +1,20 @@
-@import './contacts';
-@import './skillset';
-@import './skillsetcol';
-#about {
-  background: transparent;
-  
-}
-
-#upper-about-section {
-  min-height: 15vh;
-  display: flex;
-  flex-direction: column;
-}
-
-#lower-about-section {
-  padding-top: 5vh;
-  min-height: 45vh;
-  display: flex;
-  padding-bottom:50px;
-}
-
-#about-me-container {
+.about {
   text-align: center;
   margin: 1vw;
 }
 
-#contact-container {
-  margin: 1vw;
-}
-
 @include maxMediaQueries(975px) {
-  #lower-about-section {
-    display: flex;
-    flex-direction: column;
-  }
-  #about-me-title{
+  .about__title {
     font-size: 20px;
   }
-  #about-me-p{
+  .about__intro {
     margin: 0 auto;
     width: 80%;
   }
 }
 
 @include minMediaQueries(976px) {
-
-  #contact-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    flex: 35vw;
-    margin: 0 3vw;
-  }
-  #about-me-container {
+  .about {
     display: flex;
     flex-direction: column;
     align-items: center;

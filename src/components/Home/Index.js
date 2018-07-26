@@ -1,14 +1,13 @@
 import React from "react";
-import Home from "./Home";
+import Landing from "./Landing";
+import { TransparentFooter, TransparentNavbar } from "../global";
 
-class Index extends React.Component {
-  render() {
-    return (
-      <div>
-        <Home />
-      </div>
-    );
-  }
-}
+const Home = () => (
+  <React.Fragment>
+    <TransparentNavbar />
+    <Landing />
+    <TransparentFooter />
+  </React.Fragment>
+);
 
-export default Index;
+export default Home;

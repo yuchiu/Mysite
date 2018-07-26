@@ -1,4 +1,4 @@
-#home {
+.home-page {
   margin: 0;
   background-color: #fff;
   min-height: 100vh;
@@ -12,81 +12,85 @@
   background: linear-gradient(329deg, #535eb4, #4e8da5, #449467, #6f51aa);
   background-size: 800% 800%;
   animation: bgColor 30s ease infinite;
+  &::after {
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    position: absolute;
+    z-index: -1;
+  }
 }
 
-#home::after {
-  content: "";
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-size: cover;
-  background-position: center top;
-  background-attachment: fixed;
-  position: absolute;
-  z-index: -1;
-}
-
-.content {
+.landing {
   width: 100%;
   margin: 0 auto;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-#home .fa {
-  margin: 0 16px 24px;
-  text-decoration: none;
-  color: white;
-  &:hover,
-  &:active,
-  &:focus {
-    color: white;
+  &__intro {
+    margin: 0.4em;
+    margin-top: 5em;
+    color: $white;
+    font-size: 2vmax;
+    width: 100%;
+    text-align: center;
   }
-}
-
-#home h1 {
-  margin: 0.4em;
-  margin-top: 5em;
-  color: $white;
-  font-size: 2vmax;
-  width: 100%;
-  text-align: center;
-}
-
-#home #introduction {
-  margin-bottom: 36px;
-  margin: 36px auto 56px;
-  color: $white;
-  font-size: 26px;
-  width: 100%;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 30em;
-  animation: type 6.5s steps(60, end);
-  animation-delay: 0.3s;
-}
-
-#home .contact-icons {
-  margin: 0em;
-  font-size: 20px;
-  width: 100%;
-  text-align: center;
-}
-
-#home .arrow {
-  margin: 0.4em;
-  margin-top: 10em;
-  opacity: 0.6;
-  width: 100%;
-  text-align: center;
-}
-
-#home #line {
-  animation: blink 1s infinite;
+  &__typing {
+    margin-bottom: 36px;
+    margin: 36px auto 56px;
+    color: $white;
+    font-size: 26px;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+    animation: type 6.5s steps(60, end);
+    animation-delay: 0.3s;
+    &__line {
+      animation: blink 1s infinite;
+    }
+  }
+  &__contacts {
+    margin: 0em;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    &__icon {
+      margin: 0 16px 24px;
+      text-decoration: none;
+      color: white;
+      &:hover,
+      &:active,
+      &:focus {
+        color: white;
+      }
+    }
+  }
+  &__link {
+    color: white;
+    margin: 0.4em;
+    margin-top: 10em;
+    opacity: 0.6;
+    width: 100%;
+    text-align: center;
+    &__icon {
+      margin: 0 16px 24px;
+      text-decoration: none;
+      color: white;
+      &:hover,
+      &:active,
+      &:focus {
+        color: white;
+      }
+    }
+  }
 }
 
 @keyframes bgColor {
@@ -114,7 +118,7 @@
 }
 
 @include maxMediaQueries(880px) {
-  #home h2 {
+  .landing__typing {
     font-size: 18px;
     width: 90%;
   }
