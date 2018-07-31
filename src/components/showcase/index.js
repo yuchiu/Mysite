@@ -24,6 +24,9 @@ class Showcase extends React.Component {
       case "frontend":
         this.setState({ showAll: true, category: name });
         break;
+      case "fullstack":
+        this.setState({ showAll: true, category: name });
+        break;
       case "backend":
         this.setState({ showAll: true, category: name });
         break;
@@ -66,6 +69,13 @@ class Showcase extends React.Component {
               onClick={this.handleClick}
             >
               Back-End
+            </a>
+            <a
+              className="a-tag-btn category__btn sandy-four"
+              name="fullstack"
+              onClick={this.handleClick}
+            >
+              Full-Stack
             </a>
           </div>
           {!showAll && <DefaultShowcase />}

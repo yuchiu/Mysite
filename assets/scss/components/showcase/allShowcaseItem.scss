@@ -66,13 +66,13 @@
 
 @include maxMediaQueries(1680px) {
   .project {
-    width: 280px;
-    height: 300px;
+    width: 320px;
+    height: 340px;
   }
 }
 @include maxMediaQueries(880px) {
   .project {
-    width: 260px;
-    height: 280px;
+    width: 300px;
+    height: 320px;
   }
 }

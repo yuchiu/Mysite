@@ -4,6 +4,12 @@
 npm install
 ```
 
+if node-sass error occured in linux distribution, run the following command, then run npm install again after that.
+
+```
+sudo npm install --unsafe-perm node-sass
+```
+
 #### 2a. development
 
 ```
@@ -11,7 +17,6 @@ npm start
 ```
 
 The site will be running on http://localhost:8080
-Webpack will watch for changes and update the browser when file changes.
 
 #### 2b. production
 
