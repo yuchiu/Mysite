@@ -11,11 +11,8 @@ const AllShowcaseItem = ({ project }) => (
           alt="Card image cap"
         />
         <div className="proj-card__overlay">
-          <h4 className="proj-card__overlay__title">Card title</h4>
-          <p className="proj-card__overlay__desc">
-            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-            ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
-          </p>
+          <h4 className="proj-card__overlay__title">{project.name}</h4>
+          <p className="proj-card__overlay__desc" />
           <p className="proj-card__overlay__tech">
             {project.techStack.map((tech, i) => (
               <div
