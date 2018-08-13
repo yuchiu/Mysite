@@ -2,7 +2,7 @@ export default [
   {
     id: "100",
     name: "Netflix Clone",
-    thumbnailImg: "https://i.imgur.com/fRXR8vT.jpg",
+    thumbnailImg: "https://i.imgur.com/lUoDBqN.jpg",
     category: "frontend",
     techStack: ["React.js", "Redux", "Sass", "tmdb API"],
     githubLink: "https://github.com/yuchiu/React-Redux-Netflix-Clone",
@@ -11,7 +11,7 @@ export default [
   {
     id: "200",
     name: "Travel-Hotspots",
-    thumbnailImg: "https://i.imgur.com/AutMfIM.jpg",
+    thumbnailImg: "https://i.imgur.com/XoTm0cb.jpg",
     category: "frontend",
     techStack: ["React.js", "Redux", "Google Map API", "foursquare API"],
     githubLink: "https://github.com/yuchiu/Travel-Hotspots",
@@ -20,7 +20,7 @@ export default [
   {
     id: "300",
     name: "Photo Wall Image Upload",
-    thumbnailImg: "https://i.imgur.com/iTctvUw.jpg",
+    thumbnailImg: "https://i.imgur.com/rxHgek5.jpg",
     category: "frontend",
     techStack: ["React.js", "Redux", "firebase"],
     githubLink: "https://github.com/yuchiu/Photo-Wall",
@@ -29,7 +29,7 @@ export default [
   {
     id: "400",
     name: "Real Time Chat CDN",
-    thumbnailImg: "https://i.imgur.com/JsNlSjQ.jpg",
+    thumbnailImg: "https://i.imgur.com/2PioCnd.jpg",
     category: "frontend",
     techStack: ["React.js", "Redux", "Firebase"],
     githubLink: "https://github.com/yuchiu/React-Chat-Plugin",
@@ -38,7 +38,7 @@ export default [
   {
     id: "500",
     name: "Calculator",
-    thumbnailImg: "https://i.imgur.com/ahxa5Ih.jpg",
+    thumbnailImg: "https://i.imgur.com/et5FiEv.jpg",
     category: "frontend",
     techStack: ["JavaScript", "jQuery", "CSS"],
     githubLink: "https://github.com/yuchiu/js-calculator",
@@ -47,7 +47,7 @@ export default [
   {
     id: "600",
     name: "Simon's Game",
-    thumbnailImg: "https://i.imgur.com/zrOlOmJ.jpg",
+    thumbnailImg: "https://i.imgur.com/RoFEufb.jpg",
     category: "frontend",
     techStack: ["JavaScript", "jQuery", "CSS"],
     githubLink: "https://github.com/yuchiu/simon-game",
@@ -56,7 +56,7 @@ export default [
   {
     id: "700",
     name: "Random Quote Machine",
-    thumbnailImg: "https://i.imgur.com/yQtrYOS.jpg",
+    thumbnailImg: "https://i.imgur.com/Sbw7aUX.jpg",
     category: "frontend",
     techStack: ["JavaScript", "jQuery", "CSS"],
     githubLink: "https://github.com/yuchiu/random-quote-machine",
@@ -65,7 +65,7 @@ export default [
   {
     id: "800",
     name: "Pomodoro Timer",
-    thumbnailImg: "https://i.imgur.com/KOzFIo8.jpg",
+    thumbnailImg: "https://i.imgur.com/HPo8G9g.jpg",
     category: "frontend",
     techStack: ["JavaScript", "CSS"],
     githubLink: "https://github.com/yuchiu/tomato-clock",
@@ -74,7 +74,7 @@ export default [
   {
     id: "900",
     name: "Twitch Online Status",
-    thumbnailImg: "https://i.imgur.com/oTav3zw.jpg",
+    thumbnailImg: "https://i.imgur.com/tyrzAVP.jpg",
     category: "frontend",
     techStack: ["JavaScript", "jQuery", "CSS", "Twitch API"],
     githubLink: "https://github.com/yuchiu/twitch-JSON-API",
@@ -83,7 +83,7 @@ export default [
   {
     id: "1000",
     name: "Conway's Game of Life",
-    thumbnailImg: "https://i.imgur.com/5q9seBN.jpg",
+    thumbnailImg: "https://i.imgur.com/vULoHOA.jpg",
     category: "frontend",
     techStack: ["JavaScript"],
     githubLink: "https://github.com/yuchiu/game-of-life",
@@ -92,7 +92,7 @@ export default [
   {
     id: "1100",
     name: "Force Directed Graph",
-    thumbnailImg: "https://i.imgur.com/XgYPHqL.jpg",
+    thumbnailImg: "https://i.imgur.com/MZDIb5y.jpg",
     category: "frontend",
     techStack: ["React.js", "D3"],
     githubLink: "https://github.com/yuchiu/Force-Graph-React-D3",
@@ -101,7 +101,7 @@ export default [
   {
     id: "1200",
     name: "GDP Bar Chart",
-    thumbnailImg: "https://i.imgur.com/AfK2fvk.jpg",
+    thumbnailImg: "https://i.imgur.com/yhZz1tn.jpg",
     category: "frontend",
     techStack: ["JavaScript", "D3"],
     githubLink: "https://github.com/yuchiu/GDP-barchart-d3",
@@ -110,7 +110,7 @@ export default [
   {
     id: "1300",
     name: "Weather App",
-    thumbnailImg: "https://i.imgur.com/LaLS5HR.jpg",
+    thumbnailImg: "https://i.imgur.com/8f7CIwH.jpg",
     category: "frontend",
     techStack: ["JavaScript", "jQuery", "Open Weather API"],
     githubLink: "https://github.com/yuchiu/show-the-weather",
@@ -119,7 +119,7 @@ export default [
   {
     id: "1400",
     name: "Boostrap Page",
-    thumbnailImg: "https://i.imgur.com/efRWI3y.jpg",
+    thumbnailImg: "https://i.imgur.com/SCwtj0G.jpg",
     category: "frontend",
     techStack: ["Bootstrap"],
     githubLink: "https://github.com/yuchiu/bootstrap-conf",
@@ -128,7 +128,7 @@ export default [
   {
     id: "1500",
     name: "Wiki Viewer",
-    thumbnailImg: "https://i.imgur.com/kcOrNHd.jpg",
+    thumbnailImg: "https://i.imgur.com/mxu4CGn.jpg",
     category: "frontend",
     techStack: ["JavaScript", "Bootstrap", "Wiki API"],
     githubLink: "https://github.com/yuchiu/wiki-viewer",
@@ -137,7 +137,7 @@ export default [
   {
     id: "1600",
     name: "Rotating Cube",
-    thumbnailImg: "https://i.imgur.com/XBqtgN0.jpg",
+    thumbnailImg: "https://i.imgur.com/neV0puI.jpg",
     category: "frontend",
     techStack: ["CSS"],
     githubLink: "https://github.com/yuchiu/rotating-cube",
@@ -146,7 +146,7 @@ export default [
   {
     id: "1700",
     name: "Recipe Sharing App",
-    thumbnailImg: "https://i.imgur.com/4wTKkHJ.jpg",
+    thumbnailImg: "https://i.imgur.com/EBWwncY.jpg",
     category: "fullstack",
     techStack: ["Vue.js", "VueX", "Express.js", "SQLite"],
     githubLink: "https://github.com/yuchiu/Recipe-Sharing-App",
@@ -155,7 +155,7 @@ export default [
   {
     id: "1800",
     name: "Bookmark Sharing",
-    thumbnailImg: "https://i.imgur.com/NzaZs9r.jpg",
+    thumbnailImg: "https://i.imgur.com/z2nNGGQ.jpg",
     category: "fullstack",
     techStack: ["React.js", "Redux", "Express.js", "MongoDB"],
     githubLink: "https://github.com/yuchiu/Bookmark-Sharing",
@@ -164,7 +164,7 @@ export default [
   {
     id: "1900",
     name: "URL Shortener API",
-    thumbnailImg: "https://i.imgur.com/PFmnEab.jpg",
+    thumbnailImg: "https://i.imgur.com/1euJlhp.jpg",
     category: "backend",
     techStack: ["Express.js", "MongoDB"],
     githubLink: "https://github.com/yuchiu/URL-Shortener-Microservice",
@@ -173,7 +173,7 @@ export default [
   {
     id: "2000",
     name: "Timestamp API",
-    thumbnailImg: "https://i.imgur.com/rZFZq46.jpg",
+    thumbnailImg: "https://i.imgur.com/Dv9WVEQ.jpg",
     category: "backend",
     techStack: ["Express.js"],
     githubLink: "https://github.com/yuchiu/Timestamp-MicroService",
@@ -182,7 +182,7 @@ export default [
   {
     id: "2100",
     name: "Request Header Parser API",
-    thumbnailImg: "https://i.imgur.com/unam2uo.jpg",
+    thumbnailImg: "https://i.imgur.com/GDdG5LR.jpg",
     category: "backend",
     techStack: ["Express.js"],
     githubLink: "https://github.com/yuchiu/Request-Header-Parser-Microservice",
@@ -191,7 +191,7 @@ export default [
   {
     id: "2200",
     name: "File Metadata API",
-    thumbnailImg: "https://i.imgur.com/ZCIhQBU.jpg",
+    thumbnailImg: "https://i.imgur.com/5D5ZE63.jpg",
     category: "backend",
     techStack: ["Express.js"],
     githubLink: "https://github.com/yuchiu/File-Metadata-Microservice",

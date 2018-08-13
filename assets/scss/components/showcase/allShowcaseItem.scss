@@ -1,78 +1,100 @@
 .project {
-  width: 340px;
-  height: 360px;
-  background-color: transparent;
+  width: 420px;
+  height: 280px;
   margin: 10px;
   transition: all 0.3s ease;
-  -webkit-box-shadow: 5px 5px 26px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 5px 5px 26px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 5px 5px 26px 0px rgba(0, 0, 0, 0.1);
-  &:hover {
-    .project__pic {
-      height: 60%;
-    }
-    .project__desc {
-      height: 40%;
-    }
+  color: #efe7e1;
+  p {
+    font-size: 0.875em;
+    line-height: 1.4;
+    margin: 0 0 1.5em;
+    color: #efe7e1;
   }
-  &__pic {
+}
+.proj-card {
+  position: relative;
+  line-height: 0;
+  overflow: hidden;
+  margin-bottom: 2em;
+
+  &__img {
+    @include cubicTransition;
+    transform-origin: 50% 50%;
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center top;
-    background-repeat: no-repeat;
-    transition: all 0.2s ease-in-out;
   }
-  &__desc {
-    width: 100%;
-    height: 0%;
-    overflow: hidden;
-    transition: all 0.2s ease-in-out;
+  &:hover & {
+    &__img {
+      @include cubicTransition;
+      transform: scale(1.2);
+    }
+  }
+  &__overlay {
+    opacity: 0;
+    transition: opacity 0.5s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
     display: flex;
-    flex-wrap: wrap;
+
+    /*centering text inside .proj-card__overlay */
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background-color: $white;
-    &__name {
-      margin: 0 0 0 0.5em;
-      width: 90%;
-      font-weight: bold;
-      text-align: left;
-      font-size: 1.3em;
+    background: rgba(0, 0, 0, 0.7);
+    &:hover {
+      opacity: 1;
+    }
+    &__title {
+      font-size: 1.5em;
     }
     &__tech {
-      margin: 0 0 0 0.75em;
-      font-size: 0.9em;
-      width: 90%;
+      &__text {
+        font-size: 1.1em;
+      }
     }
-    &__link {
-      margin: 0.6em auto;
-      padding: 0.4em 2em;
-      @include cubicTransition;
-      display: block;
-      text-decoration: none;
-      border-radius: 1px;
-      color: $btn-color;
-      box-shadow: $btn-color4 0 0px 0px 1px inset;
-      font-weight: bold;
-      &:hover {
-        color: rgba(255, 255, 255, 0.85);
-        box-shadow: $btn-color 0 0px 0px 50px inset;
-        text-shadow: 0 0 10px #fff7f7, 0 0 20px #fff7f7, 0 0 30px #fff7f7,
-          0 0 40px $btn-color4;
+    &__btn-group {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 20px;
+      &__link {
+        font-size: 1em;
+        margin: 0.6em;
+        padding: 0.4em 2em;
+        @include cubicTransition;
+        display: block;
+        text-decoration: none;
+        border-radius: 1px;
+        color: #efe7e1;
+        box-shadow: #efe7e1 0 0px 0px 1px inset;
+        font-weight: bold;
+        &:hover {
+          color: rgba(255, 255, 255, 0.85);
+          box-shadow: $btn-color 0 0px 0px 50px inset;
+          text-shadow: 0 0 10px #fff7f7, 0 0 20px #fff7f7, 0 0 30px #fff7f7,
+            0 0 40px $btn-color4;
+        }
       }
     }
   }
 }
 
-@include maxMediaQueries(1680px) {
-  .project {
-    width: 320px;
-    height: 340px;
-  }
-}
 @include maxMediaQueries(880px) {
   .project {
-    width: 300px;
-    height: 320px;
+    width: 520px;
+    height: 350px;
+  }
+}
+@include maxMediaQueries(680px) {
+  .project {
+    width: 420px;
+    height: 280px;
   }
 }
