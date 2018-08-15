@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../../assets/img/YC_logo_new.png";
+import logo from "../../data/img/YC_logo_new.png";
 
 const Navbar = () => (
   <div className="navbar-container">

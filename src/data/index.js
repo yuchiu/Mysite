@@ -1,4 +1,5 @@
-import projects from "./projects";
+import projectCards from "./projects/projectCards";
+import defaultProjects from "./projects/defaultProjects";
 import {
   reduxLogo,
   reactLogo,
@@ -9,7 +10,7 @@ import {
   babelLogo,
   reactRouterLogo,
   nodejsLogo
-} from "./icons";
+} from "./svg/icons";
 
 export {
   reduxLogo,
@@ -21,5 +22,6 @@ export {
   babelLogo,
   reactRouterLogo,
   nodejsLogo,
-  projects
+  projectCards,
+  defaultProjects
 };

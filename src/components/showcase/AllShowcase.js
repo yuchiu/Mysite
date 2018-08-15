@@ -1,14 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { projects } from "../../data";
+import { projectCards } from "../../data";
 import AllShowcaseItem from "./AllShowcaseItem";
 
 const AllShowcase = ({ category }) => (
   <div>
     <div className="all-showcase">
       <div className="all-showcase__list">
-        {projects.map(
+        {projectCards.map(
           (project, i) =>
             (category === project.category ||
               project.category === "fullstack" ||

@@ -1,12 +1,12 @@
 import React from "react";
-import "../../assets/scss/styles.scss";
+import "../data/scss/index.scss";
 import { HashRouter, Route, Switch } from "react-router-dom";
 
 import Home from "./home";
 import Showcase from "./showcase";
 import Contact from "./contact";
 
-const Routes = () => (
+const Router = () => (
   <HashRouter>
     <Switch>
       <Route path="/" exact component={Home} />
@@ -15,4 +15,4 @@ const Routes = () => (
     </Switch>
   </HashRouter>
 );
-export default Routes;
+export default Router;
