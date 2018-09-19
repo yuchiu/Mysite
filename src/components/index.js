@@ -1,17 +1,17 @@
 import React from "react";
-import "../data/scss/index.scss";
 import { HashRouter, Route, Switch } from "react-router-dom";
 
-import Home from "./home";
-import Showcase from "./showcase";
-import Contact from "./contact";
+import "./index.scss";
+import HomePage from "./HomePage";
+import ShowcasePage from "./ShowcasePage";
+import ContactPage from "./ContactPage";
 
 const Router = () => (
   <HashRouter>
     <Switch>
-      <Route path="/" exact component={Home} />
-      <Route path="/showcase" exact component={Showcase} />
-      <Route path="/contact" exact component={Contact} />
+      <Route path="/" exact component={HomePage} />
+      <Route path="/showcase" exact component={ShowcasePage} />
+      <Route path="/contact" exact component={ContactPage} />
     </Switch>
   </HashRouter>
 );

@@ -1,6 +1,4 @@
-import Footer from "./Footer";
-import Navbar from "./Navbar";
-import TransparentNavbar from "./TransparentNavbar";
-import TransparentFooter from "./TransparentFooter";
+import { TransparentNavbar, Navbar } from "./Navbar";
+import { TransparentFooter, Footer } from "./Footer";
 
 export { Footer, Navbar, TransparentNavbar, TransparentFooter };
