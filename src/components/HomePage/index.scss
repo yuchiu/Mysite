@@ -42,6 +42,7 @@
     color: $white;
     font-size: 2vmax;
     width: 100%;
+    font-family: "Raleway", sans-serif;
     text-align: center;
   }
   &__typing {
@@ -52,6 +53,7 @@
     width: 100%;
     text-align: center;
     white-space: nowrap;
+    font-family: "Raleway", sans-serif;
     overflow: hidden;
     width: 30em;
     animation: type 6.5s steps(60, end);

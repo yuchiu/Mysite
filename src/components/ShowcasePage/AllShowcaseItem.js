@@ -22,7 +22,8 @@ const AllShowcaseItem = ({ project }) => (
                 style={{ display: "inline" }}
                 key={i}
               >
-                {" ∙ "}
+                {" "}
+                {i === 0 ? "" : " ∙ "}
                 {tech}
               </div>
             ))}

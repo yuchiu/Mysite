@@ -25,14 +25,5 @@ export default [
     desc: "",
     githubLink: "https://github.com/yuchiu/simon-game",
     demoLink: "https://yuchiu.github.io/simon-game/"
-  },
-  {
-    id: "4",
-    name: "Tomato Clock",
-    img: "https://i.imgur.com/MIxbebT.png",
-    techStack: ["JavaScript", "CSS"],
-    desc: "",
-    githubLink: "https://github.com/yuchiu/tomato-clock",
-    demoLink: "https://yuchiu.github.io/tomato-clock/"
   }
 ];

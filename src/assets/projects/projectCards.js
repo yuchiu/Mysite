@@ -1,200 +1,288 @@
 export default [
   {
-    id: "100",
-    name: "Netflix Clone",
-    thumbnailImg: "https://i.imgur.com/lUoDBqN.jpg",
-    category: "frontend",
-    techStack: ["React.js", "Redux", "Sass", "tmdb API"],
-    githubLink: "https://github.com/yuchiu/React-Redux-Netflix-Clone",
-    demoLink: "http://netflix-react.surge.sh/"
+    id: "1700",
+    name: "Today's News",
+    description: "",
+    thumbnailImg: "https://i.imgur.com/EBWwncY.jpg",
+    category: "fullstack",
+    techStack: [
+      "React.js",
+      "Redux",
+      "Python",
+      "Node.js",
+      "Express.js",
+      "Redis",
+      "RaddiMQ",
+      "Mongoose",
+      "MongoDB",
+      "TensorFlow",
+      "NLP"
+    ],
+
+    githubLink: "https://github.com/yuchiu/job-listing",
+    demoLink: "https://github.com/yuchiu/job-listing"
   },
   {
-    id: "200",
-    name: "Travel-Hotspots",
-    thumbnailImg: "https://i.imgur.com/XoTm0cb.jpg",
-    category: "frontend",
-    techStack: ["React.js", "Redux", "Google Map API", "foursquare API"],
-    githubLink: "https://github.com/yuchiu/Travel-Hotspots",
-    demoLink: "http://travel-hotspots.surge.sh/"
+    id: "1700",
+    name: "Realtime Collaborative Coding Editor",
+    description: "",
+    thumbnailImg: "https://i.imgur.com/EBWwncY.jpg",
+    category: "fullstack",
+    techStack: [
+      "Angular",
+      "Rxjs",
+      "python",
+      "Node.js",
+      "Express.js",
+      "RESTful API",
+      "Mongoose",
+      "MongoDB",
+      "Docker",
+      "Socket.io",
+      "Nginx"
+    ],
+
+    githubLink: "https://github.com/yuchiu/job-listing",
+    demoLink: "https://github.com/yuchiu/job-listing"
   },
   {
-    id: "300",
-    name: "Photo Wall Image Upload",
-    thumbnailImg: "https://i.imgur.com/rxHgek5.jpg",
-    category: "frontend",
-    techStack: ["React.js", "Redux", "firebase"],
-    githubLink: "https://github.com/yuchiu/Photo-Wall",
-    demoLink: "http://photo-wall.surge.sh/"
+    id: "1700",
+    name: "Project Manager - Trello Clone",
+    description: "",
+    thumbnailImg: "https://i.imgur.com/EBWwncY.jpg",
+    category: "fullstack",
+    techStack: [
+      "Angular",
+      "Rxjs",
+      "Redux",
+      "Node.js",
+      "Express.js",
+      "TypeScript",
+      "Sequelize",
+      "PostgreSQL"
+    ],
+
+    githubLink: "https://github.com/yuchiu/job-listing",
+    demoLink: "https://github.com/yuchiu/job-listing"
   },
   {
-    id: "400",
-    name: "Real Time Chat CDN",
-    thumbnailImg: "https://i.imgur.com/2PioCnd.jpg",
+    id: "1700",
+    name: "Vuejs Mobile Reponsive Site",
+    description: "",
+    thumbnailImg: "https://i.imgur.com/EBWwncY.jpg",
     category: "frontend",
-    techStack: ["React.js", "Redux", "Firebase"],
-    githubLink: "https://github.com/yuchiu/React-Chat-Plugin",
-    demoLink: "https://chat-plugin.surge.sh/"
+    techStack: ["Vue.js", "SASS"],
+
+    githubLink: "https://github.com/yuchiu/job-listing",
+    demoLink: "https://github.com/yuchiu/job-listing"
   },
   {
-    id: "500",
-    name: "Calculator",
-    thumbnailImg: "https://i.imgur.com/et5FiEv.jpg",
-    category: "frontend",
-    techStack: ["JavaScript", "jQuery", "CSS"],
-    githubLink: "https://github.com/yuchiu/js-calculator",
-    demoLink: "https://yuchiu.github.io/js-calculator/"
+    id: "1800",
+    name: "Slack Clone",
+    description: "",
+    thumbnailImg: "https://i.imgur.com/z2nNGGQ.jpg",
+    category: "fullstack",
+    techStack: [
+      "React.js",
+      "Redux",
+      "Node.js",
+      "Express.js",
+      "Sequelize",
+      "PostgreSQL",
+      "RESTful API",
+      "Socket.io",
+      "Nginx",
+      "Docker"
+    ],
+
+    githubLink: "https://github.com/yuchiu/slack-clone",
+    demoLink: "https://github.com/yuchiu/slack-clone"
   },
   {
-    id: "600",
-    name: "Simon's Game",
-    thumbnailImg: "https://i.imgur.com/RoFEufb.jpg",
-    category: "frontend",
-    techStack: ["JavaScript", "jQuery", "CSS"],
-    githubLink: "https://github.com/yuchiu/simon-game",
-    demoLink: "https://yuchiu.github.io/simon-game/"
-  },
-  {
-    id: "700",
-    name: "Random Quote Machine",
-    thumbnailImg: "https://i.imgur.com/Sbw7aUX.jpg",
-    category: "frontend",
-    techStack: ["JavaScript", "jQuery", "CSS"],
-    githubLink: "https://github.com/yuchiu/random-quote-machine",
-    demoLink: "https://yuchiu.github.io/random-quote-machine/"
-  },
-  {
-    id: "800",
-    name: "Pomodoro Timer",
-    thumbnailImg: "https://i.imgur.com/HPo8G9g.jpg",
-    category: "frontend",
-    techStack: ["JavaScript", "CSS"],
-    githubLink: "https://github.com/yuchiu/tomato-clock",
-    demoLink: "https://yuchiu.github.io/tomato-clock/"
-  },
-  {
-    id: "900",
-    name: "Twitch Online Status",
-    thumbnailImg: "https://i.imgur.com/tyrzAVP.jpg",
-    category: "frontend",
-    techStack: ["JavaScript", "jQuery", "CSS", "Twitch API"],
-    githubLink: "https://github.com/yuchiu/twitch-JSON-API",
-    demoLink: "https://yuchiu.github.io/twitch-JSON-API/"
-  },
-  {
-    id: "1000",
-    name: "Conway's Game of Life",
-    thumbnailImg: "https://i.imgur.com/vULoHOA.jpg",
-    category: "frontend",
-    techStack: ["JavaScript"],
-    githubLink: "https://github.com/yuchiu/game-of-life",
-    demoLink: "https://yuchiu.github.io/game-of-life/"
-  },
-  {
-    id: "1100",
-    name: "Force Directed Graph",
-    thumbnailImg: "https://i.imgur.com/MZDIb5y.jpg",
-    category: "frontend",
-    techStack: ["React.js", "D3"],
-    githubLink: "https://github.com/yuchiu/Force-Graph-React-D3",
-    demoLink: "https://d3-forcegraph.surge.sh/"
-  },
-  {
-    id: "1200",
-    name: "GDP Bar Chart",
-    thumbnailImg: "https://i.imgur.com/yhZz1tn.jpg",
-    category: "frontend",
-    techStack: ["JavaScript", "D3"],
-    githubLink: "https://github.com/yuchiu/GDP-barchart-d3",
-    demoLink: "https://yuchiu.github.io/GDP-barchart-d3/"
-  },
-  {
-    id: "1300",
-    name: "Weather App",
-    thumbnailImg: "https://i.imgur.com/8f7CIwH.jpg",
-    category: "frontend",
-    techStack: ["JavaScript", "jQuery", "Open Weather API"],
-    githubLink: "https://github.com/yuchiu/show-the-weather",
-    demoLink: "https://yuchiu.github.io/show-the-weather/"
-  },
-  {
-    id: "1400",
-    name: "Boostrap Page",
-    thumbnailImg: "https://i.imgur.com/SCwtj0G.jpg",
-    category: "frontend",
-    techStack: ["Bootstrap"],
-    githubLink: "https://github.com/yuchiu/bootstrap-conf",
-    demoLink: "https://yuchiu.github.io/bootstrap-conf/"
-  },
-  {
-    id: "1500",
-    name: "Wiki Viewer",
-    thumbnailImg: "https://i.imgur.com/mxu4CGn.jpg",
-    category: "frontend",
-    techStack: ["JavaScript", "Bootstrap", "Wiki API"],
-    githubLink: "https://github.com/yuchiu/wiki-viewer",
-    demoLink: "https://yuchiu.github.io/wiki-viewer/"
-  },
-  {
-    id: "1600",
-    name: "Rotating Cube",
-    thumbnailImg: "https://i.imgur.com/neV0puI.jpg",
-    category: "frontend",
-    techStack: ["CSS"],
-    githubLink: "https://github.com/yuchiu/rotating-cube",
-    demoLink: "https://yuchiu.github.io/rotating-cube/"
+    id: "1700",
+    name: "Job Listing Chat App",
+    description: "",
+    thumbnailImg: "https://i.imgur.com/EBWwncY.jpg",
+    category: "fullstack",
+    techStack: [
+      "React.js",
+      "Redux",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "Socket.io"
+    ],
+
+    githubLink: "https://github.com/yuchiu/job-listing",
+    demoLink: "https://github.com/yuchiu/job-listing"
   },
   {
     id: "1700",
     name: "Recipe Sharing App",
+    description: "",
     thumbnailImg: "https://i.imgur.com/EBWwncY.jpg",
     category: "fullstack",
-    techStack: ["Vue.js", "VueX", "Express.js", "SQLite"],
+    techStack: [
+      "Vue.js",
+      "VueX",
+      "Node.js",
+      "Express.js",
+      "Sequelize",
+      "SQLite"
+    ],
+
     githubLink: "https://github.com/yuchiu/Recipe-Sharing-App",
     demoLink: "http://recipesharingapp.surge.sh/"
   },
   {
     id: "1800",
     name: "Bookmark Sharing",
+    description: "",
     thumbnailImg: "https://i.imgur.com/z2nNGGQ.jpg",
     category: "fullstack",
-    techStack: ["React.js", "Redux", "Express.js", "MongoDB"],
+    techStack: [
+      "React.js",
+      "Redux",
+      "Node.js",
+      "Express.js",
+      "Mongoose",
+      "MongoDB"
+    ],
+
     githubLink: "https://github.com/yuchiu/Bookmark-Sharing",
     demoLink: "https://bookmark-sharing.herokuapp.com/"
   },
   {
-    id: "1900",
-    name: "URL Shortener API",
-    thumbnailImg: "https://i.imgur.com/1euJlhp.jpg",
-    category: "backend",
-    techStack: ["Express.js", "MongoDB"],
-    githubLink: "https://github.com/yuchiu/URL-Shortener-Microservice",
-    demoLink: "https://github.com/yuchiu/URL-Shortener-Microservice"
+    id: "100",
+    name: "Netflix Clone",
+    description: "",
+    thumbnailImg: "https://i.imgur.com/lUoDBqN.jpg",
+    category: "frontend",
+    techStack: ["React.js", "Redux", "Sass", "tmdb API"],
+
+    githubLink: "https://github.com/yuchiu/React-Redux-Netflix-Clone",
+    demoLink: "http://netflix-react.surge.sh/"
   },
   {
-    id: "2000",
-    name: "Timestamp API",
-    thumbnailImg: "https://i.imgur.com/Dv9WVEQ.jpg",
-    category: "backend",
-    techStack: ["Express.js"],
-    githubLink: "https://github.com/yuchiu/Timestamp-MicroService",
-    demoLink: "https://timestamp-yuchiu.herokuapp.com/"
+    id: "200",
+    name: "Travel-Hotspots",
+    description: "",
+    thumbnailImg: "https://i.imgur.com/XoTm0cb.jpg",
+    category: "frontend",
+    techStack: ["React.js", "Redux", "Google Map API", "foursquare API"],
+
+    githubLink: "https://github.com/yuchiu/Travel-Hotspots",
+    demoLink: "http://travel-hotspots.surge.sh/"
   },
   {
-    id: "2100",
-    name: "Request Header Parser API",
-    thumbnailImg: "https://i.imgur.com/GDdG5LR.jpg",
-    category: "backend",
-    techStack: ["Express.js"],
-    githubLink: "https://github.com/yuchiu/Request-Header-Parser-Microservice",
-    demoLink: "https://headerparser-yuchiu.herokuapp.com/"
+    id: "300",
+    name: "Photo Wall Image Upload",
+    description: "",
+    thumbnailImg: "https://i.imgur.com/rxHgek5.jpg",
+    category: "frontend",
+    techStack: ["React.js", "Redux", "firebase"],
+
+    githubLink: "https://github.com/yuchiu/Photo-Wall",
+    demoLink: "http://photo-wall.surge.sh/"
   },
   {
-    id: "2200",
-    name: "File Metadata API",
-    thumbnailImg: "https://i.imgur.com/5D5ZE63.jpg",
-    category: "backend",
-    techStack: ["Express.js"],
-    githubLink: "https://github.com/yuchiu/File-Metadata-Microservice",
-    demoLink: "https://filemetadata-yuchiu.herokuapp.com/"
+    id: "500",
+    name: "Calculator",
+    description: "",
+    thumbnailImg: "https://i.imgur.com/et5FiEv.jpg",
+    category: "frontend",
+    techStack: ["JavaScript", "jQuery", "CSS"],
+
+    githubLink: "https://github.com/yuchiu/js-calculator",
+    demoLink: "https://yuchiu.github.io/js-calculator/"
+  },
+  {
+    id: "600",
+    name: "Simon's Game",
+    description: "",
+    thumbnailImg: "https://i.imgur.com/RoFEufb.jpg",
+    category: "frontend",
+    techStack: ["JavaScript", "jQuery", "CSS"],
+
+    githubLink: "https://github.com/yuchiu/simon-game",
+    demoLink: "https://yuchiu.github.io/simon-game/"
+  },
+  {
+    id: "700",
+    name: "Random Quote Machine",
+    description: "",
+    thumbnailImg: "https://i.imgur.com/Sbw7aUX.jpg",
+    category: "frontend",
+    techStack: ["JavaScript", "jQuery", "CSS"],
+
+    githubLink: "https://github.com/yuchiu/random-quote-machine",
+    demoLink: "https://yuchiu.github.io/random-quote-machine/"
+  },
+  {
+    id: "800",
+    name: "Pomodoro Timer",
+    description: "",
+    thumbnailImg: "https://i.imgur.com/HPo8G9g.jpg",
+    category: "frontend",
+    techStack: ["JavaScript", "CSS"],
+
+    githubLink: "https://github.com/yuchiu/tomato-clock",
+    demoLink: "https://yuchiu.github.io/tomato-clock/"
+  },
+  {
+    id: "900",
+    name: "Twitch Online Status",
+    description: "",
+    thumbnailImg: "https://i.imgur.com/tyrzAVP.jpg",
+    category: "frontend",
+    techStack: ["JavaScript", "jQuery", "CSS", "Twitch API"],
+
+    githubLink: "https://github.com/yuchiu/twitch-JSON-API",
+    demoLink: "https://yuchiu.github.io/twitch-JSON-API/"
+  },
+  {
+    id: "1000",
+    name: "Conway's Game of Life",
+    description: "",
+    thumbnailImg: "https://i.imgur.com/vULoHOA.jpg",
+    category: "frontend",
+    techStack: ["JavaScript"],
+
+    githubLink: "https://github.com/yuchiu/game-of-life",
+    demoLink: "https://yuchiu.github.io/game-of-life/"
+  },
+  {
+    id: "1100",
+    name: "Force Directed Graph",
+    description: "",
+    thumbnailImg: "https://i.imgur.com/MZDIb5y.jpg",
+    category: "frontend",
+    techStack: ["React.js", "D3"],
+
+    githubLink: "https://github.com/yuchiu/Force-Graph-React-D3",
+    demoLink: "https://d3-forcegraph.surge.sh/"
+  },
+  {
+    id: "1300",
+    name: "Weather App",
+    description: "",
+    thumbnailImg: "https://i.imgur.com/8f7CIwH.jpg",
+    category: "frontend",
+    techStack: ["JavaScript", "jQuery", "Open Weather API"],
+
+    githubLink: "https://github.com/yuchiu/show-the-weather",
+    demoLink: "https://yuchiu.github.io/show-the-weather/"
+  },
+  {
+    id: "1200",
+    name: "GDP Bar Chart",
+    description: "",
+    thumbnailImg: "https://i.imgur.com/yhZz1tn.jpg",
+    category: "frontend",
+    techStack: ["JavaScript", "D3"],
+
+    githubLink: "https://github.com/yuchiu/GDP-barchart-d3",
+    demoLink: "https://yuchiu.github.io/GDP-barchart-d3/"
   }
 ];
