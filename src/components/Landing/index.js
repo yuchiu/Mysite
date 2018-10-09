@@ -5,8 +5,8 @@ import "./index.scss";
 class Projects extends React.Component {
   render() {
     return (
-      <div className="landing-container">
-        <div id="landing" className="landing-content animated bounceInDown">
+      <div id="landing" className="landing-container">
+        <div className="landing-content animated bounceInDown">
           {/* eslint-disable-next-line */}
           <p className="landing-content__intro">HI THERE, I'M YU.</p>
           <p className="landing-content__typing">

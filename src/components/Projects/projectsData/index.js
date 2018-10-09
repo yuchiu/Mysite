@@ -1,4 +1,4 @@
 import defaultProjects from "./defaultProjects";
-import projectCards from "./projectCards";
+import allProjects from "./allProjects";
 
-export { projectCards, defaultProjects };
+export { allProjects, defaultProjects };

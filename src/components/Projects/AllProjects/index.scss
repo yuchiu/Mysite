@@ -1,0 +1,32 @@
+@import "../../../assets/css/vars.scss";
+@import "../../../assets/css/mixins.scss";
+
+.all-projects {
+  margin: 0 auto;
+  width: 95%;
+  min-height: 100vh;
+  animation: fadein 1s;
+  &__list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@include maxMediaQueries(880px) {
+  .all-projects {
+    width: 100%;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

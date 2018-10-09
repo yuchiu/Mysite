@@ -1,0 +1,143 @@
+@import "../../assets/css/mixins";
+@import "../../assets/css/vars";
+
+.category {
+  padding-top: 35px;
+  @include aTagBtnBaseStyle;
+  @include aTagBtnSandy;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 500px;
+  .a-tag-btn.sandy-one,
+  .a-tag-btn.sandy-two,
+  .a-tag-btn.sandy-three,
+  .a-tag-btn.sandy-four {
+    cursor: pointer;
+    padding: 8px 15px;
+    color: $btn-color7;
+    &:hover {
+      text-shadow: 0 0 2px #fff7f7, 0 0 3px #fff7f7, 0 0 5px #fff7f7,
+        0 0 30px $btn-color, 0 0 10px $btn-color;
+    }
+  }
+}
+@include maxMediaQueries(800px) {
+  .category {
+    width: 500px;
+    .a-tag-btn.sandy-one,
+    .a-tag-btn.sandy-two,
+    .a-tag-btn.sandy-three,
+    .a-tag-btn.sandy-four {
+      padding: 5px 5px;
+      font-size: 0.8em;
+    }
+  }
+}
+@include maxMediaQueries(650px) {
+  .category {
+    width: 350px;
+    .a-tag-btn.sandy-one,
+    .a-tag-btn.sandy-two,
+    .a-tag-btn.sandy-three,
+    .a-tag-btn.sandy-four {
+      padding: 3px 3px;
+      font-size: 0.7em;
+    }
+  }
+}
+
+@include maxMediaQueries(500px) {
+  .category {
+    padding-top: 65px;
+  }
+}
+
+.default-projects {
+  background: #fff;
+  display: flex;
+  animation: fadein 1s;
+  &__img {
+    margin-top: 1vh;
+    margin-bottom: 1.65vh;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    list-style: none;
+    overflow: hidden;
+    width: 0vw;
+    height: 78vh;
+    filter: grayscale(100%);
+    transition: transform 1s, filter 1s;
+    box-shadow: -3px 0px 15px 0px rgb(54, 54, 54),
+      -2px 0px 8px 0px rgb(94, 94, 94);
+    transition: all 1000ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+    &:hover {
+      filter: grayscale(0%);
+      overflow: hidden;
+    }
+    &--1 {
+      flex: 8;
+      &:hover {
+        flex: 55;
+      }
+    }
+    &--2 {
+      flex: 7;
+      &:hover {
+        flex: 60;
+      }
+    }
+    &--3 {
+      flex: 6;
+      &:hover {
+        flex: 65;
+      }
+    }
+    &--4 {
+      flex: 5;
+      &:hover {
+        flex: 70;
+      }
+    }
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@include maxMediaQueries(800px) {
+  .default-projects__img--1 {
+    flex: 1;
+    &:hover {
+      flex: 20;
+    }
+  }
+
+  .default-projects__img--2 {
+    flex: 1;
+    &:hover {
+      flex: 20;
+    }
+  }
+
+  .default-projects__img--3 {
+    flex: 1;
+    &:hover {
+      flex: 20;
+    }
+  }
+
+  .default-projects__img--4 {
+    flex: 1;
+    &:hover {
+      flex: 20;
+    }
+  }
+}
