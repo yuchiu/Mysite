@@ -4,7 +4,7 @@ import "./index.scss";
 
 class SkillSet extends React.Component {
   render() {
-    return <div>SkillSet</div>;
+    return <div id="skillset">SkillSet</div>;
   }
 }
 

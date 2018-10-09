@@ -1,0 +1,47 @@
+@import "../../assets/css/var.scss";
+@import "../../assets/css/mixin.scss";
+
+.top-bar {
+  height: 50px;
+  width: 100%;
+  z-index: 2;
+  position: fixed;
+  &__nav {
+    display: flex;
+    justify-content: flex-end;
+    &__item {
+      list-style: none;
+      &__link {
+        transition: all 0.3s ease;
+        font-weight: 600;
+        color: $white;
+        text-decoration: none;
+        &:hover {
+          color: $white;
+          text-shadow: 0 0 1px $white, 0 0 5px $white, 0 0 30px $white;
+        }
+      }
+    }
+  }
+  &--shrink {
+    background-color: $white;
+    color: $black;
+    box-shadow: 1px 1px 2px $superlightgrey, 2px 2px 8px $superlightgrey;
+  }
+  &--shrink & {
+    &__nav {
+      &__item {
+        &__link {
+          color: $black;
+          &:hover {
+            color: $black;
+            text-shadow: 0 0 1px $black, 0 0 5px $black, 0 0 30px $black;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include maxMediaQueries(880px) {
+}

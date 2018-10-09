@@ -1,6 +1,7 @@
 import React from "react";
 import $ from "jquery";
 
+import "./index.scss";
 import Landing from "./Landing";
 import Projects from "./Projects";
 import SkillSet from "./SkillSet";

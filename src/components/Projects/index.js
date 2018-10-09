@@ -4,7 +4,7 @@ import "./index.scss";
 
 class Projects extends React.Component {
   render() {
-    return <div>Projects</div>;
+    return <div id="projects">Projects</div>;
   }
 }
 

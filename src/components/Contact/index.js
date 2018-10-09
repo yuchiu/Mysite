@@ -4,7 +4,7 @@ import "./index.scss";
 
 class Contacts extends React.Component {
   render() {
-    return <div>Contacts</div>;
+    return <div id="contact">Contact</div>;
   }
 }
 
