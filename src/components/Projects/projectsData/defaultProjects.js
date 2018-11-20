@@ -1,9 +1,30 @@
 export default [
   {
     id: "1",
-    name: "Netflix Clone",
-    img: "https://i.imgur.com/BWpLkRy.jpg",
-    techStack: ["React.js", "Redux", "Sass", "tmdb API"],
+    name: "Today News",
+    img: "https://i.imgur.com/XxW2C3U.png",
+    techStack: [
+      "Reactjs",
+      "Redux",
+      "react-router",
+      "Redux",
+      "Python",
+      "Nodejs",
+      "Expressjs",
+      "RESTful API",
+      "RPC API",
+      "Message Broker",
+      "RabbitMQ",
+      "Redis",
+      "ElasticSearch",
+      "Mongoose",
+      "MongoDB",
+      "Web Scraper",
+      "Machine Learning",
+      "TensorFlow",
+      "Docker",
+      "Kubernetes"
+    ],
     desc: "",
     githubLink: "https://github.com/yuchiu/React-Redux-Netflix-Clone",
     demoLink: "http://netflix-react.surge.sh/"
@@ -11,19 +32,28 @@ export default [
   {
     id: "2",
     name: "Photo Wall",
-    img: "https://i.imgur.com/I8GNgRX.png",
-    techStack: ["React.js", "Redux", "firebase"],
+    img: "https://i.imgur.com/eBgZoxI.png",
+    techStack: [
+      "Reactjs",
+      "react-router",
+      "Reselect",
+      "Redux",
+      "SCSS",
+      "Semantic-UI",
+      "Nodejs",
+      "TypeScript",
+      "Expressjs",
+      "RESTful API",
+      "Socket.io",
+      "Redis",
+      "Sequelize",
+      "PostgreSQL",
+      "Jest",
+      "Nginx",
+      "Docker"
+    ],
     desc: "",
     githubLink: "https://github.com/yuchiu/Photo-Wall",
     demoLink: "https://photo-wall.surge.sh/"
-  },
-  {
-    id: "3",
-    name: "Simon Game",
-    img: "https://i.imgur.com/Q12rdkT.png",
-    techStack: ["JavaScript", "jQuery", "CSS"],
-    desc: "",
-    githubLink: "https://github.com/yuchiu/simon-game",
-    demoLink: "https://yuchiu.github.io/simon-game/"
   }
 ];

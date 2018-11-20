@@ -3,20 +3,29 @@ export default [
     id: "1700",
     name: "Today's News",
     description: "",
-    thumbnailImg: "https://i.imgur.com/EBWwncY.jpg",
+    thumbnailImg: "https://i.imgur.com/XxW2C3U.png",
     category: "fullstack",
     techStack: [
-      "React.js",
+      "Reactjs",
+      "Redux",
+      "react-router",
       "Redux",
       "Python",
-      "Node.js",
-      "Express.js",
+      "Nodejs",
+      "Expressjs",
+      "RESTful API",
+      "RPC API",
+      "Message Broker",
+      "RabbitMQ",
       "Redis",
-      "RaddiMQ",
+      "ElasticSearch",
       "Mongoose",
       "MongoDB",
+      "Web Scraper",
+      "Machine Learning",
       "TensorFlow",
-      "NLP"
+      "Docker",
+      "Kubernetes"
     ],
 
     githubLink: "https://github.com/yuchiu/job-listing",
@@ -26,18 +35,24 @@ export default [
     id: "1800",
     name: "Slack Clone",
     description: "",
-    thumbnailImg: "https://i.imgur.com/z2nNGGQ.jpg",
+    thumbnailImg: "https://i.imgur.com/eBgZoxI.png",
     category: "fullstack",
     techStack: [
-      "React.js",
+      "Reactjs",
+      "react-router",
+      "Reselect",
       "Redux",
-      "Node.js",
-      "Express.js",
-      "Socket.io",
+      "SCSS",
+      "Semantic-UI",
+      "Nodejs",
+      "TypeScript",
+      "Expressjs",
       "RESTful API",
+      "Socket.io",
       "Redis",
       "Sequelize",
       "PostgreSQL",
+      "Jest",
       "Nginx",
       "Docker"
     ],
@@ -49,13 +64,15 @@ export default [
     id: "1700",
     name: "Job Listing Chat App",
     description: "",
-    thumbnailImg: "https://i.imgur.com/EBWwncY.jpg",
+    thumbnailImg: "https://i.imgur.com/nJ5eB6r.png",
     category: "fullstack",
     techStack: [
-      "React.js",
+      "Reactjs",
+      "react-router",
       "Redux",
-      "Node.js",
-      "Express.js",
+      "Ant Design",
+      "Nodejs",
+      "Expressjs",
       "MongoDB",
       "Mongoose",
       "Socket.io"
@@ -65,48 +82,12 @@ export default [
     demoLink: "https://github.com/yuchiu/job-listing"
   },
   {
-    id: "1700",
-    name: "Recipe Sharing App",
-    description: "",
-    thumbnailImg: "https://i.imgur.com/EBWwncY.jpg",
-    category: "fullstack",
-    techStack: [
-      "Vue.js",
-      "VueX",
-      "Node.js",
-      "Express.js",
-      "Sequelize",
-      "SQLite"
-    ],
-
-    githubLink: "https://github.com/yuchiu/Recipe-Sharing-App",
-    demoLink: "http://recipesharingapp.surge.sh/"
-  },
-  {
-    id: "1800",
-    name: "Bookmark Sharing",
-    description: "",
-    thumbnailImg: "https://i.imgur.com/z2nNGGQ.jpg",
-    category: "fullstack",
-    techStack: [
-      "React.js",
-      "Redux",
-      "Node.js",
-      "Express.js",
-      "Mongoose",
-      "MongoDB"
-    ],
-
-    githubLink: "https://github.com/yuchiu/Bookmark-Sharing",
-    demoLink: "https://bookmark-sharing.herokuapp.com/"
-  },
-  {
     id: "100",
     name: "Netflix Clone",
     description: "",
     thumbnailImg: "https://i.imgur.com/lUoDBqN.jpg",
     category: "frontend",
-    techStack: ["React.js", "Redux", "Sass", "tmdb API"],
+    techStack: ["Reactjs", "react-router", "Redux", "SCSS", "tmdb API"],
 
     githubLink: "https://github.com/yuchiu/React-Redux-Netflix-Clone",
     demoLink: "http://netflix-react.surge.sh/"
@@ -117,7 +98,7 @@ export default [
     description: "",
     thumbnailImg: "https://i.imgur.com/XoTm0cb.jpg",
     category: "frontend",
-    techStack: ["React.js", "Redux", "Google Map API", "foursquare API"],
+    techStack: ["Reactjs", "Redux", "Google Map API", "foursquare API"],
 
     githubLink: "https://github.com/yuchiu/Travel-Hotspots",
     demoLink: "http://travel-hotspots.surge.sh/"
@@ -128,7 +109,7 @@ export default [
     description: "",
     thumbnailImg: "https://i.imgur.com/rxHgek5.jpg",
     category: "frontend",
-    techStack: ["React.js", "Redux", "firebase"],
+    techStack: ["Reactjs", "Redux", "Firebase", "Cloudinary"],
 
     githubLink: "https://github.com/yuchiu/Photo-Wall",
     demoLink: "http://photo-wall.surge.sh/"
@@ -189,28 +170,6 @@ export default [
     demoLink: "https://yuchiu.github.io/twitch-JSON-API/"
   },
   {
-    id: "1000",
-    name: "Conway's Game of Life",
-    description: "",
-    thumbnailImg: "https://i.imgur.com/vULoHOA.jpg",
-    category: "frontend",
-    techStack: ["JavaScript"],
-
-    githubLink: "https://github.com/yuchiu/game-of-life",
-    demoLink: "https://yuchiu.github.io/game-of-life/"
-  },
-  {
-    id: "1100",
-    name: "Force Directed Graph",
-    description: "",
-    thumbnailImg: "https://i.imgur.com/MZDIb5y.jpg",
-    category: "frontend",
-    techStack: ["React.js", "D3"],
-
-    githubLink: "https://github.com/yuchiu/Force-Graph-React-D3",
-    demoLink: "https://d3-forcegraph.surge.sh/"
-  },
-  {
     id: "1300",
     name: "Weather App",
     description: "",
@@ -220,16 +179,5 @@ export default [
 
     githubLink: "https://github.com/yuchiu/show-the-weather",
     demoLink: "https://yuchiu.github.io/show-the-weather/"
-  },
-  {
-    id: "1200",
-    name: "GDP Bar Chart",
-    description: "",
-    thumbnailImg: "https://i.imgur.com/yhZz1tn.jpg",
-    category: "frontend",
-    techStack: ["JavaScript", "D3"],
-
-    githubLink: "https://github.com/yuchiu/GDP-barchart-d3",
-    demoLink: "https://yuchiu.github.io/GDP-barchart-d3/"
   }
 ];

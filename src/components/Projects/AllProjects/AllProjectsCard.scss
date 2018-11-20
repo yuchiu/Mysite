@@ -3,7 +3,7 @@
 
 .project {
   width: 420px;
-  height: 280px;
+  height: 300px;
   margin: 10px;
   transition: all 0.3s ease;
   box-shadow: 3px 3px 20px 0px rgba(0, 0, 0, 0.15),
@@ -60,6 +60,7 @@
       font-family: "Raleway", sans-serif;
     }
     &__tech {
+      text-align: center;
       &__text {
         font-size: 1.1em;
       }
