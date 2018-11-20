@@ -7,11 +7,13 @@ const AllProjectsCard = ({ project }) => (
   <li className={`project ${project.category}`}>
     <div className="card-deck">
       <div className="proj-card">
-        <img
-          className="proj-card__img"
-          src={`${project.thumbnailImg}`}
-          alt="img"
-        />
+        <div className="proj-card__img">
+          <img
+            className="proj-card__img__thumbnail"
+            src={`${project.thumbnailImg}`}
+            alt="img"
+          />
+        </div>
         <div className="proj-card__overlay">
           <h3 className="proj-card__overlay__title">{project.name}</h3>
           <p className="proj-card__overlay__desc" />

@@ -3,7 +3,7 @@ export default [
     id: "1700",
     name: "Today's News",
     description: "",
-    thumbnailImg: "https://i.imgur.com/XxW2C3U.png",
+    thumbnailImg: "https://i.imgur.com/1H5hgnp.png",
     category: "fullstack",
     techStack: [
       "Reactjs",
@@ -28,14 +28,14 @@ export default [
       "Kubernetes"
     ],
 
-    githubLink: "https://github.com/yuchiu/job-listing",
-    demoLink: "https://github.com/yuchiu/job-listing"
+    githubLink: "https://github.com/yuchiu/today-news",
+    demoLink: "https://github.com/yuchiu/today-news"
   },
   {
     id: "1800",
     name: "Slack Clone",
     description: "",
-    thumbnailImg: "https://i.imgur.com/eBgZoxI.png",
+    thumbnailImg: "https://i.imgur.com/nS4w1ey.png",
     category: "fullstack",
     techStack: [
       "Reactjs",
@@ -64,7 +64,7 @@ export default [
     id: "1700",
     name: "Job Listing Chat App",
     description: "",
-    thumbnailImg: "https://i.imgur.com/nJ5eB6r.png",
+    thumbnailImg: "https://i.imgur.com/8maDWbo.png",
     category: "fullstack",
     techStack: [
       "Reactjs",
@@ -107,7 +107,7 @@ export default [
     id: "300",
     name: "Photo Wall Image Upload",
     description: "",
-    thumbnailImg: "https://i.imgur.com/rxHgek5.jpg",
+    thumbnailImg: "https://i.imgur.com/GkpAI5M.png",
     category: "frontend",
     techStack: ["Reactjs", "Redux", "Firebase", "Cloudinary"],
 
@@ -151,7 +151,7 @@ export default [
     id: "800",
     name: "Pomodoro Timer",
     description: "",
-    thumbnailImg: "https://i.imgur.com/HPo8G9g.jpg",
+    thumbnailImg: "https://i.imgur.com/1y1jaWA.png",
     category: "frontend",
     techStack: ["JavaScript", "CSS"],
 

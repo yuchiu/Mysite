@@ -2,7 +2,7 @@
 @import "../../assets/css/mixins.scss";
 
 .top-bar {
-  height: 50px;
+  height: $navbarheight;
   width: 100%;
   z-index: 2;
   position: fixed;
@@ -26,7 +26,7 @@
   &--shrink {
     background-color: $white;
     color: $black;
-    box-shadow: 1px 1px 2px $superlightgrey, 2px 2px 8px $superlightgrey;
+    box-shadow: 1px 1px 2px $lightgrey, 2px 2px 8px $lightgrey;
   }
   &--shrink & {
     &__nav {

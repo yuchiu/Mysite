@@ -2,7 +2,7 @@ export default [
   {
     id: "1",
     name: "Today News",
-    img: "https://i.imgur.com/XxW2C3U.png",
+    img: "https://i.imgur.com/iB9ezfH.jpg",
     techStack: [
       "Reactjs",
       "Redux",
@@ -26,13 +26,13 @@ export default [
       "Kubernetes"
     ],
     desc: "",
-    githubLink: "https://github.com/yuchiu/React-Redux-Netflix-Clone",
-    demoLink: "http://netflix-react.surge.sh/"
+    githubLink: "https://github.com/yuchiu/today-news",
+    demoLink: "https://github.com/yuchiu/today-news"
   },
   {
     id: "2",
-    name: "Photo Wall",
-    img: "https://i.imgur.com/eBgZoxI.png",
+    name: "Slack Clone",
+    img: "https://i.imgur.com/KDyKo1K.jpg",
     techStack: [
       "Reactjs",
       "react-router",
@@ -53,7 +53,7 @@ export default [
       "Docker"
     ],
     desc: "",
-    githubLink: "https://github.com/yuchiu/Photo-Wall",
-    demoLink: "https://photo-wall.surge.sh/"
+    githubLink: "https://github.com/yuchiu/slack-clone",
+    demoLink: "https://github.com/yuchiu/slack-clone"
   }
 ];

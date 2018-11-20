@@ -1,5 +1,7 @@
 import React from "react";
-import { defaultProjects } from "./projectsData";
+
+import "./index.scss";
+import { defaultProjects } from "../projectsData";
 
 const DefaultProjects = () => (
   <div className="default-projects">

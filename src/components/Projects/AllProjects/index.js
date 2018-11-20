@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import "./index.scss";
-import { allProjects } from "@/components/Projects/projectsData";
+import { allProjects } from "../projectsData";
 import AllProjectsCard from "./AllProjectsCard";
 
 const AllProjects = ({ category }) => (

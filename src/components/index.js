@@ -34,8 +34,8 @@ class Layout extends React.Component {
       <div className="page-container">
         <Navbar />
         <Landing />
-        <SkillSet />
         <Projects />
+        <SkillSet />
         <Contact />
         <Footer />
       </div>

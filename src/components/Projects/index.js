@@ -40,7 +40,7 @@ class Projects extends React.Component {
     const { category, showAll } = this.state;
     return (
       <React.Fragment>
-        <div id="projects" className="projects-container">
+        <div id="projects" className="projects-wrapper">
           <div className="category">
             <a
               className="a-tag-btn category__btn sandy-four"
@@ -55,20 +55,6 @@ class Projects extends React.Component {
               onClick={this.handleClick}
             >
               All
-            </a>
-            <a
-              className="a-tag-btn category__btn sandy-three"
-              name="frontend"
-              onClick={this.handleClick}
-            >
-              Front-End
-            </a>
-            <a
-              className="a-tag-btn category__btn sandy-two"
-              name="fullstack"
-              onClick={this.handleClick}
-            >
-              Full-Stack
             </a>
           </div>
           {!showAll ? <DefaultProjects /> : <AllProjects category={category} />}

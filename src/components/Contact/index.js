@@ -4,7 +4,11 @@ import "./index.scss";
 
 class Contacts extends React.Component {
   render() {
-    return <div id="contact">Contact</div>;
+    return (
+      <div id="contact" className="contact-wrapper">
+        Contact
+      </div>
+    );
   }
 }
 
