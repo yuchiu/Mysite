@@ -10,11 +10,14 @@
   flex-direction: column;
 }
 .showcase-top {
-  &__showcases-nav-section {
+  &__nav {
     margin-top: 80px;
     display: flex;
     justify-content: center;
     &__btn {
+      &--selected {
+        background-color: green;
+      }
     }
   }
 }
@@ -64,5 +67,28 @@
     }
     &__desc {
     }
+  }
+}
+
+.showcase-0-slide-0 {
+  &--not-selected {
+    background-color: blue;
+  }
+}
+
+.showcase-0-slide-1 {
+  &--not-selected {
+    background-color: blue;
+  }
+  &--selected {
+    background-color: green;
+  }
+}
+.showcase-0-slide-2 {
+  &--not-selected {
+    background-color: blue;
+  }
+  &--selected {
+    background-color: green;
   }
 }

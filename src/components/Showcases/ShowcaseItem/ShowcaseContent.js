@@ -59,7 +59,6 @@ class ShowcaseContent extends React.Component {
 
   render() {
     const { itemData, index, showcaseSlideIndex } = this.props;
-    console.log(showcaseSlideIndex);
     return (
       <div className="showcase-content">
         <section
