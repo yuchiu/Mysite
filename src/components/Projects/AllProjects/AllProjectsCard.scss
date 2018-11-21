@@ -101,13 +101,31 @@
 
 @include maxMediaQueries(880px) {
   .project {
-    width: 520px;
+    width: 500px;
     height: 350px;
+  }
+  .proj-card {
+    &__img {
+      width: 500px;
+      &__thumbnail {
+        width: 500px;
+        height: 350px;
+      }
+    }
   }
 }
 @include maxMediaQueries(680px) {
   .project {
-    width: 420px;
-    height: 280px;
+    width: 400px;
+    height: 300px;
+  }
+  .proj-card {
+    &__img {
+      width: 400px;
+      &__thumbnail {
+        width: 400px;
+        height: 300px;
+      }
+    }
   }
 }

@@ -2,7 +2,7 @@
 @import "../../../assets/css/vars";
 
 .showcases-item {
-  height: 100vh;
+  min-height: 100vh;
   min-height: 1000px;
   width: 100%;
   margin: auto;
@@ -59,14 +59,14 @@
   .a-tag-btn.gibson-two,
   .a-tag-btn.gibson-three,
   .a-tag-btn.gibson-four {
-    color: $grey;
+    color: $darkgrey;
+    border-color: $darkgrey;
     border-radius: 3px;
     width: 150px;
     display: flex;
     padding: 5px;
     align-items: center;
     justify-content: center;
-    border-color: $grey;
     &:hover {
       border-color: $bright-teal;
       color: $bright-teal;
@@ -86,8 +86,9 @@
   &__slide-btn-section {
     margin: auto;
     &__btn {
+      user-select: none;
       background: transparent;
-      color: $grey;
+      color: $darkgrey;
       border: none;
       height: 200px;
       width: 100%;

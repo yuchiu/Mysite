@@ -2,11 +2,12 @@
 @import "../../assets/css/mixins.scss";
 
 .contacts-wrapper {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .contacts-wrapper {
   background: transparent;
+  margin-top: 150px;
   &__upper {
     min-height: 15vh;
     display: flex;
@@ -14,10 +15,9 @@
   }
 
   &__lower {
-    padding-top: 10vh;
+    margin-top: 100px;
     min-height: 45vh;
     display: flex;
-    padding-bottom: 7.2vh;
   }
 }
 

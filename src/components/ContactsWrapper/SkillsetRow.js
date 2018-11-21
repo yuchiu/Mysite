@@ -3,57 +3,57 @@ import React from "react";
 import "./Skillset.scss";
 import {
   reactLogo,
-  cssLogo,
-  htmlLogo,
-  javascriptLogo,
+  redisLogo,
+  expressLogo,
+  tensorflowLogo,
   nodejsLogo,
-  reactRouterLogo,
+  graphqlLogo,
   reduxLogo,
-  webpackLogo,
-  babelLogo
+  mongoDBLogo,
+  dockerLogo
 } from "./iconsSVG";
 
 export default () => (
   <section className="icons-row-section">
-    <h3 className="icons-section-title">My Current Favorite Stack</h3>
+    <h3 className="icons-section-title">
+      My Current Favorite Programming Tools
+    </h3>
     <div className="icons">
-      <div className="icons__item icons__item--html">
-        {htmlLogo}
-        <span className="icons__item__name">HTML5</span>
-      </div>
-      <div className="icons__item  icons__item--css">
-        {cssLogo}
-        <span className="icons__item__name">CSS3</span>
-      </div>
-      <div className="icons__item  icons__item--javascript">
-        {javascriptLogo}
-        <span className="icons__item__name">JavaScript</span>
-      </div>
-      <div className="icons__item icons__item--react">
+      <div className="icons__item">
         {reactLogo}
-        <span className="icons__item__name ">React</span>
+        <span className="icons__item__name ">ReactJS</span>
       </div>
-      <div className="icons__item icons__item--react-router">
-        {reactRouterLogo}
-        <span className="icons__item__name icons__item__name--react-router">
-          React Router
-        </span>
-      </div>
-      <div className="icons__item icons__item--redux">
+      <div className="icons__item ">
         {reduxLogo}
         <span className="icons__item__name">Redux</span>
       </div>
-      <div className="icons__item icons__item--nodejs">
+      <div className="icons__item">
         {nodejsLogo}
-        <span className="icons__item__name">Node.js</span>
+        <span className="icons__item__name">NodeJS</span>
       </div>
-      <div className="icons__item icons__item--webpack">
-        {webpackLogo}
-        <span className="icons__item__name">Webpack</span>
+      <div className="icons__item">
+        {expressLogo}
+        <span className="icons__item__name">ExpressJS</span>
       </div>
-      <div className="icons__item icons__item--babel">
-        {babelLogo}
-        <span className="icons__item__name">Babel</span>
+      <div className="icons__item ">
+        {graphqlLogo}
+        <span className="icons__item__name ">GraphQL</span>
+      </div>
+      <div className="icons__item ">
+        {mongoDBLogo}
+        <span className="icons__item__name">MongoDB</span>
+      </div>
+      <div className="icons__item ">
+        {redisLogo}
+        <span className="icons__item__name">Redis</span>
+      </div>
+      <div className="icons__item  ">
+        {tensorflowLogo}
+        <span className="icons__item__name">Tensorflow</span>
+      </div>
+      <div className="icons__item ">
+        {dockerLogo}
+        <span className="icons__item__name">Docker</span>
       </div>
     </div>
   </section>
