@@ -3,7 +3,7 @@ export default [
     id: "1700",
     name: "Today's News",
     description: "",
-    thumbnailImg: "https://i.imgur.com/1H5hgnp.png",
+    thumbnailImg: "https://i.imgur.com/DSxaEU8.png",
     category: "fullstack",
     techStack: [
       "Reactjs",
@@ -35,7 +35,7 @@ export default [
     id: "1800",
     name: "Slack Clone",
     description: "",
-    thumbnailImg: "https://i.imgur.com/nS4w1ey.png",
+    thumbnailImg: "https://i.imgur.com/AHVp5Sk.png",
     category: "fullstack",
     techStack: [
       "Reactjs",
@@ -64,7 +64,7 @@ export default [
     id: "1700",
     name: "Job Listing Chat App",
     description: "",
-    thumbnailImg: "https://i.imgur.com/8maDWbo.png",
+    thumbnailImg: "https://i.imgur.com/2OjOBuP.png",
     category: "fullstack",
     techStack: [
       "Reactjs",
@@ -85,7 +85,7 @@ export default [
     id: "100",
     name: "Netflix Clone",
     description: "",
-    thumbnailImg: "https://i.imgur.com/lUoDBqN.jpg",
+    thumbnailImg: "https://i.imgur.com/TR60QjV.png",
     category: "frontend",
     techStack: ["Reactjs", "react-router", "Redux", "SCSS", "tmdb API"],
 
@@ -96,7 +96,7 @@ export default [
     id: "200",
     name: "Travel-Hotspots",
     description: "",
-    thumbnailImg: "https://i.imgur.com/XoTm0cb.jpg",
+    thumbnailImg: "https://i.imgur.com/Nh5cRlP.png",
     category: "frontend",
     techStack: ["Reactjs", "Redux", "Google Map API", "foursquare API"],
 
@@ -107,7 +107,7 @@ export default [
     id: "300",
     name: "Photo Wall Image Upload",
     description: "",
-    thumbnailImg: "https://i.imgur.com/GkpAI5M.png",
+    thumbnailImg: "https://i.imgur.com/7S8f1ag.png",
     category: "frontend",
     techStack: ["Reactjs", "Redux", "Firebase", "Cloudinary"],
 
@@ -115,54 +115,10 @@ export default [
     demoLink: "http://photo-wall.surge.sh/"
   },
   {
-    id: "500",
-    name: "Calculator",
-    description: "",
-    thumbnailImg: "https://i.imgur.com/et5FiEv.jpg",
-    category: "frontend",
-    techStack: ["JavaScript", "jQuery", "CSS"],
-
-    githubLink: "https://github.com/yuchiu/js-calculator",
-    demoLink: "https://yuchiu.github.io/js-calculator/"
-  },
-  {
-    id: "600",
-    name: "Simon's Game",
-    description: "",
-    thumbnailImg: "https://i.imgur.com/RoFEufb.jpg",
-    category: "frontend",
-    techStack: ["JavaScript", "jQuery", "CSS"],
-
-    githubLink: "https://github.com/yuchiu/simon-game",
-    demoLink: "https://yuchiu.github.io/simon-game/"
-  },
-  {
-    id: "700",
-    name: "Random Quote Machine",
-    description: "",
-    thumbnailImg: "https://i.imgur.com/Sbw7aUX.jpg",
-    category: "frontend",
-    techStack: ["JavaScript", "jQuery", "CSS"],
-
-    githubLink: "https://github.com/yuchiu/random-quote-machine",
-    demoLink: "https://yuchiu.github.io/random-quote-machine/"
-  },
-  {
-    id: "800",
-    name: "Pomodoro Timer",
-    description: "",
-    thumbnailImg: "https://i.imgur.com/1y1jaWA.png",
-    category: "frontend",
-    techStack: ["JavaScript", "CSS"],
-
-    githubLink: "https://github.com/yuchiu/tomato-clock",
-    demoLink: "https://yuchiu.github.io/tomato-clock/"
-  },
-  {
     id: "900",
     name: "Twitch Online Status",
     description: "",
-    thumbnailImg: "https://i.imgur.com/tyrzAVP.jpg",
+    thumbnailImg: "https://i.imgur.com/r9GQEU9.png",
     category: "frontend",
     techStack: ["JavaScript", "jQuery", "CSS", "Twitch API"],
 
@@ -170,10 +126,54 @@ export default [
     demoLink: "https://yuchiu.github.io/twitch-JSON-API/"
   },
   {
+    id: "600",
+    name: "Simon's Game",
+    description: "",
+    thumbnailImg: "https://i.imgur.com/UzE09hC.png",
+    category: "frontend",
+    techStack: ["JavaScript", "jQuery", "CSS"],
+
+    githubLink: "https://github.com/yuchiu/simon-game",
+    demoLink: "https://yuchiu.github.io/simon-game/"
+  },
+  {
+    id: "800",
+    name: "Pomodoro Timer",
+    description: "",
+    thumbnailImg: "https://i.imgur.com/DOUV9wO.png",
+    category: "frontend",
+    techStack: ["JavaScript", "CSS"],
+
+    githubLink: "https://github.com/yuchiu/tomato-clock",
+    demoLink: "https://yuchiu.github.io/tomato-clock/"
+  },
+  {
+    id: "700",
+    name: "Random Quote Machine",
+    description: "",
+    thumbnailImg: "https://i.imgur.com/9uCertS.png",
+    category: "frontend",
+    techStack: ["JavaScript", "jQuery", "CSS"],
+
+    githubLink: "https://github.com/yuchiu/random-quote-machine",
+    demoLink: "https://yuchiu.github.io/random-quote-machine/"
+  },
+  {
+    id: "500",
+    name: "Calculator",
+    description: "",
+    thumbnailImg: "https://i.imgur.com/l2wUtSe.png",
+    category: "frontend",
+    techStack: ["JavaScript", "jQuery", "CSS"],
+
+    githubLink: "https://github.com/yuchiu/js-calculator",
+    demoLink: "https://yuchiu.github.io/js-calculator/"
+  },
+  {
     id: "1300",
     name: "Weather App",
     description: "",
-    thumbnailImg: "https://i.imgur.com/8f7CIwH.jpg",
+    thumbnailImg: "https://i.imgur.com/ioZWtER.png",
     category: "frontend",
     techStack: ["JavaScript", "jQuery", "Open Weather API"],
 

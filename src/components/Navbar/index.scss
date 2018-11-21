@@ -42,10 +42,9 @@
           &__link {
             color: $dark_nav_link_color;
             &:hover {
-              font-size: 1.35em;
-              color: $dark_nav_link_color;
-              text-shadow: 0 0 1px $lightgrey, 0 0 1px $lightgrey,
-                0 0 1px $lightgrey;
+              color: $bright-teal;
+              text-shadow: 0 0 1px $light-teal, 0 0 5px $light-teal,
+                0 0 15px $light-teal, 0 0 30px $light-teal;
             }
           }
         }

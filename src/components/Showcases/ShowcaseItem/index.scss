@@ -1,0 +1,68 @@
+@import "../../../assets/css/mixins";
+@import "../../../assets/css/vars";
+
+.showcases-item {
+  height: 100vh;
+  min-height: 1000px;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.showcase-top {
+  &__showcases-nav-section {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    &__btn {
+    }
+  }
+}
+
+.showcase-bottom {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  &__github-btn {
+  }
+  &__demo-btn {
+  }
+}
+
+.showcase-content {
+  display: flex;
+  min-height: 750px;
+  width: 100%;
+  margin-top: 20px;
+  &__img-section {
+    min-width: 900px;
+    background-color: $light-teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5vw;
+    &--showcase-0 {
+      background-color: $light-teal;
+    }
+    &--showcase-1 {
+      background-color: $light-orange;
+    }
+    &__img {
+      height: 650px;
+      box-shadow: 0 0 2px $grey, 0 0 5px $grey, 0 0 15px $darkgrey;
+    }
+  }
+  &__desc-section {
+    height: 80%;
+    &__title {
+    }
+    &__tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      &__item {
+      }
+    }
+    &__desc {
+    }
+  }
+}

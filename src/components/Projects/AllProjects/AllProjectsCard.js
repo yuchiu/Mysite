@@ -17,9 +17,9 @@ const AllProjectsCard = ({ project }) => (
         <div className="proj-card__overlay">
           <h3 className="proj-card__overlay__title">{project.name}</h3>
           <p className="proj-card__overlay__desc" />
-          <p className="proj-card__overlay__tech">
+          <div className="proj-card__overlay__tech">
             {project.techStack.map((tech, i) => (
-              <div
+              <p
                 className="proj-card__overlay__tech__text"
                 style={{ display: "inline" }}
                 key={i}
@@ -27,9 +27,9 @@ const AllProjectsCard = ({ project }) => (
                 {" "}
                 {i === 0 ? "" : " ∙ "}
                 {tech}
-              </div>
+              </p>
             ))}
-          </p>
+          </div>
           <div className="proj-card__overlay__btn-group">
             {" "}
             <a
@@ -48,7 +48,7 @@ const AllProjectsCard = ({ project }) => (
               className="a-tag-btn sandy-two proj-card__overlay__btn-group__link"
             >
               <i className="fa fa-external-link" />
-              View
+              Demo
             </a>
           </div>
         </div>

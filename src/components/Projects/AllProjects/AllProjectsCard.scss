@@ -62,12 +62,15 @@
       opacity: 1;
     }
     &__title {
+      font-size: 1.4em;
       font-family: "Raleway", sans-serif;
     }
     &__tech {
       text-align: center;
+      height: 40%;
+      font-size: 1.2em;
       &__text {
-        font-size: 1.1em;
+        font-weight: 600;
       }
     }
     &__btn-group {
