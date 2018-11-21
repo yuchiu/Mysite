@@ -1,0 +1,105 @@
+@import "../../assets/css/vars.scss";
+@import "../../assets/css/mixins.scss";
+
+/* icons in row*/
+
+//show as row above 1000px
+@media (min-width: 1000px) {
+  section.icons-col-section {
+    display: none;
+  }
+}
+.icons-row-section {
+  .icons-section-title {
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 8vh;
+  }
+}
+.icons-section-title {
+  font-size: 30px;
+}
+
+.icons {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 3vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  &__item {
+    height: 80px;
+    width: 80px;
+    &__name {
+      opacity: 0;
+      display: flex;
+      justify-content: center;
+      margin-top: 3px;
+      transition: opacity 0.5s;
+      &--react-router {
+        margin-top: 35px;
+      }
+    }
+  }
+  svg {
+    filter: grayscale(100%);
+    transition: transform 0.2s, filter 0.2s;
+  }
+  svg:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1, 1.1);
+  }
+  svg:hover + span {
+    opacity: 1;
+  }
+}
+@media (min-width: 1300px) {
+  .icons__item {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@include maxMediaQueries(975px) {
+  .icons-section-title {
+    font-size: 20px;
+  }
+}
+
+/* icons in column*/
+
+//show as col below 1000px
+@media (max-width: 1000px) {
+  section.icons-row-section {
+    display: none;
+  }
+}
+
+section.icons-col-section {
+  width: 100%;
+  margin-top: 60px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.icons-col-section {
+  .icons {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    &__col {
+      width: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 45px 0;
+    }
+    &__item {
+      height: 70px;
+      width: 70px;
+    }
+  }
+}

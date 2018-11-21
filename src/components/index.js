@@ -4,10 +4,10 @@ import $ from "jquery";
 import "./index.scss";
 import Landing from "./Landing";
 import Projects from "./Projects";
-import SkillSet from "./SkillSet";
-import Contact from "./Contact";
+import ContactsWrapper from "./ContactsWrapper";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import Showcases from "./Showcases";
 
 class Layout extends React.Component {
   componentDidMount() {
@@ -34,9 +34,9 @@ class Layout extends React.Component {
       <div className="page-container">
         <Navbar />
         <Landing />
+        <Showcases />
         <Projects />
-        <SkillSet />
-        <Contact />
+        <ContactsWrapper />
         <Footer />
       </div>
     );

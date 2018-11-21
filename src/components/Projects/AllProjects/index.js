@@ -2,13 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import "./index.scss";
-import { allProjects } from "../projectsData";
+import projectsData from "../projectsData";
 import AllProjectsCard from "./AllProjectsCard";
 
 const AllProjects = ({ category }) => (
   <div className="all-projects">
     <ul className="all-projects__list">
-      {allProjects.map(
+      {projectsData.map(
         (project, i) =>
           (category === project.category || category === "all") && (
             <AllProjectsCard key={i} category={category} project={project} />

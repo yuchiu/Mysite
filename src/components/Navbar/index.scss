@@ -1,41 +1,52 @@
 @import "../../assets/css/vars.scss";
 @import "../../assets/css/mixins.scss";
 
-.top-bar {
+.navbar-wrapper {
   height: $navbarheight;
   width: 100%;
   z-index: 2;
   position: fixed;
   &__nav {
+    width: 90%;
+    margin: auto;
     display: flex;
-    justify-content: flex-end;
-    &__item {
-      list-style: none;
-      &__link {
-        transition: all 0.3s ease;
-        font-weight: 600;
-        color: $white;
-        text-decoration: none;
-        &:hover {
+    justify-content: space-between;
+    &__ul {
+      display: flex;
+      &__li {
+        list-style: none;
+        margin: 3px 15px;
+        &__link {
+          font-size: 1.3em;
+          transition: all 0.3s ease;
+          font-weight: 600;
           color: $white;
-          text-shadow: 0 0 1px $white, 0 0 5px $white, 0 0 30px $white;
+          text-decoration: none;
+          &:hover {
+            color: $white;
+            text-shadow: 0 0 1px $white, 0 0 5px $white, 0 0 30px $white;
+          }
         }
       }
     }
   }
   &--shrink {
     background-color: $white;
-    color: $black;
+    color: $dark_nav_link_color;
     box-shadow: 1px 1px 2px $lightgrey, 2px 2px 8px $lightgrey;
   }
   &--shrink & {
     &__nav {
-      &__item {
-        &__link {
-          color: $black;
-          &:hover {
-            color: $black;
-            text-shadow: 0 0 1px $black, 0 0 5px $black, 0 0 30px $black;
+      &__ul {
+        &__li {
+          &__link {
+            color: $dark_nav_link_color;
+            &:hover {
+              font-size: 1.35em;
+              color: $dark_nav_link_color;
+              text-shadow: 0 0 1px $lightgrey, 0 0 1px $lightgrey,
+                0 0 1px $lightgrey;
+            }
           }
         }
       }

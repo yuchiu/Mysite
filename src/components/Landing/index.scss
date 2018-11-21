@@ -17,21 +17,18 @@
   flex-wrap: wrap;
   color: $white;
   text-align: center;
-  justify-content: center;
   &__intro {
-    font-size: 2.3em;
+    font-size: 2.5em;
     font-weight: 600;
-    margin: 5em 0.4em 0.4em 0.4em;
     width: 100%;
   }
   &__typing {
-    margin: 36px auto 56px;
+    margin: 5vh auto 10vh;
     font-size: 1.8em;
-    width: 100%;
     font-weight: 600;
     white-space: nowrap;
     overflow: hidden;
-    width: 30em;
+    width: 500px;
     animation: type 6.5s steps(60, end);
     animation-delay: 0.3s;
     &__line {
@@ -39,12 +36,10 @@
     }
   }
   &__link {
-    margin: 0.4em;
     width: 100%;
-    margin-bottom: 10em;
     &__icon {
+      font-size: 6em;
       opacity: 0.8;
-      margin: 0 16px 24px;
       text-decoration: none;
       color: $white;
       transition: all 0.3s ease;

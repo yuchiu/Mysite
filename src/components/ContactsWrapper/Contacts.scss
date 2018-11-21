@@ -1,0 +1,181 @@
+@import "../../assets/css/vars.scss";
+@import "../../assets/css/mixins.scss";
+
+.contacts-section {
+  text-align: center;
+  margin: 1vw;
+}
+.contacts {
+  width: 95%;
+  margin: 0 auto;
+  padding: 10px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  &__header {
+    display: block;
+    width: 50vw;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+  }
+
+  &__box {
+    width: 50%;
+    margin: 0 0;
+    display: flex;
+    justify-content: center;
+    &__border {
+      width: 95%;
+      background-color: transparent;
+      text-align: center;
+      @include aTagBtnBaseStyle;
+      @include aTagBtnVictoria;
+      .a-tag-btn.victoria-one,
+      .a-tag-btn.victoria-two,
+      .a-tag-btn.victoria-three,
+      .a-tag-btn.victoria-four {
+        border-radius: 1px;
+        padding: 5px 10px;
+        text-transform: none;
+        border-color: #383838;
+      }
+      &:hover {
+        .a-tag-btn.victoria-one,
+        .a-tag-btn.victoria-two,
+        .a-tag-btn.victoria-three,
+        .a-tag-btn.victoria-four {
+          @include cubicTransition;
+          border-color: #23ecc7;
+          background: #23ecc7;
+          box-shadow: 0 0 3px #23ecc7, 0 0 5px #23ecc7, 0 0 10px #23ecc7,
+            0 0 20px #23ecc7, 0 0 40px #23ecc7;
+        }
+      }
+      &:hover & {
+        &__btn {
+          &__icon {
+            color: #fff;
+            font-weight: bold;
+          }
+          &__name {
+            color: #fff;
+          }
+        }
+      }
+      &__btn {
+        &__icon {
+          color: #383838;
+          font-size: 2vmax;
+        }
+        &__name {
+          color: #383838;
+          font-size: 1vmax;
+        }
+      }
+    }
+  }
+}
+@include maxMediaQueries(1600px) {
+  .contacts {
+    &__header {
+      margin-bottom: 3vh;
+    }
+    &__box {
+      padding-top: 20px;
+      &__border {
+        &__btn {
+          &__name {
+            font-size: 1.2vmax;
+          }
+          &__icon {
+            font-size: 2.2vmax;
+          }
+        }
+      }
+    }
+  }
+}
+@include maxMediaQueries(1400px) {
+  .contacts {
+    &__header {
+      margin-bottom: 0;
+    }
+    &__box {
+      padding-top: 25px;
+      &__border {
+        &__btn {
+          &__name {
+            font-size: 1.4vmax;
+          }
+          &__icon {
+            font-size: 2.4vmax;
+          }
+        }
+      }
+    }
+  }
+}
+@include maxMediaQueries(1200px) {
+  .contacts {
+    &__box {
+      padding-top: 30px;
+      &__border {
+        &__btn {
+          &__name {
+            font-size: 1.6vmax;
+          }
+          &__icon {
+            font-size: 2.6vmax;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include maxMediaQueries(975px) {
+  .contacts {
+    .a-tag-btn.victoria-one,
+    .a-tag-btn.victoria-two,
+    .a-tag-btn.victoria-three,
+    .a-tag-btn.victoria-four {
+      padding: 0px 0px;
+    }
+    width: 100%;
+    &__header {
+      width: 90vw;
+      text-align: center;
+      font-size: 20px;
+    }
+    &__box {
+      width: 100%;
+      align-items: center;
+      &__border {
+        border-width: 0.1em;
+        width: 70%;
+        &__btn {
+          &__icon {
+            font-size: 4vmax;
+          }
+          &__name {
+            font-size: 1.8vmax;
+          }
+        }
+      }
+    }
+  }
+  .contacts__box {
+    padding-top: 0;
+  }
+}
+
+@include minMediaQueries(976px) {
+  .contacts-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 35vw;
+    margin: 0 3vw;
+  }
+}
