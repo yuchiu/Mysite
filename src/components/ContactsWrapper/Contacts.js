@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Contacts.scss";
 
-const Contacts = () => (
+export default () => (
   <div className="contacts-section">
     <div className="contacts">
       <h1 className="contacts__header">Get In Touch With Me</h1>
@@ -66,4 +66,3 @@ const Contacts = () => (
     </div>
   </div>
 );
-export default Contacts;

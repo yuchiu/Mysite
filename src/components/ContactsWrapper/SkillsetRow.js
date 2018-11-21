@@ -13,7 +13,7 @@ import {
   babelLogo
 } from "./iconsSVG";
 
-const SkillsetRow = () => (
+export default () => (
   <section className="icons-row-section">
     <h3 className="icons-section-title">My Current Favorite Stack</h3>
     <div className="icons">
@@ -58,5 +58,3 @@ const SkillsetRow = () => (
     </div>
   </section>
 );
-
-export default SkillsetRow;

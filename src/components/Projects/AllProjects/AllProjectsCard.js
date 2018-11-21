@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import "./AllProjectsCard.scss";
 
-const AllProjectsCard = ({ project }) => (
+export default ({ project }) => (
   <li className={`project ${project.category}`}>
     <div className="card-deck">
       <div className="proj-card">
@@ -56,9 +56,3 @@ const AllProjectsCard = ({ project }) => (
     </div>
   </li>
 );
-
-AllProjectsCard.propTypes = {
-  project: PropTypes.object
-};
-
-export default AllProjectsCard;

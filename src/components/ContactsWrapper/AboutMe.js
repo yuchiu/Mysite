@@ -2,7 +2,7 @@ import React from "react";
 
 import "./AboutMe.scss";
 
-const AboutMe = () => (
+export default () => (
   <div className="about">
     <h1 className="about__title">About Me</h1>
     <div className="about__intro">
@@ -21,5 +21,3 @@ const AboutMe = () => (
     </div>
   </div>
 );
-
-export default AboutMe;

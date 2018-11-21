@@ -6,7 +6,7 @@ import SkillsetCol from "./SkillsetCol";
 import AboutMe from "./AboutMe";
 import Contacts from "./Contacts";
 
-const ContactsWrapper = () => (
+export default () => (
   <div id="contacts-wrapper" className="contacts-wrapper">
     <div className="contacts-wrapper__upper">
       <SkillsetRow />
@@ -18,4 +18,3 @@ const ContactsWrapper = () => (
     </div>
   </div>
 );
-export default ContactsWrapper;
