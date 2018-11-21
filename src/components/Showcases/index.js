@@ -24,6 +24,42 @@ class Showcases extends React.Component {
     });
   };
 
+  handleSlideLeft = e => {
+    const { showcaseListSlideStatus } = this.state;
+    const field = e.target.name;
+    if (showcaseListSlideStatus[field] === "1") {
+      showcaseListSlideStatus[field] = "0";
+      this.setState({
+        showcaseListSlideStatus
+      });
+      return;
+    }
+    if (showcaseListSlideStatus[field] === "2") {
+      showcaseListSlideStatus[field] = "1";
+      this.setState({
+        showcaseListSlideStatus
+      });
+    }
+  };
+
+  handleSlideRight = e => {
+    const { showcaseListSlideStatus } = this.state;
+    const field = e.target.name;
+    if (showcaseListSlideStatus[field] === "0") {
+      showcaseListSlideStatus[field] = "1";
+      this.setState({
+        showcaseListSlideStatus
+      });
+      return;
+    }
+    if (showcaseListSlideStatus[field] === "1") {
+      showcaseListSlideStatus[field] = "2";
+      this.setState({
+        showcaseListSlideStatus
+      });
+    }
+  };
+
   // get the showcaseListSlideStatus showcaseItem accordingly
   getShowcaseSlideIndex = index => {
     const { showcaseListSlideStatus } = this.state;
@@ -43,6 +79,8 @@ class Showcases extends React.Component {
             itemData={itemData}
             handleChange={this.handleChange}
             showcaseSlideIndex={this.getShowcaseSlideIndex(index)}
+            handleSlideLeft={this.handleSlideLeft}
+            handleSlideRight={this.handleSlideRight}
           />
         ))}
       </div>

@@ -13,7 +13,7 @@ export default ({ index, handleChange, showcaseSlideIndex }) => (
         value="0"
         onClick={handleChange}
       >
-        slide 1
+        Introduction
       </button>
     ) : (
       <button
@@ -22,7 +22,7 @@ export default ({ index, handleChange, showcaseSlideIndex }) => (
         value="0"
         onClick={handleChange}
       >
-        slide 1
+        Introduction
       </button>
     )}
     {showcaseSlideIndex === "1" ? (
@@ -31,7 +31,7 @@ export default ({ index, handleChange, showcaseSlideIndex }) => (
         value="1"
         onClick={handleChange}
       >
-        slide 2
+        System Architecture
       </button>
     ) : (
       <button
@@ -40,7 +40,7 @@ export default ({ index, handleChange, showcaseSlideIndex }) => (
         value="1"
         onClick={handleChange}
       >
-        slide 2
+        System Architecture
       </button>
     )}
 
@@ -51,7 +51,7 @@ export default ({ index, handleChange, showcaseSlideIndex }) => (
         value="2"
         onClick={handleChange}
       >
-        slide 3
+        Technical Specification
       </button>
     ) : (
       <button
@@ -60,7 +60,7 @@ export default ({ index, handleChange, showcaseSlideIndex }) => (
         value="2"
         onClick={handleChange}
       >
-        slide 3
+        Technical Specification
       </button>
     )}
   </React.Fragment>

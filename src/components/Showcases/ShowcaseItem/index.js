@@ -5,7 +5,14 @@ import showcaseData from "../showcaseData";
 import NavButtonGroup from "./NavButtonGroup";
 import ShowcaseContent from "./ShowcaseContent";
 
-export default ({ itemData, index, handleChange, showcaseSlideIndex }) => (
+export default ({
+  itemData,
+  index,
+  handleChange,
+  handleSlideLeft,
+  handleSlideRight,
+  showcaseSlideIndex
+}) => (
   <div className="showcases-item">
     <div className="showcase-top">
       <section className="showcase-top__nav">
@@ -20,6 +27,8 @@ export default ({ itemData, index, handleChange, showcaseSlideIndex }) => (
       itemData={itemData}
       index={index}
       showcaseSlideIndex={showcaseSlideIndex}
+      handleSlideLeft={handleSlideLeft}
+      handleSlideRight={handleSlideRight}
     />
     <div className="showcase-bottom">
       <button className="showcase-bottom__github-btn">Github</button>

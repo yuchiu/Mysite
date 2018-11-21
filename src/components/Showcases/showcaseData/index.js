@@ -26,6 +26,7 @@ export default [
       "Docker"
     ],
     introDesc: "dasdddsad sadsad asdasda as daffdsfa asdsd afsa as",
+    userStory: "i can do xx, i can do yyy",
     archDesc:
       "dasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsad",
     githubLink: "https://github.com/yuchiu/slack-clone",
@@ -61,6 +62,7 @@ export default [
       "Kubernetes"
     ],
     introDesc: "da asdasd fasf asassadd sdasda",
+    userStory: "i can do xx, i can do yyy",
     archDesc:
       "dasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsad",
 
