@@ -45,8 +45,22 @@ export default ({
       />
     </div>
     <div className="showcase-bottom">
-      <button className="showcase-bottom__github-btn">Github</button>
-      <button className="showcase-bottom__demo-btn">Demo</button>
+      <a
+        className="showcase-bottom__github-btn"
+        rel="noopener noreferrer"
+        target="_blank"
+        href={itemData.githubLink}
+      >
+        Github
+      </a>
+      <a
+        className="showcase-bottom__demo-btn"
+        rel="noopener noreferrer"
+        target="_blank"
+        href={itemData.demoLink}
+      >
+        Demo
+      </a>
     </div>
   </div>
 );

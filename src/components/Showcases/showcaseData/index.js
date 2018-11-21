@@ -4,7 +4,7 @@ export default [
     name: "Slack Clone",
     imgUrl: {
       demoPic: "https://imgur.com/wGlKGSQ.png",
-      archDiagram: "https://i.imgur.com/TUgrS4B.jpg"
+      archDiagram: "https://i.imgur.com/wgvotBA.jpg"
     },
     techStack: [
       "Reactjs",
@@ -37,7 +37,7 @@ export default [
     name: "Today News",
     imgUrl: {
       demoPic: "https://imgur.com/xiq3tIT.png",
-      archDiagram: "https://i.imgur.com/AAmP07P.jpg"
+      archDiagram: "https://i.imgur.com/FBYB9vn.jpg"
     },
     techStack: [
       "Reactjs",
