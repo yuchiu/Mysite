@@ -4,7 +4,7 @@
 .showcases-item {
   height: 100vh;
   min-height: 1000px;
-  width: 95%;
+  width: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -37,19 +37,43 @@
   min-height: 750px;
   width: 100%;
   margin-top: 20px;
-  &__left-btn-section {
-    width: 150px;
+  &__slide-btn-section {
+    margin: auto;
     &__btn {
-    }
-  }
-  &__right-btn-section {
-    width: 150px;
-    &__btn {
+      background: transparent;
+      color: $darkgrey;
+      border: none;
+      height: 200px;
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 6em;
+      transform: scale(0.5, 1);
+      transition: all 0.3s ease;
+      font-family: "Roboto", sans-serif;
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        color: $bright-teal;
+        text-shadow: 0 0 1px $light-teal, 0 0 5px $light-teal,
+          0 0 15px $light-teal, 0 0 30px $light-teal;
+
+        cursor: pointer;
+      }
+      &--disabled {
+        opacity: 0.6;
+        color: $grey;
+        &:hover {
+          cursor: default;
+          color: $grey;
+        }
+      }
     }
   }
 
   &__img-section {
-    min-width: 900px;
+    min-width: 850px;
     background-color: $light-teal;
     display: flex;
     justify-content: center;

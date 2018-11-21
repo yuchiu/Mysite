@@ -3,21 +3,21 @@ import React from "react";
 export default ({ index, handleSlideLeft, showcaseSlideIndex }) => (
   <React.Fragment>
     {showcaseSlideIndex === "0" ? (
-      <div className={`showcase-content__left-btn-section`}>
+      <div className={`showcase-content__slide-btn-section`}>
         <button
-          className={`showcase-content__left-btn-section__btn showcase-content__left-btn-section__btn--disabled`}
+          className={`showcase-content__slide-btn-section__btn showcase-content__slide-btn-section__btn--disabled`}
         >
-          disabled left button
+          {"<<"}
         </button>
       </div>
     ) : (
-      <div className={`showcase-content__left-btn-section`}>
+      <div className={`showcase-content__slide-btn-section`}>
         <button
           name={`showcaseItem${index}`}
-          className={`showcase-content__left-btn-section__btn`}
+          className={`showcase-content__slide-btn-section__btn`}
           onClick={handleSlideLeft}
         >
-          left button
+          {"<<"}
         </button>
       </div>
     )}
