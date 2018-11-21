@@ -2,8 +2,11 @@ import React from "react";
 
 import "./index.scss";
 import showcaseData from "../showcaseData";
-import NavButtonGroup from "./NavButtonGroup";
-import ShowcaseContent from "./ShowcaseContent";
+import NavBtnGroup from "./NavBtnGroup";
+import SlideDesc from "./SlideDesc";
+import SlideImg from "./SlideImg";
+import BtnLeftSlide from "./BtnLeftSlide";
+import BtnRightSlide from "./BtnRightSlide";
 
 export default ({
   itemData,
@@ -16,20 +19,31 @@ export default ({
   <div className="showcases-item">
     <div className="showcase-top">
       <section className="showcase-top__nav">
-        <NavButtonGroup
+        <NavBtnGroup
           index={index}
           handleChange={handleChange}
           showcaseSlideIndex={showcaseSlideIndex}
         />
       </section>
     </div>
-    <ShowcaseContent
-      itemData={itemData}
-      index={index}
-      showcaseSlideIndex={showcaseSlideIndex}
-      handleSlideLeft={handleSlideLeft}
-      handleSlideRight={handleSlideRight}
-    />
+    <div className="showcase-content">
+      <BtnLeftSlide
+        index={index}
+        handleSlideLeft={handleSlideLeft}
+        showcaseSlideIndex={showcaseSlideIndex}
+      />
+      <section
+        className={`showcase-content__img-section showcase-content__img-section--showcase-${index}`}
+      >
+        <SlideImg itemData={itemData} showcaseSlideIndex={showcaseSlideIndex} />
+      </section>
+      <SlideDesc itemData={itemData} showcaseSlideIndex={showcaseSlideIndex} />
+      <BtnRightSlide
+        index={index}
+        handleSlideRight={handleSlideRight}
+        showcaseSlideIndex={showcaseSlideIndex}
+      />
+    </div>
     <div className="showcase-bottom">
       <button className="showcase-bottom__github-btn">Github</button>
       <button className="showcase-bottom__demo-btn">Demo</button>

@@ -1,9 +1,5 @@
 import React from "react";
 
-import "./index.scss";
-import showcaseData from "../showcaseData";
-import ShowcaseContent from "./ShowcaseContent";
-
 export default ({ index, handleChange, showcaseSlideIndex }) => (
   <React.Fragment>
     {showcaseSlideIndex === "0" ? (
