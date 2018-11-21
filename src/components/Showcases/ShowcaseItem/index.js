@@ -46,20 +46,20 @@ export default ({
     </div>
     <div className="showcase-bottom">
       <a
-        className="showcase-bottom__github-btn"
+        className="showcase-bottom__github-btn a-tag-btn  gibson-one"
         rel="noopener noreferrer"
         target="_blank"
         href={itemData.githubLink}
       >
-        Github
+        <i className="fa fa-2x fa-github" /> Github
       </a>
       <a
-        className="showcase-bottom__demo-btn"
+        className="showcase-bottom__demo-btn a-tag-btn  gibson-two"
         rel="noopener noreferrer"
         target="_blank"
         href={itemData.demoLink}
       >
-        Demo
+        <i class="fa fa-2x fa-window-maximize" /> Demo
       </a>
     </div>
   </div>

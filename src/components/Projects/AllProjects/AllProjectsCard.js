@@ -38,7 +38,7 @@ export default ({ project }) => (
               rel="noopener noreferrer"
               className="a-tag-btn sandy-two proj-card__overlay__btn-group__link"
             >
-              <i className="fa fa-external-link" />
+              <i className="fa fa-github" />
               Github
             </a>
             <a
@@ -47,7 +47,7 @@ export default ({ project }) => (
               rel="noopener noreferrer"
               className="a-tag-btn sandy-two proj-card__overlay__btn-group__link"
             >
-              <i className="fa fa-external-link" />
+              <i class="fa fa-window-maximize" />
               Demo
             </a>
           </div>

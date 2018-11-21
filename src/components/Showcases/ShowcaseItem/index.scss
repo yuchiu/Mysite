@@ -14,18 +14,64 @@
     margin-top: 80px;
     display: flex;
     justify-content: center;
-    &__btn {
-      &--selected {
-        background-color: green;
+    &__item {
+      user-select: none;
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+      align-items: center;
+      font-weight: 600;
+      &__btn {
+        width: 150px;
+        height: 8px;
+        margin-top: 5px;
+        background-color: $superlightgrey;
+        border: 0px solid $grey;
+        border-radius: 2px;
+        &:hover {
+          cursor: pointer;
+        }
+        &:focus {
+          outline: none;
+        }
+        &--selected {
+          background-color: $light-bright-teal;
+          box-shadow: 0 0 5px $light-teal, 0 0 10px $white, 0 0 20px $white,
+            0 0 10px $white, 0 0 20px $white, 0 0 10px $white, 0 0 20px $white,
+            0 0 30px $super-light-teal, 0 0 5px $light-teal, 0 0 10px $white,
+            0 0 20px $white, 0 0 10px $white, 0 0 20px $white, 0 0 10px $white,
+            0 0 20px $white, 0 0 30px $super-light-teal;
+        }
       }
     }
   }
 }
 
 .showcase-bottom {
-  margin-top: 20px;
   display: flex;
   justify-content: center;
+  margin: auto;
+  margin-top: 0px;
+  width: 400px;
+  @include aTagBtnBaseStyle;
+  @include aTagBtnGibson;
+  .a-tag-btn.gibson-one,
+  .a-tag-btn.gibson-two,
+  .a-tag-btn.gibson-three,
+  .a-tag-btn.gibson-four {
+    color: $grey;
+    border-radius: 3px;
+    width: 150px;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    border-color: $grey;
+    &:hover {
+      border-color: $bright-teal;
+      color: $bright-teal;
+    }
+  }
   &__github-btn {
   }
   &__demo-btn {
@@ -34,21 +80,21 @@
 
 .showcase-content {
   display: flex;
-  min-height: 750px;
+  min-height: 700px;
   width: 100%;
   margin-top: 20px;
   &__slide-btn-section {
     margin: auto;
     &__btn {
       background: transparent;
-      color: $darkgrey;
+      color: $grey;
       border: none;
       height: 200px;
       width: 100%;
       padding-left: 10px;
       padding-right: 10px;
-      font-size: 6em;
-      transform: scale(0.5, 1);
+      font-size: 7em;
+      transform: scale(0.45, 1);
       transition: all 0.3s ease;
       font-family: "Roboto", sans-serif;
       &:focus {
@@ -56,13 +102,13 @@
       }
       &:hover {
         color: $bright-teal;
-        text-shadow: 0 0 1px $light-teal, 0 0 5px $light-teal,
-          0 0 15px $light-teal, 0 0 30px $light-teal;
+        text-shadow: 0 0 1px $super-light-teal, 0 0 5px $super-light-teal,
+          0 0 15px $super-light-teal, 0 0 30px $super-light-teal;
 
         cursor: pointer;
       }
       &--disabled {
-        opacity: 0.6;
+        opacity: 0.4;
         color: $grey;
         &:hover {
           cursor: default;
@@ -73,14 +119,14 @@
   }
 
   &__img-section {
-    min-width: 850px;
-    background-color: $light-teal;
+    min-width: 800px;
+    background-color: $super-light-teal;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 5vw;
     &--showcase-0 {
-      background-color: $light-teal;
+      background-color: $super-light-teal;
     }
     &--showcase-1 {
       background-color: $light-orange;

@@ -42,7 +42,7 @@ class Projects extends React.Component {
               name="all"
               onClick={this.handleClick}
             >
-              All Projects
+              FrontEnd Projects
             </a>
           </div>
           <AllProjects category={category} />

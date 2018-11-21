@@ -43,8 +43,8 @@
             color: $dark_nav_link_color;
             &:hover {
               color: $bright-teal;
-              text-shadow: 0 0 1px $light-teal, 0 0 5px $light-teal,
-                0 0 15px $light-teal, 0 0 30px $light-teal;
+              text-shadow: 0 0 1px $super-light-teal, 0 0 5px $super-light-teal,
+                0 0 15px $super-light-teal, 0 0 30px $super-light-teal;
             }
           }
         }
