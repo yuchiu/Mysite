@@ -5,8 +5,15 @@ import "./index.scss";
 export default () => (
   <div className="footer">
     <nav className="footer__nav">
-      <p>
-        © 2018 <b>Yu Chiu</b>
+      <a
+        href="https://github.com/yuchiu/my-site"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <b>Github repo of this site</b>
+      </a>
+      <p className="footer__nav__copyright">
+        © 2019 <b>Yu Chiu</b>
       </p>
     </nav>
   </div>

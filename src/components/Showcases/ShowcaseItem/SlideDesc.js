@@ -8,21 +8,26 @@ export default ({ itemData, showcaseSlideIndex }) => (
         <h4 className="showcase-content__desc-section__name">
           {itemData.name}
         </h4>
-        <ul className="showcase-content__desc-section__tech-stack">
-          {itemData.techStack.map((tech, i) => (
-            <li
-              key={`techlist-${i}`}
-              className="showcase-content__desc-section__tech-stack__item"
-            >
-              {tech}
-            </li>
-          ))}
-        </ul>
         <p className="showcase-content__desc-section__desc">
           {itemData.introDesc}
         </p>
+        <b>Tech Stack:</b>
+        <ul className="showcase-content__desc-section__tech-stack">
+          {itemData.techStack.map((tech, i) => (
+            <p
+              className="showcase-content__desc-section__tech-stack__item"
+              key={`techlist-${i}`}
+            >
+              {i === 0 ? "" : ", "}
+              {tech}
+            </p>
+          ))}
+        </ul>
+        <b> User Stories:</b>
         <p className="showcase-content__desc-section__user-story">
-          {itemData.userStory}
+          {itemData.userStory.map((story, i) => (
+            <p key={`story-${i}`}>{story}</p>
+          ))}
         </p>
       </section>
     )}
@@ -33,7 +38,7 @@ export default ({ itemData, showcaseSlideIndex }) => (
         </h4>
 
         <p className="showcase-content__desc-section__desc">
-          {itemData.archDesc}
+          Under Construction
         </p>
       </section>
     )}
@@ -42,6 +47,9 @@ export default ({ itemData, showcaseSlideIndex }) => (
         <h4 className="showcase-content__desc-section__title">
           Techinical Specification
         </h4>
+        <p className="showcase-content__desc-section__desc">
+          Under Construction
+        </p>
       </section>
     )}
   </React.Fragment>

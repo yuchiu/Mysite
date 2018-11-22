@@ -4,7 +4,7 @@
 .showcases-item {
   min-height: 100vh;
   min-height: 1000px;
-  width: 100%;
+  width: 100vw;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -81,17 +81,20 @@
 .showcase-content {
   display: flex;
   min-height: 700px;
-  width: 100%;
+  width: 100vw;
   margin-top: 20px;
+  justify-content: flex-start;
   &__slide-btn-section {
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 120px;
     &__btn {
       user-select: none;
       background: transparent;
       color: $darkgrey;
       border: none;
       height: 200px;
-      width: 100%;
       padding-left: 10px;
       padding-right: 10px;
       font-size: 7em;
@@ -125,7 +128,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 5vw;
+    margin-right: 50px;
     &--showcase-0 {
       background-color: $super-light-teal;
     }
@@ -138,20 +141,25 @@
     }
   }
   &__desc-section {
-    height: 80%;
-    width: 100%;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    &__title {
+      font-size: 1.5em;
+    }
     &__name {
+      margin: 0;
+      margin-bottom: 10px;
+      font-size: 1.5em;
     }
     &__tech-stack {
+      padding: 0;
       display: flex;
       flex-wrap: wrap;
       &__item {
       }
     }
     &__desc {
-      width: 500px;
     }
     &__user-story {
     }

@@ -9,5 +9,9 @@
     justify-content: center;
     align-items: center;
     box-shadow: -1px -1px 2px $superlightgrey, -2px -2px 8px $superlightgrey;
+
+    &__copyright {
+      margin-left: 10px;
+    }
   }
 }

@@ -61,27 +61,6 @@ export default [
     demoLink: "https://github.com/yuchiu/slack-clone"
   },
   {
-    id: "1700",
-    name: "Job Listing Chat App",
-    description: "",
-    thumbnailImg: "https://i.imgur.com/2OjOBuP.png",
-    category: "fullstack",
-    techStack: [
-      "Reactjs",
-      "react-router",
-      "Redux",
-      "Ant Design",
-      "Nodejs",
-      "Expressjs",
-      "MongoDB",
-      "Mongoose",
-      "Socket.io"
-    ],
-
-    githubLink: "https://github.com/yuchiu/job-listing",
-    demoLink: "https://github.com/yuchiu/job-listing"
-  },
-  {
     id: "100",
     name: "Netflix Clone",
     description: "",
@@ -157,6 +136,15 @@ export default [
 
     githubLink: "https://github.com/yuchiu/random-quote-machine",
     demoLink: "https://yuchiu.github.io/random-quote-machine/"
+  },
+  {
+    id: "1000",
+    name: "Conway's Game of Life",
+    thumbnailImg: "https://i.imgur.com/bX9dnoi.png",
+    category: "frontend",
+    techStack: ["JavaScript"],
+    githubLink: "https://github.com/yuchiu/game-of-life",
+    demoLink: "https://yuchiu.github.io/game-of-life/"
   },
   {
     id: "500",

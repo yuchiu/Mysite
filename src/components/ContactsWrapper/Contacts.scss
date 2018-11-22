@@ -37,7 +37,7 @@
         border-radius: 1px;
         padding: 5px 10px;
         text-transform: none;
-        border-color: #383838;
+        border-color: $darkgrey;
       }
       &:hover {
         .a-tag-btn.victoria-one,
@@ -64,11 +64,11 @@
       }
       &__btn {
         &__icon {
-          color: #383838;
+          color: $darkgrey;
           font-size: 2vmax;
         }
         &__name {
-          color: #383838;
+          color: $darkgrey;
           font-size: 1vmax;
         }
       }
