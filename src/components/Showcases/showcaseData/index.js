@@ -1,5 +1,48 @@
 export default [
   {
+    id: "1",
+    name: "Today News",
+    imgUrl: {
+      demoPic: "https://imgur.com/xiq3tIT.png",
+      archDiagram: "https://i.imgur.com/FBYB9vn.jpg"
+    },
+    techStack: [
+      "Reactjs",
+      "Redux",
+      "react-router",
+      "Redux",
+      "Python",
+      "Nodejs",
+      "Expressjs",
+      "RESTful API",
+      "RPC API",
+      "Message Broker",
+      "RabbitMQ",
+      "Redis",
+      "ElasticSearch",
+      "Mongoose",
+      "MongoDB",
+      "Web Scraper",
+      "Machine Learning",
+      "TensorFlow"
+    ],
+    introDesc:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. ",
+    userStory: [
+      "Users can register and log in with their accounts",
+      "News are classified in different categories for users",
+      "News are derived from multiple news sources",
+      "Users can scroll to the bottom and get more news feeds",
+      "Users can search for news article by keyword",
+      "News are recommended to users based on his/her browsing histories"
+    ],
+    archDesc:
+      "dasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsad",
+
+    githubLink: "https://github.com/yuchiu/today-news",
+    demoLink: "https://github.com/yuchiu/today-news"
+  },
+  {
     id: "2",
     name: "Slack Clone",
     imgUrl: {
@@ -46,50 +89,5 @@ export default [
       "dasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsad",
     githubLink: "https://github.com/yuchiu/slack-clone",
     demoLink: "https://github.com/yuchiu/slack-clone"
-  },
-  {
-    id: "1",
-    name: "Today News",
-    imgUrl: {
-      demoPic: "https://imgur.com/xiq3tIT.png",
-      archDiagram: "https://i.imgur.com/FBYB9vn.jpg"
-    },
-    techStack: [
-      "Reactjs",
-      "Redux",
-      "react-router",
-      "Redux",
-      "Python",
-      "Nodejs",
-      "Expressjs",
-      "RESTful API",
-      "RPC API",
-      "Message Broker",
-      "RabbitMQ",
-      "Redis",
-      "ElasticSearch",
-      "Mongoose",
-      "MongoDB",
-      "Web Scraper",
-      "Machine Learning",
-      "TensorFlow",
-      "Docker",
-      "Kubernetes"
-    ],
-    introDesc:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. ",
-    userStory: [
-      "Users can register and log in with their accounts",
-      "News are classified in different categories for users",
-      "News are derived from multiple news sources",
-      "Users can scroll to the bottom and get more news feeds",
-      "Users can search for news article by keyword",
-      "News are recommended to users based on his/her browsing histories"
-    ],
-    archDesc:
-      "dasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsad",
-
-    githubLink: "https://github.com/yuchiu/today-news",
-    demoLink: "https://github.com/yuchiu/today-news"
   }
 ];

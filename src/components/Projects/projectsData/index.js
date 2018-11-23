@@ -23,9 +23,7 @@ export default [
       "MongoDB",
       "Web Scraper",
       "Machine Learning",
-      "TensorFlow",
-      "Docker",
-      "Kubernetes"
+      "TensorFlow"
     ],
 
     githubLink: "https://github.com/yuchiu/today-news",
