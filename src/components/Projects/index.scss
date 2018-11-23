@@ -4,6 +4,12 @@
 .projects-wrapper {
 }
 
+.down-arrow-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
 .category {
   padding-top: 35px;
   @include aTagBtnBaseStyle;

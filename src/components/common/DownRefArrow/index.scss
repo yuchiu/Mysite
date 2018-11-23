@@ -1,0 +1,22 @@
+@import "../../../assets/css/vars.scss";
+.arrow-icon {
+  font-size: 6em;
+  opacity: 0.8;
+  text-decoration: none;
+  color: $white;
+  transition: all 0.3s ease;
+  &:hover {
+    cursor: pointer;
+    opacity: 1;
+    text-shadow: 0 0 1px $white, 0 0 5px $white, 0 0 30px $white;
+  }
+  &--dark {
+    color: $darkgrey;
+    opacity: 1;
+    &:hover {
+      color: $bright-teal;
+      text-shadow: 0 0 1px $super-light-teal, 0 0 5px $super-light-teal,
+        0 0 15px $super-light-teal, 0 0 30px $super-light-teal;
+    }
+  }
+}

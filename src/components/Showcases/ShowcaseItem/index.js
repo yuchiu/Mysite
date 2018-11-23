@@ -7,6 +7,7 @@ import SlideDesc from "./SlideDesc";
 import SlideImg from "./SlideImg";
 import BtnLeftSlide from "./BtnLeftSlide";
 import BtnRightSlide from "./BtnRightSlide";
+import { DownRefArrow } from "../../common";
 
 export default ({
   itemData,
@@ -16,7 +17,7 @@ export default ({
   handleSlideRight,
   showcaseSlideIndex
 }) => (
-  <div className="showcases-item">
+  <div id={`showcase-item-${index + 1}`} className="showcases-item-wrapper">
     <div className="showcase-top">
       <section className="showcase-top__nav">
         <NavBtnGroup
@@ -44,23 +45,12 @@ export default ({
         showcaseSlideIndex={showcaseSlideIndex}
       />
     </div>
-    <div className="showcase-bottom">
-      <a
-        className="showcase-bottom__github-btn a-tag-btn  gibson-one"
-        rel="noopener noreferrer"
-        target="_blank"
-        href={itemData.githubLink}
-      >
-        <i className="fa fa-2x fa-github" /> Github
-      </a>
-      <a
-        className="showcase-bottom__demo-btn a-tag-btn  gibson-two"
-        rel="noopener noreferrer"
-        target="_blank"
-        href={itemData.demoLink}
-      >
-        <i class="fa fa-2x fa-window-maximize" /> Demo
-      </a>
+    <div className="showcase-content__bottom">
+      {index === 1 ? (
+        <DownRefArrow idhref="#projects-wrapper" dark={true} />
+      ) : (
+        <DownRefArrow idhref={`#showcase-item-${index + 2}`} dark={true} />
+      )}
     </div>
   </div>
 );

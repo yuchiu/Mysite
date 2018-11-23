@@ -12,6 +12,13 @@ export default ({ itemData, showcaseSlideIndex }) => (
     {showcaseSlideIndex === "1" && (
       <img
         src={itemData.imgUrl.archDiagram}
+        className="showcase-content__img-section__img showcase-content__img-section__img--large"
+        alt="showcase-img"
+      />
+    )}
+    {showcaseSlideIndex === "2" && (
+      <img
+        src={itemData.imgUrl.archDiagram}
         className="showcase-content__img-section__img"
         alt="showcase-img"
       />

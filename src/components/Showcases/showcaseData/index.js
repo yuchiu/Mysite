@@ -47,7 +47,7 @@ export default [
     name: "Slack Clone",
     imgUrl: {
       demoPic: "https://imgur.com/wGlKGSQ.png",
-      archDiagram: "https://i.imgur.com/wgvotBA.jpg"
+      archDiagram: "https://i.imgur.com/4k0g7dE.jpg"
     },
     techStack: [
       "Reactjs",
@@ -72,9 +72,7 @@ export default [
       "t vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem",
     userStory: [
       "Users can register and log in with their account",
-      "Users profile image are randomly generated once he/she is registered",
-      "Users can upload his/her own profile image",
-      "Users can edit his/her profile info including password",
+      "Users can edit his/her profile info, including profile image & password",
       "Users can create team",
       "Teams description can be edited only by admin",
       "Users can invite people to join their team",

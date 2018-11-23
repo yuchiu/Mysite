@@ -1,7 +1,7 @@
 @import "../../../assets/css/mixins";
 @import "../../../assets/css/vars";
 
-.showcases-item {
+.showcases-item-wrapper {
   min-height: 100vh;
   min-height: 1000px;
   width: 100vw;
@@ -11,7 +11,7 @@
 }
 .showcase-top {
   &__nav {
-    margin-top: 80px;
+    margin-top: 60px;
     display: flex;
     justify-content: center;
     &__item {
@@ -47,11 +47,10 @@
   }
 }
 
-.showcase-bottom {
+.demolink-group {
   display: flex;
   justify-content: center;
-  margin: auto;
-  margin-top: 0px;
+  margin: 0 auto;
   width: 400px;
   @include aTagBtnBaseStyle;
   @include aTagBtnGibson;
@@ -80,10 +79,13 @@
 
 .showcase-content {
   display: flex;
-  min-height: 700px;
+  height: 700px;
   width: 100vw;
-  margin-top: 20px;
+  margin-top: 25px;
   justify-content: flex-start;
+  &__bottom {
+    margin: 10px auto 0 auto;
+  }
   &__slide-btn-section {
     display: flex;
     flex-direction: column;
@@ -123,7 +125,8 @@
   }
 
   &__img-section {
-    min-width: 800px;
+    min-width: 720px;
+    min-height: 700px;
     background-color: $super-light-teal;
     display: flex;
     justify-content: center;
@@ -136,32 +139,40 @@
       background-color: $light-orange;
     }
     &__img {
-      height: 620px;
+      height: 450px;
       box-shadow: 0 0 2px $grey, 0 0 5px $grey, 0 0 15px $darkgrey;
-    }
-  }
-  &__desc-section {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    &__title {
-      font-size: 1.5em;
-    }
-    &__name {
-      margin: 0;
-      margin-bottom: 10px;
-      font-size: 1.5em;
-    }
-    &__tech-stack {
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      &__item {
+      &--large {
+        height: 90%;
       }
     }
+  }
+  &__detail {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     &__desc {
-    }
-    &__user-story {
+      display: flex;
+      flex-direction: column;
+      &__title {
+        font-size: 1.5em;
+      }
+      &__name {
+        margin: 0;
+        margin-bottom: 10px;
+        font-size: 1.5em;
+      }
+      &__tech-stack {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        &__item {
+        }
+      }
+      &__text {
+      }
+      &__user-story {
+      }
     }
   }
 }

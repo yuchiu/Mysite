@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./index.scss";
+import { DownRefArrow } from "../common";
 import AllProjects from "./AllProjects";
 
 class Projects extends React.Component {
@@ -46,6 +47,9 @@ class Projects extends React.Component {
             </a>
           </div>
           <AllProjects category={category} />
+        </div>
+        <div className="down-arrow-section">
+          <DownRefArrow idhref="#contacts-wrapper" dark={true} />
         </div>
       </React.Fragment>
     );

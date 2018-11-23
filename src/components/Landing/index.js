@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./index.scss";
+import { DownRefArrow } from "../common";
 
 export default () => (
   <div id="landing-wrapper" className="landing-wrapper">
@@ -12,9 +13,7 @@ export default () => (
         <span className="landing-content__typing__line">|</span>
       </p>
       <div className="landing-content__link">
-        <a href="#showcases-wrapper" aria-hidden="true">
-          <i className="landing-content__link__icon fa fa-angle-double-down fa-4x" />
-        </a>
+        <DownRefArrow idhref="#showcases-wrapper" dark={false} />
       </div>
     </div>
   </div>
