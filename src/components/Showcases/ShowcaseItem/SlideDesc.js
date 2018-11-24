@@ -20,7 +20,7 @@ export default ({ itemData, showcaseSlideIndex }) => (
           </div>
           <ul className="showcase-content__main__detail__desc__tech-stack">
             <b className="showcase-content__main__detail__desc__tech-stack__bold">
-              Tech Stack:
+              Tech Stack
             </b>
             {itemData.techStack.map((tech, i) => (
               <p
@@ -33,7 +33,7 @@ export default ({ itemData, showcaseSlideIndex }) => (
             ))}
           </ul>
           <p className="showcase-content__main__detail__desc__user-story">
-            <b> User Stories:</b>
+            <b> User Stories</b>
             {itemData.userStory.map((story, i) => (
               <p
                 className="showcase-content__main__detail__desc__user-story__item"

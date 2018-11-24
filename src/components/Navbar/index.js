@@ -72,8 +72,6 @@ class Navbar extends React.Component {
     });
   }
 
-  handleScroll = () => {};
-
   render() {
     return (
       <section className="navbar-wrapper">
