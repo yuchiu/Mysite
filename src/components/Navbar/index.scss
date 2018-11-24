@@ -6,6 +6,8 @@
   width: 100%;
   z-index: 2;
   position: fixed;
+  background-color: #535eb4;
+  animation: bgColor 60s infinite;
   &__nav {
     width: 90%;
     margin: auto;
@@ -26,26 +28,9 @@
             color: $white;
             text-shadow: 0 0 1px $white, 0 0 5px $white, 0 0 30px $white;
           }
-        }
-      }
-    }
-  }
-  &--shrink {
-    background-color: $white;
-    color: $dark_nav_link_color;
-    box-shadow: 1px 1px 2px $lightgrey, 2px 2px 8px $lightgrey;
-  }
-  &--shrink & {
-    &__nav {
-      &__ul {
-        &__li {
-          &__link {
-            color: $dark_nav_link_color;
-            &:hover {
-              color: $bright-teal;
-              text-shadow: 0 0 1px $super-light-teal, 0 0 5px $super-light-teal,
-                0 0 15px $super-light-teal, 0 0 30px $super-light-teal;
-            }
+          &--active {
+            color: $white;
+            text-shadow: 0 0 1px $white, 0 0 5px $white, 0 0 30px $white;
           }
         }
       }
@@ -53,5 +38,19 @@
   }
 }
 
+@keyframes bgColor {
+  0% {
+    background-color: #535eb4;
+  }
+  33% {
+    background-color: #4e8da5;
+  }
+  66% {
+    background-color: #449467;
+  }
+  100% {
+    background-color: #6f51aa;
+  }
+}
 @include maxMediaQueries(880px) {
 }

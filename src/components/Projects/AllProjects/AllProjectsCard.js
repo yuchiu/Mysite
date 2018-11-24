@@ -47,7 +47,7 @@ export default ({ project }) => (
               rel="noopener noreferrer"
               className="a-tag-btn sandy-two proj-card__overlay__btn-group__link"
             >
-              <i class="fa fa-window-maximize" />
+              <i className="fa fa-window-maximize" />
               Demo
             </a>
           </div>

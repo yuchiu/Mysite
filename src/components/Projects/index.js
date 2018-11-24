@@ -47,9 +47,9 @@ class Projects extends React.Component {
             </a>
           </div>
           <AllProjects category={category} />
-        </div>
-        <div className="down-arrow-section">
-          <DownRefArrow idhref="#contacts-wrapper" dark={true} />
+          <div className="down-arrow-section">
+            <DownRefArrow idhref="#contacts-wrapper" dark={true} />
+          </div>
         </div>
       </React.Fragment>
     );

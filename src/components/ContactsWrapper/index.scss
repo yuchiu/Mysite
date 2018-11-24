@@ -3,11 +3,7 @@
 
 .contacts-wrapper {
   min-height: 100vh;
-}
-
-.contacts-wrapper {
-  background: transparent;
-  margin-top: 150px;
+  background-color: $white;
   &__upper {
     min-height: 15vh;
     display: flex;

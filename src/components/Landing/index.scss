@@ -7,9 +7,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(329deg, #535eb4, #4e8da5, #449467, #6f51aa);
-  background-size: 800% 800%;
-  animation: bgColor 30s ease infinite;
+  background-color: #535eb4;
+  animation: bgColor 60s infinite;
 }
 
 .landing-content {
@@ -40,18 +39,6 @@
   }
 }
 
-@keyframes bgColor {
-  0% {
-    background-position: 0% 23%;
-  }
-  50% {
-    background-position: 100% 78%;
-  }
-  100% {
-    background-position: 0% 23%;
-  }
-}
-
 @keyframes type {
   from {
     width: 0px;
@@ -68,5 +55,20 @@
   .landing__typing {
     font-size: 18px;
     width: 90%;
+  }
+}
+
+@keyframes bgColor {
+  0% {
+    background-color: #535eb4;
+  }
+  33% {
+    background-color: #4e8da5;
+  }
+  66% {
+    background-color: #449467;
+  }
+  100% {
+    background-color: #6f51aa;
   }
 }

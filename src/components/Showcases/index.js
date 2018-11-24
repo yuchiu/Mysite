@@ -1,5 +1,6 @@
 import React from "react";
 
+import "./index.scss";
 import showcaseData from "./showcaseData";
 import ShowcaseItem from "./ShowcaseItem";
 

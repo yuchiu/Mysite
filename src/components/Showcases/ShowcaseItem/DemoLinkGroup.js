@@ -16,7 +16,7 @@ export default ({ itemData }) => (
       target="_blank"
       href={itemData.demoLink}
     >
-      <i class="fa fa-2x fa-window-maximize" /> Demo
+      <i className="fa fa-2x fa-window-maximize" /> Demo
     </a>
   </div>
 );

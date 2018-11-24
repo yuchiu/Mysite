@@ -2,7 +2,8 @@
 
 .footer {
   height: auto !important;
-  margin: 30px auto -30px;
+  background-color: $white;
+  margin: -30px auto -30px;
   &__nav {
     height: $footerheight;
     display: flex;
