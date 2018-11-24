@@ -7,17 +7,19 @@ export default ({ itemData, showcaseSlideIndex }) => (
     {showcaseSlideIndex === "0" && (
       <section className="showcase-content__detail">
         <div className="showcase-content__detail__desc">
-          <h4 className="showcase-content__detail__desc__title">
+          <h4 className="showcase-content__detail__desc__header">
             Introduction
+            <h4 className="showcase-content__detail__desc__header__name">
+              {itemData.name}
+            </h4>
+            <p className="showcase-content__detail__desc__header__text">
+              {itemData.introDesc}
+            </p>
           </h4>
-          <h4 className="showcase-content__detail__desc__name">
-            {itemData.name}
-          </h4>
-          <p className="showcase-content__detail__desc__text">
-            {itemData.introDesc}
-          </p>
-          <b>Tech Stack:</b>
           <ul className="showcase-content__detail__desc__tech-stack">
+            <b className="showcase-content__detail__desc__tech-stack__bold">
+              Tech Stack:
+            </b>
             {itemData.techStack.map((tech, i) => (
               <p
                 className="showcase-content__detail__desc__tech-stack__item"
@@ -28,10 +30,15 @@ export default ({ itemData, showcaseSlideIndex }) => (
               </p>
             ))}
           </ul>
-          <b> User Stories:</b>
           <p className="showcase-content__detail__desc__user-story">
+            <b> User Stories:</b>
             {itemData.userStory.map((story, i) => (
-              <p key={`story-${i}`}>{story}</p>
+              <p
+                className="showcase-content__detail__desc__user-story__item"
+                key={`story-${i}`}
+              >
+                {story}
+              </p>
             ))}
           </p>
         </div>
@@ -41,7 +48,7 @@ export default ({ itemData, showcaseSlideIndex }) => (
     {showcaseSlideIndex === "1" && (
       <section className="showcase-content__detail">
         <div className="showcase-content__detail__desc">
-          <h4 className="showcase-content__detail__desc__title">
+          <h4 className="showcase-content__detail__desc__header">
             System Architecture
           </h4>
 
@@ -55,7 +62,7 @@ export default ({ itemData, showcaseSlideIndex }) => (
     {showcaseSlideIndex === "2" && (
       <section className="showcase-content__detail">
         <div className="showcase-content__detail__desc">
-          <h4 className="showcase-content__detail__desc__title">
+          <h4 className="showcase-content__detail__desc__header">
             Techinical Specification
           </h4>
           <p className="showcase-content__detail__desc__text">

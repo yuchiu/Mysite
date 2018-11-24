@@ -3,7 +3,7 @@ export default [
     id: "1700",
     name: "Today's News",
     description: "",
-    thumbnailImg: "https://i.imgur.com/DSxaEU8.png",
+    thumbnailImg: "https://i.imgur.com/xiq3tIT.png",
     category: "fullstack",
     techStack: [
       "Reactjs",

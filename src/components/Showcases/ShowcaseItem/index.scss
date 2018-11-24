@@ -7,6 +7,7 @@
   margin: auto;
   display: flex;
   flex-direction: column;
+  transition: all 0.3s ease;
 }
 .showcase-top {
   &__nav {
@@ -89,7 +90,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-width: 120px;
+    width: 120px;
     &__btn {
       user-select: none;
       background: transparent;
@@ -125,6 +126,7 @@
 
   &__img-section {
     min-width: 720px;
+    transition: all 0.3s ease;
     min-height: 700px;
     background-color: $super-light-teal;
     display: flex;
@@ -138,7 +140,8 @@
       background-color: $light-orange;
     }
     &__img {
-      height: 450px;
+      transition: all 0.3s ease;
+      height: 500px;
       box-shadow: 0 0 2px $grey, 0 0 5px $grey, 0 0 15px $darkgrey;
       &--large {
         height: 90%;
@@ -150,51 +153,103 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: all 0.3s ease;
     &__desc {
       display: flex;
+      height: 100%;
       flex-direction: column;
-      &__title {
+      justify-content: space-between;
+      margin-bottom: 20px;
+      font-size: 1.1em;
+      &__header {
         font-size: 1.5em;
+        &__name {
+          font-size: 1.2em;
+        }
+        &__text {
+          font-size: 0.7em;
+          font-weight: 300;
+        }
       }
-      &__name {
-        margin: 0;
-        margin-bottom: 10px;
-        font-size: 1.5em;
-      }
+
       &__tech-stack {
+        margin: 0;
         padding: 0;
         display: flex;
         flex-wrap: wrap;
+        &__bold {
+          width: 100%;
+        }
         &__item {
+          margin-bottom: 0;
         }
       }
-      &__text {
-      }
       &__user-story {
+        &__item {
+          margin: 0;
+        }
       }
     }
   }
 }
 
-.showcase-0-slide-0 {
-  &--not-selected {
-    background-color: blue;
+@include maxMediaQueries(1500px) {
+  .showcase-content {
+    &__img-section {
+      min-width: 600px;
+      margin-right: 20px;
+      &__img {
+        height: 400px;
+        &--large {
+          height: 580px;
+        }
+      }
+    }
+    &__slide-btn-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 120px;
+      &__btn {
+        height: 200px;
+        padding-left: 0px;
+        padding-right: 0px;
+        font-size: 7em;
+      }
+    }
+    &__detail {
+      &__desc {
+        font-size: 1em;
+        &__header {
+          font-size: 1.3em;
+        }
+        &__name {
+          font-size: 1.3em;
+        }
+        &__tech-stack {
+          &__item {
+          }
+        }
+        &__text {
+        }
+        &__user-story {
+        }
+      }
+    }
   }
 }
 
-.showcase-0-slide-1 {
-  &--not-selected {
-    background-color: blue;
-  }
-  &--selected {
-    background-color: green;
-  }
-}
-.showcase-0-slide-2 {
-  &--not-selected {
-    background-color: blue;
-  }
-  &--selected {
-    background-color: green;
+@include maxMediaQueries(1300px) {
+  .showcase-content {
+    &__img-section {
+      min-width: 500px;
+      margin-right: 10px;
+      &__img {
+        height: 400px;
+        &--large {
+          height: 500px;
+        }
+      }
+    }
   }
 }

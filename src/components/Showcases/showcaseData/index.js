@@ -3,7 +3,7 @@ export default [
     id: "1",
     name: "Today News",
     imgUrl: {
-      demoPic: "https://imgur.com/xiq3tIT.png",
+      demoPic: "https://i.imgur.com/y2bUGMn.gif",
       archDiagram: "https://i.imgur.com/FBYB9vn.jpg"
     },
     techStack: [
@@ -27,7 +27,7 @@ export default [
       "TensorFlow"
     ],
     introDesc:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. ",
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.",
     userStory: [
       "Users can register and log in with their accounts",
       "News are classified in different categories for users",
@@ -46,7 +46,7 @@ export default [
     id: "2",
     name: "Slack Clone",
     imgUrl: {
-      demoPic: "https://imgur.com/wGlKGSQ.png",
+      demoPic: "https://i.imgur.com/6FqTT5y.gif",
       archDiagram: "https://i.imgur.com/4k0g7dE.jpg"
     },
     techStack: [
@@ -69,7 +69,7 @@ export default [
       "Docker"
     ],
     introDesc:
-      "t vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem",
+      "t vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserun.",
     userStory: [
       "Users can register and log in with their account",
       "Users can edit his/her profile info, including profile image & password",

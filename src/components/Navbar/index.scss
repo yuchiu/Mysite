@@ -19,6 +19,7 @@
         list-style: none;
         margin: 3px 15px;
         &__link {
+          user-select: none;
           display: flex;
           align-items: center;
           font-size: 1.3em;
