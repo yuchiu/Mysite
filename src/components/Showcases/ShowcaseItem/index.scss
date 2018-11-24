@@ -141,12 +141,12 @@
       @include bgColorAnimation;
       background: linear-gradient(
         45deg,
-        $white 0%,
-        $white 20%,
+        #fff 0%,
+        #fff 20%,
         transparent 20%,
         transparent 40%,
-        $white 40%,
-        $white 100%
+        #fff 40%,
+        #fff 100%
       );
       &__img {
         transition: all 0.3s ease;
