@@ -19,18 +19,23 @@
         list-style: none;
         margin: 3px 15px;
         &__link {
+          display: flex;
+          align-items: center;
           font-size: 1.3em;
           transition: all 0.3s ease;
           font-weight: 600;
           color: $white;
           text-decoration: none;
+          &--logo {
+            margin-top: -10px;
+          }
           &:hover {
             color: $white;
-            text-shadow: 0 0 1px $white, 0 0 5px $white, 0 0 30px $white;
+            filter: drop-shadow(0 0 5px $white) drop-shadow(0 0 20px $white);
           }
           &--active {
             color: $white;
-            text-shadow: 0 0 1px $white, 0 0 5px $white, 0 0 30px $white;
+            filter: drop-shadow(0 0 5px $white) drop-shadow(0 0 20px $white);
           }
         }
       }

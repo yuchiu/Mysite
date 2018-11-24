@@ -1,6 +1,7 @@
 import React from "react";
 import $ from "jquery";
 
+import YCLogo from "./YCLogo";
 import "./index.scss";
 
 class Navbar extends React.Component {
@@ -78,9 +79,10 @@ class Navbar extends React.Component {
             <li className="navbar-wrapper__nav__ul__li">
               <a
                 id="landing-nav-link"
-                className="navbar-wrapper__nav__ul__li__link "
+                className="navbar-wrapper__nav__ul__li__link navbar-wrapper__nav__ul__li__link--logo "
                 href="#landing-wrapper"
               >
+                <YCLogo />
                 Home
               </a>
             </li>
