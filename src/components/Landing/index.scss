@@ -7,8 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #4e8da5;
-  animation: bgColor 40s infinite;
+  @include bgColorAnimation;
 }
 
 .landing-content {
@@ -55,41 +54,5 @@
   .landing__typing {
     font-size: 18px;
     width: 90%;
-  }
-}
-
-@keyframes bgColor {
-  0% {
-    background-color: #4e8da5;
-  }
-  10% {
-    background-color: #9b8ee4;
-  }
-  20% {
-    background-color: #748aec;
-  }
-  30% {
-    background-color: #449467;
-  }
-  40% {
-    background-color: #24b598;
-  }
-  50% {
-    background-color: #3d91e5;
-  }
-  60% {
-    background-color: #3d91e5;
-  }
-  70% {
-    background-color: #7294dd;
-  }
-  80% {
-    background-color: #67d494;
-  }
-  90% {
-    background-color: #65d1b1;
-  }
-  100% {
-    background-color: #4e8da5;
   }
 }

@@ -3,6 +3,7 @@
 
 .contacts-wrapper {
   min-height: 100vh;
+  margin-top: 50px;
   background-color: $white;
   &__upper {
     min-height: 15vh;
@@ -11,7 +12,7 @@
   }
 
   &__lower {
-    margin-top: 100px;
+    margin-top: 40px;
     min-height: 45vh;
     display: flex;
   }
@@ -23,6 +24,6 @@
     display: flex;
     flex-direction: column;
     margin-top: -50px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
 }

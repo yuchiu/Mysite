@@ -17,6 +17,9 @@ class Navbar extends React.Component {
     const showcasesLink = $("#showcases-nav-link");
     const projectsLink = $("#projects-nav-link");
     const contactsLink = $("#contacts-nav-link");
+
+    landingLink.addClass("navbar-wrapper__nav__ul__li__link--active");
+
     $(window).scroll(() => {
       if ($(document).scrollTop() > 50) {
         navWrapper.addClass("navbar-wrapper--shrink");

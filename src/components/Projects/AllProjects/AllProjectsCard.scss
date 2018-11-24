@@ -91,8 +91,7 @@
         &:hover {
           color: rgba(255, 255, 255, 0.85);
           box-shadow: $btn-color 0 0px 0px 50px inset;
-          text-shadow: 0 0 10px $white, 0 0 20px $white, 0 0 30px $white,
-            0 0 40px $btn-color4;
+          text-shadow: 0 0 6px $white, 0 0 40px $btn-color4;
         }
       }
     }
