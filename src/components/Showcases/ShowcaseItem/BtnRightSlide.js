@@ -14,7 +14,7 @@ export default ({ index, handleSlideRight, showcaseSlideIndex }) => (
       <div className={`showcase-content__slide-btn-section`}>
         <button
           name={`showcaseItem${index}`}
-          className={`showcase-content__slide-btn-section__btn`}
+          className={`showcase-content__slide-btn-section__btn showcase-content__slide-btn-section__btn--right`}
           onClick={handleSlideRight}
         >
           {">>"}

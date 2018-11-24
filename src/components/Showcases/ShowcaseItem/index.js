@@ -33,12 +33,20 @@ export default ({
         handleSlideLeft={handleSlideLeft}
         showcaseSlideIndex={showcaseSlideIndex}
       />
-      <section
-        className={`showcase-content__img-section showcase-content__img-section--showcase-${index}`}
-      >
-        <SlideImg itemData={itemData} showcaseSlideIndex={showcaseSlideIndex} />
-      </section>
-      <SlideDesc itemData={itemData} showcaseSlideIndex={showcaseSlideIndex} />
+      <div v className="showcase-content__main">
+        <section
+          className={`showcase-content__main__img-section showcase-content__img-section--showcase-${index}`}
+        >
+          <SlideImg
+            itemData={itemData}
+            showcaseSlideIndex={showcaseSlideIndex}
+          />
+        </section>
+        <SlideDesc
+          itemData={itemData}
+          showcaseSlideIndex={showcaseSlideIndex}
+        />
+      </div>
       <BtnRightSlide
         index={index}
         handleSlideRight={handleSlideRight}
