@@ -31,11 +31,11 @@
           }
           &:hover {
             color: $white;
-            filter: drop-shadow(0 0 10px $white);
+            filter: drop-shadow(0 0 30px $white) drop-shadow(0 0 10px $white);
           }
           &--active {
             color: $white;
-            filter: drop-shadow(0 0 10px $white);
+            filter: drop-shadow(0 0 30px $white) drop-shadow(0 0 10px $white);
           }
         }
       }
@@ -53,6 +53,19 @@
           margin: 3px 6px;
           &__link {
             font-size: 1.1em;
+          }
+        }
+      }
+    }
+  }
+}
+@include maxMediaQueries(650px) {
+  .navbar-wrapper {
+    display: block;
+    &__nav {
+      &__ul {
+        &__li {
+          &__link {
           }
         }
       }

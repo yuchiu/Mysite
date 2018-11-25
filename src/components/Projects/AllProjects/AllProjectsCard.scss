@@ -113,17 +113,17 @@
     }
   }
 }
-@include maxMediaQueries(680px) {
+@include maxMediaQueries(650px) {
   .project {
-    width: 400px;
-    height: 300px;
+    width: 350px;
+    height: 280px;
   }
   .proj-card {
     &__img {
-      width: 400px;
+      width: 350px;
       &__thumbnail {
-        width: 400px;
-        height: 300px;
+        width: 350px;
+        height: 280px;
       }
     }
   }

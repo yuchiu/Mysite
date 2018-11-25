@@ -111,3 +111,14 @@ section.icons-col-section {
     }
   }
 }
+
+@media (max-width: 650px) {
+  .icons-col-section {
+    .icons {
+      &__item {
+        height: 90px;
+        width: 90px;
+      }
+    }
+  }
+}

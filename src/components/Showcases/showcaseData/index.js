@@ -4,7 +4,8 @@ export default [
     name: "Today News",
     imgUrl: {
       demoPic: "https://i.imgur.com/y2bUGMn.gif",
-      archDiagram: "https://i.imgur.com/FBYB9vn.jpg"
+      archDiagram: "https://i.imgur.com/FBYB9vn.jpg",
+      techPic: "https://imgur.com/xiq3tIT.png"
     },
     techStack: [
       "Reactjs",
@@ -47,7 +48,8 @@ export default [
     name: "Slack Clone",
     imgUrl: {
       demoPic: "https://i.imgur.com/6FqTT5y.gif",
-      archDiagram: "https://i.imgur.com/4k0g7dE.jpg"
+      archDiagram: "https://i.imgur.com/4k0g7dE.jpg",
+      techPic: "https://imgur.com/AHVp5Sk.png"
     },
     techStack: [
       "Reactjs",
