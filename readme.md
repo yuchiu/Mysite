@@ -1,6 +1,6 @@
 # My Portfolio Site
 
-View this site live on this [Link](http://www.yuchiu.com)
+View this site live on this [Link](https://www.yuchiu.com)
 
 ## Serving Application
 

@@ -36,7 +36,11 @@ export default class Contacts extends React.Component {
       setTimeout(
         () =>
           this.setState({
-            isMsgSend: true
+            isMsgSend: true,
+            formData: {
+              subject: "",
+              message: ""
+            }
           }),
         500
       );
