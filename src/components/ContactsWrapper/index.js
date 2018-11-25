@@ -4,7 +4,7 @@ import "./index.scss";
 import SkillsetRow from "./SkillsetRow";
 import SkillsetCol from "./SkillsetCol";
 import AboutMe from "./AboutMe";
-import Contacts from "./Contacts";
+import ContactsForm from "./ContactsForm";
 
 export default () => (
   <div id="contacts-wrapper" className="contacts-wrapper">
@@ -14,7 +14,7 @@ export default () => (
     </div>
     <div className="contacts-wrapper__lower">
       <AboutMe />
-      <Contacts />
+      <ContactsForm />
     </div>
   </div>
 );

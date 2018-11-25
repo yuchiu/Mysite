@@ -1,7 +1,7 @@
 @import "../../assets/css/vars.scss";
 @import "../../assets/css/mixins.scss";
 
-.contacts-section {
+.contacts-form {
   transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -12,7 +12,8 @@
   margin-left: 30px;
   min-height: 40vh;
 }
-.msg-header {
+
+.form-header {
   margin: 0 auto;
   margin-bottom: 15px;
   &__title {
@@ -20,7 +21,7 @@
   }
 }
 
-.msg-subject {
+.form-subject {
   font-size: 1.2em;
   width: 100%;
   display: flex;
@@ -48,12 +49,15 @@
     }
 
     &__input {
+      padding: 2px;
+      border: 1px solid $lightgrey;
+      border-radius: 2px;
       width: 80%;
     }
   }
 }
 
-.msg-body {
+.form-body {
   font-size: 1.2em;
   height: 40%;
   min-height: 150px;
@@ -64,12 +68,15 @@
     padding-right: 10px;
   }
   &__text {
+    padding: 2px;
+    border: 1px solid $lightgrey;
+    border-radius: 2px;
     width: 80%;
     height: 95%;
     min-height: 150px;
   }
 }
-.msg-sender {
+.form-sender {
   margin-top: 10px;
   font-size: 1.2em;
   width: 100%;
@@ -81,10 +88,13 @@
   }
   &__mail-addr {
     width: 80%;
+    padding: 2px;
+    border: 1px solid $lightgrey;
+    border-radius: 2px;
   }
 }
 
-.msg-send {
+.form-send {
   width: 90.5%;
   font-size: 1.2em;
   display: flex;
@@ -112,7 +122,7 @@
     }
     &:hover {
       cursor: pointer;
-      .msg-send {
+      .form-send {
         &__btn {
           display: flex;
           &__icon {
@@ -125,7 +135,7 @@
     }
     &:focus {
       cursor: pointer;
-      .msg-send {
+      .form-send {
         &__btn {
           &__icon {
             transition: all 1.5s ease-out;

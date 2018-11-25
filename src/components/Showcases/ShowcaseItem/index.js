@@ -33,7 +33,7 @@ export default ({
         handleSlideLeft={handleSlideLeft}
         showcaseSlideIndex={showcaseSlideIndex}
       />
-      <div v className="showcase-content__main">
+      <div className="showcase-content__main">
         <section
           className={`showcase-content__main__img-section showcase-content__main__img-section--showcase-${index}`}
         >
