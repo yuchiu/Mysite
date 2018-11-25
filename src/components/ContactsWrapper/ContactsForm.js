@@ -1,4 +1,5 @@
 import React from "react";
+import validator from "validator";
 
 import "./ContactsForm.scss";
 import { PopUpModal } from "../common";
@@ -7,18 +8,39 @@ export default class Contacts extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isMsgSend: false
+      isMsgSend: false,
+      formData: {
+        subject: "",
+        message: "",
+        email: ""
+      }
     };
   }
 
+  handleChange = e => {
+    const { formData } = this.state;
+    const field = e.target.name;
+    formData[field] = e.target.value;
+    this.setState({
+      formData
+    });
+  };
+
   handleSend = () => {
-    setTimeout(
-      () =>
-        this.setState({
-          isMsgSend: true
-        }),
-      500
-    );
+    const { formData } = this.state;
+    if (
+      formData.subject &&
+      formData.message &&
+      validator.isEmail(formData.email)
+    ) {
+      setTimeout(
+        () =>
+          this.setState({
+            isMsgSend: true
+          }),
+        500
+      );
+    }
   };
 
   handleClose = () => {
@@ -28,7 +50,7 @@ export default class Contacts extends React.Component {
   };
 
   render() {
-    const { isMsgSend } = this.state;
+    const { isMsgSend, formData } = this.state;
     return (
       <React.Fragment>
         {isMsgSend ? (
@@ -58,6 +80,8 @@ export default class Contacts extends React.Component {
               <h4 className="form-subject__section__h4">Subject:</h4>
               <input
                 name="subject"
+                value={formData.subject}
+                onChange={this.handleChange}
                 className="form-subject__section__input"
                 placeholder="Hello World!"
                 required
@@ -68,6 +92,8 @@ export default class Contacts extends React.Component {
             <h4 className="form-body__h4">Message:</h4>
             <textarea
               name="message"
+              value={formData.message}
+              onChange={this.handleChange}
               className="form-body__text"
               placeholder="Message Body"
               required
@@ -76,10 +102,12 @@ export default class Contacts extends React.Component {
           <div className="form-sender">
             <h4 className="form-sender__h4">From:</h4>
             <input
-              className="form-sender__mail-addr"
-              placeholder="sender@email.com"
               name="email"
               type="email"
+              className="form-sender__mail-addr"
+              onChange={this.handleChange}
+              value={formData.email}
+              placeholder="sender@email.com"
               required
             />
           </div>
