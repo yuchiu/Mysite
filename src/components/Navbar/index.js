@@ -84,7 +84,7 @@ class Navbar extends React.Component {
                 href="#landing-wrapper"
               >
                 <YCLogo />
-                Home
+                YU CHIU
               </a>
             </li>
           </ul>
@@ -95,7 +95,7 @@ class Navbar extends React.Component {
                 className="navbar-wrapper__nav__ul__li__link "
                 href="#showcases-wrapper"
               >
-                Showcases
+                SHOWCASES
               </a>
             </li>
             <li className="navbar-wrapper__nav__ul__li">
@@ -104,7 +104,7 @@ class Navbar extends React.Component {
                 className="navbar-wrapper__nav__ul__li__link"
                 href="#projects-wrapper"
               >
-                Projects
+                PROJECTS
               </a>
             </li>
             <li className="navbar-wrapper__nav__ul__li">
@@ -113,7 +113,7 @@ class Navbar extends React.Component {
                 className="navbar-wrapper__nav__ul__li__link"
                 href="#contacts-wrapper"
               >
-                Contacts
+                CONTACTS
               </a>
             </li>
           </ul>
