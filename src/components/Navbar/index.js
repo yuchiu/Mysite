@@ -27,7 +27,7 @@ class Navbar extends React.Component {
         navWrapper.removeClass("navbar-wrapper--shrink");
       }
       if (
-        $(window).scrollTop() >= landingTop &&
+        $(window).scrollTop() >= landingTop - 100 &&
         $(window).scrollTop() < showcasesTop
       ) {
         landingLink.addClass("navbar-wrapper__nav__ul__li__link--active");
@@ -39,7 +39,7 @@ class Navbar extends React.Component {
       }
 
       if (
-        $(window).scrollTop() >= showcasesTop &&
+        $(window).scrollTop() >= showcasesTop - 100 &&
         $(window).scrollTop() < projectsTop
       ) {
         showcasesLink.addClass("navbar-wrapper__nav__ul__li__link--active");
@@ -50,7 +50,7 @@ class Navbar extends React.Component {
         showcasesLink.removeClass("navbar-wrapper__nav__ul__li__link--active");
       }
       if (
-        $(window).scrollTop() >= projectsTop &&
+        $(window).scrollTop() >= projectsTop - 100 &&
         $(window).scrollTop() < contactsTop
       ) {
         projectsLink.addClass("navbar-wrapper__nav__ul__li__link--active");
@@ -61,7 +61,7 @@ class Navbar extends React.Component {
         projectsLink.removeClass("navbar-wrapper__nav__ul__li__link--active");
       }
 
-      if ($(window).scrollTop() >= contactsTop) {
+      if ($(window).scrollTop() >= contactsTop - 100) {
         contactsLink.addClass("navbar-wrapper__nav__ul__li__link--active");
         landingLink.removeClass("navbar-wrapper__nav__ul__li__link--active");
         projectsLink.removeClass("navbar-wrapper__nav__ul__li__link--active");
