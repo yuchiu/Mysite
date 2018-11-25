@@ -31,11 +31,11 @@
           }
           &:hover {
             color: $white;
-            filter: drop-shadow(0 0 30px $white) drop-shadow(0 0 10px $white);
+            filter: drop-shadow(0 0 25px $white) drop-shadow(0 0 10px $white);
           }
           &--active {
             color: $white;
-            filter: drop-shadow(0 0 30px $white) drop-shadow(0 0 10px $white);
+            filter: drop-shadow(0 0 25px $white) drop-shadow(0 0 10px $white);
           }
         }
       }
@@ -46,7 +46,6 @@
 @include maxMediaQueries(880px) {
   .navbar-wrapper {
     &__nav {
-      width: 100%;
       &__ul {
         padding-left: 0px;
         &__li {
@@ -63,6 +62,7 @@
   .navbar-wrapper {
     display: block;
     &__nav {
+      width: 100%;
       &__ul {
         &__li {
           &__link {
