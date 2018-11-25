@@ -20,10 +20,6 @@
 }
 /* Transition Animation */
 @mixin cubicTransition {
-  -webkit-transition: all 700ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
-  -moz-transition: all 700ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
-  -ms-transition: all 700ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
-  -o-transition: all 700ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
   transition: all 700ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
 }
 
@@ -85,9 +81,6 @@
     letter-spacing: 0.08em;
     border-radius: 0;
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
     transition: all 1s ease;
   }
   .a-tag-btn:after,
@@ -99,9 +92,6 @@
     top: 50%;
     width: 150%;
     z-index: -1;
-    -webkit-transition: all 0.75s ease 0s;
-    -moz-transition: all 0.75s ease 0s;
-    -o-transition: all 0.75s ease 0s;
     transition: all 0.75s ease 0s;
   }
   .a-tag-btn:hover,
@@ -129,9 +119,6 @@
     overflow: hidden;
     letter-spacing: 0.08em;
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
     transition: all 1s ease;
   }
 }
@@ -146,9 +133,6 @@
   .a-tag-btn.sandy-one:after {
     border: 3px solid #a8d3d3;
     opacity: 0;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
   }
   .a-tag-btn.sandy-one:hover:after {
@@ -163,9 +147,6 @@
   .a-tag-btn.sandy-two:after {
     border: 3px solid #a8d3d3;
     opacity: 0;
-    -moz-transform: translateY(-50%) translateX(-50%) rotate(90deg);
-    -ms-transform: translateY(-50%) translateX(-50%) rotate(90deg);
-    -webkit-transform: translateY(-50%) translateX(-50%) rotate(90deg);
     transform: translateY(-50%) translateX(-50%) rotate(90deg);
   }
   .a-tag-btn.sandy-two:hover:after {
@@ -180,9 +161,6 @@
   .a-tag-btn.sandy-three:after {
     border: 3px solid #a8d3d3;
     opacity: 0;
-    -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
-    -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
-    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
     transform: translateX(-50%) translateY(-50%) rotate(-25deg);
   }
   .a-tag-btn.sandy-three:hover:after {
@@ -197,9 +175,6 @@
   .a-tag-btn.sandy-four:after {
     border: 3px solid #a8d3d3;
     opacity: 0;
-    -moz-transform: translateY(-50%) translateX(-50%) rotate(25deg);
-    -ms-transform: translateY(-50%) translateX(-50%) rotate(25deg);
-    -webkit-transform: translateY(-50%) translateX(-50%) rotate(25deg);
     transform: translateY(-50%) translateX(-50%) rotate(25deg);
   }
   .a-tag-btn.sandy-four:hover:after {
@@ -217,9 +192,6 @@
   }
   .a-tag-btn.victoria-one:after {
     background: #a8d3d3;
-    -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
-    -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
-    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
     transform: translateX(-50%) translateY(-50%) rotate(-25deg);
   }
   .a-tag-btn.victoria-two {
@@ -227,9 +199,6 @@
   }
   .a-tag-btn.victoria-two:after {
     background: #a8d3d3;
-    -moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
-    -ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
-    -webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
     transform: translateX(-50%) translateY(-50%) rotate(25deg);
   }
   .a-tag-btn.victoria-three {
@@ -238,9 +207,6 @@
   .a-tag-btn.victoria-three:after {
     background: #a8d3d3;
     opacity: 0.5;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
   }
   .a-tag-btn.victoria-three:hover:after {
@@ -253,9 +219,6 @@
   .a-tag-btn.victoria-four:after {
     background: #a8d3d3;
     opacity: 0.5;
-    -moz-transform: translateY(-50%) translateX(-50%) rotate(90deg);
-    -ms-transform: translateY(-50%) translateX(-50%) rotate(90deg);
-    -webkit-transform: translateY(-50%) translateX(-50%) rotate(90deg);
     transform: translateY(-50%) translateX(-50%) rotate(90deg);
   }
   .a-tag-btn.victoria-four:hover:after {
@@ -282,9 +245,6 @@
       rgba(101, 179, 122, 0.2) 50%
     );
     background-size: 10px 10px;
-    -moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
-    -ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
-    -webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
     transform: translateX(-50%) translateY(-50%) rotate(25deg);
   }
   .a-tag-btn.gibson-one:hover:after {
@@ -307,9 +267,6 @@
       rgba(101, 179, 122, 0.2) 50%
     );
     background-size: 10px 10px;
-    -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
-    -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
-    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
     transform: translateX(-50%) translateY(-50%) rotate(-25deg);
   }
   .a-tag-btn.gibson-two:hover:after {
@@ -332,9 +289,6 @@
       rgba(101, 179, 122, 0.2) 50%
     );
     background-size: 10px 10px;
-    -moz-transform: translateX(-50%) translateY(-50%) rotate(90deg);
-    -ms-transform: translateX(-50%) translateY(-50%) rotate(90deg);
-    -webkit-transform: translateX(-50%) translateY(-50%) rotate(90deg);
     transform: translateX(-50%) translateY(-50%) rotate(90deg);
   }
   .a-tag-btn.gibson-three:hover:after {
@@ -357,14 +311,128 @@
       rgba(101, 179, 122, 0.2) 50%
     );
     background-size: 10px 10px;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
   }
   .a-tag-btn.gibson-four:hover:after {
     height: 600% !important;
     opacity: 1;
     color: #fff;
+  }
+}
+
+/* Thar Buttons */
+
+@mixin aTagBtnThar() {
+  .a-tag-btn.thar-one {
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #f7ca18;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+  }
+  .a-tag-btn.thar-one:hover {
+    color: #000 !important;
+    background-color: transparent;
+    text-shadow: none;
+  }
+  .a-tag-btn.thar-one:hover:before {
+    bottom: 0%;
+    top: auto;
+    height: 100%;
+  }
+  .a-tag-btn.thar-one:before {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 0px;
+    width: 100%;
+    z-index: -1;
+    content: "";
+    color: #000 !important;
+    background: #f7ca18;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+  }
+  .a-tag-btn.thar-two {
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #f7ca18;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+  }
+  .a-tag-btn.thar-two:hover {
+    color: #000 !important;
+    background-color: transparent;
+    text-shadow: ntwo;
+  }
+  .a-tag-btn.thar-two:hover:before {
+    top: 0%;
+    bottom: auto;
+    height: 100%;
+  }
+  .a-tag-btn.thar-two:before {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 0px;
+    width: 100%;
+    z-index: -1;
+    content: "";
+    color: #000 !important;
+    background: #f7ca18;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+  }
+  .a-tag-btn.thar-three {
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #f7ca18;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s;
+  }
+  .a-tag-btn.thar-three:hover {
+    color: #000 !important;
+    background-color: transparent;
+    text-shadow: nthree;
+  }
+  .a-tag-btn.thar-three:hover:before {
+    left: 0%;
+    right: auto;
+    width: 100%;
+  }
+  .a-tag-btn.thar-three:before {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 0px;
+    z-index: -1;
+    content: "";
+    color: #000 !important;
+    background: #f7ca18;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s;
+  }
+  .a-tag-btn.thar-four {
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid #f7ca18;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s;
+  }
+  .a-tag-btn.thar-four:hover {
+    color: #000 !important;
+    background-color: transparent;
+    text-shadow: nfour;
+  }
+  .a-tag-btn.thar-four:hover:before {
+    right: 0%;
+    left: auto;
+    width: 100%;
+  }
+  .a-tag-btn.thar-four:before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 0px;
+    z-index: -1;
+    content: "";
+    color: #000 !important;
+    background: #f7ca18;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s;
   }
 }
