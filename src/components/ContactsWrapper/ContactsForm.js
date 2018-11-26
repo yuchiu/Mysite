@@ -49,7 +49,8 @@ export default class Contacts extends React.Component {
             isMsgSend: true,
             formData: {
               subject: "",
-              message: ""
+              message: "",
+              email: formData.email
             }
           }),
         500
@@ -91,7 +92,7 @@ export default class Contacts extends React.Component {
               <span className="form-subject__to__h4__email">{myEmail}</span>
               <CopyToClipboard text={myEmail} onCopy={this.handleCopy}>
                 <span className="form-subject__to__h4__copy-btn">
-                  <i class="fas fa-copy" /> {isEmailCopied}
+                  <i className="fas fa-copy" /> {isEmailCopied}
                 </span>
               </CopyToClipboard>
             </div>
