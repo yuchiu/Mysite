@@ -3,7 +3,12 @@
 
 .about-wrapper {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   min-height: 50vh;
+  flex: 38vw;
+  margin-bottom: 50px;
   &__title {
     margin-bottom: 35px;
   }
@@ -14,7 +19,7 @@
 
 .social {
   width: 100%;
-  margin: auto auto 0 auto;
+  margin: 0 auto 0 auto;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -42,10 +47,12 @@
       }
       &__btn {
         &__icon {
+          @include cubicTransition;
           font-size: 2.5em;
           color: $darkgrey;
         }
         &__name {
+          @include cubicTransition;
           font-size: 1em;
           color: $darkgrey;
         }
@@ -55,11 +62,8 @@
         .a-tag-btn.victoria-two,
         .a-tag-btn.victoria-three,
         .a-tag-btn.victoria-four {
-          @include cubicTransition;
-          border-color: #23ecc7;
-          background: #23ecc7;
-          box-shadow: 0 0 3px #23ecc7, 0 0 5px #23ecc7, 0 0 10px #23ecc7,
-            0 0 20px #23ecc7, 0 0 40px #23ecc7;
+          border-color: $bright-teal;
+          background: $bright-teal;
         }
       }
       &:hover & {
@@ -74,28 +78,5 @@
         }
       }
     }
-  }
-}
-
-@include maxMediaQueries(975px) {
-  .about-wrapper {
-    &__title {
-      font-size: 25px;
-    }
-    &__intro {
-      margin: 0 auto;
-      width: 85%;
-    }
-  }
-}
-
-@include minMediaQueries(976px) {
-  .about-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    flex: 38vw;
-    margin: 0 3vw;
   }
 }

@@ -60,7 +60,10 @@ export default ({ itemData, showcaseSlideIndex }) => (
             ))}
           </p>
         </div>
-        <DemoLinkGroup itemData={itemData} />
+        <DemoLinkGroup
+          showcaseSlideIndex={showcaseSlideIndex}
+          itemData={itemData}
+        />
       </section>
     )}
     {showcaseSlideIndex === "1" && (
@@ -71,11 +74,15 @@ export default ({ itemData, showcaseSlideIndex }) => (
               System Architecture
             </h4>
             <p className="showcase-content__main__detail__desc__header__text">
-              {itemData.archDesc}
+              Under Constructions
+              {/* {itemData.archDesc} */}
             </p>
           </div>
         </div>
-        <DemoLinkGroup itemData={itemData} />
+        <DemoLinkGroup
+          showcaseSlideIndex={showcaseSlideIndex}
+          itemData={itemData}
+        />
       </section>
     )}
     {showcaseSlideIndex === "2" && (
@@ -86,11 +93,15 @@ export default ({ itemData, showcaseSlideIndex }) => (
               Techinical Specification
             </h4>
             <p className="showcase-content__main__detail__desc__header__text">
-              {itemData.techSpecDesc}
+              Under Constructions
+              {/* {itemData.techSpecDesc} */}
             </p>
           </div>
         </div>
-        <DemoLinkGroup itemData={itemData} />
+        <DemoLinkGroup
+          showcaseSlideIndex={showcaseSlideIndex}
+          itemData={itemData}
+        />
       </section>
     )}
   </React.Fragment>

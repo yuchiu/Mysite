@@ -3,8 +3,8 @@
 
 /* icons in row*/
 
-//show as row above 1000px
-@media (min-width: 1000px) {
+//show as row above 975px
+@media (min-width: 975px) {
   section.icons-col-section {
     display: none;
   }
@@ -76,8 +76,8 @@
 
 /* icons in column*/
 
-//show as col below 1000px
-@media (max-width: 1000px) {
+//show as col below 975px
+@media (max-width: 975px) {
   section.icons-row-section {
     display: none;
   }
@@ -85,7 +85,7 @@
 
 section.icons-col-section {
   width: 100%;
-  margin-top: 60px;
+  margin-top: 30px;
   letter-spacing: 2px;
   text-align: center;
 }
@@ -103,7 +103,7 @@ section.icons-col-section {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      padding: 45px 0;
+      padding: 20px 0;
     }
     &__item {
       height: 135px;
