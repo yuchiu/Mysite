@@ -8,12 +8,13 @@
   justify-content: space-between;
   min-height: 50vh;
   flex: 38vw;
-  margin-bottom: 50px;
   &__title {
     margin-bottom: 35px;
   }
   &__intro {
     font-size: 1.2em;
+    margin: auto;
+    width: 80%;
   }
 }
 
@@ -44,6 +45,7 @@
         padding: 20px 10px;
         text-transform: none;
         border-color: $darkgrey;
+        user-select: none;
       }
       &__btn {
         &__icon {
@@ -78,5 +80,12 @@
         }
       }
     }
+  }
+}
+
+//show as col below 975px
+@media (max-width: 975px) {
+  .about-wrapper {
+    margin-bottom: 50px;
   }
 }

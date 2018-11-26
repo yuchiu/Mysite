@@ -1,5 +1,6 @@
 import React from "react";
 import validator from "validator";
+import CopyToClipboard from "react-copy-to-clipboard";
 
 import "./ContactsForm.scss";
 import { PopUpModal } from "../common";
@@ -9,6 +10,8 @@ export default class Contacts extends React.Component {
     super(props);
     this.state = {
       isMsgSend: false,
+      isEmailCopied: "copy email",
+      myEmail: "steven2002yc@gmail.com",
       formData: {
         subject: "",
         message: "",
@@ -16,6 +19,13 @@ export default class Contacts extends React.Component {
       }
     };
   }
+
+  handleCopy = () => {
+    this.setState({ isEmailCopied: "copied!" });
+    setTimeout(() => {
+      this.setState({ isEmailCopied: "copy email" });
+    }, 3000);
+  };
 
   handleChange = e => {
     const { formData } = this.state;
@@ -54,7 +64,7 @@ export default class Contacts extends React.Component {
   };
 
   render() {
-    const { isMsgSend, formData } = this.state;
+    const { isMsgSend, formData, myEmail, isEmailCopied } = this.state;
     return (
       <React.Fragment>
         {isMsgSend ? (
@@ -69,7 +79,7 @@ export default class Contacts extends React.Component {
         <form
           className="gform contacts-form"
           method="POST"
-          data-email="steven2002yc@gmail.com"
+          data-email={myEmail}
           action="https://script.google.com/macros/s/AKfycbwmpk3mHxjdk4qyvkY_i7HK-O3ldBho6wYPQ_eCjKUBQmykXCra/exec"
         >
           <div className="form-header">
@@ -77,8 +87,13 @@ export default class Contacts extends React.Component {
           </div>
           <div className="form-subject">
             <div className="form-subject__to">
-              <h4 className="form-subject__to__h4">To:</h4>{" "}
-              steven2002yc@gmail.com
+              <h4 className="form-subject__to__h4">To:</h4>
+              <span className="form-subject__to__h4__email">{myEmail}</span>
+              <CopyToClipboard text={myEmail} onCopy={this.handleCopy}>
+                <span className="form-subject__to__h4__copy-btn">
+                  <i class="fas fa-copy" /> {isEmailCopied}
+                </span>
+              </CopyToClipboard>
             </div>
             <div className="form-subject__section">
               <h4 className="form-subject__section__h4">Subject:</h4>

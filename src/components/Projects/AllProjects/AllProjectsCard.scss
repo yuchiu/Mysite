@@ -70,7 +70,6 @@
       height: 40%;
       font-size: 1.2em;
       &__text {
-        font-weight: 600;
       }
     }
     &__btn-group {
@@ -87,7 +86,6 @@
         border-radius: 1px;
         color: $white;
         box-shadow: $white 0 0px 0px 1px inset;
-        font-weight: bold;
         &:hover {
           color: rgba(255, 255, 255, 0.85);
           box-shadow: $btn-color 0 0px 0px 50px inset;

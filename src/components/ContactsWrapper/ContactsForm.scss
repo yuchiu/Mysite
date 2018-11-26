@@ -28,15 +28,28 @@
   flex-direction: column;
   align-items: flex-start;
   &__to {
-    font-weight: bold;
     display: flex;
     margin: 0;
+    width: 100%;
     align-items: center;
     margin-bottom: 5px;
     &__h4 {
       padding-right: 48px;
       font-size: 1.2em;
       font-weight: 300;
+      &__email {
+      }
+      &__copy-btn {
+        padding: 3px;
+        margin: 0 3px;
+        border: 1px solid $grey;
+        border-radius: 2px;
+        color: $grey;
+        margin-left: auto;
+        &:hover {
+          cursor: pointer;
+        }
+      }
     }
   }
   &__section {
@@ -115,6 +128,7 @@
     border: 1px solid $darkgrey;
     border-radius: 2px;
 
+    user-select: none;
     &__icon {
       transition: all 0.3s ease;
       font-size: 1.5em;

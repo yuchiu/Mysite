@@ -22,6 +22,8 @@
     font-size: 1.2em;
     padding: 8px 25px;
     color: $btn-color7;
+    font-weight: 400;
+    border-radius: 2px;
     &:hover {
       text-shadow: 0 0 2px #fff7f7, 0 0 3px #fff7f7, 0 0 5px #fff7f7,
         0 0 30px $btn-color, 0 0 10px $btn-color;
