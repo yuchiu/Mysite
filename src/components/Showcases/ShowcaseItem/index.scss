@@ -64,6 +64,7 @@
   .a-tag-btn.gibson-three,
   .a-tag-btn.gibson-four {
     color: $darkgrey;
+    font-size: 0.9em;
     border-color: $darkgrey;
     border-radius: 3px;
     width: 150px;
@@ -88,9 +89,6 @@
   width: 100vw;
   margin-top: 20px;
   justify-content: flex-start;
-  &__bottom {
-    margin: 10px auto 0 auto;
-  }
   &__slide-btn-section {
     display: flex;
     flex-direction: column;
@@ -185,6 +183,7 @@
           &__text {
             font-size: 1.1em;
             font-weight: 300;
+            white-space: pre-line;
           }
         }
 

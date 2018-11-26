@@ -4,14 +4,20 @@ export default [
     name: "Today News",
     imgUrl: {
       demoPic: "https://i.imgur.com/y2bUGMn.gif",
-      archDiagram: "https://i.imgur.com/FBYB9vn.jpg",
-      techPic: "https://imgur.com/xiq3tIT.png"
+      archDiagram: "https://i.imgur.com/FBYB9vn.jpg"
     },
-    techStack: [
+    clientTechStack: [
       "Reactjs",
+      "React Native",
+      "React-Redux",
+      "React-Router",
       "Redux",
-      "react-router",
-      "Redux",
+      "Redux-Thunk",
+      "Reselect",
+      "Axios",
+      "SCSS"
+    ],
+    serverTechStack: [
       "Python",
       "Nodejs",
       "Expressjs",
@@ -27,8 +33,7 @@ export default [
       "Machine Learning",
       "TensorFlow"
     ],
-    introDesc:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.",
+    introDesc: `Sed ut perspiciatis unde omnis ia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.`,
     userStory: [
       "Users can register and log in with their accounts",
       "News are classified in different categories for users",
@@ -37,9 +42,22 @@ export default [
       "Users can search for news article by keyword",
       "News are recommended to users based on his/her browsing histories"
     ],
-    archDesc:
-      "dasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsad",
+    archDesc: `Under Construction
+    Service Oriented Architecture, inter services communication, databases, Data Pipeline, Machine Learning
+    `,
 
+    techSpecDesc: `
+    Under Construction
+    Client
+    Server
+    Search
+    Authentications
+    Web Scraping
+    NLP
+    Machine Learning
+    Optimization
+    Deployment
+    `,
     githubLink: "https://github.com/yuchiu/today-news",
     demoLink: "https://github.com/yuchiu/today-news"
   },
@@ -48,16 +66,21 @@ export default [
     name: "Slack Clone",
     imgUrl: {
       demoPic: "https://i.imgur.com/6FqTT5y.gif",
-      archDiagram: "https://i.imgur.com/4k0g7dE.jpg",
-      techPic: "https://imgur.com/AHVp5Sk.png"
+      archDiagram: "https://i.imgur.com/4k0g7dE.jpg"
     },
-    techStack: [
+    clientTechStack: [
       "Reactjs",
-      "react-router",
-      "Reselect",
+      "React-Redux",
+      "React-Router",
       "Redux",
+      "Redux-Thunk",
+      "Reselect",
+      "Axios",
+      "Jest",
       "SCSS",
-      "Semantic-UI",
+      "Semantic-UI"
+    ],
+    serverTechStack: [
       "Nodejs",
       "TypeScript",
       "Expressjs",
@@ -66,7 +89,6 @@ export default [
       "Redis",
       "Sequelize",
       "PostgreSQL",
-      "Jest",
       "Nginx",
       "Docker"
     ],
@@ -85,8 +107,22 @@ export default [
       "Users can send real time message within channels or direct message",
       "Users can share images, audio or text files to other users"
     ],
-    archDesc:
-      "dasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsdasdsad",
+    archDesc: `
+    Monolithic Architecture, n-layer architecture, throughput, database, load-balance, containerize
+      `,
+    techSpecDesc: `
+    Under Construction
+    Client:
+    Styling:
+    React and its ecosystem as SPA framework to create components based structure. 
+    Utilize Redux for data layer to serve global data and organize application structure in unidirectional data flow within its lifecycle phases. Action Dispatchers, handles mutation methods, calls services if there are external interactions, dispatch action payload to Reducers. Services, handle side effects like external API calls, return request result back to Actions Dispatchers. Reducers, save action payloads in Store with its respective data structure. Selectors, provides APIs for retrieving store's data, as well as taking care of business logics that compute raw data from reducers to derived data for components.
+    Components are seperated in presentational and container. Container components are the logic layer that provides data source and mutations to presentations. Presentation components only render the view layer as stateless components.    
+    Server:
+    Authentications
+    Testing
+    Optimization
+    Deployment
+    `,
     githubLink: "https://github.com/yuchiu/slack-clone",
     demoLink: "https://github.com/yuchiu/slack-clone"
   }

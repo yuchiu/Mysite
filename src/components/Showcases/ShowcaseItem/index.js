@@ -34,14 +34,17 @@ export default ({
         showcaseSlideIndex={showcaseSlideIndex}
       />
       <div className="showcase-content__main">
-        <section
-          className={`showcase-content__main__img-section showcase-content__main__img-section--showcase-${index}`}
-        >
-          <SlideImg
-            itemData={itemData}
-            showcaseSlideIndex={showcaseSlideIndex}
-          />
-        </section>
+        {showcaseSlideIndex === "2" ? null : (
+          <section
+            className={`showcase-content__main__img-section showcase-content__main__img-section--showcase-${index}`}
+          >
+            <SlideImg
+              itemData={itemData}
+              showcaseSlideIndex={showcaseSlideIndex}
+            />
+          </section>
+        )}
+
         <SlideDesc
           itemData={itemData}
           showcaseSlideIndex={showcaseSlideIndex}
@@ -52,13 +55,6 @@ export default ({
         handleSlideRight={handleSlideRight}
         showcaseSlideIndex={showcaseSlideIndex}
       />
-    </div>
-    <div className="showcase-content__bottom">
-      {index === 1 ? (
-        <DownRefArrow idhref="#projects-wrapper" dark={true} />
-      ) : (
-        <DownRefArrow idhref={`#showcase-item-${index + 2}`} dark={true} />
-      )}
     </div>
   </div>
 );

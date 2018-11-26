@@ -16,12 +16,5 @@ export default ({ itemData, showcaseSlideIndex }) => (
         alt="showcase-img"
       />
     )}
-    {showcaseSlideIndex === "2" && (
-      <img
-        src={itemData.imgUrl.techPic}
-        className="showcase-content__main__img-section__img"
-        alt="showcase-img"
-      />
-    )}
   </React.Fragment>
 );
