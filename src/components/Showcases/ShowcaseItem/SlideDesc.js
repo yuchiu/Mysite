@@ -76,6 +76,16 @@ export default ({ itemData, showcaseSlideIndex }) => (
             <p className="showcase-content__main__detail__desc__header__text">
               Under Constructions
               {/* {itemData.archDesc} */}
+              "Users can register and log in with their account", "Users can
+              edit his/her profile info, including profile image & password",
+              "Users can create team", "Teams description can be edited only by
+              admin", "Users can invite people to join their team", "Users can
+              create channel inside his/her team", "Channels can be public or
+              private for invited members only", "Channels description can be
+              edited", "Users can create direct message or group message with
+              other team members", "Users can send real time message within
+              channels or direct message", "Users can share images, audio or
+              text files to other users"
             </p>
           </div>
         </div>

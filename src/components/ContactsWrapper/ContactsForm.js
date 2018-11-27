@@ -84,7 +84,7 @@ export default class Contacts extends React.Component {
           action="https://script.google.com/macros/s/AKfycbwmpk3mHxjdk4qyvkY_i7HK-O3ldBho6wYPQ_eCjKUBQmykXCra/exec"
         >
           <div className="form-header">
-            <h4 className="form-header__title">Get In Touch With Me</h4>
+            <h4 className="form-header__title">Leave Me a Message</h4>
           </div>
           <div className="form-subject">
             <div className="form-subject__to">
