@@ -2,6 +2,7 @@ export default [
   {
     id: "1",
     name: "Today News",
+    time: "Fall 2018",
     imgUrl: {
       demoPic: "https://i.imgur.com/y2bUGMn.gif",
       archDiagram: "https://i.imgur.com/FBYB9vn.jpg"
@@ -33,9 +34,11 @@ export default [
       "Machine Learning",
       "TensorFlow"
     ],
-    introDesc: `Sed ut perspiciatis unde omnis ia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.`,
+    introDesc: `Today News is a fullstack news recommendation system implemented in service oriented architecture. 
+    Users can easily read latest news from various sources such CNN, Bloomberg, ESPN all in one place with personal recommendations according to his/her browsing history.
+    The two cornerstones of the system are data warehouse that collects, analyzes and converts raw data into processed data, and services that utilize the processed data to provides functionalities for user interactions.`,
     userStory: [
-      "Users can register and log in with their accounts",
+      "Users can register and log in to their accounts",
       "News are classified in different categories for users",
       "News are derived from multiple news sources",
       "Users can scroll to the bottom and get more news feeds",
@@ -64,6 +67,7 @@ export default [
   {
     id: "2",
     name: "Slack Clone",
+    time: "Summer 2018",
     imgUrl: {
       demoPic: "https://i.imgur.com/6FqTT5y.gif",
       archDiagram: "https://i.imgur.com/4k0g7dE.jpg"
@@ -92,10 +96,10 @@ export default [
       "Nginx",
       "Docker"
     ],
-    introDesc:
-      "t vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserun.",
+    introDesc: `Slack Clone is a fullstack live chat application implemented in monolithic three Tier architecture.
+    This application recreate Slack's main features including but not limited to real-time communications, create Teams, create Channels, direct messages, profile image uploads, file uploads and more.`,
     userStory: [
-      "Users can register and log in with their account",
+      "Users can register and log in to their account",
       "Users can edit his/her profile info, including profile image & password",
       "Users can create team",
       "Teams description can be edited only by admin",
@@ -108,7 +112,19 @@ export default [
       "Users can share images, audio or text files to other users"
     ],
     archDesc: `
-    Monolithic Architecture, n-layer architecture, throughput, database, load-balance, containerize
+    Under Construction
+    Monolithic Architecture,
+     3 tier architecture,
+      throughput,
+      database, 
+      load-balance, 
+      containerize
+
+      Possible future expansion:
+      user status
+      more testing
+      optimization
+      prerendering
       `,
     techSpecDesc: `
     Under Construction
@@ -121,6 +137,9 @@ export default [
     Authentications
     Testing
     Optimization
+    Code Splitting
+    Caching
+    Advanced webpack config
     Deployment
     `,
     githubLink: "https://github.com/yuchiu/slack-clone",

@@ -15,9 +15,7 @@ import {
 
 export default () => (
   <section className="icons-col-section">
-    <h3 className="icons-section-title">
-      My Current Favorite Development Stack
-    </h3>
+    <h3 className="icons-section-title">My Favorite Development Stack</h3>
     <div className="icons">
       <div className="icons__col">
         <div className="icons__item">

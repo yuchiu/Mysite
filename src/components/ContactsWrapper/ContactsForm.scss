@@ -42,6 +42,7 @@
         font-size: 1.2em;
       }
       &__copy-btn {
+        transition: all 0.3s ease;
         user-select: none;
         font-size: 0.9em;
         padding: 2px;
@@ -50,8 +51,21 @@
         border-radius: 2px;
         color: $grey;
         margin-left: auto;
+        width: 110px;
         &:hover {
           cursor: pointer;
+          color: $btn-color;
+          border: 1px solid $btn-color;
+        }
+        &--copied {
+          width: 98px;
+          color: $btn-color6;
+          font-weight: 600;
+          border: 2px solid $btn-color6;
+          &:hover {
+            color: $btn-color6;
+            border: 2px solid $btn-color6;
+          }
         }
       }
     }
@@ -122,6 +136,7 @@
   justify-content: flex-end;
   margin-top: 0px;
   &__btn {
+    transition: all 0.3s ease;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,12 +153,15 @@
       font-size: 1.5em;
       opacity: 0;
       width: 0;
+      color: $btn-color6;
     }
     &__text {
       margin: auto 0;
     }
     &:hover {
       cursor: pointer;
+      color: $btn-color6;
+      border: 1px solid $btn-color6;
       .form-send {
         &__btn {
           display: flex;

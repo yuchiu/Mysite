@@ -49,7 +49,7 @@ export default ({ index, handleChange, showcaseSlideIndex }) => (
           value="1"
           onClick={handleChange}
         >
-          System Architecture
+          System Design
         </button>
         <button
           className={`showcase-top__nav__item__btn showcase-top__nav__item__btn--selected`}
@@ -67,7 +67,7 @@ export default ({ index, handleChange, showcaseSlideIndex }) => (
           value="1"
           onClick={handleChange}
         >
-          System Architecture
+          System Design
         </button>
         <button
           className={`showcase-top__nav__item__btn`}

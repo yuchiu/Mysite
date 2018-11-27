@@ -10,7 +10,7 @@ export default class Contacts extends React.Component {
     super(props);
     this.state = {
       isMsgSend: false,
-      isEmailCopied: "copy email",
+      isEmailCopied: false,
       myEmail: "steven2002yc@gmail.com",
       formData: {
         subject: "",
@@ -21,9 +21,9 @@ export default class Contacts extends React.Component {
   }
 
   handleCopy = () => {
-    this.setState({ isEmailCopied: "copied!" });
+    this.setState({ isEmailCopied: true });
     setTimeout(() => {
-      this.setState({ isEmailCopied: "copy email" });
+      this.setState({ isEmailCopied: false });
     }, 3000);
   };
 
@@ -91,9 +91,15 @@ export default class Contacts extends React.Component {
               <h4 className="form-subject__to__h4">To:</h4>
               <span className="form-subject__to__h4__email">{myEmail}</span>
               <CopyToClipboard text={myEmail} onCopy={this.handleCopy}>
-                <span className="form-subject__to__h4__copy-btn">
-                  <i className="fas fa-copy" /> {isEmailCopied}
-                </span>
+                {isEmailCopied ? (
+                  <span className="form-subject__to__h4__copy-btn form-subject__to__h4__copy-btn--copied">
+                    <i className="far fa-check-square" /> copied!
+                  </span>
+                ) : (
+                  <span className="form-subject__to__h4__copy-btn">
+                    <i className="fas fa-copy" /> copy email
+                  </span>
+                )}
               </CopyToClipboard>
             </div>
             <div className="form-subject__section">
