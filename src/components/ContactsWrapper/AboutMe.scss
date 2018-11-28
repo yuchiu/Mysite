@@ -44,19 +44,20 @@
         border-radius: 2px;
         padding: 20px 10px;
         text-transform: none;
-        border-color: $darkgrey;
+        border: 2px solid $superdarkgrey;
         user-select: none;
       }
       &__btn {
         &__icon {
           @include cubicTransition;
           font-size: 2.5em;
-          color: $darkgrey;
+          color: $superdarkgrey;
         }
         &__name {
           @include cubicTransition;
           font-size: 1em;
-          color: $darkgrey;
+          color: $superdarkgrey;
+          font-weight: 400;
         }
       }
       &:hover {

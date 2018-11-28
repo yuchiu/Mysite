@@ -5,7 +5,7 @@ export default ({ index, handleChange, showcaseSlideIndex }) => (
     {showcaseSlideIndex === "0" ? (
       <div className={`showcase-top__nav__item`}>
         <button
-          className="showcase-top__nav__item__text"
+          className="showcase-top__nav__item__text showcase-top__nav__item__text--selected"
           name={`showcaseItem${index}`}
           value="0"
           onClick={handleChange}
@@ -44,7 +44,7 @@ export default ({ index, handleChange, showcaseSlideIndex }) => (
     {showcaseSlideIndex === "1" ? (
       <div className={`showcase-top__nav__item`}>
         <button
-          className="showcase-top__nav__item__text"
+          className="showcase-top__nav__item__text showcase-top__nav__item__text--selected"
           name={`showcaseItem${index}`}
           value="1"
           onClick={handleChange}
@@ -83,7 +83,7 @@ export default ({ index, handleChange, showcaseSlideIndex }) => (
     {showcaseSlideIndex === "2" ? (
       <div className={`showcase-top__nav__item`}>
         <button
-          className="showcase-top__nav__item__text"
+          className="showcase-top__nav__item__text showcase-top__nav__item__text--selected"
           name={`showcaseItem${index}`}
           value="2"
           onClick={handleChange}

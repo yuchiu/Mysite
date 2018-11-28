@@ -1,4 +1,5 @@
 import React from "react";
+import ReactMarkdown from "react-markdown";
 
 import DemoLinkGroup from "./DemoLinkGroup";
 
@@ -36,7 +37,6 @@ export default ({ itemData, showcaseSlideIndex }) => (
                   {tech}
                 </p>
               ))}
-              <br />
               <br />
               <b className="showcase-content__main__detail__desc__header__tech-stack__bold">
                 BackEnd Stack
@@ -91,7 +91,10 @@ export default ({ itemData, showcaseSlideIndex }) => (
             </h4>
           </div>
           <p className="showcase-content__main__detail__desc__text">
-            {itemData.archDesc}
+            <ReactMarkdown
+              className="showcase-content__main__detail__desc__text"
+              source={itemData.archDesc}
+            />
           </p>
         </div>
         <DemoLinkGroup
@@ -101,15 +104,18 @@ export default ({ itemData, showcaseSlideIndex }) => (
       </section>
     )}
     {showcaseSlideIndex === "2" && (
-      <section className="showcase-content__main__detail">
+      <section className="showcase-content__main__detail showcase-content__main__detail--wide">
         <div className="showcase-content__main__detail__desc  showcase-content__main__detail__desc--pushup">
           <div className="showcase-content__main__detail__desc__header">
-            <h4 className="showcase-content__main__detail__desc__header__title">
+            <h4 className="showcase-content__main__detail__desc__header__title showcase-content__main__detail__desc__header__title--wide">
               Techinical Specification
             </h4>
           </div>
           <p className="showcase-content__main__detail__desc__text">
-            {itemData.techSpecDesc}
+            <ReactMarkdown
+              className="showcase-content__main__detail__desc__text"
+              source={itemData.techSpecDesc}
+            />
           </p>
         </div>
         <DemoLinkGroup

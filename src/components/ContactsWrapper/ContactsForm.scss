@@ -144,7 +144,8 @@
     width: 200px;
 
     background: transparent;
-    border: 1px solid $darkgrey;
+    color: $superdarkgrey;
+    border: 2px solid $superdarkgrey;
     border-radius: 2px;
 
     user-select: none;
@@ -161,7 +162,7 @@
     &:hover {
       cursor: pointer;
       color: $btn-color6;
-      border: 1px solid $btn-color6;
+      border: 2px solid $btn-color6;
       .form-send {
         &__btn {
           display: flex;

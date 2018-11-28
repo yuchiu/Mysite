@@ -34,7 +34,11 @@ export default ({
         showcaseSlideIndex={showcaseSlideIndex}
       />
       <div className="showcase-content__main">
-        {showcaseSlideIndex === "2" ? null : (
+        {showcaseSlideIndex === "2" ? (
+          <section
+            className={`showcase-content__main__img-section showcase-content__main__img-section--wide showcase-content__main__img-section--showcase-${index} `}
+          />
+        ) : (
           <section
             className={`showcase-content__main__img-section showcase-content__main__img-section--showcase-${index}`}
           >
