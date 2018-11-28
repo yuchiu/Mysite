@@ -58,9 +58,10 @@ export default ({ itemData, showcaseSlideIndex }) => (
               ))}
             </ul>
           </div>
-          <p className="showcase-content__main__detail__desc__text">
-            {itemData.introDesc}
-          </p>
+          <div className="showcase-content__main__detail__desc__text showcase-content__main__detail__desc__text--intro">
+            <b>Descriptions</b>
+            <p>{itemData.introDesc}</p>
+          </div>
           <br />
           <br />
           <p className="showcase-content__main__detail__desc__user-story">
