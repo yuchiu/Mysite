@@ -190,6 +190,7 @@
         width: 0px;
         height: 0px;
         min-width: 0px;
+        min-height: 0px;
         margin: 0px;
         opacity: 0;
         padding: 0px;
@@ -278,6 +279,16 @@
       &__img-section {
         min-width: 580px;
         margin-right: 15px;
+        &--wide {
+          transition: all 0.3s ease;
+          width: 0px;
+          height: 0px;
+          min-width: 0px;
+          min-height: 0px;
+          margin: 0px;
+          opacity: 0;
+          padding: 0px;
+        }
         &__img {
           height: 400px;
           &--large {
@@ -310,8 +321,18 @@
       flex-direction: column;
       &__img-section {
         width: 90%;
-        margin: auto;
+        margin: 0 auto;
         min-height: 500px;
+        &--wide {
+          transition: all 0.3s ease;
+          width: 0px;
+          height: 0px;
+          min-width: 0px;
+          min-height: 0px;
+          margin: 0px;
+          opacity: 0;
+          padding: 0px;
+        }
         &__img {
           height: 420px;
           &--large {
@@ -322,7 +343,7 @@
       }
       &__detail {
         width: 90%;
-        margin: auto;
+        margin: 0 auto;
         justify-content: flex-start;
         &__desc {
           display: flex;
@@ -382,6 +403,16 @@
       &__img-section {
         margin: auto;
         min-width: 90%;
+        &--wide {
+          transition: all 0.3s ease;
+          width: 0px;
+          height: 0px;
+          min-width: 0px;
+          min-height: 0px;
+          margin: 0px;
+          opacity: 0;
+          padding: 0px;
+        }
         &__img {
           height: 380px;
           &--large {
@@ -391,7 +422,7 @@
       }
       &__detail {
         width: 90%;
-        margin: auto;
+        margin: 0 auto;
         &__desc {
           font-size: 1.15em;
         }
@@ -415,6 +446,16 @@
       &__img-section {
         margin: auto;
         min-width: 90%;
+        &--wide {
+          transition: all 0.3s ease;
+          width: 0px;
+          height: 0px;
+          min-width: 0px;
+          min-height: 0px;
+          margin: 0px;
+          opacity: 0;
+          padding: 0px;
+        }
         &__img {
           height: 90%;
           width: 90%;
@@ -425,7 +466,27 @@
       }
       &__detail {
         width: 90%;
-        margin: auto;
+        margin: 0 auto;
+      }
+    }
+  }
+  .showcase-content {
+    &__main {
+      width: 100%;
+      &__detail {
+        &__desc {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}
+
+@include maxMediaQueries(500px) {
+  .showcase-top {
+    &__nav {
+      &__item {
+        font-size: 0.6em;
       }
     }
   }
