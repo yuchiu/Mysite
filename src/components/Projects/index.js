@@ -2,7 +2,7 @@ import React from "react";
 
 import "./index.scss";
 import { DownRefArrow } from "../common";
-import AllProjects from "./AllProjects";
+import ProjectList from "./ProjectList";
 
 class Projects extends React.Component {
   constructor(props) {
@@ -46,7 +46,7 @@ class Projects extends React.Component {
               FrontEnd Projects
             </a>
           </div>
-          <AllProjects category={category} />
+          <ProjectList category={category} />
         </div>
       </React.Fragment>
     );

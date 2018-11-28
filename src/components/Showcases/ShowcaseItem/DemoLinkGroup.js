@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./DemoLinkGroup.scss";
+
 export default ({ itemData, showcaseSlideIndex }) => (
   <React.Fragment>
     {showcaseSlideIndex === "2" ? (

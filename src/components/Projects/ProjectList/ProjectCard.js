@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import "./AllProjectsCard.scss";
+import "./ProjectCard.scss";
 
 export default ({ project }) => (
   <li className={`project ${project.category}`}>

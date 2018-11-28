@@ -1,0 +1,62 @@
+@import "../../../assets/css/mixins";
+@import "../../../assets/css/vars";
+
+.slide-btn-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  &__btn {
+    user-select: none;
+    background: transparent;
+    color: $darkgrey;
+    border: none;
+    height: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 7em;
+    transform: scale(0.45, 1);
+    transition: all 0.3s ease;
+    font-family: "Roboto", sans-serif;
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      color: $bright-teal;
+      text-shadow: 0 0 1px $super-light-teal, 0 0 5px $super-light-teal,
+        0 0 15px $super-light-teal, 0 0 30px $super-light-teal;
+
+      cursor: pointer;
+    }
+    &--right {
+      margin-right: 15px;
+    }
+    &--disabled {
+      opacity: 0.4;
+      color: $grey;
+      &:hover {
+        cursor: default;
+        color: $grey;
+      }
+    }
+  }
+}
+
+@include maxMediaQueries(1300px) {
+  .slide-btn-section {
+    &__btn {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+@include maxMediaQueries(850px) {
+  .slide-btn-section {
+    width: 0px;
+    &__btn {
+      opacity: 0;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import "../../../assets/css/mixins";
+@import "../../../assets/css/vars";
+
+.demolink-group {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  @include aTagBtnBaseStyle;
+  @include aTagBtnGibson;
+  &--center {
+    justify-content: center;
+  }
+  .a-tag-btn.gibson-one,
+  .a-tag-btn.gibson-two,
+  .a-tag-btn.gibson-three,
+  .a-tag-btn.gibson-four {
+    margin: 0 15px 0;
+    color: $superdarkgrey;
+    border-color: $superdarkgrey;
+    font-size: 0.9em;
+    font-weight: 400;
+    border-radius: 3px;
+    width: 150px;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      border-color: $bright-teal;
+      color: $bright-teal;
+    }
+  }
+  &__github-btn {
+  }
+  &__demo-btn {
+  }
+}
+
+@include maxMediaQueries(1300px) {
+  .demolink-group {
+    justify-content: center;
+  }
+}

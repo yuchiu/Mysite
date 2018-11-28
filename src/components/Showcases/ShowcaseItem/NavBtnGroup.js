@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./NavBtnGroup.scss";
+
 export default ({ index, handleChange, showcaseSlideIndex }) => (
   <React.Fragment>
     {showcaseSlideIndex === "0" ? (
