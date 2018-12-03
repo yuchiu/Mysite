@@ -35,7 +35,7 @@ class Layout extends React.Component {
         <Navbar />
         <Landing />
         <Showcases />
-        <Projects />
+        {/* <Projects /> */}
         <ContactsWrapper />
         <Footer />
       </div>

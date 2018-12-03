@@ -10,12 +10,12 @@ class Navbar extends React.Component {
 
     const landingTop = $("#landing-wrapper").offset().top;
     const showcasesTop = $("#showcases-wrapper").offset().top;
-    const projectsTop = $("#projects-wrapper").offset().top;
+    // const projectsTop = $("#projects-wrapper").offset().top;
     const contactsTop = $("#contacts-wrapper").offset().top;
 
     const landingLink = $("#landing-nav-link");
     const showcasesLink = $("#showcases-nav-link");
-    const projectsLink = $("#projects-nav-link");
+    // const projectsLink = $("#projects-nav-link");
     const contactsLink = $("#contacts-nav-link");
 
     landingLink.addClass("navbar-wrapper__nav__ul__li__link--active");
@@ -33,38 +33,39 @@ class Navbar extends React.Component {
         landingLink.addClass("navbar-wrapper__nav__ul__li__link--active");
         showcasesLink.removeClass("navbar-wrapper__nav__ul__li__link--active");
         contactsLink.removeClass("navbar-wrapper__nav__ul__li__link--active");
-        projectsLink.removeClass("navbar-wrapper__nav__ul__li__link--active");
+        // projectsLink.removeClass("navbar-wrapper__nav__ul__li__link--active");
       } else {
         landingLink.removeClass("navbar-wrapper__nav__ul__li__link--active");
       }
 
       if (
         $(window).scrollTop() >= showcasesTop - 100 &&
-        $(window).scrollTop() < projectsTop
+        // $(window).scrollTop() < projectsTop
+        $(window).scrollTop() < contactsTop
       ) {
         showcasesLink.addClass("navbar-wrapper__nav__ul__li__link--active");
         landingLink.removeClass("navbar-wrapper__nav__ul__li__link--active");
         contactsLink.removeClass("navbar-wrapper__nav__ul__li__link--active");
-        projectsLink.removeClass("navbar-wrapper__nav__ul__li__link--active");
+        // projectsLink.removeClass("navbar-wrapper__nav__ul__li__link--active");
       } else {
         showcasesLink.removeClass("navbar-wrapper__nav__ul__li__link--active");
       }
-      if (
-        $(window).scrollTop() >= projectsTop - 100 &&
-        $(window).scrollTop() < contactsTop
-      ) {
-        projectsLink.addClass("navbar-wrapper__nav__ul__li__link--active");
-        landingLink.removeClass("navbar-wrapper__nav__ul__li__link--active");
-        showcasesLink.removeClass("navbar-wrapper__nav__ul__li__link--active");
-        contactsLink.removeClass("navbar-wrapper__nav__ul__li__link--active");
-      } else {
-        projectsLink.removeClass("navbar-wrapper__nav__ul__li__link--active");
-      }
+      // if (
+      //   $(window).scrollTop() >= projectsTop - 100 &&
+      //   $(window).scrollTop() < contactsTop
+      // ) {
+      //   projectsLink.addClass("navbar-wrapper__nav__ul__li__link--active");
+      //   landingLink.removeClass("navbar-wrapper__nav__ul__li__link--active");
+      //   showcasesLink.removeClass("navbar-wrapper__nav__ul__li__link--active");
+      //   contactsLink.removeClass("navbar-wrapper__nav__ul__li__link--active");
+      // } else {
+      //   projectsLink.removeClass("navbar-wrapper__nav__ul__li__link--active");
+      // }
 
       if ($(window).scrollTop() >= contactsTop - 100) {
         contactsLink.addClass("navbar-wrapper__nav__ul__li__link--active");
         landingLink.removeClass("navbar-wrapper__nav__ul__li__link--active");
-        projectsLink.removeClass("navbar-wrapper__nav__ul__li__link--active");
+        // projectsLink.removeClass("navbar-wrapper__nav__ul__li__link--active");
         showcasesLink.removeClass("navbar-wrapper__nav__ul__li__link--active");
       } else {
         contactsLink.removeClass("navbar-wrapper__nav__ul__li__link--active");
@@ -98,7 +99,7 @@ class Navbar extends React.Component {
                 SHOWCASES
               </a>
             </li>
-            <li className="navbar-wrapper__nav__ul__li">
+            {/* <li className="navbar-wrapper__nav__ul__li">
               <a
                 id="projects-nav-link"
                 className="navbar-wrapper__nav__ul__li__link"
@@ -106,7 +107,7 @@ class Navbar extends React.Component {
               >
                 PROJECTS
               </a>
-            </li>
+            </li> */}
             <li className="navbar-wrapper__nav__ul__li">
               <a
                 id="contacts-nav-link"

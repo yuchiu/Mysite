@@ -1,73 +1,5 @@
 export default [
   {
-    id: "1",
-    name: "Today News",
-    time: "Fall 2018",
-    imgUrl: {
-      demoPic: "https://i.imgur.com/y2bUGMn.gif",
-      archDiagram: "https://i.imgur.com/FBYB9vn.jpg"
-    },
-    clientTechStack: [
-      "Reactjs",
-      "React Native",
-      "React-Redux",
-      "React-Router",
-      "Redux",
-      "Redux-Thunk",
-      "Reselect",
-      "Axios",
-      "SCSS"
-    ],
-    serverTechStack: [
-      "Python",
-      "Nodejs",
-      "Expressjs",
-      "RESTful API",
-      "RPC API",
-      "Message Broker",
-      "RabbitMQ",
-      "Redis",
-      "ElasticSearch",
-      "Mongoose",
-      "MongoDB",
-      "Web Scraper",
-      "Machine Learning",
-      "TensorFlow"
-    ],
-    introDesc: `Today News is a fullstack news recommendation system implemented in service oriented architecture. 
-    The two main components of the system are data warehouse that collects, analyzes, converts raw data into processed data, and services that utilize the processed data to provides functionalities for user interfaces & interactions.
-    Users can conveniently read latest news from various sources such CNN, Bloomberg, ESPN all in one place with personal recommendations according to his/her browsing history.`,
-    userStory: [
-      "Users can register and log in to their accounts",
-      "News are classified in different categories for users",
-      "News are derived from multiple news sources",
-      "Users can scroll to the bottom and get more news feeds",
-      "Users can search for news article by keyword",
-      "News are recommended to users based on his/her browsing histories"
-    ],
-    archDesc: `\n**Scenarios:**
-    \n**Constraints:** 
-    \n**Implementations:** 
-    \n**Evolvements: **`,
-
-    techSpecDesc: `
-    \n**Client Application: **(React ∙ React Native ∙ Redux ∙ React-Redux ∙ Redux-Thunk ∙ React-Router ∙ Axios)
-    • React and its ecosystem as SPA framework to create components based structure. 
-    \n**Communication: **(RESTful API ∙ RPC API ∙ Message Broker ∙ RabbitMQ)
-    • First layer of communications between Client and Web Server is done in HTTP request in RESTful standard. RPC API & Message Broker are being utilize behind the first layer of the system. 
-    • Server & Services are mostly using Remote Procedure Call that allow the API to be free from REST like HTTP request and involkes functions similiarly to local procedure calls with JSON-RPC via HTTP.
-    • Data Services are handled asynchronously instead of letting service waiting for their response, such as data pipeline &d preference log processor that handles heavy computations. These Services communication are put into queue of task by Message Broker service that are implemented in RabbitMQ.
-    \n**Authentications: **(Json Web Token)
-    \n**Service Applications: **(Python ∙ Nodejs ∙ Express)
-    \n**Database:** (Redis ∙ Mongoose ∙ MongoDB ∙ ElasticSearch)
-    \n**Data Pipeline:** (Python ∙ Web Scraper ∙ NLP ∙ Tensorflow)
-    \n**Recommendation System:** (Python ∙ Tensorflow)
-    \n**Deployment: **
-    `,
-    githubLink: "https://github.com/yuchiu/today-news",
-    demoLink: "https://github.com/yuchiu/today-news"
-  },
-  {
     id: "2",
     name: "Slack Clone",
     time: "Summer 2018",
@@ -75,6 +7,8 @@ export default [
       demoPic: "https://i.imgur.com/6FqTT5y.gif",
       archDiagram: "https://i.imgur.com/PhN3zT1.jpg"
     },
+    githubLink: "https://github.com/yuchiu/slack-clone",
+    demoLink: "http://yuchiu-slack.surge.sh",
     clientTechStack: [
       "Reactjs",
       "React-Redux",
@@ -120,8 +54,8 @@ export default [
     Concurrent Users during Peak time - Assume 100,000 users using slack clone service,  
     daily active users/seconds per day x average online seconds(assume 30 mins per day) => 100,000 / (24 x 60 x 60) x (30 x 60) ≈ 2083(active users online at the moment)
     Assume concurrent usage during peak time is 6 times than normal => 2083 x 6 ≈  12500
-    Assume active users doubles in 3 months => 12500 users x 2 = 25000 users.
-    Asumme users make a request every 10 seconds during peak hour => 25000 / 10s = 2500/s there will be 2500 request per seconds.
+    Assume active users doubles in 3 months so does concurrent user during peak time => 12500 users x 2 = 25000 users.
+    Assume users make a request every 10 seconds during peak hour => 25000 / 10s = 2500/s there will be 2500 request per seconds.
     The system should be able to handle 25000 active users and 2500 request per seconds at minimum during peak usage time.
     Data Bandwidth - Authentications request are neglected due to bandwidth & data that registration going to consume is significantly lower than the application usage.
     Text message bandwidth is also neglected for the reason of text size is exponentially smaller than Images and other file types
@@ -133,16 +67,18 @@ export default [
     1.465gb * 90 days ≈ 132gb total hard disk usage after 3 months.
     The system should be able to store 132gb of data after 3 months
     \n**Implementations:**  
-    3 tier architecture - 1) Client tier with React and its ecosystem as SPA framework, 2) Server tier with Nginx, Nodejs with Expressjs as the backend framework for high concurrent work load, 3) Data tier using PostgreSQL for relational database and Redis for caching session store and database query result.
-    The Client and Server are connected with RESTful API(http) and WebSocket using socket.io. WebSocket handle real time communication such as inviting new members, sharing files. RESTful API handles asynchronus request such as user registrations and team creations.
-    Nginx is serves as Web Server that handles load balancing, reverse proxy and serves cached static files
+    The system is built in three tier architecture,
+    1) Client tier with React and its ecosystem as SPA framework, 
+    2) Server tier with Nginx, Nodejs with Expressjs as the backend framework for high concurrent workload, 
+    3) Data tier using PostgreSQL for relational database and Redis for caching session store and database query result.
+    The Client and Server are connected with RESTful API(http) and WebSocket using socket.io. 
+    WebSocket handle real time communication such as inviting new members, sharing files and RESTful API handles asynchronous request such as user registrations and team creations.
     Apache Bench test with 5000 request and 500 concurrent on local server finished in 0.71 seconds.
     \n**Evolvements(future expansion):**  
+    Implements more Testing coverage such as unit testing, integration testing, E2E testing
     Splitting services such as authentication service that has significantly lower concurrent request than the heavier chat service to maximize resource allocations.
     provides more feature/scenarios such as payment support
-    use WebSockets for more connections, similiar to Slack's implementation
-    implements a more rebust testing setup
-    improve system robustness, prevent crash & failure cases`,
+    use WebSockets for more connections, similar to Slack's implementation`,
     techSpecDesc: `**Styling: **(SCSS ∙ BEM • CSS grid • Flexbox • Semantic UI)
     • SCSS as CSS preprocessing to utilize the robust syntax of vars, mixins and nesting structure to enhance CSS styling development
     • Apply BEM methodology to provide better namespace and well defined CSS hierarchy structure.
@@ -150,27 +86,133 @@ export default [
     \n**Client Applications: **(React ∙ Redux ∙ React-Redux ∙ Redux-Thunk ∙ React-Router ∙ Reselect ∙ Axios ∙ Jest)
     • React and its ecosystem as SPA framework to create components based structure. 
     • Utilize Redux for data layer to serve global data and organize application structure in unidirectional data flow within its lifecycle phases. Action Dispatchers, handles mutation methods, calls services if there are external interactions, dispatch action payload to Reducers. Services, handle side effects like external API calls, return request result back to Actions Dispatchers. Reducers, save action payloads in Store with its respective data structure. Selectors, provides APIs for retrieving store's data, as well as taking care of business logics that compute raw data from reducers to derived data for components.
-    • Components are seperated in presentational and container. Container components are the logic layer that provides data source and mutations to presentations. Presentation components only render the view layer as stateless components.    
+    • Components are separated in presentational and container. Container components are the logic layer that provides data source and mutations to presentations. Presentation components only render the view layer as stateless components.    
     \n**Communications: **(RESTful API ∙ WebSocket ∙ Socket.io)
-    • Since using session for authentications is not stateless, I stick with the conventional endpoint such as /signin, /singout instead of naming them in RESTful semantic standard.
-    • The rest of API endpoint would be considered more RESTful with semantic noun naming, api versioning, apply HTTP methods accordingly to request resource. The response of REST endpoint also include a "meta" field besides requesting data itself. The meta field include 3 attributes, 1) the embedded HTTP response status code, 2) sucess or error type, 3) server's response message. By providing meta field, client would have a better understanding for server's response for the request"  
-    • Using WebSocket connection for real time message
+    • The API endpoint are implemented in RESTful fashion with semantic plural noun naming, api versioning, apply HTTP methods accordingly to request resource. The response of REST endpoint also include a "meta" field besides requesting data itself. The meta field include 3 attributes, 1) the embedded HTTP response status code, 2) success or error type, 3) server's response message. By providing meta field, client would have a better understanding for server's response for the request"  
+    • WebSocket connection are implemented for real time message using socket.io.
     \n**Authentications: **(Session ∙ Redis)
-    • Session for authentications, 
-    • Redis for session store, it also maintain a central pool of session data which stay consistence even with multiple backend server instances being load balanced.
-    • Authorization is done by having administration field for Team_Member table that indicates his/her status with repective team once it was created, "2" would pocess highest authority as the owner of the team, "1" would be admin, and "0" would be normal users
+    • Sessions are store in redis, which provides a central store of session data that stay consistent even when connected with multiple backend server instances.
+    • Authorization is done by having administration field for Team_Member table that indicates his/her status with respective team once it was created.
     \n**Server Applications: **(Nodejs ∙ TypeScript ∙ Express ∙ Nginx)
-    • Nodejs and Express is the stack for the BackEnd Server, with TypeScript to provides more robust syntax capability like static typing. For example all model attributes has according sequelize interface that has type checks built in for all interactions.
+    • BackEnd Server is implemented in Nodejs and Expressjs, with TypeScript to provides more robust syntax capability like static typing. For example all model attributes has its according sequelize interface that has type checks built in for all interactions.
     • The Server Application is split into three main components, Routers, Controllers, Models, which could also be interpreted as 3 tier as well. Router would be the frontend of the Server that routes and select controllers to handles the request API Request, and it would also be the tier to return API responses back to the Client. Controller is the tier where business logic taking place, it is the tier that perform operations with Database interface and provides the response to the router. Models is the Data tier that defines how the schema is structured and presented in database. Some Models contains hooks that perform in certain phase during specific database operations, some also has inherited methods that were defined within the model such as comparePassword. 
-    • Nginx is serving static files like images and audio during production environments.
     \n**Databases:** (Redis ∙ Sequelize ∙ PostgreSQL)
-    • Caching Database query with Redis, remove stale data every hour, update when the key changes
-    • Due to the strong correlation between Database table like users, channels, teams, message, Relational Database would be a superior choice at this scale. 
-    • Sequelize is used as the ORM for the Database, most of the basic interactions is done with Sequelize's API. However there are more complex query which introduces redundant complexity into controller, therefore a seperate file of SQL queries was created for the complex query operations.
+    • Caching Database queries with Redis, remove stale data every hour, also update cached data when the key changes
+    • Due to the strong correlation between Database table like users, channels, teams, message, Relational Database would be a more favorable choice at this scenario. 
+    • Sequelize is used as the ORM for the Database, most of the trivial interactions is done with Sequelize's API. However there are more complex query which introduces redundant complexity into controller with ORM, therefore a separate file of SQL queries was created specifically for the complex query operations.
     \n**Deployments & Operations: **(Nginx ∙ Docker)
-    • Nginx is the reverse proxy and load balancer in production environment. IP hash would be the load balancing strategy that keeps connections between client and servers with same IP address, therefore WebSocket would be hitting the same server throughout connected duration.
-    • Containerize each module with Docker including Redis, PostgreSQL, Nginx, Backend Server. A Docker-Compose file was created to bootstrap all the operations that are necessary to initiate the system. This simplify steps to configure settings that were neccessary such as setting persisting volume for PostgreSQL & Redis, Nginx access to Cache directory, exposing ports and Load balancing with multiple BackEnd Server instance.`,
-    githubLink: "https://github.com/yuchiu/slack-clone",
-    demoLink: "https://github.com/yuchiu/slack-clone"
+    • Nginx serves static files, load balance and reverse proxy in production environment. The load balancing strategy is IP hash which keeps connections between client and servers with same IP address, therefore WebSocket would be hitting the same server throughout connected duration.
+    • Every components of this application is containerized and connected by the docker network driver. The Docker built processes are specified in the docker-compose.yml that bootstrap all the operations necessary to initiate the containerized system. This simplify steps to configure settings that were necessary such as mounting persisting volume for PostgreSQL & Redis, Nginx access to Cache directory, exposing ports and Load balancing with multiple BackEnd Server instance.`
+  },
+  {
+    id: "1",
+    name: "Today News",
+    time: "Fall 2018",
+    imgUrl: {
+      demoPic: "https://i.imgur.com/y2bUGMn.gif",
+      archDiagram: "https://i.imgur.com/FBYB9vn.jpg"
+    },
+    githubLink: "https://github.com/yuchiu/today-news",
+    demoLink: "http://today-news.surge.sh",
+    clientTechStack: [
+      "Reactjs",
+      "React Native",
+      "React-Redux",
+      "React-Router",
+      "Redux",
+      "Redux-Thunk",
+      "Reselect",
+      "Axios",
+      "SCSS"
+    ],
+    serverTechStack: [
+      "Python",
+      "Nodejs",
+      "Expressjs",
+      "RESTful API",
+      "RPC API",
+      "Message Queue",
+      "RabbitMQ",
+      "Redis",
+      "ElasticSearch",
+      "Mongoose",
+      "MongoDB",
+      "Web Scraper",
+      "Machine Learning",
+      "TensorFlow"
+    ],
+    introDesc: `Today News is a comprehensive up to date news coverage applications aggregated from various sources with personal news recommendation system implemented in in service oriented architecture. 
+    The two main components of the system are data pipeline that collects, analyzes, converts raw data into processed data, and services that utilize the processed data to provides functionalities for user interfaces & interactions.
+`,
+    userStory: [
+      "Users can register and log in to their accounts",
+      "News are classified in different categories for users",
+      "News are derived from multiple news sources",
+      "Users can scroll to the bottom and get more news feeds",
+      "Users can search for news article by keyword",
+      "News are recommended to users based on his/her browsing histories"
+    ],
+    archDesc: `\n**Scenarios:**
+    Search News, fetch News, recommend news, Authentications for users. Scrape news, data cleansing in the backend.
+    \n**Constraints:**
+    Concurrent Users during Peak time - Assume 500,000 users using Today News service,  
+    daily active users/seconds per day x average online seconds(assume 30 mins per day) => 500,000 / (24 x 60 x 60) x (30 x 60) ≈ 10400(active users online at the moment)
+    Assume concurrent usage during peak time is 3 times than normal => 10400 x 3 ≈  31200
+    Assume active users doubles in 3 months so does concurrent user during peak time => 31200 users x 2 = 62400 users.
+    Assume users make a request every 20 seconds during peak hour => 62400 / 20s = 3120/s there will be 3120 request per seconds during peak hour.
+    The system should be able to handle 250,000 active users and 3120 request per seconds at minimum during peak usage time.
+    Data Bandwidth - Assume concurrent user during peak time would be 31200 users based on our previous assumptions
+    Assume file size of 5kb per news, during peak 30 min client rendered 50 news to users => 5kb * 50 news * 31200 users ≈ 7,800,000kb ( 7.8gb, the data size streamed in 30 min of peak time)
+    There will be 7800000 kb / 30 min x 60 seconds ≈ 4333kb, 4.3mb of data will be streaming during that time.
+    Data Storage - Assume file size of 5kb per news, assume each day the system fetch 1000 news, there will be 5mb of news fetched per day.    
+    5mb * 90 days ≈ 450mb of total hard disk usage after 3 months.
+    The system should be able to store 132gb of data after 3 months. Storage wise the concern is fairly minimum.
+    Real Time Recommendation System(User-Based Collaborative Filtering)
+    Assume concurrent user during peak time would be 31200 users based on our previous assumptions
+    Assume user preference changed every 10 minutes
+    31200 users x 1/(5 min x 60) => 104/s 
+    The Recommendation System need to be able to process 104 QPS per second to recomputing user's preference.
+    \n**Implementations:** 
+    The System is consisted of 3 layer in general, 
+    1) Frontend client layer consumes data from backend platform layer via API, then provides visual presentations to the client. i.e Web Client, Mobile Client, Status Monitoring Service. 
+    2) Backend platform layer are consist of services that perform operations to provide processed data to Client layer via REST API. The communication between services would be perform in RPC API and Message Queue, i.e News Service, User Service, Search Service, Recommendation Service, Preference Log Process Service. 
+    3) Data Layer transforms raw data into processed data for backend platform layer to use.
+
+    \n**Evolvements(future expansion): **
+    Implements more Testing coverage such as unit testing, integration testing, E2E testing
+    Improve topic modeling accuracy and recommendation accuracy
+    Integrate with The Onion Router(TOR) network to improve the stability of scraping system
+    Continuous deployment pipeline such as Jenkins
+    `,
+
+    techSpecDesc: `
+    \n**Client Application: **(React ∙ React Native ∙ Redux ∙ React-Redux ∙ Redux-Thunk ∙ React-Router ∙ Axios)
+    • React and its ecosystem as SPA framework to create components based structure, utilizing Redux as the global state control layer.
+    • React Native for mobile applications(Under Development)
+    \n**Communication: **(RESTful API ∙ RPC API ∙ RabbitMQ)
+    • Communications between Client and Web Server/API Gateway is done in HTTP request in RESTful standard. RPC API & Message Queue are being utilized for inter service communication beneath client layer. 
+    • Server & Services that required fast response are using Remote Procedure Call that allow the API to be free from REST like HTTP request and invokes functions similarly to local procedure calls with JSON-RPC via HTTP.
+    • Communications with asynchronously request are handled by Message Queue that implemented in RabbitMQ. The services utilize Message Queue are the computation heavy services, such as data pipeline &d preference log processor.
+    \n**Authentications: **(Json Web Token)
+    • Using Json Web Token for authentication, since JWT is stateless, this allow authentication for multiple platform such as mobile and web with minimum configuration needed.
+    \n**Backend Services: **(Python ∙ jsonrpclib-pelix ∙ Nodejs ∙ Express ∙ Jayson)
+    • Web Server/API Gateway is implemented in Nodejs and Expressjs. Platform layer services are implemented in both Nodejs and Python with its own JSON-RPC server library. Data layer services like Topic Modeling & News Pipeline are implemented in Python because of the varieties of tools that are available in Python, such as Tensorflow for machine learning.
+    • Web Server/API gateway routes requests accordingly to different services for handling and responding to client. Services that require data outside of its own scope are done by calling APIs provided by other services instead of obtaining data by itself.
+    • News Recommendation Service consist of Click log processor and JSON RPC recommendation Service. (Under Development, currently it only applies time decay model, next goal is applying User-Based Collaborative Filtering as well)
+    Click log processor to implements time decay model to calculate user's preference. If a news topic is clicked, p = (1-α)p + α, if not, p = (1-α)p, Where p is the selection probability, and α is the degree of weight decrease. The result is that the nth most recent selection will have a weight of (1-α)^n. Using a coefficient value of 0.05 as an example, the 10th most recent selection would only have half the weight of the most recent. Increasing α would bias towards more recent results more.
+    • Each of services has implemented a heartbeat API which allow external service to check on its current status. This allow monitoring service to keep the system in checks.
+    \n**Data Pipeline:** (Python ∙ Web Scraper ∙ NLP ∙ CNN ∙ Tensorflow)
+    • Data Pipeline is consist of 5 Main Module, News Monitor, News Scraper, News Deduper, Topic Modeling Trainer and Topic Modeling Service. 
+    • The news monitor use News API to derive latest news, store news title MD5 digest from news fetcher into Redis to avoid sending repeated news to message queue. 
+    • The web scraper use a Newspaper package to fetch corresponding news articles from official news website. 
+    • News depuper implements TF-IDF to calculate similarity of news to avoid storing same news from different news source into MongoDB and only store the one published firstly.
+    • News Topic Modeling trainer is implemented by Convolutional Neural Network(CNN) in TensorFlow.
+    • Topic Modeling Service provides classification service using model that are trained offline.
+    \n**Database:** (Redis ∙ Mongoose ∙ MongoDB ∙ ElasticSearch)
+    • MongoDB is the main database this project uses due to several considerations. 1) The news data are scrape from various sources therefore the data structure would be less consistent. 2) There are no strong correlation between data that we are utilizing. 
+    • Search service uses ElasticSearch as database for the robust searching functionalities such as type predictions and fuzzy matching. It obtains its data from main mongoDB and store a copy of the news data.(under development.
+    • Redis is used as cache for news, user's recommendations, as well as other services.
+    \n**Deployment: **(Docker)
+    Docker for containerizations of the system(Under Development)`
   }
 ];

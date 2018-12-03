@@ -10,15 +10,15 @@
   &__btn {
     user-select: none;
     background: transparent;
-    color: $darkgrey;
+    color: $grey;
     border: none;
     height: 200px;
     padding-left: 10px;
     padding-right: 10px;
     font-size: 7em;
-    transform: scale(0.45, 1);
     transition: all 0.3s ease;
     font-family: "Roboto", sans-serif;
+    font-weight: 600;
     &:focus {
       outline: none;
     }
@@ -26,8 +26,12 @@
       color: $bright-teal;
       text-shadow: 0 0 1px $super-light-teal, 0 0 5px $super-light-teal,
         0 0 15px $super-light-teal, 0 0 30px $super-light-teal;
-
       cursor: pointer;
+    }
+    &:active {
+      color: $btn-color;
+      text-shadow: 0 0 1px $btn-color5, 0 0 5px $btn-color5,
+        0 0 15px $btn-color5, 0 0 30px $btn-color5;
     }
     &--right {
       margin-right: 15px;

@@ -9,7 +9,7 @@ export default ({ index, handleSlideLeft, showcaseSlideIndex }) => (
         <button
           className={`slide-btn-section__btn slide-btn-section__btn--disabled`}
         >
-          {"<<"}
+          ⦑
         </button>
       </div>
     ) : (
@@ -19,7 +19,7 @@ export default ({ index, handleSlideLeft, showcaseSlideIndex }) => (
           className={`slide-btn-section__btn`}
           onClick={handleSlideLeft}
         >
-          {"<<"}
+          ⦑
         </button>
       </div>
     )}
