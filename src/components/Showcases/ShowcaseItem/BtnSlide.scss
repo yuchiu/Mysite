@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Gamja+Flower");
 @import "../../../assets/css/mixins";
 @import "../../../assets/css/vars";
 
@@ -17,7 +18,8 @@
     padding-right: 10px;
     font-size: 7em;
     transition: all 0.3s ease;
-    font-family: "Roboto", sans-serif;
+    font-family: "Gamja Flower", cursive;
+
     font-weight: 600;
     &:focus {
       outline: none;

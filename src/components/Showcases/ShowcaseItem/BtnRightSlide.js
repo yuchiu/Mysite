@@ -9,7 +9,7 @@ export default ({ index, handleSlideRight, showcaseSlideIndex }) => (
         <button
           className={`slide-btn-section__btn slide-btn-section__btn--disabled`}
         >
-          ⦒
+          &#12297;
         </button>
       </div>
     ) : (
@@ -19,7 +19,7 @@ export default ({ index, handleSlideRight, showcaseSlideIndex }) => (
           className={`slide-btn-section__btn slide-btn-section__btn--right`}
           onClick={handleSlideRight}
         >
-          ⦒
+          &#12297;
         </button>
       </div>
     )}
