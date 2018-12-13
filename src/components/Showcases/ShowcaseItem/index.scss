@@ -14,13 +14,14 @@
   display: flex;
   min-height: 80vh;
   width: 100vw;
-  margin: 20px 0 auto;
+  margin: 20px;
   justify-content: flex-start;
   &__main {
     display: flex;
-    width: 100%;
+    margin: 0 auto;
+    width: 98%;
     &__img-section {
-      min-width: 680px;
+      min-width: 750px;
       transition: all 0.3s ease;
       display: flex;
       justify-content: center;

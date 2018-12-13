@@ -11,13 +11,9 @@ export default [
     demoLink: "http://yuchiu-slack.surge.sh",
     clientTechStack: [
       "Reactjs",
-      "React-Redux",
-      "React-Router",
       "Redux",
+      "React-Router",
       "Redux-Thunk",
-      "Reselect",
-      "Axios",
-      "Jest",
       "SCSS",
       "Semantic-UI"
     ],
@@ -90,7 +86,8 @@ export default [
     \n**Communications: **(RESTful API ∙ WebSocket ∙ Socket.io)
     • The API endpoint are implemented in RESTful fashion with semantic plural noun naming, api versioning, apply HTTP methods accordingly to request resource. The response of REST endpoint also include a "meta" field besides requesting data itself. The meta field include 3 attributes, 1) the embedded HTTP response status code, 2) success or error type, 3) server's response message. By providing meta field, client would have a better understanding for server's response for the request"  
     • WebSocket connection are implemented for real time message using socket.io.
-    \n**Authentications: **(Session ∙ Redis)
+    \n**Authentications: **(OAuth2 ∙ Session ∙ Redis)
+    • implemented OAuth2 with Google API.
     • Sessions are store in redis, which provides a central store of session data that stay consistent even when connected with multiple backend server instances.
     • Authorization is done by having administration field for Team_Member table that indicates his/her status with respective team once it was created.
     \n**Server Applications: **(Nodejs ∙ TypeScript ∙ Express ∙ Nginx)
@@ -117,12 +114,9 @@ export default [
     clientTechStack: [
       "Reactjs",
       "React Native",
-      "React-Redux",
-      "React-Router",
       "Redux",
+      "React-Router",
       "Redux-Thunk",
-      "Reselect",
-      "Axios",
       "SCSS"
     ],
     serverTechStack: [
@@ -212,7 +206,7 @@ export default [
     • MongoDB is the main database this project uses due to several considerations. 1) The news data are scrape from various sources therefore the data structure would be less consistent. 2) There are no strong correlation between data that we are utilizing. 
     • Search service uses ElasticSearch as database for the robust searching functionalities such as type predictions and fuzzy matching. It obtains its data from main mongoDB and store a copy of the news data.(under development.
     • Redis is used as cache for news, user's recommendations, as well as other services.
-    \n**Deployment: **(Docker)
-    Docker for containerizations of the system(Under Development)`
+    \n**Deployment: **
+    • Deployed on AWS EC2 instance`
   }
 ];

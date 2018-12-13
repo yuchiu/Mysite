@@ -1,22 +1,12 @@
 import React from "react";
 
 import "./index.scss";
-import showcaseData from "../showcaseData";
 import NavBtnGroup from "./NavBtnGroup";
 import SlideDesc from "./SlideDesc";
 import SlideImg from "./SlideImg";
-import BtnLeftSlide from "./BtnLeftSlide";
-import BtnRightSlide from "./BtnRightSlide";
 import { DownRefArrow } from "../../common";
 
-export default ({
-  itemData,
-  index,
-  handleChange,
-  handleSlideLeft,
-  handleSlideRight,
-  showcaseSlideIndex
-}) => (
+export default ({ itemData, index, handleChange, showcaseSlideIndex }) => (
   <div id={`showcase-item-${index + 1}`} className="showcases-item-wrapper">
     <div className="showcase-top">
       <section className="showcase-top__nav">
@@ -28,11 +18,6 @@ export default ({
       </section>
     </div>
     <div className="showcase-content">
-      <BtnLeftSlide
-        index={index}
-        handleSlideLeft={handleSlideLeft}
-        showcaseSlideIndex={showcaseSlideIndex}
-      />
       <div className="showcase-content__main">
         {showcaseSlideIndex === "2" ? (
           <section
@@ -54,11 +39,6 @@ export default ({
           showcaseSlideIndex={showcaseSlideIndex}
         />
       </div>
-      <BtnRightSlide
-        index={index}
-        handleSlideRight={handleSlideRight}
-        showcaseSlideIndex={showcaseSlideIndex}
-      />
     </div>
   </div>
 );
