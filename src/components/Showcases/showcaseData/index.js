@@ -71,7 +71,6 @@ export default [
     WebSocket handle real time communication such as inviting new members, sharing files and RESTful API handles asynchronous request such as user registrations and team creations.
     Apache Bench test with 5000 request and 500 concurrent on local server finished in 0.71 seconds.
     \n**Evolvements(future expansion):**  
-    Implements more Testing coverage such as unit testing, integration testing, E2E testing
     Splitting services such as authentication service that has significantly lower concurrent request than the heavier chat service to maximize resource allocations.
     provides more feature/scenarios such as payment support
     use WebSockets for more connections, similar to Slack's implementation`,
@@ -173,7 +172,6 @@ export default [
     3) Data Layer transforms raw data into processed data for backend platform layer to use.
 
     \n**Evolvements(future expansion): **
-    Implements more Testing coverage such as unit testing, integration testing, E2E testing
     Improve topic modeling accuracy and recommendation accuracy
     Integrate with The Onion Router(TOR) network to improve the stability of scraping system
     Continuous deployment pipeline such as Jenkins
