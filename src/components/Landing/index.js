@@ -5,15 +5,12 @@ import { DownRefArrow } from "../common";
 
 export default () => (
   <div id="landing-wrapper" className="landing-wrapper">
-    <div className="landing-content animated bounceInDown">
-      {/* eslint-disable-next-line */}
-      <p className="landing-content__intro">HI THERE, I'M YU.</p>
-      <p className="landing-content__typing">
-        Learner · Creator · Developer
-        <span className="landing-content__typing__line">|</span>
-      </p>
-      <div className="landing-content__link">
-        <DownRefArrow idhref="#showcases-wrapper" dark={false} />
+    <div className="landing-ring">
+      <div className="landing-content animated fadeIn">
+        <p className="landing-content__intro  fadeIn">HI THERE, I'M YU.</p>
+        <p className="landing-content__desc  fadeIn">
+          Learner · Creator · Developer
+        </p>
       </div>
     </div>
   </div>
