@@ -1,20 +1,6 @@
 @import "../../assets/css/vars.scss";
 @import "../../assets/css/mixins.scss";
 
-$diameter: 560px; // size control // diametro
-
-$radio: ($diameter/2); // radio
-
-$negative-radio: -($radio);
-
-$border: ($radio/8); // border
-
-$negative-border: -($border);
-
-$opacity: 0.6; // opacity
-
-$acceleration: 5s; // accelerate
-
 .landing-wrapper {
   margin: 0;
   min-height: 100vh;
@@ -48,18 +34,10 @@ $acceleration: 5s; // accelerate
   transform-origin: center center;
 }
 .landing-ring:after {
-  box-shadow: inset 0 $border 0 rgba(250, 250, 0, $opacity),
-    inset $border 0 0 rgba(250, 200, 0, $opacity),
-    inset 0 $negative-border 0 rgba(250, 150, 0, $opacity),
-    inset $negative-border 0 0 rgba(250, 100, 0, $opacity);
-  animation: rotar $acceleration -0.5s linear infinite;
+  animation: ringColor 40s infinite, rotar $acceleration -0s linear infinite;
 }
 .landing-ring:before {
-  box-shadow: inset 0 $border 0 rgba(0, 250, 250, $opacity),
-    inset $border 0 0 rgba(0, 200, 200, $opacity),
-    inset 0 $negative-border 0 rgba(0, 150, 200, $opacity),
-    inset $negative-border 0 0 rgba(0, 200, 250, $opacity);
-  animation: rotarIz $acceleration -0.5s linear infinite;
+  animation: ringColor 40s infinite, rotarIz $acceleration -0s linear infinite;
 }
 
 .landing-content {
@@ -98,6 +76,85 @@ $acceleration: 5s; // accelerate
   }
   100% {
     transform: rotateZ(-360deg) scaleX(1) scaleY(1);
+  }
+}
+@keyframes ringColor {
+  0% {
+    box-shadow: inset 0 $border 0 $background-color1,
+      inset $border 0 0 $background-color1,
+      inset 0 $negative-border 0 $background-color1,
+      inset $negative-border 0 0 $background-color1,
+      inset $negative-border 0 0 $background-color1;
+  }
+  10% {
+    box-shadow: inset 0 $border 0 $background-color2,
+      inset $border 0 0 $background-color2,
+      inset 0 $negative-border 0 $background-color2,
+      inset $negative-border 0 0 $background-color2,
+      inset $negative-border 0 0 $background-color2;
+  }
+  20% {
+    box-shadow: inset 0 $border 0 $background-color3,
+      inset $border 0 0 $background-color3,
+      inset 0 $negative-border 0 $background-color3,
+      inset $negative-border 0 0 $background-color3,
+      inset $negative-border 0 0 $background-color3;
+  }
+  30% {
+    box-shadow: inset 0 $border 0 $background-color4,
+      inset $border 0 0 $background-color4,
+      inset 0 $negative-border 0 $background-color4,
+      inset $negative-border 0 0 $background-color4,
+      inset $negative-border 0 0 $background-color4;
+  }
+  40% {
+    box-shadow: inset 0 $border 0 $background-color5,
+      inset $border 0 0 $background-color5,
+      inset 0 $negative-border 0 $background-color5,
+      inset $negative-border 0 0 $background-color5,
+      inset $negative-border 0 0 $background-color5;
+  }
+  50% {
+    box-shadow: inset 0 $border 0 $background-color6,
+      inset $border 0 0 $background-color6,
+      inset 0 $negative-border 0 $background-color6,
+      inset $negative-border 0 0 $background-color6,
+      inset $negative-border 0 0 $background-color6;
+  }
+  60% {
+    box-shadow: inset 0 $border 0 $background-color7,
+      inset $border 0 0 $background-color7,
+      inset 0 $negative-border 0 $background-color7,
+      inset $negative-border 0 0 $background-color7,
+      inset $negative-border 0 0 $background-color7;
+  }
+  70% {
+    box-shadow: inset 0 $border 0 $background-color8,
+      inset $border 0 0 $background-color8,
+      inset 0 $negative-border 0 $background-color8,
+      inset $negative-border 0 0 $background-color8,
+      inset $negative-border 0 0 $background-color8;
+  }
+  80% {
+    box-shadow: inset 0 $border 0 $background-color9,
+      inset $border 0 0 $background-color9,
+      inset 0 $negative-border 0 $background-color9,
+      inset $negative-border 0 0 $background-color9,
+      inset $negative-border 0 0 $background-color9;
+  }
+  90% {
+    box-shadow: inset 0 $border 0 $background-color10,
+      inset $border 0 0 $background-color10,
+      inset 0 $negative-border 0 $background-color10,
+      inset $negative-border 0 0 $background-color10,
+      inset $negative-border 0 0 $background-color10;
+  }
+  100% {
+    box-shadow: inset 0 $border 0 $background-color1,
+      inset $border 0 0 $background-color1,
+      inset 0 $negative-border 0 $background-color1,
+      inset $negative-border 0 0 $background-color1,
+      inset $negative-border 0 0 $background-color1;
   }
 }
 
