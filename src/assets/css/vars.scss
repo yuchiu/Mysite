@@ -15,9 +15,11 @@ $negative-radio-small: -($radio-small);
 $border: ($radio/10); // border
 $negative-border: -($border);
 $acceleration: 15s; // accelerate
+$acceleration-2: 20s; // accelerate
+$acceleration-3: 25s; // accelerate
 
 /* other base style */
-$opacity: 0.5; // opacity
+$opacity: 0.6; // opacity
 
 /* colors */
 $superwhite: #fff;

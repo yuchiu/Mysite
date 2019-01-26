@@ -7,10 +7,10 @@ import ContactsForm from "./ContactsForm";
 export default () => (
   <div id="contacts-wrapper" className="contacts-wrapper">
     <div className="contacts-wrapper__upper">
-      <Social />
+      <ContactsForm />
     </div>
     <div className="contacts-wrapper__lower">
-      <ContactsForm />
+      <Social />
     </div>
   </div>
 );

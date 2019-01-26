@@ -29,33 +29,40 @@
   background-color: $background-color1;
   animation: bgColor 40s infinite;
 }
+@mixin buttonColorAnimation {
+  border-color: $background-color1;
+  animation: bgColor 40s infinite, borderColor 40s infinite;
+}
 
 @keyframes bgColor {
   0% {
     background-color: $background-color1;
   }
-  10% {
+  9% {
+    background-color: $background-color1;
+  }
+  18% {
     background-color: $background-color2;
   }
-  20% {
+  27% {
     background-color: $background-color3;
   }
-  30% {
+  36% {
     background-color: $background-color4;
   }
-  40% {
+  45% {
     background-color: $background-color5;
   }
-  50% {
+  54% {
     background-color: $background-color6;
   }
-  60% {
+  63% {
     background-color: $background-color7;
   }
-  70% {
+  72% {
     background-color: $background-color8;
   }
-  80% {
+  81% {
     background-color: $background-color9;
   }
   90% {
@@ -63,6 +70,45 @@
   }
   100% {
     background-color: $background-color1;
+  }
+}
+
+@keyframes borderColor {
+  0% {
+    border-color: $background-color1;
+  }
+  9% {
+    border-color: $background-color1;
+  }
+  18% {
+    border-color: $background-color2;
+  }
+  27% {
+    border-color: $background-color3;
+  }
+  36% {
+    border-color: $background-color4;
+  }
+  45% {
+    border-color: $background-color5;
+  }
+  54% {
+    border-color: $background-color6;
+  }
+  63% {
+    border-color: $background-color7;
+  }
+  72% {
+    border-color: $background-color8;
+  }
+  81% {
+    border-color: $background-color9;
+  }
+  90% {
+    border-color: $background-color10;
+  }
+  100% {
+    border-color: $background-color1;
   }
 }
 

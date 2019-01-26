@@ -8,7 +8,9 @@ export default [
       archDiagram: "https://i.imgur.com/FBYB9vn.jpg"
     },
     githubLink: "https://github.com/yuchiu/today-news",
-    demoLink: "http://today-news.surge.sh",
+    demoLink:
+      "https://github.com/yuchiu/today-news/blob/master/today-gif-demo.gif",
+    siteLink: "http://today-news.surge.sh",
     language: ["JavaScript", "Python"],
     frontEndStack: [
       "React.js",
@@ -20,6 +22,7 @@ export default [
     backEndStack: [
       "Node.js",
       "Express.js",
+      "jsonrpclib-pelix",
       "RESTful API",
       "RPC API",
       "Web Scraper",
@@ -27,7 +30,7 @@ export default [
     ],
     dataStore: ["RabbitMQ", "Redis", "ElasticSearch", "Mongoose", "MongoDB"],
     operationsStack: ["Docker", "AWS EC2"],
-    introDesc: `Today News is a comprehensive news coverage applications aggregated from various sources with personal news recommendation system.`,
+    introDesc: `A comprehensive news coverage applications aggregated from various sources with personal news recommendation system.`,
     highlight: [
       "Users can register and log in to their accounts",
       "News are classified in different categories for users",
@@ -107,13 +110,15 @@ export default [
       archDiagram: "https://i.imgur.com/PhN3zT1.jpg"
     },
     githubLink: "https://github.com/yuchiu/slack-clone",
-    demoLink: "http://yuchiu-slack.surge.sh",
+    demoLink:
+      "https://github.com/yuchiu/slack-clone/blob/master/slack-clone-demo.gif",
+    siteLink: "http://yuchiu-slack.surge.sh",
     language: ["JavaScript", "TypeScript"],
     frontEndStack: ["React.js", "React-Router", "Redux", "SCSS", "Semantic-UI"],
-    backEndStack: ["Nodejs", "Expressjs", "RESTful API", "Socketio"],
+    backEndStack: ["Nodejs", "Expressjs", "RESTful API", "Websocket"],
     dataStore: ["Redis", "Sequelize", "PostgreSQL"],
     operationsStack: ["Nginx", "Docker", "AWS EC2"],
-    introDesc: `Slack Clone is a fullstack web application that recreate Slack's main features including but not limited to real-time communications, create Teams, create Channels, direct messages, profile image uploads, file uploads and more.`,
+    introDesc: `A fullstack web application that recreate Slack's main features including but not limited to real-time communications, create Teams, create Channels, direct messages, profile image uploads, file uploads and more.`,
     highlight: [
       "Users can register and log in to their account",
       "Users can edit his/her profile info, including profile image & password",

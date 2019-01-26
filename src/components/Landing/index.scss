@@ -22,6 +22,9 @@
   line-height: $diameter;
   -webkit-font-smoothing: antialiased;
   transition: all 1s ease-in-out;
+  border-radius: 100%;
+  animation: ringColor 40s infinite, rotar $acceleration -0s linear infinite,
+    ring1fadeInOut 40s infinite, wordfadeIn 2s ease-in;
 }
 .landing-ring:after,
 .landing-ring:before {
@@ -35,11 +38,11 @@
   transform-origin: center center;
 }
 .landing-ring:after {
-  animation: ringColor 40s infinite, rotar $acceleration -0s linear infinite,
+  animation: ringColor 40s infinite, rotar2 $acceleration-2 -0s linear infinite,
     ring1fadeInOut 40s infinite, wordfadeIn 2s ease-in;
 }
 .landing-ring:before {
-  animation: ringColor 40s infinite, rotarIz $acceleration -0s linear infinite,
+  animation: ringColor 40s infinite, rotarIz $acceleration-3 -0s linear infinite,
     ring2fadeInOut 40s infinite, wordfadeIn 2s ease-in;
 }
 
@@ -51,7 +54,6 @@
   color: $superdarkgrey;
   text-align: center;
   position: relative;
-  margin-top: 210px;
   &__intro {
     font-size: 2.5em;
     width: 100%;
@@ -72,15 +74,26 @@
     transform: rotateZ(360deg) scaleX(1) scaleY(0.9);
   }
 }
-@keyframes rotarIz {
+@keyframes rotar2 {
   0% {
-    transform: rotateZ(0deg) scaleX(0.82) scaleY(0.88);
+    transform: rotateZ(0deg) scaleX(0.9) scaleY(0.95);
   }
   50% {
-    transform: rotateZ(-180deg) scaleX(0.9) scaleY(1);
+    transform: rotateZ(180deg) scaleX(1) scaleY(1.1);
   }
   100% {
-    transform: rotateZ(-360deg) scaleX(0.82) scaleY(0.88);
+    transform: rotateZ(360deg) scaleX(0.9) scaleY(0.95);
+  }
+}
+@keyframes rotarIz {
+  0% {
+    transform: rotateZ(0deg) scaleX(0.85) scaleY(1.05);
+  }
+  50% {
+    transform: rotateZ(-180deg) scaleX(0.9) scaleY(0.95);
+  }
+  100% {
+    transform: rotateZ(-360deg) scaleX(0.85) scaleY(1.05);
   }
 }
 @keyframes wordfadeIn {
@@ -245,6 +258,6 @@
     line-height: $diameter-small;
   }
   .landing-content {
-    margin-top: 150px;
+    font-size: 0.8em;
   }
 }

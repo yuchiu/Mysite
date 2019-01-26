@@ -6,6 +6,7 @@ export default () => (
   <div className="footer">
     <nav className="footer__nav">
       <a
+        className="footer__nav__link"
         href="https://github.com/yuchiu/my-site"
         target="_blank"
         rel="noopener noreferrer"

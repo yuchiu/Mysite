@@ -10,7 +10,13 @@
     justify-content: center;
     align-items: center;
     box-shadow: -1px -1px 2px $superlightgrey, -2px -2px 8px $superlightgrey;
-
+    &__link {
+      color: $grey;
+      transition: all 0.5s ease;
+      &:hover {
+        color: $darkgrey;
+      }
+    }
     &__copyright {
       margin-left: 10px;
     }

@@ -29,7 +29,7 @@ export default () => (
           >
             <i className="social__box__border__btn__icon fa fa-linkedin" />
             <br />
-            <p className="social__box__border__btn__name">Linkedin</p>
+            <p className="social__box__border__btn__name">LinkedIn</p>
           </a>
         </div>
       </div>
@@ -37,7 +37,7 @@ export default () => (
         <div className="social__box__border">
           <a
             href="https://codepen.io/yuchiu/"
-            className="social__box__border__btn a-tag-btn victoria-four"
+            className="social__box__border__btn a-tag-btn victoria-two"
             rel="noopener noreferrer"
             target="_blank"
           >

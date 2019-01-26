@@ -14,25 +14,31 @@
   .a-tag-btn.gibson-two,
   .a-tag-btn.gibson-three,
   .a-tag-btn.gibson-four {
+    @include buttonColorAnimation;
     margin: 0 15px 0;
-    color: $superdarkgrey;
-    border-color: $superdarkgrey;
-    font-size: 0.9em;
-    font-weight: 400;
+    color: $white;
+    font-size: 1.1em;
     border-radius: 3px;
     width: 150px;
     display: flex;
+    font-weight: 400;
     padding: 5px;
     align-items: center;
     justify-content: center;
-    &:hover {
-      border-color: $bright-teal;
-      color: $bright-teal;
+    text-shadow: 1px 1px 4px $grey;
+  }
+  &__btn {
+    &__icon {
+      transition: all 0.5s ease-in-out;
+      padding-right: 3px;
     }
-  }
-  &__github-btn {
-  }
-  &__demo-btn {
+    &__text {
+    }
+    &:hover & {
+      &__icon {
+        text-shadow: 1px 1px 8px $white;
+      }
+    }
   }
 }
 

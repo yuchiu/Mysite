@@ -83,6 +83,7 @@ export default class Contacts extends React.Component {
           data-email={myEmail}
           action="https://script.google.com/macros/s/AKfycbwmpk3mHxjdk4qyvkY_i7HK-O3ldBho6wYPQ_eCjKUBQmykXCra/exec"
         >
+          <h1 className="contacts-form__title">Get In Touch With Me</h1>
           <div className="form-subject">
             <div className="form-subject__to">
               <h4 className="form-subject__to__h4">To:</h4>
@@ -122,19 +123,17 @@ export default class Contacts extends React.Component {
               required
             />
           </div>
-          <div className="form-sender">
-            <h4 className="form-sender__h4">From:</h4>
+          <div className="form-send">
+            <h4 className="form-send__h4">From:</h4>
             <input
               name="email"
               type="email"
-              className="form-sender__mail-addr"
+              className="form-send__mail-addr"
               onChange={this.handleChange}
               value={formData.email}
-              placeholder="sender@email.com"
+              placeholder="send@email.com"
               required
             />
-          </div>
-          <div className="form-send">
             <button
               className="form-send__btn"
               onClick={this.handleSend}

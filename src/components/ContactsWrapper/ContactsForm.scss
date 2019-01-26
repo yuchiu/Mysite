@@ -9,6 +9,10 @@
   justify-content: space-between;
   text-align: center;
   width: 100%;
+  margin-top: ($navbarheight * 2);
+  &__title {
+    width: 100%;
+  }
 }
 
 .form-subject {
@@ -42,7 +46,7 @@
         border-radius: 2px;
         color: $grey;
         margin-left: auto;
-        width: 110px;
+        min-width: 110px;
         &:hover {
           cursor: pointer;
           color: $btn-color;
@@ -51,11 +55,10 @@
         &--copied {
           width: 98px;
           color: $btn-color6;
-          font-weight: 600;
-          border: 2px solid $btn-color6;
+          border: 1px solid $btn-color6;
           &:hover {
             color: $btn-color6;
-            border: 2px solid $btn-color6;
+            border: 1px solid $btn-color6;
           }
         }
       }
@@ -75,6 +78,7 @@
       border: 1px solid $lightgrey;
       border-radius: 2px;
       width: 100%;
+      padding: 2px;
     }
   }
 }
@@ -100,7 +104,7 @@
     min-height: 150px;
   }
 }
-.form-sender {
+.form-send {
   margin: 0 auto 0;
   margin-top: 10px;
   font-size: 1.2em;
@@ -116,33 +120,30 @@
     padding: 2px;
     border: 1px solid $lightgrey;
     border-radius: 2px;
+    padding: 2px;
+    margin-right: 15px;
+    min-width: 200px;
   }
-}
-
-.form-send {
-  margin: 0 auto 0;
-  width: 60%;
-  font-size: 1.2em;
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 0px;
   &__btn {
+    margin: 0 auto 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0px;
     transition: all 0.3s ease;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
-    width: 200px;
+    min-width: 200px;
+    height: 26px;
 
     background: transparent;
     color: $superdarkgrey;
-    border: 2px solid $superdarkgrey;
+    border: 1px solid $superdarkgrey;
     border-radius: 2px;
 
     user-select: none;
     &__icon {
       transition: all 0.3s ease;
-      font-size: 1.5em;
       opacity: 0;
       width: 0;
       color: $btn-color;
@@ -153,10 +154,9 @@
     &:hover {
       cursor: pointer;
       color: $btn-color;
-      border: 2px solid $btn-color;
+      border: 1px solid $btn-color;
       .form-send {
         &__btn {
-          display: flex;
           &__icon {
             opacity: 1;
           }
@@ -171,7 +171,7 @@
         &__btn {
           &__icon {
             transition: all 1.5s ease-out;
-            margin-left: 400px;
+            margin-left: 250px;
             opacity: 0;
           }
           &__text {
