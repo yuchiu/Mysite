@@ -33,10 +33,9 @@
       .a-tag-btn.victoria-four {
         border-radius: 2px;
         padding: 20px 10px;
-        text-transform: none;
         border: 2px solid $superdarkgrey;
         user-select: none;
-        text-shadow: 1px 1px 4px $grey;
+        text-shadow: 1px 1px 3px $grey, 1px 1px 5px $grey;
         @include buttonColorAnimation;
       }
       &__btn {

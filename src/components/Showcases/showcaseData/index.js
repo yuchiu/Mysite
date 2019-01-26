@@ -4,7 +4,7 @@ export default [
     name: "Today News",
     time: "Fall 2018",
     imgUrl: {
-      demoPic: "https://i.imgur.com/y2bUGMn.gif",
+      demoPic: "https://i.imgur.com/xiq3tIT.png",
       archDiagram: "https://i.imgur.com/FBYB9vn.jpg"
     },
     githubLink: "https://github.com/yuchiu/today-news",
@@ -106,7 +106,7 @@ export default [
     name: "Slack Clone",
     time: "Summer 2018",
     imgUrl: {
-      demoPic: "https://i.imgur.com/6FqTT5y.gif",
+      demoPic: "https://i.imgur.com/AHVp5Sk.png",
       archDiagram: "https://i.imgur.com/PhN3zT1.jpg"
     },
     githubLink: "https://github.com/yuchiu/slack-clone",

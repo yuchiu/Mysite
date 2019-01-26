@@ -25,12 +25,13 @@
     padding: 5px;
     align-items: center;
     justify-content: center;
-    text-shadow: 1px 1px 4px $grey;
+    text-shadow: 1px 1px 3px $grey, 1px 1px 5px $grey;
   }
   &__btn {
     &__icon {
       transition: all 0.5s ease-in-out;
       padding-right: 3px;
+      font-size: 1.5em;
     }
     &__text {
     }

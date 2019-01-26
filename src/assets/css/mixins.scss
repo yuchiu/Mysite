@@ -27,11 +27,11 @@
 
 @mixin bgColorAnimation {
   background-color: $background-color1;
-  animation: bgColor 40s infinite;
+  animation: bgColor 30s infinite;
 }
 @mixin buttonColorAnimation {
   border-color: $background-color1;
-  animation: bgColor 40s infinite, borderColor 40s infinite;
+  animation: bgColor 30s infinite, borderColor 30s infinite;
 }
 
 @keyframes bgColor {
@@ -122,7 +122,6 @@
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    text-transform: uppercase;
     overflow: hidden;
     letter-spacing: 0.08em;
     border-radius: 0;
@@ -161,9 +160,7 @@
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    text-transform: uppercase;
     overflow: hidden;
-    letter-spacing: 0.08em;
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
     transition: all 1s ease;
   }

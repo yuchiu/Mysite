@@ -13,21 +13,21 @@
 .showcase-content {
   display: flex;
   min-height: 80vh;
-  width: 100vw;
-  margin: 20px;
+  width: 92%;
+  margin: 20px auto;
   justify-content: flex-start;
   &__main {
     display: flex;
-    margin: 0 auto;
-    width: 98%;
+    width: 100%;
+    justify-content: space-between;
     &__img-section {
       min-width: 50%;
       transition: all 0.3s ease;
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-right: 30px;
       @include bgColorAnimation;
+      margin-right: 50px;
       background: linear-gradient(
         45deg,
         #fff 0%,
@@ -39,11 +39,8 @@
       );
       &__img {
         transition: all 0.3s ease;
-        height: 500px;
-        box-shadow: 0 0 20px $grey;
-        &--large {
-          height: 650px;
-        }
+        width: 600px;
+        box-shadow: 0 0 10px $grey;
       }
     }
     &__detail {
@@ -112,10 +109,7 @@
         margin: 0 auto;
         min-height: 500px;
         &__img {
-          height: 420px;
-          &--large {
-            height: 480px;
-          }
+          width: 550px;
         }
         margin-bottom: 20px;
       }
@@ -164,10 +158,7 @@
         margin: auto;
         min-width: 90%;
         &__img {
-          height: 380px;
-          &--large {
-            height: 420px;
-          }
+          width: 500px;
         }
       }
       &__detail {
@@ -192,9 +183,6 @@
         &__img {
           height: 90%;
           width: 90%;
-          &--large {
-            height: 90%;
-          }
         }
       }
       &__detail {

@@ -23,8 +23,8 @@
   -webkit-font-smoothing: antialiased;
   transition: all 1s ease-in-out;
   border-radius: 100%;
-  animation: ringColor 40s infinite, rotar $acceleration -0s linear infinite,
-    ring1fadeInOut 40s infinite, wordfadeIn 2s ease-in;
+  animation: ringColor 30s infinite, rotar $acceleration -0s linear infinite,
+    ring1fadeInOut 30s infinite, wordfadeIn 2s ease-in;
 }
 .landing-ring:after,
 .landing-ring:before {
@@ -38,12 +38,12 @@
   transform-origin: center center;
 }
 .landing-ring:after {
-  animation: ringColor 40s infinite, rotar2 $acceleration-2 -0s linear infinite,
-    ring1fadeInOut 40s infinite, wordfadeIn 2s ease-in;
+  animation: ringColor 30s infinite, rotar2 $acceleration-2 -0s linear infinite,
+    ring1fadeInOut 30s infinite, wordfadeIn 2s ease-in;
 }
 .landing-ring:before {
-  animation: ringColor 40s infinite, rotarIz $acceleration-3 -0s linear infinite,
-    ring2fadeInOut 40s infinite, wordfadeIn 2s ease-in;
+  animation: ringColor 30s infinite, rotarIz $acceleration-3 -0s linear infinite,
+    ring2fadeInOut 30s infinite, wordfadeIn 2s ease-in;
 }
 
 .landing-content {
@@ -68,7 +68,7 @@
     transform: rotateZ(0deg) scaleX(1) scaleY(0.9);
   }
   50% {
-    transform: rotateZ(180deg) scaleX(0.85) scaleY(0.88);
+    transform: rotateZ(180deg) scaleX(0.85) scaleY(0.95);
   }
   100% {
     transform: rotateZ(360deg) scaleX(1) scaleY(0.9);
@@ -143,109 +143,109 @@
 }
 @keyframes ringColor {
   0% {
-    box-shadow: inset 0 $border 0 $background-color1,
-      inset $border 0 0 $background-color1,
-      inset 0 $negative-border 0 $background-color1,
-      inset $negative-border 0 0 $background-color1,
-      inset $border $negative-border 0 $background-color1;
+    box-shadow: inset 0 $border 0 $landing-ring-color1,
+      inset $border 0 0 $landing-ring-color1,
+      inset 0 $negative-border 0 $landing-ring-color1,
+      inset $negative-border 0 0 $landing-ring-color1,
+      inset $border $negative-border 0 $landing-ring-color1;
   }
   7% {
-    box-shadow: inset 0 $border 0 $background-color1,
-      inset $border 0 0 $background-color1,
-      inset 0 $negative-border 0 $background-color1,
-      inset $negative-border 0 0 $background-color1,
-      inset $border $negative-border 0 $background-color2;
+    box-shadow: inset 0 $border 0 $landing-ring-color1,
+      inset $border 0 0 $landing-ring-color1,
+      inset 0 $negative-border 0 $landing-ring-color1,
+      inset $negative-border 0 0 $landing-ring-color1,
+      inset $border $negative-border 0 $landing-ring-color2;
   }
   14% {
-    box-shadow: inset 0 $border 0 $background-color1,
-      inset $border 0 0 $background-color1,
-      inset 0 $negative-border 0 $background-color1,
-      inset $negative-border 0 0 $background-color2,
-      inset $border $negative-border 0 $background-color3;
+    box-shadow: inset 0 $border 0 $landing-ring-color1,
+      inset $border 0 0 $landing-ring-color1,
+      inset 0 $negative-border 0 $landing-ring-color1,
+      inset $negative-border 0 0 $landing-ring-color2,
+      inset $border $negative-border 0 $landing-ring-color3;
   }
   21% {
-    box-shadow: inset 0 $border 0 $background-color1,
-      inset $border 0 0 $background-color1,
-      inset 0 $negative-border 0 $background-color2,
-      inset $negative-border 0 0 $background-color3,
-      inset $border $negative-border 0 $background-color4;
+    box-shadow: inset 0 $border 0 $landing-ring-color1,
+      inset $border 0 0 $landing-ring-color1,
+      inset 0 $negative-border 0 $landing-ring-color2,
+      inset $negative-border 0 0 $landing-ring-color3,
+      inset $border $negative-border 0 $landing-ring-color4;
   }
   28% {
-    box-shadow: inset 0 $border 0 $background-color1,
-      inset $border 0 0 $background-color2,
-      inset 0 $negative-border 0 $background-color3,
-      inset $negative-border 0 0 $background-color4,
-      inset $border $negative-border 0 $background-color5;
+    box-shadow: inset 0 $border 0 $landing-ring-color1,
+      inset $border 0 0 $landing-ring-color2,
+      inset 0 $negative-border 0 $landing-ring-color3,
+      inset $negative-border 0 0 $landing-ring-color4,
+      inset $border $negative-border 0 $landing-ring-color5;
   }
   35% {
-    box-shadow: inset 0 $border 0 $background-color2,
-      inset $border 0 0 $background-color3,
-      inset 0 $negative-border 0 $background-color4,
-      inset $negative-border 0 0 $background-color5,
-      inset $negative-border 0 0 $background-color6;
+    box-shadow: inset 0 $border 0 $landing-ring-color2,
+      inset $border 0 0 $landing-ring-color3,
+      inset 0 $negative-border 0 $landing-ring-color4,
+      inset $negative-border 0 0 $landing-ring-color5,
+      inset $negative-border 0 0 $landing-ring-color6;
   }
   42% {
-    box-shadow: inset 0 $border 0 $background-color3,
-      inset $border 0 0 $background-color4,
-      inset 0 $negative-border 0 $background-color5,
-      inset $negative-border 0 0 $background-color6,
-      inset $negative-border 0 0 $background-color7;
+    box-shadow: inset 0 $border 0 $landing-ring-color3,
+      inset $border 0 0 $landing-ring-color4,
+      inset 0 $negative-border 0 $landing-ring-color5,
+      inset $negative-border 0 0 $landing-ring-color6,
+      inset $negative-border 0 0 $landing-ring-color7;
   }
   49% {
-    box-shadow: inset 0 $border 0 $background-color4,
-      inset $border 0 0 $background-color5,
-      inset 0 $negative-border 0 $background-color6,
-      inset $negative-border 0 0 $background-color7,
-      inset $negative-border 0 0 $background-color8;
+    box-shadow: inset 0 $border 0 $landing-ring-color4,
+      inset $border 0 0 $landing-ring-color5,
+      inset 0 $negative-border 0 $landing-ring-color6,
+      inset $negative-border 0 0 $landing-ring-color7,
+      inset $negative-border 0 0 $landing-ring-color8;
   }
   56% {
-    box-shadow: inset 0 $border 0 $background-color5,
-      inset $border 0 0 $background-color6,
-      inset 0 $negative-border 0 $background-color7,
-      inset $negative-border 0 0 $background-color8,
-      inset $negative-border 0 0 $background-color9;
+    box-shadow: inset 0 $border 0 $landing-ring-color5,
+      inset $border 0 0 $landing-ring-color6,
+      inset 0 $negative-border 0 $landing-ring-color7,
+      inset $negative-border 0 0 $landing-ring-color8,
+      inset $negative-border 0 0 $landing-ring-color9;
   }
   64% {
-    box-shadow: inset 0 $border 0 $background-color6,
-      inset $border 0 0 $background-color7,
-      inset 0 $negative-border 0 $background-color8,
-      inset $negative-border 0 0 $background-color9,
-      inset $negative-border 0 0 $background-color10;
+    box-shadow: inset 0 $border 0 $landing-ring-color6,
+      inset $border 0 0 $landing-ring-color7,
+      inset 0 $negative-border 0 $landing-ring-color8,
+      inset $negative-border 0 0 $landing-ring-color9,
+      inset $negative-border 0 0 $landing-ring-color10;
   }
   71% {
-    box-shadow: inset 0 $border 0 $background-color7,
-      inset $border 0 0 $background-color8,
-      inset 0 $negative-border 0 $background-color9,
-      inset $negative-border 0 0 $background-color10,
-      inset $negative-border 0 0 $background-color1;
+    box-shadow: inset 0 $border 0 $landing-ring-color7,
+      inset $border 0 0 $landing-ring-color8,
+      inset 0 $negative-border 0 $landing-ring-color9,
+      inset $negative-border 0 0 $landing-ring-color10,
+      inset $negative-border 0 0 $landing-ring-color1;
   }
   79% {
-    box-shadow: inset 0 $border 0 $background-color8,
-      inset $border 0 0 $background-color9,
-      inset 0 $negative-border 0 $background-color10,
-      inset $negative-border 0 0 $background-color1,
-      inset $negative-border 0 0 $background-color1;
+    box-shadow: inset 0 $border 0 $landing-ring-color8,
+      inset $border 0 0 $landing-ring-color9,
+      inset 0 $negative-border 0 $landing-ring-color10,
+      inset $negative-border 0 0 $landing-ring-color1,
+      inset $negative-border 0 0 $landing-ring-color1;
   }
   86% {
-    box-shadow: inset 0 $border 0 $background-color9,
-      inset $border 0 0 $background-color10,
-      inset 0 $negative-border 0 $background-color1,
-      inset $negative-border 0 0 $background-color1,
-      inset $negative-border 0 0 $background-color1;
+    box-shadow: inset 0 $border 0 $landing-ring-color9,
+      inset $border 0 0 $landing-ring-color10,
+      inset 0 $negative-border 0 $landing-ring-color1,
+      inset $negative-border 0 0 $landing-ring-color1,
+      inset $negative-border 0 0 $landing-ring-color1;
   }
   93% {
-    box-shadow: inset 0 $border 0 $background-color10,
-      inset $border 0 0 $background-color1,
-      inset 0 $negative-border 0 $background-color1,
-      inset $negative-border 0 0 $background-color1,
-      inset $negative-border 0 0 $background-color1;
+    box-shadow: inset 0 $border 0 $landing-ring-color10,
+      inset $border 0 0 $landing-ring-color1,
+      inset 0 $negative-border 0 $landing-ring-color1,
+      inset $negative-border 0 0 $landing-ring-color1,
+      inset $negative-border 0 0 $landing-ring-color1;
   }
   100% {
-    box-shadow: inset 0 $border 0 $background-color1,
-      inset $border 0 0 $background-color1,
-      inset 0 $negative-border 0 $background-color1,
-      inset $negative-border 0 0 $background-color1,
-      inset $negative-border 0 0 $background-color1;
+    box-shadow: inset 0 $border 0 $landing-ring-color1,
+      inset $border 0 0 $landing-ring-color1,
+      inset 0 $negative-border 0 $landing-ring-color1,
+      inset $negative-border 0 0 $landing-ring-color1,
+      inset $negative-border 0 0 $landing-ring-color1;
   }
 }
 

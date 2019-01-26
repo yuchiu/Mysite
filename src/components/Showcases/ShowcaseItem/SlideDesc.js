@@ -12,14 +12,14 @@ const loopDotItem = (list, listName) =>
         ""
       ) : (
         <span className="showcase-content__main__detail__desc__header__tech-stack__item__dot">
-          •
+          ·
         </span>
       )}
       {item}
     </p>
   ));
 
-export default ({ itemData, showcaseSlideIndex }) => (
+export default ({ itemData }) => (
   <React.Fragment>
     <section className="showcase-content__main__detail">
       <div className="showcase-content__main__detail__desc">
@@ -77,10 +77,7 @@ export default ({ itemData, showcaseSlideIndex }) => (
           </ul>
         </div>
       </div>
-      <DemoLinkGroup
-        showcaseSlideIndex={showcaseSlideIndex}
-        itemData={itemData}
-      />
+      <DemoLinkGroup itemData={itemData} />
     </section>
   </React.Fragment>
 );
