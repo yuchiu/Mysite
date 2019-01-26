@@ -4,15 +4,20 @@ $footerheight: 30px;
 $navbarheight: 50px;
 
 /* ring config*/
-$diameter: 560px; // size control // diametro
+$diameter: 560px; // size control // diameter
+$diameter-small: 420px; // size control // diameter small
+
 $radio: ($diameter/2); // radio
 $negative-radio: -($radio);
-$border: ($radio/8); // border
+$radio-small: ($diameter-small/2); // radio small
+$negative-radio-small: -($radio-small);
+
+$border: ($radio/10); // border
 $negative-border: -($border);
-$acceleration: 10s; // accelerate
+$acceleration: 15s; // accelerate
 
 /* other base style */
-$opacity: 0.6; // opacity
+$opacity: 0.5; // opacity
 
 /* colors */
 $superwhite: #fff;
@@ -52,7 +57,7 @@ $btn-color7: #226364;
 $background-color1: rgba(78, 141, 165, $opacity);
 $background-color2: rgba(155, 142, 228, $opacity);
 $background-color3: rgba(116, 138, 236, $opacity);
-$background-color4: rgba(68, 148, 103, $opacity);
+$background-color4: rgba(112, 204, 152, $opacity);
 $background-color5: rgba(36, 181, 152, $opacity);
 $background-color6: rgba(61, 145, 229, $opacity);
 $background-color7: rgba(61, 145, 229, $opacity);

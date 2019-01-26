@@ -21,6 +21,7 @@
   text-align: center;
   line-height: $diameter;
   -webkit-font-smoothing: antialiased;
+  transition: all 1s ease-in-out;
 }
 .landing-ring:after,
 .landing-ring:before {
@@ -34,19 +35,23 @@
   transform-origin: center center;
 }
 .landing-ring:after {
-  animation: ringColor 40s infinite, rotar $acceleration -0s linear infinite;
+  animation: ringColor 40s infinite, rotar $acceleration -0s linear infinite,
+    ring1fadeInOut 40s infinite, wordfadeIn 2s ease-in;
 }
 .landing-ring:before {
-  animation: ringColor 40s infinite, rotarIz $acceleration -0s linear infinite;
+  animation: ringColor 40s infinite, rotarIz $acceleration -0s linear infinite,
+    ring2fadeInOut 40s infinite, wordfadeIn 2s ease-in;
 }
 
 .landing-content {
+  animation: wordfadeIn 3s ease-in;
+  transition: all 1s ease-in-out;
   display: flex;
   flex-direction: column;
-  color: $darkgrey;
+  color: $superdarkgrey;
   text-align: center;
   position: relative;
-  margin-top: 200px;
+  margin-top: 210px;
   &__intro {
     font-size: 2.5em;
     width: 100%;
@@ -58,24 +63,69 @@
 }
 @keyframes rotar {
   0% {
-    transform: rotateZ(0deg) scaleX(1) scaleY(1);
+    transform: rotateZ(0deg) scaleX(1) scaleY(0.9);
   }
   50% {
-    transform: rotateZ(180deg) scaleX(0.82) scaleY(0.95);
+    transform: rotateZ(180deg) scaleX(0.85) scaleY(0.88);
   }
   100% {
-    transform: rotateZ(360deg) scaleX(1) scaleY(1);
+    transform: rotateZ(360deg) scaleX(1) scaleY(0.9);
   }
 }
 @keyframes rotarIz {
   0% {
-    transform: rotateZ(0deg) scaleX(1) scaleY(1);
+    transform: rotateZ(0deg) scaleX(0.82) scaleY(0.88);
   }
   50% {
-    transform: rotateZ(-180deg) scaleX(0.95) scaleY(0.85);
+    transform: rotateZ(-180deg) scaleX(0.9) scaleY(1);
   }
   100% {
-    transform: rotateZ(-360deg) scaleX(1) scaleY(1);
+    transform: rotateZ(-360deg) scaleX(0.82) scaleY(0.88);
+  }
+}
+@keyframes wordfadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes ring1fadeInOut {
+  0% {
+    opacity: 0.9;
+  }
+  25% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 0.85;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+@keyframes ring2fadeInOut {
+  0% {
+    opacity: 1.1;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1.1;
   }
 }
 @keyframes ringColor {
@@ -84,70 +134,98 @@
       inset $border 0 0 $background-color1,
       inset 0 $negative-border 0 $background-color1,
       inset $negative-border 0 0 $background-color1,
-      inset $negative-border 0 0 $background-color1;
+      inset $border $negative-border 0 $background-color1;
   }
-  10% {
-    box-shadow: inset 0 $border 0 $background-color2,
-      inset $border 0 0 $background-color2,
-      inset 0 $negative-border 0 $background-color2,
+  7% {
+    box-shadow: inset 0 $border 0 $background-color1,
+      inset $border 0 0 $background-color1,
+      inset 0 $negative-border 0 $background-color1,
+      inset $negative-border 0 0 $background-color1,
+      inset $border $negative-border 0 $background-color2;
+  }
+  14% {
+    box-shadow: inset 0 $border 0 $background-color1,
+      inset $border 0 0 $background-color1,
+      inset 0 $negative-border 0 $background-color1,
       inset $negative-border 0 0 $background-color2,
-      inset $negative-border 0 0 $background-color2;
+      inset $border $negative-border 0 $background-color3;
   }
-  20% {
-    box-shadow: inset 0 $border 0 $background-color3,
-      inset $border 0 0 $background-color3,
-      inset 0 $negative-border 0 $background-color3,
+  21% {
+    box-shadow: inset 0 $border 0 $background-color1,
+      inset $border 0 0 $background-color1,
+      inset 0 $negative-border 0 $background-color2,
       inset $negative-border 0 0 $background-color3,
-      inset $negative-border 0 0 $background-color3;
+      inset $border $negative-border 0 $background-color4;
   }
-  30% {
-    box-shadow: inset 0 $border 0 $background-color4,
-      inset $border 0 0 $background-color4,
-      inset 0 $negative-border 0 $background-color4,
+  28% {
+    box-shadow: inset 0 $border 0 $background-color1,
+      inset $border 0 0 $background-color2,
+      inset 0 $negative-border 0 $background-color3,
       inset $negative-border 0 0 $background-color4,
-      inset $negative-border 0 0 $background-color4;
+      inset $border $negative-border 0 $background-color5;
   }
-  40% {
-    box-shadow: inset 0 $border 0 $background-color5,
-      inset $border 0 0 $background-color5,
-      inset 0 $negative-border 0 $background-color5,
+  35% {
+    box-shadow: inset 0 $border 0 $background-color2,
+      inset $border 0 0 $background-color3,
+      inset 0 $negative-border 0 $background-color4,
       inset $negative-border 0 0 $background-color5,
-      inset $negative-border 0 0 $background-color5;
-  }
-  50% {
-    box-shadow: inset 0 $border 0 $background-color6,
-      inset $border 0 0 $background-color6,
-      inset 0 $negative-border 0 $background-color6,
-      inset $negative-border 0 0 $background-color6,
       inset $negative-border 0 0 $background-color6;
   }
-  60% {
-    box-shadow: inset 0 $border 0 $background-color7,
-      inset $border 0 0 $background-color7,
-      inset 0 $negative-border 0 $background-color7,
-      inset $negative-border 0 0 $background-color7,
+  42% {
+    box-shadow: inset 0 $border 0 $background-color3,
+      inset $border 0 0 $background-color4,
+      inset 0 $negative-border 0 $background-color5,
+      inset $negative-border 0 0 $background-color6,
       inset $negative-border 0 0 $background-color7;
   }
-  70% {
-    box-shadow: inset 0 $border 0 $background-color8,
-      inset $border 0 0 $background-color8,
-      inset 0 $negative-border 0 $background-color8,
-      inset $negative-border 0 0 $background-color8,
+  49% {
+    box-shadow: inset 0 $border 0 $background-color4,
+      inset $border 0 0 $background-color5,
+      inset 0 $negative-border 0 $background-color6,
+      inset $negative-border 0 0 $background-color7,
       inset $negative-border 0 0 $background-color8;
   }
-  80% {
-    box-shadow: inset 0 $border 0 $background-color9,
-      inset $border 0 0 $background-color9,
-      inset 0 $negative-border 0 $background-color9,
-      inset $negative-border 0 0 $background-color9,
+  56% {
+    box-shadow: inset 0 $border 0 $background-color5,
+      inset $border 0 0 $background-color6,
+      inset 0 $negative-border 0 $background-color7,
+      inset $negative-border 0 0 $background-color8,
       inset $negative-border 0 0 $background-color9;
   }
-  90% {
-    box-shadow: inset 0 $border 0 $background-color10,
-      inset $border 0 0 $background-color10,
-      inset 0 $negative-border 0 $background-color10,
-      inset $negative-border 0 0 $background-color10,
+  64% {
+    box-shadow: inset 0 $border 0 $background-color6,
+      inset $border 0 0 $background-color7,
+      inset 0 $negative-border 0 $background-color8,
+      inset $negative-border 0 0 $background-color9,
       inset $negative-border 0 0 $background-color10;
+  }
+  71% {
+    box-shadow: inset 0 $border 0 $background-color7,
+      inset $border 0 0 $background-color8,
+      inset 0 $negative-border 0 $background-color9,
+      inset $negative-border 0 0 $background-color10,
+      inset $negative-border 0 0 $background-color1;
+  }
+  79% {
+    box-shadow: inset 0 $border 0 $background-color8,
+      inset $border 0 0 $background-color9,
+      inset 0 $negative-border 0 $background-color10,
+      inset $negative-border 0 0 $background-color1,
+      inset $negative-border 0 0 $background-color1;
+  }
+  86% {
+    box-shadow: inset 0 $border 0 $background-color9,
+      inset $border 0 0 $background-color10,
+      inset 0 $negative-border 0 $background-color1,
+      inset $negative-border 0 0 $background-color1,
+      inset $negative-border 0 0 $background-color1;
+  }
+  93% {
+    box-shadow: inset 0 $border 0 $background-color10,
+      inset $border 0 0 $background-color1,
+      inset 0 $negative-border 0 $background-color1,
+      inset $negative-border 0 0 $background-color1,
+      inset $negative-border 0 0 $background-color1;
   }
   100% {
     box-shadow: inset 0 $border 0 $background-color1,
@@ -159,8 +237,14 @@
 }
 
 @include maxMediaQueries(880px) {
-  .landing__typing {
-    font-size: 18px;
-    width: 90%;
+  .landing-ring {
+    margin-left: $negative-radio-small;
+    margin-top: $negative-radio-small;
+    width: $diameter-small;
+    height: $diameter-small;
+    line-height: $diameter-small;
+  }
+  .landing-content {
+    margin-top: 150px;
   }
 }

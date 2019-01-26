@@ -21,15 +21,11 @@ class Navbar extends React.Component {
     landingLink.addClass("navbar-wrapper__nav__ul__li__link--active");
 
     $(window).scroll(() => {
-      if ($(document).scrollTop() > 50) {
-        navWrapper.addClass("navbar-wrapper--shrink");
-      } else {
-        navWrapper.removeClass("navbar-wrapper--shrink");
-      }
       if (
         $(window).scrollTop() >= landingTop - 100 &&
         $(window).scrollTop() < showcasesTop
       ) {
+        navWrapper.removeClass("navbar-wrapper--shrink");
         landingLink.addClass("navbar-wrapper__nav__ul__li__link--active");
         showcasesLink.removeClass("navbar-wrapper__nav__ul__li__link--active");
         contactsLink.removeClass("navbar-wrapper__nav__ul__li__link--active");
@@ -43,6 +39,7 @@ class Navbar extends React.Component {
         // $(window).scrollTop() < projectsTop
         $(window).scrollTop() < contactsTop
       ) {
+        navWrapper.addClass("navbar-wrapper--shrink");
         showcasesLink.addClass("navbar-wrapper__nav__ul__li__link--active");
         landingLink.removeClass("navbar-wrapper__nav__ul__li__link--active");
         contactsLink.removeClass("navbar-wrapper__nav__ul__li__link--active");
@@ -84,8 +81,11 @@ class Navbar extends React.Component {
                 className="navbar-wrapper__nav__ul__li__link navbar-wrapper__nav__ul__li__link--logo "
                 href="#landing-wrapper"
               >
-                <YCLogo />
-                YU CHIU
+                <span className="navbar-wrapper__nav__ul__li__link__svg ">
+                  <YCLogo />
+                </span>
+
+                <span>YU CHIU</span>
               </a>
             </li>
           </ul>

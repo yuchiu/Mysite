@@ -3,24 +3,18 @@
 
 .contacts-wrapper {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   &__upper {
-    min-height: 15vh;
+    flex: 1;
     display: flex;
     flex-direction: column;
   }
 
   &__lower {
-    min-height: 50vh;
+    flex: 4;
     display: flex;
-  }
-}
-
-@include maxMediaQueries(975px) {
-  .contacts-wrapper__lower {
-    padding-top: 0;
-    display: flex;
-    flex-direction: column;
-    margin-top: -50px;
-    margin-bottom: 100px;
+    margin-bottom: ($footerheight * 3);
   }
 }

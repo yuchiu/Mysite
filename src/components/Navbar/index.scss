@@ -6,7 +6,10 @@
   width: 100%;
   z-index: 2;
   position: fixed;
-  @include bgColorAnimation;
+  &--shrink {
+    background: white;
+    box-shadow: 1px 2px 8px $lightgrey;
+  }
   &__nav {
     width: 90%;
     margin: auto;
@@ -23,18 +26,33 @@
           align-items: center;
           font-size: 1.3em;
           transition: all 0.3s ease;
-          color: $white;
+          color: $superdarkgrey;
           text-decoration: none;
           &--logo {
             margin-top: -8px;
           }
+          &__svg {
+            filter: invert(1) saturate(0) sepia(100%) hue-rotate(300deg);
+          }
           &:hover {
-            color: $white;
-            filter: drop-shadow(0 0 25px $white) drop-shadow(0 0 10px $white);
+            color: $bright-teal;
+          }
+          &:hover & {
+            &__svg {
+              filter: drop-shadow(0 0 1px $bright-teal)
+                drop-shadow(0 0 5px $bright-teal)
+                drop-shadow(0 0 15px $bright-teal);
+            }
           }
           &--active {
-            color: $white;
-            filter: drop-shadow(0 0 25px $white) drop-shadow(0 0 10px $white);
+            color: $bright-teal;
+          }
+          &--active & {
+            &__svg {
+              filter: drop-shadow(0 0 1px $bright-teal)
+                drop-shadow(0 0 5px $bright-teal)
+                drop-shadow(0 0 15px $bright-teal);
+            }
           }
         }
       }

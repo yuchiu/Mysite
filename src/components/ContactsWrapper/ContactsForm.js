@@ -83,9 +83,6 @@ export default class Contacts extends React.Component {
           data-email={myEmail}
           action="https://script.google.com/macros/s/AKfycbwmpk3mHxjdk4qyvkY_i7HK-O3ldBho6wYPQ_eCjKUBQmykXCra/exec"
         >
-          <div className="form-header">
-            <h4 className="form-header__title">Leave Me a Message</h4>
-          </div>
           <div className="form-subject">
             <div className="form-subject__to">
               <h4 className="form-subject__to__h4">To:</h4>
@@ -109,7 +106,7 @@ export default class Contacts extends React.Component {
                 value={formData.subject}
                 onChange={this.handleChange}
                 className="form-subject__section__input"
-                placeholder="Hello World!"
+                placeholder="#include <header>"
                 required
               />
             </div>
@@ -121,7 +118,7 @@ export default class Contacts extends React.Component {
               value={formData.message}
               onChange={this.handleChange}
               className="form-body__text"
-              placeholder="Message Body"
+              placeholder="cout << Hello World!"
               required
             />
           </div>
