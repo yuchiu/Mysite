@@ -30,52 +30,51 @@ export default ({ itemData, showcaseSlideIndex }) => (
           <h4 className="showcase-content__main__detail__desc__header__time">
             {itemData.time}
           </h4>
+          <div className="showcase-content__main__detail__desc__text showcase-content__main__detail__desc__text--intro">
+            <p>{itemData.introDesc}</p>
+          </div>
           <ul className="showcase-content__main__detail__desc__header__tech-stack">
             {itemData.language.length === 0 ? null : (
               <React.Fragment>
-                <b className="showcase-content__main__detail__desc__header__tech-stack__bold">
+                <span className="showcase-content__main__detail__desc__header__tech-stack__title">
                   Languages{" "}
-                </b>
+                </span>
                 {loopDotItem(itemData.language, "language")}
               </React.Fragment>
             )}
             {itemData.frontEndStack.length === 0 ? null : (
               <React.Fragment>
-                <b className="showcase-content__main__detail__desc__header__tech-stack__bold">
+                <span className="showcase-content__main__detail__desc__header__tech-stack__title">
                   Front-End{" "}
-                </b>
+                </span>
                 {loopDotItem(itemData.frontEndStack, "front-end")}
               </React.Fragment>
             )}
             {itemData.backEndStack.length === 0 ? null : (
               <React.Fragment>
-                <b className="showcase-content__main__detail__desc__header__tech-stack__bold">
+                <span className="showcase-content__main__detail__desc__header__tech-stack__title">
                   Back-End{" "}
-                </b>
+                </span>
                 {loopDotItem(itemData.backEndStack, "back-end")}
               </React.Fragment>
             )}
             {itemData.dataStore.length === 0 ? null : (
               <React.Fragment>
-                <b className="showcase-content__main__detail__desc__header__tech-stack__bold">
+                <span className="showcase-content__main__detail__desc__header__tech-stack__title">
                   Data Store{" "}
-                </b>
+                </span>
                 {loopDotItem(itemData.dataStore, "data-store")}
               </React.Fragment>
             )}
             {itemData.operationsStack.length === 0 ? null : (
               <React.Fragment>
-                <b className="showcase-content__main__detail__desc__header__tech-stack__bold">
+                <span className="showcase-content__main__detail__desc__header__tech-stack__title">
                   Operations{" "}
-                </b>
+                </span>
                 {loopDotItem(itemData.operationsStack, "operation")}
               </React.Fragment>
             )}
           </ul>
-          <div className="showcase-content__main__detail__desc__text showcase-content__main__detail__desc__text--intro">
-            <b>Descriptions</b>
-            <p>{itemData.introDesc}</p>
-          </div>
         </div>
       </div>
       <DemoLinkGroup

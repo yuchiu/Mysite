@@ -40,7 +40,6 @@
           &:hover & {
             &__svg {
               filter: drop-shadow(0 0 1px $bright-teal)
-                drop-shadow(0 0 5px $bright-teal)
                 drop-shadow(0 0 15px $bright-teal);
             }
           }
@@ -50,8 +49,7 @@
           &--active & {
             &__svg {
               filter: drop-shadow(0 0 1px $bright-teal)
-                drop-shadow(0 0 5px $bright-teal)
-                drop-shadow(0 0 15px $bright-teal);
+                drop-shadow(0 0 5px $bright-teal);
             }
           }
         }

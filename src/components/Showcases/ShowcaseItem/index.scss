@@ -74,8 +74,9 @@
             padding: 0;
             display: flex;
             flex-wrap: wrap;
-            &__bold {
+            &__title {
               width: 100%;
+              margin-top: 5px;
             }
             &__item {
               margin-bottom: 0;
@@ -137,7 +138,7 @@
           }
 
           &__tech-stack {
-            &__bold {
+            &__title {
             }
             &__item {
             }
