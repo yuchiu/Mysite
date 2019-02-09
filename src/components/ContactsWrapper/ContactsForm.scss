@@ -11,7 +11,7 @@ $form-body-width: 55%;
   justify-content: space-between;
   text-align: center;
   width: 100%;
-  margin-top: ($navbarheight * 2);
+  margin-top: ($navbar-height * 2);
   &__title {
     width: 100%;
   }
@@ -191,7 +191,22 @@ $form-body-width: 55%;
   }
 }
 
-@include maxMediaQueries(975px) {
+@media screen and (max-width: $MQ-xxxl) {
+  .form-subject {
+    width: 75%;
+  }
+  .form-body {
+    width: 75%;
+  }
+  .form-sender {
+    width: 75%;
+  }
+  .form-send {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: $MQ-xl) {
   .form-subject {
     width: 85%;
   }
@@ -203,5 +218,29 @@ $form-body-width: 55%;
   }
   .form-send {
     width: 85%;
+  }
+}
+
+@media screen and (max-width: $MQ-md) {
+  .contacts-form {
+    font-size: 0.85em;
+  }
+
+  .form-subject {
+    width: 95%;
+  }
+  .form-body {
+    width: 95%;
+  }
+  .form-sender {
+    width: 95%;
+  }
+  .form-send {
+    width: 95%;
+    &__btn {
+      font-size: 0.95em;
+      min-width: 120px;
+      height: 22px;
+    }
   }
 }

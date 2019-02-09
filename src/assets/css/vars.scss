@@ -1,26 +1,37 @@
+/* Media Queries Break Point*/
+
+$MQ-sm: 450px;
+$MQ-md: 600px;
+$MQ-lg: 800px;
+$MQ-xl: 1000px;
+$MQ-xxl: 1200px;
+$MQ-xxxl: 1400px;
+
 /* sizes */
 
-$footerheight: 30px;
-$navbarheight: 50px;
+$font-size-sm: 16px;
+$font-size-md: 20px;
+$font-size-lg: 24px;
+$font-size-xl: 28px;
+$font-size-xxl: 32px;
+$font-size-xxxl: 36px;
 
-/* ring config*/
-$diameter: 560px; // size control // diameter
-$diameter-small: 420px; // size control // diameter small
+$footer-height: 30px;
+$navbar-height: 100px;
+$navbar-height-MQ-md: 50px;
 
-$radio: ($diameter/2); // radio
-$negative-radio: -($radio);
-$radio-small: ($diameter-small/2); // radio small
-$negative-radio-small: -($radio-small);
+$spacing-sm: 4px;
+$spacing-md: 8px;
+$spacing-lg: 12px;
+$spacing-xl: 16px;
 
-$border: ($radio/11); // border
-$negative-border: -($border);
-$acceleration: 10s; // accelerate
-$acceleration-2: 15s; // accelerate
-$acceleration-3: 20s; // accelerate
+$font-size-sm: 12px;
+$font-size-md: 16px;
+$font-size-lg: 20px;
+$font-size-xl: 24px;
 
 /* other base style */
-$background-opacity: 0.5; // opacity
-$ring-opacity: 0.75; // opacity
+$background-opacity: 0.65; // opacity
 
 /* colors */
 $superwhite: #fff;
@@ -57,7 +68,7 @@ $btn-color5: #62c4e2;
 $btn-color6: #2f8085;
 $btn-color7: #226364;
 
-$background-color1: rgba(130, 206, 189, $background-opacity);
+$background-color1: rgba(100, 219, 193, $background-opacity);
 $background-color2: rgba(155, 142, 228, $background-opacity);
 $background-color3: rgba(116, 138, 236, $background-opacity);
 $background-color4: rgba(112, 204, 152, $background-opacity);
@@ -67,14 +78,3 @@ $background-color7: rgba(61, 145, 229, $background-opacity);
 $background-color8: rgba(114, 148, 221, $background-opacity);
 $background-color9: rgba(103, 212, 148, $background-opacity);
 $background-color10: rgba(101, 209, 177, $background-opacity);
-
-$landing-ring-color1: rgba(130, 206, 189, $ring-opacity);
-$landing-ring-color2: rgba(155, 142, 228, $ring-opacity);
-$landing-ring-color3: rgba(116, 138, 236, $ring-opacity);
-$landing-ring-color4: rgba(112, 204, 152, $ring-opacity);
-$landing-ring-color5: rgba(36, 181, 152, $ring-opacity);
-$landing-ring-color6: rgba(61, 145, 229, $ring-opacity);
-$landing-ring-color7: rgba(61, 145, 229, $ring-opacity);
-$landing-ring-color8: rgba(114, 148, 221, $ring-opacity);
-$landing-ring-color9: rgba(103, 212, 148, $ring-opacity);
-$landing-ring-color10: rgba(101, 209, 177, $ring-opacity);

@@ -30,7 +30,7 @@
     }
   }
 }
-@include maxMediaQueries(800px) {
+@media screen and (max-width: 800px) {
   .category {
     width: 500px;
     .a-tag-btn.sandy-one,
@@ -42,7 +42,7 @@
     }
   }
 }
-@include maxMediaQueries(650px) {
+@media screen and (max-width: $MQ-md) {
   .category {
     width: 350px;
     .a-tag-btn.sandy-one,
@@ -55,7 +55,7 @@
   }
 }
 
-@include maxMediaQueries(500px) {
+@media screen and (max-width: 500px) {
   .category {
     padding-top: 65px;
   }

@@ -95,7 +95,7 @@
   }
 }
 
-@include maxMediaQueries(880px) {
+@media screen and (max-width: $MQ-lg) {
   .project {
     width: 500px;
     height: 350px;
@@ -110,7 +110,7 @@
     }
   }
 }
-@include maxMediaQueries(650px) {
+@media screen and (max-width: $MQ-md) {
   .project {
     width: 350px;
     height: 280px;

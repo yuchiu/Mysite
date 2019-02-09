@@ -9,13 +9,13 @@
   &__upper {
     flex: 3;
     display: flex;
-    margin-bottom: ($footerheight);
+    margin-bottom: ($footer-height);
   }
 
   &__lower {
     flex: 1;
     display: flex;
     flex-direction: column;
-    margin-bottom: ($footerheight * 2);
+    margin-bottom: ($footer-height * 2);
   }
 }

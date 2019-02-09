@@ -16,7 +16,7 @@
   }
 }
 
-@include maxMediaQueries(880px) {
+@media screen and (max-width: $MQ-lg) {
   .all-projects {
     width: 100%;
   }

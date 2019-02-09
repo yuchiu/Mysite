@@ -1,5 +1,31 @@
 @import "../../assets/css/vars.scss";
 @import "../../assets/css/mixins.scss";
+/* ring config*/
+$diameter: 560px; // size control // diameter
+$diameter-small: 380px; // size control // diameter small
+
+$radio: ($diameter/2); // radio
+$negative-radio: -($radio);
+$radio-small: ($diameter-small/2); // radio small
+$negative-radio-small: -($radio-small);
+
+$border: ($radio/10); // border
+$negative-border: -($border);
+$acceleration: 10s; // accelerate
+$acceleration-2: 15s; // accelerate
+$acceleration-3: 20s; // accelerate
+$ring-opacity: 0.7; // opacity
+
+$landing-ring-color1: rgba(100, 219, 193, $ring-opacity);
+$landing-ring-color2: rgba(155, 142, 228, $ring-opacity);
+$landing-ring-color3: rgba(116, 138, 236, $ring-opacity);
+$landing-ring-color4: rgba(112, 204, 152, $ring-opacity);
+$landing-ring-color5: rgba(36, 181, 152, $ring-opacity);
+$landing-ring-color6: rgba(61, 145, 229, $ring-opacity);
+$landing-ring-color7: rgba(61, 145, 229, $ring-opacity);
+$landing-ring-color8: rgba(114, 148, 221, $ring-opacity);
+$landing-ring-color9: rgba(103, 212, 148, $ring-opacity);
+$landing-ring-color10: rgba(101, 209, 177, $ring-opacity);
 
 .landing-wrapper {
   margin: 0;
@@ -24,7 +50,7 @@
   transition: all 1s ease-in-out;
   border-radius: 100%;
   animation: ringColor 30s infinite, rotar $acceleration -0s linear infinite,
-    ring1fadeInOut 30s infinite, wordfadeIn 2s ease-in;
+    ring1fadeInOut 30s infinite;
 }
 .landing-ring:after,
 .landing-ring:before {
@@ -39,11 +65,11 @@
 }
 .landing-ring:after {
   animation: ringColor 30s infinite, rotar2 $acceleration-2 -0s linear infinite,
-    ring1fadeInOut 30s infinite, wordfadeIn 2s ease-in;
+    ring1fadeInOut 30s infinite;
 }
 .landing-ring:before {
   animation: ringColor 30s infinite, rotarIz $acceleration-3 -0s linear infinite,
-    ring2fadeInOut 30s infinite, wordfadeIn 2s ease-in;
+    ring2fadeInOut 30s infinite;
 }
 
 .landing-content {
@@ -147,93 +173,86 @@
       inset $border 0 0 $landing-ring-color1,
       inset 0 $negative-border 0 $landing-ring-color1,
       inset $negative-border 0 0 $landing-ring-color1,
-      inset $border $negative-border 0 $landing-ring-color1;
-  }
-  7% {
-    box-shadow: inset 0 $border 0 $landing-ring-color1,
-      inset $border 0 0 $landing-ring-color1,
-      inset 0 $negative-border 0 $landing-ring-color1,
-      inset $negative-border 0 0 $landing-ring-color1,
       inset $border $negative-border 0 $landing-ring-color2;
   }
-  14% {
+  7% {
     box-shadow: inset 0 $border 0 $landing-ring-color1,
       inset $border 0 0 $landing-ring-color1,
       inset 0 $negative-border 0 $landing-ring-color1,
       inset $negative-border 0 0 $landing-ring-color2,
       inset $border $negative-border 0 $landing-ring-color3;
   }
-  21% {
+  14% {
     box-shadow: inset 0 $border 0 $landing-ring-color1,
       inset $border 0 0 $landing-ring-color1,
       inset 0 $negative-border 0 $landing-ring-color2,
       inset $negative-border 0 0 $landing-ring-color3,
       inset $border $negative-border 0 $landing-ring-color4;
   }
-  28% {
+  21% {
     box-shadow: inset 0 $border 0 $landing-ring-color1,
       inset $border 0 0 $landing-ring-color2,
       inset 0 $negative-border 0 $landing-ring-color3,
       inset $negative-border 0 0 $landing-ring-color4,
       inset $border $negative-border 0 $landing-ring-color5;
   }
-  35% {
+  28% {
     box-shadow: inset 0 $border 0 $landing-ring-color2,
       inset $border 0 0 $landing-ring-color3,
       inset 0 $negative-border 0 $landing-ring-color4,
       inset $negative-border 0 0 $landing-ring-color5,
-      inset $negative-border 0 0 $landing-ring-color6;
+      inset $border $negative-border 0 $landing-ring-color6;
   }
-  42% {
+  35% {
     box-shadow: inset 0 $border 0 $landing-ring-color3,
       inset $border 0 0 $landing-ring-color4,
       inset 0 $negative-border 0 $landing-ring-color5,
       inset $negative-border 0 0 $landing-ring-color6,
       inset $negative-border 0 0 $landing-ring-color7;
   }
-  49% {
+  42% {
     box-shadow: inset 0 $border 0 $landing-ring-color4,
       inset $border 0 0 $landing-ring-color5,
       inset 0 $negative-border 0 $landing-ring-color6,
       inset $negative-border 0 0 $landing-ring-color7,
       inset $negative-border 0 0 $landing-ring-color8;
   }
-  56% {
+  49% {
     box-shadow: inset 0 $border 0 $landing-ring-color5,
       inset $border 0 0 $landing-ring-color6,
       inset 0 $negative-border 0 $landing-ring-color7,
       inset $negative-border 0 0 $landing-ring-color8,
       inset $negative-border 0 0 $landing-ring-color9;
   }
-  64% {
+  58% {
     box-shadow: inset 0 $border 0 $landing-ring-color6,
       inset $border 0 0 $landing-ring-color7,
       inset 0 $negative-border 0 $landing-ring-color8,
       inset $negative-border 0 0 $landing-ring-color9,
       inset $negative-border 0 0 $landing-ring-color10;
   }
-  71% {
+  66% {
     box-shadow: inset 0 $border 0 $landing-ring-color7,
       inset $border 0 0 $landing-ring-color8,
       inset 0 $negative-border 0 $landing-ring-color9,
       inset $negative-border 0 0 $landing-ring-color10,
       inset $negative-border 0 0 $landing-ring-color1;
   }
-  79% {
+  75% {
     box-shadow: inset 0 $border 0 $landing-ring-color8,
       inset $border 0 0 $landing-ring-color9,
       inset 0 $negative-border 0 $landing-ring-color10,
       inset $negative-border 0 0 $landing-ring-color1,
       inset $negative-border 0 0 $landing-ring-color1;
   }
-  86% {
+  83% {
     box-shadow: inset 0 $border 0 $landing-ring-color9,
       inset $border 0 0 $landing-ring-color10,
       inset 0 $negative-border 0 $landing-ring-color1,
       inset $negative-border 0 0 $landing-ring-color1,
       inset $negative-border 0 0 $landing-ring-color1;
   }
-  93% {
+  92% {
     box-shadow: inset 0 $border 0 $landing-ring-color10,
       inset $border 0 0 $landing-ring-color1,
       inset 0 $negative-border 0 $landing-ring-color1,
@@ -249,7 +268,7 @@
   }
 }
 
-@include maxMediaQueries(880px) {
+@media screen and (max-width: $MQ-lg) {
   .landing-ring {
     margin-left: $negative-radio-small;
     margin-top: $negative-radio-small;
@@ -259,5 +278,18 @@
   }
   .landing-content {
     font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: $MQ-sm) {
+  .landing-ring {
+    margin-left: $negative-radio-small * 0.8;
+    margin-top: $negative-radio-small * 0.8;
+    width: $diameter-small * 0.8;
+    height: $diameter-small * 0.8;
+    line-height: $diameter-small * 0.8;
+  }
+  .landing-content {
+    font-size: 0.65em;
   }
 }

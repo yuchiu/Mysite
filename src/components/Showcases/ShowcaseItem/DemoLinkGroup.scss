@@ -43,7 +43,7 @@
   }
 }
 
-@include maxMediaQueries(1300px) {
+@media screen and (max-width: 1300px) {
   .demolink-group {
     justify-content: center;
   }

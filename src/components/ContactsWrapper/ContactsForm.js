@@ -107,7 +107,7 @@ export default class Contacts extends React.Component {
                 value={formData.subject}
                 onChange={this.handleChange}
                 className="form-subject__section__input"
-                placeholder="#include <header>"
+                placeholder="Hi There!"
                 required
               />
             </div>
@@ -119,7 +119,7 @@ export default class Contacts extends React.Component {
               value={formData.message}
               onChange={this.handleChange}
               className="form-body__text"
-              placeholder="cout << Hello World!"
+              placeholder="Hello World!"
               required
             />
           </div>

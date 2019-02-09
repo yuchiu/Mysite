@@ -51,7 +51,7 @@
       transition: all 0.3s ease;
       &__desc {
         display: flex;
-        height: 60%;
+        min-height: 60%;
         flex-direction: column;
         justify-content: space-between;
         font-size: 1.2em;
@@ -99,7 +99,7 @@
     }
   }
 }
-@include maxMediaQueries(1300px) {
+@media screen and (max-width: 1300px) {
   .showcase-content {
     &__main {
       width: 100%;
@@ -149,7 +149,7 @@
   }
 }
 
-@include maxMediaQueries(850px) {
+@media screen and (max-width: 850px) {
   .showcase-content {
     width: 100%;
     &__main {
@@ -172,7 +172,7 @@
   }
 }
 
-@include maxMediaQueries(650px) {
+@media screen and (max-width: $MQ-md) {
   .showcase-content {
     width: 100%;
     &__main {
@@ -181,8 +181,7 @@
         margin: auto;
         min-width: 90%;
         &__img {
-          height: 90%;
-          width: 90%;
+          width: 380px;
         }
       }
       &__detail {
