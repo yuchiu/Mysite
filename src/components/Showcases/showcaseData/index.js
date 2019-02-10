@@ -1,6 +1,29 @@
 export default [
   {
     id: "1",
+    name: "Netflix Clone",
+    time: "Winter 2018",
+    imgUrl: {
+      demoPic: "https://i.imgur.com/zlwtyhg.png",
+      archDiagram: ""
+    },
+    githubLink: "https://github.com/yuchiu/Netflix-Clone",
+    demoLink:
+      "https://github.com/yuchiu/Netflix-Clone/blob/master/netflix-clone-optimize-gif-demo.gif",
+    siteLink: "http://yuchiu-netflix.surge.sh",
+    language: ["JavaScript", "Python"],
+    frontEndStack: ["React.js", "React-Router", "Redux", "SCSS"],
+    backEndStack: ["Node.js", "Express.js", "RESTful API", "RPC API", "Scrapy"],
+    dataStore: ["ElasticSearch", "Postgres"],
+    operationsStack: ["Docker", "AWS EC2"],
+    introDesc: `A full-text movie search application with IMDB movie data and user interface similiar to Netflix`,
+    highlight: [],
+    archDesc: ``,
+
+    techSpecDesc: ``
+  },
+  {
+    id: "2",
     name: "Today News",
     time: "Fall 2018",
     imgUrl: {
@@ -29,7 +52,7 @@ export default [
       "TensorFlow"
     ],
     dataStore: ["RabbitMQ", "Redis", "ElasticSearch", "Mongoose", "MongoDB"],
-    operationsStack: ["Docker", "AWS EC2"],
+    operationsStack: ["AWS EC2"],
     introDesc: `A comprehensive news coverage applications aggregated from various sources with personal news recommendation system.`,
     highlight: [
       "Users can register and log in to their accounts",
@@ -102,7 +125,7 @@ export default [
     • Deployed on AWS EC2 instance`
   },
   {
-    id: "2",
+    id: "3",
     name: "Slack Clone",
     time: "Summer 2018",
     imgUrl: {
