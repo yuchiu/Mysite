@@ -13,7 +13,7 @@ export default () => (
             rel="noopener noreferrer"
             target="_blank"
           >
-            <i className="social__box__border__btn__icon fa fa-github" />
+            <i className="social__box__border__btn__icon fab fa-github" />
             <br />
             <p className="social__box__border__btn__name">GitHub</p>
           </a>
@@ -27,7 +27,7 @@ export default () => (
             rel="noopener noreferrer"
             target="_blank"
           >
-            <i className="social__box__border__btn__icon fa fa-linkedin" />
+            <i className="social__box__border__btn__icon fab fa-linkedin" />
             <br />
             <p className="social__box__border__btn__name">LinkedIn</p>
           </a>

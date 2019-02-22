@@ -11,25 +11,25 @@ export default ({ itemData }) => (
         target="_blank"
         href={itemData.githubLink}
       >
-        <i className="fa fa-github demolink-group__btn__icon" />
+        <i className="fab fa-github demolink-group__btn__icon" />
         <span className="demolink-group__btn__text">Github</span>
       </a>
       <a
-        className="demolink-group__demo-btn a-tag-btn  gibson-three"
+        className="demolink-group__btn a-tag-btn  gibson-three"
         rel="noopener noreferrer"
         target="_blank"
         href={itemData.demoLink}
       >
-        <i className="fa fa-video demolink-group__btn__icon" />
+        <i className="fas fa-video demolink-group__btn__icon" />
         <span className="demolink-group__btn__text">Demo</span>
       </a>
       <a
-        className="demolink-group__demo-btn a-tag-btn  gibson-two"
+        className="demolink-group__btn a-tag-btn  gibson-two"
         rel="noopener noreferrer"
         target="_blank"
         href={itemData.siteLink}
       >
-        <i className="fa fa-desktop demolink-group__btn__icon" />
+        <i className="far fa-browser demolink-group__btn__icon" />
         <span className="demolink-group__btn__text">Live Site</span>
       </a>
     </div>
