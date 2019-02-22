@@ -12,7 +12,6 @@
     box-shadow: 1px 2px 8px $lightgrey;
   }
   &__nav {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,7 +31,7 @@
           user-select: none;
           display: flex;
           align-items: center;
-          font-size: 1.3em;
+          font-size: 1.2em;
           transition: all 0.3s ease;
           color: $superdarkgrey;
           text-decoration: none;

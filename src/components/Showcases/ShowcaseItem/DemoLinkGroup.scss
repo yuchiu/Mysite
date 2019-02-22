@@ -15,14 +15,14 @@
   .a-tag-btn.gibson-three,
   .a-tag-btn.gibson-four {
     @include buttonColorAnimation;
-    margin: 0 15px 0;
+    margin: 0 10px 0;
     color: $white;
     font-size: 1em;
     border-radius: 3px;
-    width: 150px;
+    width: 126px;
     display: flex;
     font-weight: 400;
-    padding: 5px;
+    padding: $spacing-sm;
     align-items: center;
     justify-content: center;
     text-shadow: 1px 1px 3px $grey, 1px 1px 5px $grey;
@@ -32,6 +32,10 @@
       transition: all 0.5s ease-in-out;
       padding-right: 3px;
       font-size: 1.5em;
+      &--link {
+        padding-left: $spacing-sm;
+        font-size: 1em;
+      }
     }
     &__text {
       transition: all 0.5s ease-in-out;
@@ -50,5 +54,9 @@
 @media screen and (max-width: 1300px) {
   .demolink-group {
     justify-content: center;
+    &__btn {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

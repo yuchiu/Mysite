@@ -31,7 +31,7 @@ export default ({ itemData }) => (
             {itemData.time}
           </h4>
           <div className="showcase-content__main__detail__desc__text showcase-content__main__detail__desc__text--intro">
-            <p>{itemData.introDesc}</p>
+            <span>{itemData.introDesc}</span>
           </div>
           <ul className="showcase-content__main__detail__desc__header__tech-stack">
             {itemData.language.length === 0 ? null : (

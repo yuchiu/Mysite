@@ -37,6 +37,7 @@ $form-body-width: 55%;
       font-weight: 300;
       margin: auto 0;
       &__email {
+        padding: $spacing-sm;
         font-size: 1.2em;
       }
       &__copy-btn {
@@ -78,11 +79,10 @@ $form-body-width: 55%;
     }
 
     &__input {
-      padding: 2px;
       border: 1px solid $lightgrey;
       border-radius: 2px;
       width: 100%;
-      padding: 2px;
+      padding: $spacing-sm;
     }
   }
 }
@@ -121,10 +121,9 @@ $form-body-width: 55%;
   }
   &__mail-addr {
     width: 100%;
-    padding: 2px;
     border: 1px solid $lightgrey;
     border-radius: 2px;
-    padding: 2px;
+    padding: $spacing-sm;
     margin-right: 15px;
     min-width: 200px;
   }
@@ -138,7 +137,7 @@ $form-body-width: 55%;
     justify-content: center;
     align-items: center;
     min-width: 200px;
-    height: 26px;
+    height: 29px;
 
     background: transparent;
     color: $superdarkgrey;
