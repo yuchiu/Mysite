@@ -17,42 +17,6 @@
     &--pushup {
       justify-content: flex-start;
     }
-    &__header {
-      &__name {
-        font-size: 1.8em;
-      }
-      &__time {
-        color: $grey;
-        font-weight: 300;
-      }
-      &__tech-stack {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-wrap: wrap;
-        &__title {
-          width: 100%;
-          margin-top: 5px;
-          color: $grey;
-        }
-        &__item {
-          margin-bottom: 0;
-          &__dot {
-            padding: 0 5px;
-          }
-        }
-      }
-    }
-
-    &__text {
-      margin: 15px 0px;
-      white-space: pre-line;
-      font-size: 0.9em;
-      &--intro {
-        font-size: 1em;
-        white-space: pre-line;
-      }
-    }
   }
 }
 
@@ -65,28 +29,6 @@
       display: flex;
       justify-content: flex-start;
       margin-bottom: 20px;
-      &__header {
-        &__title {
-          text-align: center;
-        }
-        &__name {
-          text-align: center;
-        }
-        &__text {
-          font-size: 1.1em;
-        }
-      }
-
-      &__tech-stack {
-        &__title {
-        }
-        &__item {
-        }
-      }
-      &__user-story {
-        &__item {
-        }
-      }
     }
   }
 }

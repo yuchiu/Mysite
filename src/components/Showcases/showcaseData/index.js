@@ -4,6 +4,7 @@ export default [
     name: "Netflix Clone",
     time: "Winter 2018",
     imgUrl: {
+      demoVid: "",
       demoPic: "https://i.imgur.com/zlwtyhg.png",
       archDiagram: ""
     },
@@ -27,6 +28,7 @@ export default [
     name: "Today News",
     time: "Fall 2018",
     imgUrl: {
+      demoVid: "",
       demoPic: "https://i.imgur.com/xiq3tIT.png",
       archDiagram: "https://i.imgur.com/FBYB9vn.jpg"
     },
@@ -129,6 +131,7 @@ export default [
     name: "Slack Clone",
     time: "Summer 2018",
     imgUrl: {
+      demoVid: "",
       demoPic: "https://i.imgur.com/AHVp5Sk.png",
       archDiagram: "https://i.imgur.com/PhN3zT1.jpg"
     },

@@ -1,0 +1,58 @@
+@import "../../../assets/css/mixins";
+@import "../../../assets/css/vars";
+
+.showcase-content-tech-stack {
+  &__name {
+    font-size: 1.8em;
+  }
+  &__time {
+    color: $grey;
+    font-weight: 300;
+  }
+  &__text {
+    margin: 15px 0px;
+    white-space: pre-line;
+    font-size: 0.9em;
+    &--intro {
+      font-size: 1em;
+      white-space: pre-line;
+    }
+  }
+  &__tech-stack {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    &__title {
+      width: 100%;
+      margin-top: 5px;
+      color: $grey;
+    }
+    &__item {
+      margin-bottom: 0;
+      &__dot {
+        padding: 0 5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .showcase-content-tech-stack {
+    &__title {
+      text-align: center;
+    }
+    &__name {
+      text-align: center;
+    }
+    &__text {
+      font-size: 1.1em;
+    }
+    &__tech-stack {
+      &__title {
+      }
+      &__item {
+      }
+    }
+  }
+}

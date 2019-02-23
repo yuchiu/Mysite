@@ -14,7 +14,11 @@ const ShowcaseItem = ({
   <div id={`showcase-item-${index + 1}`} className="showcases-item-wrapper">
     <div className="showcase-content">
       <div className="showcase-content__main">
-        <SlideImg itemData={itemData} index={index} />
+        <SlideImg
+          itemData={itemData}
+          index={index}
+          showcaseSlideIndex={showcaseSlideIndex}
+        />
         <SlideDesc
           index={index}
           itemData={itemData}
