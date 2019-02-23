@@ -1,17 +1,18 @@
 import React from "react";
 
-import DemoLinkGroup from "./DemoLinkGroup";
+import "./index.scss";
+import BtnGroup from "./BtnGroup";
 
 const loopDotItem = (list, listName) =>
   list.map((item, i) => (
     <p
-      className="showcase-content__main__detail__desc__header__tech-stack__item"
+      className="showcase-content-detail__desc__header__tech-stack__item"
       key={`techlist-${listName}-${i}`}
     >
       {i === 0 ? (
         ""
       ) : (
-        <span className="showcase-content__main__detail__desc__header__tech-stack__item__dot">
+        <span className="showcase-content-detail__desc__header__tech-stack__item__dot">
           ·
         </span>
       )}
@@ -19,24 +20,24 @@ const loopDotItem = (list, listName) =>
     </p>
   ));
 
-export default ({ itemData }) => (
+export default ({ itemData, handleChange, showcaseSlideIndex, index }) => (
   <React.Fragment>
-    <section className="showcase-content__main__detail">
-      <div className="showcase-content__main__detail__desc">
-        <div className="showcase-content__main__detail__desc__header">
-          <h4 className="showcase-content__main__detail__desc__header__name">
+    <section className="showcase-content-detail">
+      <div className="showcase-content-detail__desc">
+        <div className="showcase-content-detail__desc__header">
+          <h4 className="showcase-content-detail__desc__header__name">
             {itemData.name}
           </h4>
-          <h4 className="showcase-content__main__detail__desc__header__time">
+          <h4 className="showcase-content-detail__desc__header__time">
             {itemData.time}
           </h4>
-          <div className="showcase-content__main__detail__desc__text showcase-content__main__detail__desc__text--intro">
+          <div className="showcase-content-detail__desc__text showcase-content-detail__desc__text--intro">
             <span>{itemData.introDesc}</span>
           </div>
-          <ul className="showcase-content__main__detail__desc__header__tech-stack">
+          <ul className="showcase-content-detail__desc__header__tech-stack">
             {itemData.language.length === 0 ? null : (
               <React.Fragment>
-                <span className="showcase-content__main__detail__desc__header__tech-stack__title">
+                <span className="showcase-content-detail__desc__header__tech-stack__title">
                   Languages{" "}
                 </span>
                 {loopDotItem(itemData.language, "language")}
@@ -44,7 +45,7 @@ export default ({ itemData }) => (
             )}
             {itemData.frontEndStack.length === 0 ? null : (
               <React.Fragment>
-                <span className="showcase-content__main__detail__desc__header__tech-stack__title">
+                <span className="showcase-content-detail__desc__header__tech-stack__title">
                   Front-End{" "}
                 </span>
                 {loopDotItem(itemData.frontEndStack, "front-end")}
@@ -52,7 +53,7 @@ export default ({ itemData }) => (
             )}
             {itemData.backEndStack.length === 0 ? null : (
               <React.Fragment>
-                <span className="showcase-content__main__detail__desc__header__tech-stack__title">
+                <span className="showcase-content-detail__desc__header__tech-stack__title">
                   Back-End{" "}
                 </span>
                 {loopDotItem(itemData.backEndStack, "back-end")}
@@ -60,7 +61,7 @@ export default ({ itemData }) => (
             )}
             {itemData.dataStore.length === 0 ? null : (
               <React.Fragment>
-                <span className="showcase-content__main__detail__desc__header__tech-stack__title">
+                <span className="showcase-content-detail__desc__header__tech-stack__title">
                   Data Store{" "}
                 </span>
                 {loopDotItem(itemData.dataStore, "data-store")}
@@ -68,7 +69,7 @@ export default ({ itemData }) => (
             )}
             {itemData.operationsStack.length === 0 ? null : (
               <React.Fragment>
-                <span className="showcase-content__main__detail__desc__header__tech-stack__title">
+                <span className="showcase-content-detail__desc__header__tech-stack__title">
                   Operations{" "}
                 </span>
                 {loopDotItem(itemData.operationsStack, "operation")}
@@ -77,7 +78,12 @@ export default ({ itemData }) => (
           </ul>
         </div>
       </div>
-      <DemoLinkGroup itemData={itemData} />
+      <BtnGroup
+        index={index}
+        itemData={itemData}
+        handleChange={handleChange}
+        showcaseSlideIndex={showcaseSlideIndex}
+      />
     </section>
   </React.Fragment>
 );

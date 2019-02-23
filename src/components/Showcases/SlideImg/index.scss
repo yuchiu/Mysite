@@ -1,0 +1,58 @@
+@import "../../../assets/css/vars";
+@import "../../../assets/css/mixins";
+
+.showcase-content-img-section {
+  min-width: 50%;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include bgColorAnimation;
+  margin-right: 50px;
+  background: linear-gradient(
+    45deg,
+    #fff 0%,
+    #fff 20%,
+    transparent 20%,
+    transparent 40%,
+    #fff 40%,
+    #fff 100%
+  );
+  &__img {
+    transition: all 0.3s ease;
+    width: 600px;
+    box-shadow: 0 0 10px $darkgrey;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .showcase-content-img-section {
+    width: 90%;
+    margin: 0 auto;
+    min-height: 500px;
+    &__img {
+      width: 550px;
+    }
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .showcase-content-img-section {
+    margin: auto;
+    min-width: 90%;
+    &__img {
+      width: 500px;
+    }
+  }
+}
+
+@media screen and (max-width: $MQ-md) {
+  .showcase-content-img-section {
+    margin: auto;
+    min-width: 90%;
+    &__img {
+      width: 380px;
+    }
+  }
+}

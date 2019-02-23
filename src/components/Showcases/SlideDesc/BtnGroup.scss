@@ -1,7 +1,7 @@
 @import "../../../assets/css/mixins";
 @import "../../../assets/css/vars";
 
-.demolink-group {
+.btn-group {
   display: flex;
   width: 100%;
   justify-content: flex-start;
@@ -36,9 +36,18 @@
         padding-left: $spacing-sm;
         font-size: 1em;
       }
+      &--selected {
+        text-shadow: 1px 1px 8px $white;
+      }
     }
     &__text {
       transition: all 0.5s ease-in-out;
+      &--selected {
+        text-shadow: 1px 1px 8px $white;
+      }
+    }
+    &:hover {
+      cursor: pointer;
     }
     &:hover & {
       &__text {
@@ -52,7 +61,7 @@
 }
 
 @media screen and (max-width: 1300px) {
-  .demolink-group {
+  .btn-group {
     justify-content: center;
     &__btn {
       display: flex;

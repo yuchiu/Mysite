@@ -1,0 +1,112 @@
+@import "../../../assets/css/mixins";
+@import "../../../assets/css/vars";
+
+.showcase-content-detail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+  &__desc {
+    display: flex;
+    min-height: 60%;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.2em;
+    margin: auto;
+    &--pushup {
+      justify-content: flex-start;
+    }
+    &__header {
+      &__name {
+        font-size: 1.8em;
+      }
+      &__time {
+        color: $grey;
+        font-weight: 300;
+      }
+      &__tech-stack {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        &__title {
+          width: 100%;
+          margin-top: 5px;
+          color: $grey;
+        }
+        &__item {
+          margin-bottom: 0;
+          &__dot {
+            padding: 0 5px;
+          }
+        }
+      }
+    }
+
+    &__text {
+      margin: 15px 0px;
+      white-space: pre-line;
+      font-size: 0.9em;
+      &--intro {
+        font-size: 1em;
+        white-space: pre-line;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .showcase-content-detail {
+    width: 90%;
+    margin: 0 auto;
+    justify-content: flex-start;
+    &__desc {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 20px;
+      &__header {
+        &__title {
+          text-align: center;
+        }
+        &__name {
+          text-align: center;
+        }
+        &__text {
+          font-size: 1.1em;
+        }
+      }
+
+      &__tech-stack {
+        &__title {
+        }
+        &__item {
+        }
+      }
+      &__user-story {
+        &__item {
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .showcase-content-detail {
+    width: 90%;
+    margin: 0 auto;
+    &__desc {
+      font-size: 1.15em;
+    }
+  }
+}
+
+@media screen and (max-width: $MQ-md) {
+  .showcase-content-detail {
+    width: 90%;
+    margin: 0 auto;
+    &__desc {
+      font-size: 1em;
+    }
+  }
+}
